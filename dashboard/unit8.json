@@ -1,0 +1,625 @@
+{
+  "unit_name": "8. Error Handling and Debugging",
+  "mcqs": [
+    {
+      "id": 801,
+      "question": "Which block is used to enclose code that might throw an error?",
+      "options": [
+        "A) catch",
+        "B) try",
+        "C) error",
+        "D) finally"
+      ],
+      "correct_option": "B",
+      "explanation": "The 'try' block contains the code to be tested for errors.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 802,
+      "question": "Which block is used to handle an error that occurred?",
+      "options": [
+        "A) try",
+        "B) check",
+        "C) catch",
+        "D) finally"
+      ],
+      "correct_option": "C",
+      "explanation": "The 'catch' block executes if an exception occurs in the try block.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 803,
+      "question": "Which block always executes regardless of whether an error occurred or not?",
+      "options": [
+        "A) try",
+        "B) catch",
+        "C) always",
+        "D) finally"
+      ],
+      "correct_option": "D",
+      "explanation": "The 'finally' block is used for cleanup code.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 804,
+      "question": "What keyword is used to manually generate an error?",
+      "options": [
+        "A) error",
+        "B) raise",
+        "C) throw",
+        "D) exception"
+      ],
+      "correct_option": "C",
+      "explanation": "The 'throw' statement allows creating custom errors.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 805,
+      "question": "What is the base class for all built-in errors in JavaScript?",
+      "options": [
+        "A) SystemError",
+        "B) Exception",
+        "C) Error",
+        "D) BaseError"
+      ],
+      "correct_option": "C",
+      "explanation": "The 'Error' object is the basis for all specific error types.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 806,
+      "question": "Which error occurs when you use a variable that has not been declared?",
+      "options": [
+        "A) TypeError",
+        "B) ReferenceError",
+        "C) SyntaxError",
+        "D) RangeError"
+      ],
+      "correct_option": "B",
+      "explanation": "ReferenceError happens when an invalid reference is made.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 807,
+      "question": "Which error occurs when a value is not of the expected type?",
+      "options": [
+        "A) TypeError",
+        "B) ReferenceError",
+        "C) ValueError",
+        "D) SyntaxError"
+      ],
+      "correct_option": "A",
+      "explanation": "TypeError occurs when an operation is performed on an incompatible type.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 808,
+      "question": "Which error occurs when there is a typo in the code syntax?",
+      "options": [
+        "A) EvalError",
+        "B) ReferenceError",
+        "C) SyntaxError",
+        "D) TypeError"
+      ],
+      "correct_option": "C",
+      "explanation": "SyntaxError is thrown by the parser when code violates language rules.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 809,
+      "question": "Which error occurs when a number is outside its allowed range (e.g., array size)?",
+      "options": [
+        "A) RangeError",
+        "B) MemoryError",
+        "C) LimitError",
+        "D) NumberError"
+      ],
+      "correct_option": "A",
+      "explanation": "RangeError happens when a value is not in the set or range of allowed values.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 810,
+      "question": "What is the purpose of console.trace()?",
+      "options": [
+        "A) To draw a graph",
+        "B) To log a stack trace",
+        "C) To clear the console",
+        "D) To monitor performance"
+      ],
+      "correct_option": "B",
+      "explanation": "trace() shows the path of function calls that led to the current point.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 811,
+      "question": "What is 'Logical Error'?",
+      "options": [
+        "A) Code that doesn't run",
+        "B) Code that runs but produces wrong results",
+        "C) Missing semicolon",
+        "D) Server crash"
+      ],
+      "correct_option": "B",
+      "explanation": "Logical errors are flaws in the algorithm logic.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 812,
+      "question": "How can you debug code in the browser without printing anything?",
+      "options": [
+        "A) Use 'debugger' keyword",
+        "B) Use 'stop' keyword",
+        "C) Use 'pause'",
+        "D) Cannot do that"
+      ],
+      "correct_option": "A",
+      "explanation": "The 'debugger' keyword stops execution at that line in dev tools.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 813,
+      "question": "Which of these is NOT a property of an Error object?",
+      "options": [
+        "A) name",
+        "B) message",
+        "C) stack",
+        "D) code"
+      ],
+      "correct_option": "D",
+      "explanation": "The standard properties are name, message, and stack (non-standard but supported).",
+      "difficulty": "medium"
+    },
+    {
+      "id": 814,
+      "question": "What does a 'stack trace' show?",
+      "options": [
+        "A) Variable values",
+        "B) Sequence of function calls",
+        "C) CPU usage",
+        "D) File structure"
+      ],
+      "correct_option": "B",
+      "explanation": "It provides the 'call stack' at the moment the error was thrown.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 815,
+      "question": "What is the output: try { throw new Error('Hi'); } catch (e) { console.log(e.name); }",
+      "options": [
+        "A) Hi",
+        "B) Error",
+        "C) undefined",
+        "D) Null"
+      ],
+      "correct_option": "B",
+      "explanation": "e.name is 'Error' (the type), e.message is 'Hi'.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 816,
+      "question": "Can you have multiple catch blocks for one try block in JS?",
+      "options": [
+        "A) Yes",
+        "B) No",
+        "C) Only in ES6+",
+        "D) Only for different types"
+      ],
+      "correct_option": "B",
+      "explanation": "JS only supports one catch block. You must manually check error types inside it.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 817,
+      "question": "What is the best practice for custom errors?",
+      "options": [
+        "A) Throw strings",
+        "B) Throw numbers",
+        "C) Extend the Error class",
+        "D) Just log the error"
+      ],
+      "correct_option": "C",
+      "explanation": "Extending Error allows proper stack traces and type checking.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 818,
+      "question": "What happens if an error is thrown but not caught?",
+      "options": [
+        "A) Browser ignores it",
+        "B) Script execution stops and an error is logged to console",
+        "C) Computer restarts",
+        "D) Page refreshes"
+      ],
+      "correct_option": "B",
+      "explanation": "Uncaught errors crash the current execution context.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 819,
+      "question": "What does URIError represent?",
+      "options": [
+        "A) Large URL",
+        "B) Invalid characters in encodeURI() or decodeURI()",
+        "C) 404 Not Found",
+        "D) Server Timeout"
+      ],
+      "correct_option": "B",
+      "explanation": "Thrown when URI handling functions are used incorrectly.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 820,
+      "question": "What is the output: try { console.log('1'); } finally { console.log('2'); }",
+      "options": [
+        "A) 1",
+        "B) 2",
+        "C) 1 2",
+        "D) Error"
+      ],
+      "correct_option": "C",
+      "explanation": "Try runs, then finally runs.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 821,
+      "question": "In a catch block, the error parameter is:",
+      "options": [
+        "A) Mandatory",
+        "B) Optional (since ES2019)",
+        "C) Only a string",
+        "D) Always null"
+      ],
+      "correct_option": "B",
+      "explanation": "Since ES2019, you can use 'catch { }' without the error variable.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 822,
+      "question": "Which of these console methods outputs an interactive list of object properties?",
+      "options": [
+        "A) console.log()",
+        "B) console.dir()",
+        "C) console.info()",
+        "D) console.debug()"
+      ],
+      "correct_option": "B",
+      "explanation": "console.dir() is specifically for exploring object structures.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 823,
+      "question": "What is a 'Runtime Error'?",
+      "options": [
+        "A) Error during parsing",
+        "B) Error during code execution",
+        "C) Error in CSS",
+        "D) Error in variable name"
+      ],
+      "correct_option": "B",
+      "explanation": "Runtime errors occur while the program is actually running.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 824,
+      "question": "Which console method is used to measure the time taken by a block of code?",
+      "options": [
+        "A) console.time() and console.timeEnd()",
+        "B) console.start() and console.stop()",
+        "C) console.clock()",
+        "D) console.measure()"
+      ],
+      "correct_option": "A",
+      "explanation": "These methods allow simple performance profiling.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 825,
+      "question": "What is 'Silent Failure'?",
+      "options": [
+        "A) A syntax error",
+        "B) Code that fails but doesn't throw a visible error",
+        "C) An alert box",
+        "D) Slow loading"
+      ],
+      "correct_option": "B",
+      "explanation": "Silent failures are dangerous because they are hard to track.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 826,
+      "question": "What is the result of 10 / 0 in JavaScript?",
+      "options": [
+        "A) Error",
+        "B) 0",
+        "C) Infinity",
+        "D) undefined"
+      ],
+      "correct_option": "C",
+      "explanation": "JS returns Infinity for division by zero; it is NOT an error.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 827,
+      "question": "What is a 'Breakpoint'?",
+      "options": [
+        "A) A line where the script crashes",
+        "B) A manual stopping point set in dev tools for debugging",
+        "C) A specific error type",
+        "D) A type of loop"
+      ],
+      "correct_option": "B",
+      "explanation": "Breakpoints allow developers to inspect state at specific lines.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 828,
+      "question": "What is the purpose of console.assert()?",
+      "options": [
+        "A) To check if value is true",
+        "B) To log a message only if the condition is false",
+        "C) To stop execution",
+        "D) To clear history"
+      ],
+      "correct_option": "B",
+      "explanation": "It's a useful debugging tool for verifying expectations.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 829,
+      "question": "Which error is thrown if you try to redefine a 'const' variable?",
+      "options": [
+        "A) ReferenceError",
+        "B) TypeError",
+        "C) ConstError",
+        "D) SyntaxError"
+      ],
+      "correct_option": "B",
+      "explanation": "Reassigning a constant is a TypeError.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 830,
+      "question": "The 'throw' keyword can throw:",
+      "options": [
+        "A) Only Error objects",
+        "B) Only strings",
+        "C) Any value (primitive or object)",
+        "D) Only Booleans"
+      ],
+      "correct_option": "C",
+      "explanation": "While best practice is to throw Error objects, technically anything can be thrown.",
+      "difficulty": "hard"
+    }
+  ],
+  "theory_questions": [
+    {
+      "id": 851,
+      "question": "Explain the structure and flow of a try...catch...finally block.",
+      "model_answer": "Code in 'try' is executed. if an error occurs, 'try' stops and 'catch' block runs with the error object. Regardless of success or failure, 'finally' executes at the end, usually for cleanup like closing files.",
+      "key_points": [
+        "Error trapping",
+        "Handler logic",
+        "Cleanup block",
+        "Control flow"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 852,
+      "question": "What is the Error object? Describe its main properties.",
+      "model_answer": "The Error object provides information about errors. It has two standard properties: 'name' (the type of error) and 'message' (a description). Most browsers also provide 'stack' (the sequence of calls).",
+      "key_points": [
+        "name",
+        "message",
+        "stack trace",
+        "Built-in prototypes"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 853,
+      "question": "Differentiate between SyntaxError, ReferenceError, and TypeError.",
+      "model_answer": "SyntaxError: Typo in code (parser cannot understand). ReferenceError: Accessing an undeclared/out-of-scope variable. TypeError: Calling a non-function or accessing properties of null/undefined.",
+      "key_points": [
+        "Parsing vs Execution",
+        "Invalid references",
+        "Incompatible types",
+        "Common examples"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 854,
+      "question": "Explain the difference between 'throwing' an error and 'logging' an error.",
+      "model_answer": "Throwing (throw) stops execution and transfers control to the nearest catch block; it indicates a failure that the program must handle. Logging (console.error) just prints a message to the console without interrupting flow.",
+      "key_points": [
+        "Execution impact",
+        "Control flow",
+        "Visibility",
+        "Intent"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 855,
+      "question": "How can the 'debugger' keyword be used effectively?",
+      "model_answer": "Inserting 'debugger' in code tells the browser to pause execution if DevTools are open. It acts as a hardcoded breakpoint, allowing the developer to inspect variables, the call stack, and step through code instruction by instruction.",
+      "key_points": [
+        "Pause execution",
+        "DevTools triggers",
+        "Variable inspection",
+        "Step-by-step"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 856,
+      "question": "What is the 'finally' block used for? Provide a practical example.",
+      "model_answer": "Finally is used for cleanup that must happen whether an error occurred or not. Example: Closing a database connection or hiding a 'loading' spinner on a website after an API call finishes or fails.",
+      "key_points": [
+        "Guaranteed execution",
+        "Cleanup",
+        "Loading states",
+        "Connection management"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 857,
+      "question": "What is a Stack Trace and why is it important for debugging?",
+      "model_answer": "A stack trace is a report of the active stack frames at a certain point in time. It tells you which function called which function, helping you trace the path of execution to find exactly where and why a bug occurred.",
+      "key_points": [
+        "Call sequence",
+        "File/Line numbers",
+        "Ancestry of error",
+        "Logic tracking"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 858,
+      "question": "Explain how to create and throw a custom Error type.",
+      "model_answer": "Custom errors are created by extending the Error class. This allows the error to have its own name (e.g., ValidationError) and custom properties while retaining the standard message and stack trace behavior.",
+      "key_points": [
+        "Class inheritance",
+        "Custom name",
+        "Instance checking",
+        "Specific handling"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 859,
+      "question": "Describe the use of console.table() and console.dir() in debugging objects.",
+      "model_answer": "console.table() displays arrays/objects in a formatted table, making it easy to compare items. console.dir() displays an interactive tree of an object's properties, which is more detailed than a standard console.log().",
+      "key_points": [
+        "Visual formatting",
+        "Interactive exploration",
+        "Table vs Tree",
+        "Object inspection"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 860,
+      "question": "What are 'Global Error Handlers' like window.onerror?",
+      "model_answer": "These are handlers that catch errors not caught by try-catch blocks. They are used for global logging, reporting bugs to a server, or showing a friendly 'Something went wrong' UI to the user.",
+      "key_points": [
+        "Catch-all",
+        "Analytics/Logging",
+        "User experience",
+        "Async errors"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    }
+  ],
+  "coding_questions": [
+    {
+      "id": 881,
+      "problem_statement": "Write a try-catch block that attempts to call a function 'calculate()' that doesn't exist, and logs 'Function not found' if it fails.",
+      "input_format": "None",
+      "output_format": "Error message",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Function not found",
+      "solution_explanation": "Calling non-existent function throws ReferenceError.",
+      "code_solution": "try {\n  calculate();\n} catch (err) {\n  console.log('Function not found');\n}",
+      "difficulty": "easy"
+    },
+    {
+      "id": 882,
+      "problem_statement": "Write a script that throws a custom error 'Age too low' if the variable age is less than 18.",
+      "input_format": "Number age",
+      "output_format": "Throw error",
+      "constraints": "None",
+      "sample_input": "15",
+      "sample_output": "Uncaught Error: Age too low",
+      "solution_explanation": "Use throw keyword with a new Error object.",
+      "code_solution": "let age = 15;\nif (age < 18) {\n  throw new Error('Age too low');\n}",
+      "difficulty": "easy"
+    },
+    {
+      "id": 883,
+      "problem_statement": "Implement a try-catch-finally block where 'try' logs 'Searching', 'catch' logs 'Error', and 'finally' logs 'Done'. Ensure no error actually occurs.",
+      "input_format": "None",
+      "output_format": "'Searching' then 'Done'",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Searching, Done",
+      "solution_explanation": "Finally runs even if catch doesn't.",
+      "code_solution": "try {\n  console.log('Searching');\n} catch (e) {\n  console.log('Error');\n} finally {\n  console.log('Done');\n}",
+      "difficulty": "medium"
+    },
+    {
+      "id": 884,
+      "problem_statement": "Write a function 'checkDivide' that takes a and b. If b is 0, throw a TypeError with message 'Cannot divide by zero'.",
+      "input_format": "Numbers",
+      "output_format": "Result or Error",
+      "constraints": "None",
+      "sample_input": "10, 0",
+      "sample_output": "TypeError: Cannot divide by zero",
+      "solution_explanation": "Manually check and throw.",
+      "code_solution": "function checkDivide(a, b) {\n  if (b === 0) throw new TypeError('Cannot divide by zero');\n  return a / b;\n}\ncheckDivide(10, 0);",
+      "difficulty": "medium"
+    },
+    {
+      "id": 885,
+      "problem_statement": "Use console.time() and console.timeEnd() to measure how long a loop of 1,000,000 iterations takes.",
+      "input_format": "None",
+      "output_format": "Execution time in ms",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "loop_timer: Xms",
+      "solution_explanation": "Labels must match in time and timeEnd.",
+      "code_solution": "console.time('loop_timer');\nfor(let i=0; i<1000000; i++) {}\nconsole.timeEnd('loop_timer');",
+      "difficulty": "medium"
+    },
+    {
+      "id": 886,
+      "problem_statement": "Write a function that parses a JSON string. If the string is invalid, catch the error and return an empty object {}.",
+      "input_format": "String",
+      "output_format": "Object",
+      "constraints": "None",
+      "sample_input": "'invalid json'",
+      "sample_output": "{}",
+      "solution_explanation": "JSON.parse throws SyntaxError on bad input.",
+      "code_solution": "function safeParse(str) {\n  try {\n    return JSON.parse(str);\n  } catch (err) {\n    return {};\n  }\n}\nconsole.log(safeParse('hello'));",
+      "difficulty": "medium"
+    },
+    {
+      "id": 887,
+      "problem_statement": "Create a function that uses console.assert() to check if a score is positive. Log an error 'Score must be > 0' if it's not.",
+      "input_format": "Number",
+      "output_format": "Console error on failure.",
+      "constraints": "None",
+      "sample_input": "-5",
+      "sample_output": "Assertion failed: Score must be > 0",
+      "solution_explanation": "Assert logs if condition is false.",
+      "code_solution": "function checkScore(n) {\n  console.assert(n > 0, 'Score must be > 0');\n}\ncheckScore(-5);",
+      "difficulty": "hard"
+    },
+    {
+      "id": 888,
+      "problem_statement": "Implement a retry logic: a loop that tries to call a failing function 3 times before finally giving up and logging 'Failed'.",
+      "input_format": "None",
+      "output_format": "Retry attempts then 'Failed'",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Failed",
+      "solution_explanation": "Use a loop with try-catch inside.",
+      "code_solution": "let attempts = 0;\nwhile (attempts < 3) {\n  try {\n    throw new Error('failing'); \n  } catch (e) {\n    attempts++;\n    if (attempts === 3) console.log('Failed');\n  }\n}",
+      "difficulty": "hard"
+    }
+  ]
+}

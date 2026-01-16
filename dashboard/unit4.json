@@ -1,0 +1,625 @@
+{
+  "unit_name": "4. Control Structures – Conditionals",
+  "mcqs": [
+    {
+      "id": 401,
+      "question": "Which statement is used to execute a block of code if a condition is true?",
+      "options": [
+        "A) while",
+        "B) for",
+        "C) if",
+        "D) case"
+      ],
+      "correct_option": "C",
+      "explanation": "The 'if' statement is the basic conditional structure.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 402,
+      "question": "How do you start an if statement in JavaScript?",
+      "options": [
+        "A) if i = 5 then",
+        "B) if (i == 5)",
+        "C) if i == 5",
+        "D) if i = 5"
+      ],
+      "correct_option": "B",
+      "explanation": "Condition in an 'if' statement must be enclosed in parentheses.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 403,
+      "question": "Which block executes if the condition in the 'if' statement is false?",
+      "options": [
+        "A) then",
+        "B) otherwise",
+        "C) else",
+        "D) next"
+      ],
+      "correct_option": "C",
+      "explanation": "The 'else' block provides an alternative path.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 404,
+      "question": "What is the correct syntax for an 'else if' statement?",
+      "options": [
+        "A) elseif (cond)",
+        "B) else if (cond)",
+        "C) eliseif (cond)",
+        "D) if else (cond)"
+      ],
+      "correct_option": "B",
+      "explanation": "In JS, 'else if' are two separate words.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 405,
+      "question": "Which statement is used to perform different actions based on different conditions?",
+      "options": [
+        "A) switch",
+        "B) select",
+        "C) filter",
+        "D) check"
+      ],
+      "correct_option": "A",
+      "explanation": "The switch statement is used for multi-way branching based on a variable's value.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 406,
+      "question": "What keyword is used to termination a case in a switch statement?",
+      "options": [
+        "A) stop",
+        "B) exit",
+        "C) break",
+        "D) end"
+      ],
+      "correct_option": "C",
+      "explanation": "The 'break' keyword prevents the code from falling through to the next case.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 407,
+      "question": "What is the result of if (0) { console.log('true'); } else { console.log('false'); }?",
+      "options": [
+        "A) true",
+        "B) false",
+        "C) undefined",
+        "D) Error"
+      ],
+      "correct_option": "B",
+      "explanation": "0 is a falsy value, so the else block executes.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 408,
+      "question": "What is the result of if (' ') { console.log('true'); } else { console.log('false'); }?",
+      "options": [
+        "A) true",
+        "B) false",
+        "C) undefined",
+        "D) Error"
+      ],
+      "correct_option": "A",
+      "explanation": "A string containing a space is truthy.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 409,
+      "question": "Which part of a switch statement executes if no matches are found?",
+      "options": [
+        "A) else",
+        "B) otherwise",
+        "C) default",
+        "D) none"
+      ],
+      "correct_option": "C",
+      "explanation": "The 'default' label handles cases not explicitly covered.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 410,
+      "question": "Is the comparison in a switch statement strict (===) or abstract (==)?",
+      "options": [
+        "A) Abstract (==)",
+        "B) Strict (===)",
+        "C) Depends on the version",
+        "D) Depends on the case"
+      ],
+      "correct_option": "B",
+      "explanation": "Switch uses strict equality for matching case values.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 411,
+      "question": "What happens if a 'break' is missing in a switch case?",
+      "options": [
+        "A) Syntax Error",
+        "B) Script crashes",
+        "C) Execution continues into the next case",
+        "D) Only the first case runs"
+      ],
+      "correct_option": "C",
+      "explanation": "This behavior is known as 'fall-through'.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 412,
+      "question": "Can you use expressions in switch case labels?",
+      "options": [
+        "A) Yes",
+        "B) No",
+        "C) Only constants",
+        "D) Only strings"
+      ],
+      "correct_option": "A",
+      "explanation": "Case labels can be any expression, which is evaluated at runtime.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 413,
+      "question": "What is the output: if (5 > 10) { console.log('A'); } else if (10 > 5) { console.log('B'); } else { console.log('C'); }?",
+      "options": [
+        "A) A",
+        "B) B",
+        "C) C",
+        "D) B and C"
+      ],
+      "correct_option": "B",
+      "explanation": "10 > 5 is true, so 'B' is logged and the rest is skipped.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 414,
+      "question": "How many 'else' blocks can an if statement have?",
+      "options": [
+        "A) Multiple",
+        "B) Only one",
+        "C) Zero or one",
+        "D) Unlimited"
+      ],
+      "correct_option": "C",
+      "explanation": "An 'if' can have at most one catch-all 'else' block.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 415,
+      "question": "Nested if-else statements are used to:",
+      "options": [
+        "A) Loop code",
+        "B) Check multiple related conditions",
+        "C) Speed up execution",
+        "D) Define functions"
+      ],
+      "correct_option": "B",
+      "explanation": "Nesting allows checking secondary conditions within a primary one.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 416,
+      "question": "Which of these acts like a shorthand conditional?",
+      "options": [
+        "A) Logical AND (&&)",
+        "B) Logical OR (||)",
+        "C) Ternary operator",
+        "D) All of the above"
+      ],
+      "correct_option": "D",
+      "explanation": "All three can be used to conditionally execute code or assign values.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 417,
+      "question": "What is the output: let x = 10; if (x = 5) { console.log('Five'); }",
+      "options": [
+        "A) Five",
+        "B) Ten",
+        "C) ReferenceError",
+        "D) No output"
+      ],
+      "correct_option": "A",
+      "explanation": "x = 5 is an assignment, which returns the value 5 (truthy).",
+      "difficulty": "hard"
+    },
+    {
+      "id": 418,
+      "question": "What is the best way to handle many 'else if' checks for the same variable?",
+      "options": [
+        "A) Nested if",
+        "B) While loop",
+        "C) Switch statement",
+        "D) Function"
+      ],
+      "correct_option": "C",
+      "explanation": "Switch is cleaner and sometimes more efficient for multiple fixed-value checks.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 419,
+      "question": "Can multiple cases share the same code block in a switch statement?",
+      "options": [
+        "A) No",
+        "B) Yes, by omitting break",
+        "C) Yes, using commas",
+        "D) Only for string cases"
+      ],
+      "correct_option": "B",
+      "explanation": "Grouping cases without breaks allows them to execute the same logic.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 420,
+      "question": "What is truthy/falsy check in an if statement?",
+      "options": [
+        "A) It only checks if condition is true/false boolean",
+        "B) It converts the condition to a boolean implicitly",
+        "C) It only works for numbers",
+        "D) It requires 'use strict'"
+      ],
+      "correct_option": "B",
+      "explanation": "JavaScript implicitly coerces the condition to a boolean.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 421,
+      "question": "Which statement allows checking conditions like 'value > 10' in a switch?",
+      "options": [
+        "A) case > 10:",
+        "B) case (value > 10):",
+        "C) switch (true)",
+        "D) default:"
+      ],
+      "correct_option": "C",
+      "explanation": "Using switch(true) allows case expressions to be boolean comparisons.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 422,
+      "question": "What is the output: let a = '1'; switch(a) { case 1: console.log('N'); break; case '1': console.log('S'); break; }",
+      "options": [
+        "A) N",
+        "B) S",
+        "C) N and S",
+        "D) No output"
+      ],
+      "correct_option": "B",
+      "explanation": "Switch uses strict comparison ('1' === 1 is false, '1' === '1' is true).",
+      "difficulty": "medium"
+    },
+    {
+      "id": 423,
+      "question": "Is the default block mandatory in a switch statement?",
+      "options": [
+        "A) Yes",
+        "B) No",
+        "C) Only if using strings",
+        "D) Only in ES6"
+      ],
+      "correct_option": "B",
+      "explanation": "The default block is optional but recommended.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 424,
+      "question": "Which of these will skip the if block? if ([]) { ... }",
+      "options": [
+        "A) if ([])",
+        "B) if ({})",
+        "C) if (NaN)",
+        "D) if ('0')"
+      ],
+      "correct_option": "C",
+      "explanation": "NaN is falsy; [ ], { }, and '0' are truthy.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 425,
+      "question": "What is 'Guard Clause' pattern?",
+      "options": [
+        "A) Using switch for everything",
+        "B) Using if-return early to avoid nesting",
+        "C) Using nested if-else",
+        "D) Using while instead of if"
+      ],
+      "correct_option": "B",
+      "explanation": "Checking preconditions and exiting early produces flatter code.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 426,
+      "question": "In switch, the 'case' values must be unique?",
+      "options": [
+        "A) Yes",
+        "B) No",
+        "C) Only for numbers",
+        "D) Only for Booleans"
+      ],
+      "correct_option": "A",
+      "explanation": "Duplicate cases will cause the first match only to execute.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 427,
+      "question": "What is the output: if (!!'hello') console.log('Hi')",
+      "options": [
+        "A) hello",
+        "B) Hi",
+        "C) true",
+        "D) false"
+      ],
+      "correct_option": "B",
+      "explanation": "!!'hello' is true. So 'Hi' is logged.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 428,
+      "question": "Which of the following describes the flow of if-elseif-else?",
+      "options": [
+        "A) Sequential",
+        "B) Parallel",
+        "C) Exclusive",
+        "D) Recursive"
+      ],
+      "correct_option": "C",
+      "explanation": "Once a condition is met, no other blocks in that chain are executed.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 429,
+      "question": "Can you use variables in case labels?",
+      "options": [
+        "A) Yes",
+        "B) No",
+        "C) Only if const",
+        "D) Only if let"
+      ],
+      "correct_option": "A",
+      "explanation": "Case labels can be expressions, including variables.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 430,
+      "question": "Which operator is equivalent to a simple if-else assignment?",
+      "options": [
+        "A) ||",
+        "B) &&",
+        "C) ?:",
+        "D) ??"
+      ],
+      "correct_option": "C",
+      "explanation": "The ternary operator is used for conditional assignment.",
+      "difficulty": "easy"
+    }
+  ],
+  "theory_questions": [
+    {
+      "id": 451,
+      "question": "Explain the syntax and execution flow of the 'if...else if...else' structure.",
+      "model_answer": "Execution starts from the top. If the 'if' condition is true, its block runs and the rest are skipped. If false, it checks each 'else if'. If all are false, the 'else' block runs. If no 'else' is provided, no block runs.",
+      "key_points": [
+        "Sequential check",
+        "Exclusive execution",
+        "Else as fallback",
+        "Boolean coercion"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 452,
+      "question": "How does the 'switch' statement work, and what is the role of 'break' and 'default'?",
+      "model_answer": "Switch evaluates an expression and matches it against 'case' values using strict equality. 'break' prevents fall-through into the next case. 'default' executes if no cases match. It's often used for multi-way branches.",
+      "key_points": [
+        "Strict equality",
+        "Fall-through",
+        "Default case",
+        "Break keyword"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 453,
+      "question": "What is 'Fall-through' in a switch statement and is it always bad?",
+      "model_answer": "Fall-through occurs when 'break' is omitted, causing execution to continue into the next case. It’s not always bad; it’s useful when multiple cases should trigger the same code block. However, unintentional fall-through is a common bug.",
+      "key_points": [
+        "Omitted break",
+        "Shared logic",
+        "Intentional grouping",
+        "Bugs"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 454,
+      "question": "Compare 'if-else' vs 'switch' statements in terms of performance and readability.",
+      "model_answer": "if-else is better for ranges, complex logic, and boolean checks. switch is better for readability when checking a single variable against many fixed values. switch can be slightly faster due to dispatch tables for many cases.",
+      "key_points": [
+        "Readability",
+        "Ranges vs Values",
+        "Performance optimization",
+        "Single vs Multi variable"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 455,
+      "question": "Explain the concept of 'Truthy' and 'Falsy' values in JavaScript conditions.",
+      "model_answer": "JS converts values to boolean in conditions. 8 values are Falsy: false, 0, -0, 0n, '', null, undefined, NaN. Everything else (including [], {}, 'false') is Truthy. This allows concise checks like 'if (variable)'.",
+      "key_points": [
+        "Contextual conversion",
+        "Falsy list",
+        "Truthy objects/arrays",
+        "Concise checks"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 456,
+      "question": "What is nesting of conditionals? What are the potential drawbacks and how can they be avoided?",
+      "model_answer": "Nesting is putting an if-else inside another. Drawbacks include high cyclomatic complexity and 'Pyramid of Doom' (unreadable code). It can be avoided using guard clauses, boolean logic (&&/||), or extracting logic into functions.",
+      "key_points": [
+        "Deep nesting",
+        "Readability issues",
+        "Guard clauses",
+        "Code flattening"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 457,
+      "question": "How can logical operators (&& and ||) be used as shorthand for if statements?",
+      "model_answer": "&& can execute code if the left side is truthy (cond && action()). || can provide a default value if the left side is falsy (const val = input || default). This is called short-circuiting.",
+      "key_points": [
+        "Short-circuit evaluation",
+        "Action triggering",
+        "Default assignment",
+        "Conciseness"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 458,
+      "question": "Explain the 'switch(true)' pattern and why it is used.",
+      "model_answer": "In this pattern, switch(true) is used, and cases contain conditions (e.g., case x > 10:). Since case expressions are evaluated, the first case that evaluates to true matches. It’s a cleaner alternative to multiple 'else if' blocks with ranges.",
+      "key_points": [
+        "Condition matching",
+        "Range checking in switch",
+        "Syntax trick",
+        "Alternative to else if"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 459,
+      "question": "Discuss the impact of strict equality (===) in switch case matching.",
+      "model_answer": "Switch matches cases using '===', meaning if you switch on a string '5' and have a case 5 (number), it will NOT match. This prevents bugs from coercion but requires ensuring data types match.",
+      "key_points": [
+        "Strict match",
+        "Type matters",
+        "No coercion",
+        "Predictability"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 460,
+      "question": "What is a 'Default' case in switch and where should it be placed?",
+      "model_answer": "The default case acts like the 'else' in an if-statement. It handles unknown values. While it can be placed anywhere, it's conventional and best practice to put it at the end.",
+      "key_points": [
+        "Fallback",
+        "Optional block",
+        "End placement",
+        "Error handling"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    }
+  ],
+  "coding_questions": [
+    {
+      "id": 481,
+      "problem_statement": "Write a program that uses if-else to check if a person is eligible to vote (age >= 18).",
+      "input_format": "Number age",
+      "output_format": "'Eligible' or 'Not Eligible'",
+      "constraints": "None",
+      "sample_input": "16",
+      "sample_output": "Not Eligible",
+      "solution_explanation": "Simple comparison and output.",
+      "code_solution": "let age = 16;\nif (age >= 18) {\n  console.log('Eligible');\n} else {\n  console.log('Not Eligible');\n}",
+      "difficulty": "easy"
+    },
+    {
+      "id": 482,
+      "problem_statement": "Use a switch statement to log the name of the day based on a number (1-3). 1: 'Monday', 2: 'Tuesday', 3: 'Wednesday'. Default: 'Invalid Day'.",
+      "input_format": "Number day",
+      "output_format": "String day name.",
+      "constraints": "Number 1-3",
+      "sample_input": "2",
+      "sample_output": "Tuesday",
+      "solution_explanation": "Map cases to values.",
+      "code_solution": "let dayNum = 2;\nswitch(dayNum) {\n  case 1: console.log('Monday'); break;\n  case 2: console.log('Tuesday'); break;\n  case 3: console.log('Wednesday'); break;\n  default: console.log('Invalid Day');\n}",
+      "difficulty": "easy"
+    },
+    {
+      "id": 483,
+      "problem_statement": "Write a script that categorizes a temperature: <0 is 'Freezing', 0-20 is 'Cold', 21-35 is 'Warm', >35 is 'Hot'.",
+      "input_format": "Number temp",
+      "output_format": "Category",
+      "constraints": "None",
+      "sample_input": "25",
+      "sample_output": "Warm",
+      "solution_explanation": "Use if-elseif-else chain.",
+      "code_solution": "let temp = 25;\nif (temp < 0) console.log('Freezing');\nelse if (temp <= 20) console.log('Cold');\nelse if (temp <= 35) console.log('Warm');\nelse console.log('Hot');",
+      "difficulty": "medium"
+    },
+    {
+      "id": 484,
+      "problem_statement": "Check if a given string is empty (''). Log 'Empty' if it is, otherwise log 'Not Empty' using only if.",
+      "input_format": "String str",
+      "output_format": "'Empty' or 'Not Empty'",
+      "constraints": "None",
+      "sample_input": "''",
+      "sample_output": "Empty",
+      "solution_explanation": "Empty string evaluates to false.",
+      "code_solution": "let s = '';\nif (s) {\n  console.log('Not Empty');\n} else {\n  console.log('Empty');\n}",
+      "difficulty": "medium"
+    },
+    {
+      "id": 485,
+      "problem_statement": "Write a switch statement where cases 1, 2, and 3 all log 'Low', 4 and 5 log 'High', and others log 'Unknown'.",
+      "input_format": "Number rank",
+      "output_format": "Status string.",
+      "constraints": "None",
+      "sample_input": "2",
+      "sample_output": "Low",
+      "solution_explanation": "Use case grouping.",
+      "code_solution": "let rank = 2;\nswitch(rank) {\n  case 1:\n  case 2:\n  case 3: console.log('Low'); break;\n  case 4:\n  case 5: console.log('High'); break;\n  default: console.log('Unknown');\n}",
+      "difficulty": "medium"
+    },
+    {
+      "id": 486,
+      "problem_statement": "Determine if a year is a leap year (multiple of 4, but not 100 unless also multiple of 400).",
+      "input_format": "Number year",
+      "output_format": "true/false",
+      "constraints": "None",
+      "sample_input": "2000",
+      "sample_output": "true",
+      "solution_explanation": "Boolean logic combination.",
+      "code_solution": "let year = 2000;\nif ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {\n  console.log(true);\n} else {\n  console.log(false);\n}",
+      "difficulty": "hard"
+    },
+    {
+      "id": 487,
+      "problem_statement": "Implement a simple calculator using switch on an operator string (+, -, *, /) and two numbers a and b.",
+      "input_format": "String op, Numbers a, b",
+      "output_format": "Result",
+      "constraints": "None",
+      "sample_input": "'*', 5, 4",
+      "sample_output": "20",
+      "solution_explanation": "Switch on the operator.",
+      "code_solution": "let op = '*', a = 5, b = 4;\nswitch(op) {\n  case '+': console.log(a + b); break;\n  case '-': console.log(a - b); break;\n  case '*': console.log(a * b); break;\n  case '/': console.log(a / b); break;\n}",
+      "difficulty": "medium"
+    },
+    {
+      "id": 488,
+      "problem_statement": "Write a guard clause style function (pseudo-code logic) that checks if an object exists and then checks if object.active is true before logging 'Active'.",
+      "input_format": "Object obj",
+      "output_format": "'Active' or nothing.",
+      "constraints": "None",
+      "sample_input": "{ active: true }",
+      "sample_output": "Active",
+      "solution_explanation": "Exit early for bad conditions.",
+      "code_solution": "const obj = { active: true };\nif (!obj) return;\nif (!obj.active) return;\nconsole.log('Active');",
+      "difficulty": "hard"
+    }
+  ]
+}

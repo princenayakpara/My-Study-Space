@@ -1,0 +1,625 @@
+{
+  "unit_name": "9. let, const, Hoisting, TDZ, Scope & Closures",
+  "mcqs": [
+    {
+      "id": 901,
+      "question": "What is 'Hoisting' in JavaScript?",
+      "options": [
+        "A) Increasing performance",
+        "B) Moving declarations to the top of their scope",
+        "C) Deleting unused variables",
+        "D) Locking variable values"
+      ],
+      "correct_option": "B",
+      "explanation": "Hoisting is the default behavior of moving declarations to the top.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 902,
+      "question": "Which keyword's declaration is hoisted and initialized with 'undefined'?",
+      "options": [
+        "A) let",
+        "B) const",
+        "C) var",
+        "D) All of them"
+      ],
+      "correct_option": "C",
+      "explanation": "var is hoisted and immediately assigned 'undefined'.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 903,
+      "question": "What is the result of using a 'let' variable before its declaration?",
+      "options": [
+        "A) undefined",
+        "B) ReferenceError",
+        "C) null",
+        "D) SyntaxError"
+      ],
+      "correct_option": "B",
+      "explanation": "Accessing let/const before declaration triggers the TDZ.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 904,
+      "question": "What does TDZ stand for?",
+      "options": [
+        "A) Time Dead Zone",
+        "B) Temporal Dead Zone",
+        "C) Total Data Zone",
+        "D) Type Definition Zone"
+      ],
+      "correct_option": "B",
+      "explanation": "Temporal Dead Zone is the period between scope entry and variable declaration.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 905,
+      "question": "What is a 'Closure' in JavaScript?",
+      "options": [
+        "A) A function wrapped in brackets",
+        "B) A function that remembers its outer lexical scope",
+        "C) Closing a browser tab",
+        "D) Ending a function with return"
+      ],
+      "correct_option": "B",
+      "explanation": "Closures allow a function to access variables from an enclosing scope even after it has finished.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 906,
+      "question": "Which scope is created by curly braces { } with 'let' and 'const'?",
+      "options": [
+        "A) Function scope",
+        "B) Global scope",
+        "C) Block scope",
+        "D) Module scope"
+      ],
+      "correct_option": "C",
+      "explanation": "let and const are restricted to the block where they are defined.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 907,
+      "question": "Variable shadowing occurs when:",
+      "options": [
+        "A) A variable is deleted",
+        "B) A local variable has the same name as an outer variable",
+        "C) A variable is hoisted",
+        "D) A variable is used in a closure"
+      ],
+      "correct_option": "B",
+      "explanation": "The inner variable 'shadows' or hides the outer one.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 908,
+      "question": "What is the output: console.log(a); var a = 5;",
+      "options": [
+        "A) 5",
+        "B) undefined",
+        "C) Error",
+        "D) null"
+      ],
+      "correct_option": "B",
+      "explanation": "var is hoisted and initialized as undefined.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 909,
+      "question": "What is the output: console.log(a); let a = 5;",
+      "options": [
+        "A) 5",
+        "B) undefined",
+        "C) ReferenceError",
+        "D) 0"
+      ],
+      "correct_option": "C",
+      "explanation": "let is hoisted but stays in the TDZ until initialized.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 110,
+      "question": "Which of these is NOT part of the execution context?",
+      "options": [
+        "A) Variable Object",
+        "B) Scope Chain",
+        "C) CSS Styles",
+        "D) This value"
+      ],
+      "correct_option": "C",
+      "explanation": "Execution context consists of variable environment, scope, and 'this'.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 911,
+      "question": "Closures are useful for:",
+      "options": [
+        "A) Data encapsulation (Private variables)",
+        "B) Speeding up math",
+        "C) Cleaning memory",
+        "D) Declaring constants"
+      ],
+      "correct_option": "A",
+      "explanation": "Closures are the primary way to simulate private properties in older JS.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 912,
+      "question": "What is the scope of 'var' in a for loop?",
+      "options": [
+        "A) Block",
+        "B) Global/Function",
+        "C) Loop only",
+        "D) Undefined"
+      ],
+      "correct_option": "B",
+      "explanation": "var ignores block scope and belongs to the function or global object.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 913,
+      "question": "What is 'Lexical Scope'?",
+      "options": [
+        "A) Scope determined at runtime",
+        "B) Scope determined at author-time (where code is written)",
+        "C) Scope related to dictionaries",
+        "D) None of the above"
+      ],
+      "correct_option": "B",
+      "explanation": "JavaScript uses static (lexical) scoping.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 914,
+      "question": "Which of these starts the Temporal Dead Zone?",
+      "options": [
+        "A) When the variable is initialized",
+        "B) When the scope starts",
+        "C) When the variable is deleted",
+        "D) When the function returns"
+      ],
+      "correct_option": "B",
+      "explanation": "TDZ begins at the start of the block and ends at initialization.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 915,
+      "question": "What happens to variables in a closure after the outer function returns?",
+      "options": [
+        "A) They are garbage collected",
+        "B) They remain in memory as long as the closure exists",
+        "C) They become global",
+        "D) They are set to null"
+      ],
+      "correct_option": "B",
+      "explanation": "The environment is preserved for the inner function's use.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 916,
+      "question": "What is the output: { var x = 10; } console.log(x);",
+      "options": [
+        "A) 10",
+        "B) ReferenceError",
+        "C) undefined",
+        "D) null"
+      ],
+      "correct_option": "A",
+      "explanation": "var does not have block scope, so it leaks out of { }.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 917,
+      "question": "What is the output: { let x = 10; } console.log(x);",
+      "options": [
+        "A) 10",
+        "B) ReferenceError",
+        "C) undefined",
+        "D) null"
+      ],
+      "correct_option": "B",
+      "explanation": "let is block-scoped and cannot be seen outside { }.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 918,
+      "question": "Does function expression get hoisted?",
+      "options": [
+        "A) Yes",
+        "B) No",
+        "C) Only if using var",
+        "D) Only in strict mode"
+      ],
+      "correct_option": "B",
+      "explanation": "Function expressions follow variable hoisting rules (no initialization if let/const).",
+      "difficulty": "hard"
+    },
+    {
+      "id": 919,
+      "question": "What is the 'Global Object' in browsers?",
+      "options": [
+        "A) document",
+        "B) window",
+        "C) nav",
+        "D) body"
+      ],
+      "correct_option": "B",
+      "explanation": "Global variables declared with 'var' become properties of 'window'.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 920,
+      "question": "Which of these prevents global variable pollution?",
+      "options": [
+        "A) var",
+        "B) IIFE",
+        "C) let/const",
+        "D) Both B and C"
+      ],
+      "correct_option": "D",
+      "explanation": "Screoping and self-invoking functions keep the global namespace clean.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 921,
+      "question": "What is 'Partial Application' using closures?",
+      "options": [
+        "A) Fixing some arguments of a function and returning a new function",
+        "B) Calling a function halfway",
+        "C) A type of recursion",
+        "D) Error handling"
+      ],
+      "correct_option": "A",
+      "explanation": "Closures allow 'pre-filling' function arguments.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 922,
+      "question": "The 'use strict' directive:",
+      "options": [
+        "A) Enables closures",
+        "B) Prevents hoisting",
+        "C) Forbids the use of undeclared variables",
+        "D) Makes code run faster"
+      ],
+      "correct_option": "C",
+      "explanation": "Strict mode enforces better coding practices and catches common errors.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 923,
+      "question": "What is the scope of a function declaration inside another function?",
+      "options": [
+        "A) Global",
+        "B) Only visible inside the parent function",
+        "C) Block scope",
+        "D) Parent session scope"
+      ],
+      "correct_option": "B",
+      "explanation": "Nested functions follow lexical scoping rules.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 924,
+      "question": "What is 'Currying' in JavaScript?",
+      "options": [
+        "A) Frying code",
+        "B) Converting a function with multiple args into a sequence of nested functions with one arg",
+        "C) Concatenating strings",
+        "D) Sorting arrays"
+      ],
+      "correct_option": "B",
+      "explanation": "Currying relies heavily on closures to maintain argument state.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 925,
+      "question": "Which of these determines the value of 'this' in a closure?",
+      "options": [
+        "A) The closure itself",
+        "B) The outer function",
+        "C) How the inner function is called",
+        "D) The variable names"
+      ],
+      "correct_option": "C",
+      "explanation": "In standard functions, 'this' binding happens at call-time.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 926,
+      "question": "Can const objects be changed?",
+      "options": [
+        "A) No, never",
+        "B) Yes, you can change properties, but not reassign the variable",
+        "C) Only in non-strict mode",
+        "D) Only if declared with let"
+      ],
+      "correct_option": "B",
+      "explanation": "const protects the reference binding, not the content data.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 927,
+      "question": "What is produced by: for(var i=0; i<5; i++)? Where is 'i' lived?",
+      "options": [
+        "A) Inside loop",
+        "B) Outside loop in the surrounding function/global",
+        "C) It is deleted",
+        "D) It's a closure"
+      ],
+      "correct_option": "B",
+      "explanation": "var has no block scope, so 'i' persists after the loop.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 928,
+      "question": "What is output: function outer() { let x = 10; return function() { console.log(x); } } let inner = outer(); inner();",
+      "options": [
+        "A) 10",
+        "B) undefined",
+        "C) ReferenceError",
+        "D) null"
+      ],
+      "correct_option": "A",
+      "explanation": "Continuous access to 'x' via the closure.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 929,
+      "question": "What is essentially a 'Closure' + 'Data' combined?",
+      "options": [
+        "A) A Class",
+        "B) An Object with methods",
+        "C) A Module",
+        "D) Any of these"
+      ],
+      "correct_option": "D",
+      "explanation": "Many abstractions use closures to manage state and logic.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 930,
+      "question": "Does 'TDZ' exist for function declarations?",
+      "options": [
+        "A) Yes",
+        "B) No",
+        "C) Only in modules",
+        "D) Only in loops"
+      ],
+      "correct_option": "B",
+      "explanation": "Function declarations are fully hoisted and available everywhere in scope.",
+      "difficulty": "hard"
+    }
+  ],
+  "theory_questions": [
+    {
+      "id": 951,
+      "question": "Define Hoisting and explain how it differs for var, let, and const.",
+      "model_answer": "Hoisting is JS's behavior of moving declarations to the top of the scope. 'var' is hoisted and initialized to 'undefined'. 'let' and 'const' are hoisted but NOT initialized, placing them in the Temporal Dead Zone (TDZ) where accessing them causes a ReferenceError.",
+      "key_points": [
+        "Moving declarations",
+        "var (undefined)",
+        "let/const (TDZ)",
+        "ReferenceError"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 952,
+      "question": "What is the Temporal Dead Zone (TDZ)? Why was it introduced?",
+      "model_answer": "TDZ is the state between a variable's scope entry and its declaration. It was introduced with let/const to prevent using variables before they are defined, catching logical errors that 'var' would allow (by returning undefined).",
+      "key_points": [
+        "Scope start to initialization",
+        "let/const only",
+        "Bug prevention",
+        "Strictness"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 953,
+      "question": "Explain Closures with a practical example like a counter function.",
+      "model_answer": "A closure is a function bundled with its lexical environment. Example: a function 'createCounter' returns an inner function that increments a private 'count' variable. Even after 'createCounter' returns, the inner function 'remembers' and can modify 'count'.",
+      "key_points": [
+        "Lexical environment",
+        "Persistent variables",
+        "Inner vs Outer",
+        "Private state"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 954,
+      "question": "How does Lexical Scoping work in JavaScript?",
+      "model_answer": "Lexical scoping (statical scoping) means variable access is determined by the physical location of the variable in the source code. A function has access to variables in its own scope, its parent's scope, and so on up to the global scope.",
+      "key_points": [
+        "Author-time nesting",
+        "Outer scope visibility",
+        "Static resolution",
+        "Scope chain"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 955,
+      "question": "Compare Block Scope and Function Scope.",
+      "model_answer": "Function scope (var) means a variable is visible throughout the entire function it is defined in. Block scope (let/const) means it is only visible within the nearest set of curly braces { } (loops, if-statements, etc.).",
+      "key_points": [
+        "var vs let/const",
+        "Braces vs Function body",
+        "Leakage prevention",
+        "Shadowing"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 956,
+      "question": "What are the common memory implications of using closures?",
+      "model_answer": "Closures can lead to increased memory usage because they prevent the variables in their lexical environment from being garbage collected. If closures are created in a loop or kept for too long, they may cause memory leaks.",
+      "key_points": [
+        "Garbage collection prevention",
+        "Memory retention",
+        "Potential leaks",
+        "Environment references"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 957,
+      "question": "How does 'Variable Shadowing' work? Is it considered a good practice?",
+      "model_answer": "Shadowing occurs when a variable in an inner scope has the same name as one in an outer scope. While often useful, it can be confusing and lead to bugs because the outer variable becomes inaccessible within that inner scope.",
+      "key_points": [
+        "Name collision",
+        "Inner override",
+        "Inaccessibility of outer",
+        "Readability issues"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 958,
+      "question": "Explain the concept of 'Module Pattern' using closures.",
+      "model_answer": "The Module Pattern uses closures to create private members and public APIs. An IIFE returns an object with methods that have access to private variables defined inside the IIFE's scope, effectively hiding internal logic from the outside world.",
+      "key_points": [
+        "Encapsulation",
+        "Public vs Private",
+        "IIFE usage",
+        "Clean API"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 959,
+      "question": "What happens inside the JS engine during the 'Creation Phase' of an execution context?",
+      "model_answer": "During creation, the engine sets up the memory heap for variables and functions. Function declarations are stored entirely, while 'var' variables are initialized as 'undefined'. This is the root cause of hoisting.",
+      "key_points": [
+        "Memory allocation",
+        "Setup phase",
+        "Hoisting mechanism",
+        "Execution prep"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 960,
+      "question": "Why should 'var' be avoided in modern JavaScript?",
+      "model_answer": "'var' should be avoided because its function-scoping and hoisting behaviors often lead to bugs (like leakage from loops). 'let' and 'const' provide block-scoping and TDZ, which makes code more predictable and easier to debug.",
+      "key_points": [
+        "Bug prone",
+        "Block scope lack",
+        "Hoisting issues",
+        "Better alternatives"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    }
+  ],
+  "coding_questions": [
+    {
+      "id": 981,
+      "problem_statement": "Write a script demonstrating 'Hoisting' by logging a 'var' variable before it is declared with a value.",
+      "input_format": "None",
+      "output_format": "undefined",
+      "constraints": "Use var.",
+      "sample_input": "None",
+      "sample_output": "undefined",
+      "solution_explanation": "var declarations are moved up but initialization stays.",
+      "code_solution": "console.log(myVar);\nvar myVar = 'Hoisted';",
+      "difficulty": "easy"
+    },
+    {
+      "id": 982,
+      "problem_statement": "Write a script that demonstrates 'TDZ' by trying to log a 'let' variable before it is declared. Wrap in try-catch to log the error name.",
+      "input_format": "None",
+      "output_format": "ReferenceError",
+      "constraints": "Use let.",
+      "sample_input": "None",
+      "sample_output": "ReferenceError",
+      "solution_explanation": "let variables cannot be accessed before line of declaration.",
+      "code_solution": "try {\n  console.log(x);\n  let x = 10;\n} catch (e) {\n  console.log(e.name);\n}",
+      "difficulty": "medium"
+    },
+    {
+      "id": 983,
+      "problem_statement": "Create a function 'secretGenerator' that uses a closure to hold a 'secret' string. It should return a function that logs that secret.",
+      "input_format": "String",
+      "output_format": "Log message",
+      "constraints": "None",
+      "sample_input": "'password123'",
+      "sample_output": "password123",
+      "solution_explanation": "Inner function captures scope of outer.",
+      "code_solution": "function secretGenerator(s) {\n  return function() {\n     console.log(s);\n  }\n}\nconst getSecret = secretGenerator('password123');\ngetSecret();",
+      "difficulty": "medium"
+    },
+    {
+      "id": 984,
+      "problem_statement": "Demonstrate block scope by declaring 'let a = 1' outside a block and 'let a = 2' inside a block. Log 'a' inside and outside.",
+      "input_format": "None",
+      "output_format": "2 then 1",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "2, 1",
+      "solution_explanation": "Block scope creates independent bindings.",
+      "code_solution": "let a = 1;\n{\n  let a = 2;\n  console.log(a);\n}\nconsole.log(a);",
+      "difficulty": "easy"
+    },
+    {
+      "id": 985,
+      "problem_statement": "Fix the following loop so it prints 0, 1, 2, 3, 4 instead of 5, 5, 5, 5, 5: for(var i=0; i<5; i++) { setTimeout(() => console.log(i), 100); }",
+      "input_format": "None",
+      "output_format": "0 1 2 3 4",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "0 to 4",
+      "solution_explanation": "Change var to let to get block scoping.",
+      "code_solution": "for(let i=0; i<5; i++) {\n  setTimeout(() => console.log(i), 100);\n}",
+      "difficulty": "hard"
+    },
+    {
+      "id": 986,
+      "problem_statement": "Create a 'bankAccount' object using a closure that allows depositing and checking balance but hides the actual balance variable.",
+      "input_format": "Numbers",
+      "output_format": "Balance updates",
+      "constraints": "None",
+      "sample_input": "deposit 50",
+      "sample_output": "50",
+      "solution_explanation": "Variables in outer function act as private state.",
+      "code_solution": "function bankAccount() {\n  let balance = 0;\n  return {\n    deposit: (n) => balance += n,\n    getBalance: () => balance\n  }\n}\nconst myAcc = bankAccount();\nmyAcc.deposit(100);\nconsole.log(myAcc.getBalance());",
+      "difficulty": "hard"
+    },
+    {
+      "id": 987,
+      "problem_statement": "Demonstrate function hoisting by calling 'greet()' before its declaration.",
+      "input_format": "None",
+      "output_format": "Message",
+      "constraints": "Must use function declaration.",
+      "sample_input": "None",
+      "sample_output": "Hello!",
+      "solution_explanation": "Function declarations are fully hoisted.",
+      "code_solution": "greet();\nfunction greet() {\n  console.log('Hello!');\n}",
+      "difficulty": "medium"
+    },
+    {
+      "id": 988,
+      "problem_statement": "Create a function 'multiplier' that takes 'x' and returns an inner function that takes 'y' and returns x * y. (Example of closure/currying).",
+      "input_format": "Numbers",
+      "output_format": "Product",
+      "constraints": "None",
+      "sample_input": "multiplier(2)(5)",
+      "sample_output": "10",
+      "solution_explanation": "The inner function remembers 'x'.",
+      "code_solution": "function multiplier(x) {\n  return function(y) {\n    return x * y;\n  }\n}\nconst double = multiplier(2);\nconsole.log(double(5));",
+      "difficulty": "hard"
+    }
+  ]
+}

@@ -1,0 +1,425 @@
+{
+  "unit_name": "1. Introduction to JavaScript",
+  "mcqs": [
+    {
+      "id": 101,
+      "question": "Who created JavaScript?",
+      "options": ["A) James Gosling", "B) Brendan Eich", "C) Bjarne Stroustrup", "D) Guido van Rossum"],
+      "correct_option": "B",
+      "explanation": "Brendan Eich created JavaScript in 1995 while working at Netscape.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 102,
+      "question": "Which company developed JavaScript?",
+      "options": ["A) Microsoft", "B) Google", "C) Netscape", "D) Sun Microsystems"],
+      "correct_option": "C",
+      "explanation": "Netscape Communications developed JavaScript.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 103,
+      "question": "What was the original name of JavaScript?",
+      "options": ["A) LiveScript", "B) Mocha", "C) JScript", "D) ECMA"],
+      "correct_option": "B",
+      "explanation": "The original code name was Mocha, later LiveScript, then JavaScript.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 104,
+      "question": "Is JavaScript a case-sensitive language?",
+      "options": ["A) Yes", "B) No", "C) Depends on the browser", "D) Only for variables"],
+      "correct_option": "A",
+      "explanation": "JavaScript is case-sensitive, meaning 'name' and 'Name' are different.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 105,
+      "question": "Which tag is used to embed JavaScript in an HTML document?",
+      "options": ["A) <js>", "B) <javascript>", "C) <script>", "D) <code>"],
+      "correct_option": "C",
+      "explanation": "The <script> tag is used to include JavaScript in HTML.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 106,
+      "question": "Which of these is NOT a characteristic of JavaScript?",
+      "options": ["A) Dynamic typing", "B) Interpreted", "C) Single-threaded", "D) Strongly typed"],
+      "correct_option": "D",
+      "explanation": "JavaScript is weakly/loosely typed, not strongly typed.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 107,
+      "question": "What is ECMA?",
+      "options": ["A) A JavaScript Framework", "B) A standards organization", "C) A browser engine", "D) A server-side library"],
+      "correct_option": "B",
+      "explanation": "ECMA International is the organization that standardizes JavaScript (ECMAScript).",
+      "difficulty": "medium"
+    },
+    {
+      "id": 108,
+      "question": "Which extension is used for JavaScript files?",
+      "options": ["A) .java", "B) .jscript", "C) .js", "D) .script"],
+      "correct_option": "C",
+      "explanation": ".js is the standard file extension for JavaScript.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 109,
+      "question": "Which of the following describes the 'loose' nature of JavaScript?",
+      "options": ["A) It uses semicolons everywhere", "B) Variables can change types during execution", "C) It only runs on Windows", "D) It requires a compiler"],
+      "correct_option": "B",
+      "explanation": "Weak/Loose typing allows variables to hold values of any type and change them.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 110,
+      "question": "JavaScript is primarily used for:",
+      "options": ["A) Graphic design", "B) Server-side logic", "C) Client-side interactivity", "D) Both B and C"],
+      "correct_option": "D",
+      "explanation": "JS is used both for frontend (client) and backend (server - Node.js).",
+      "difficulty": "easy"
+    },
+    {
+      "id": 111,
+      "question": "Which of the following is the standard version of JavaScript?",
+      "options": ["A) JScript", "B) ActionScript", "C) ECMAScript", "D) TypeScript"],
+      "correct_option": "C",
+      "explanation": "ECMAScript is the official specification of JavaScript.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 112,
+      "question": "Where is the correct place to insert a JavaScript in HTML?",
+      "options": ["A) <head>", "B) <body>", "C) Both <head> and <body>", "D) Outside <html>"],
+      "correct_option": "C",
+      "explanation": "JS can be placed in both <head> and <body> sections.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 113,
+      "question": "What is the purpose of the 'type' attribute in the <script> tag?",
+      "options": ["A) To specify the language version", "B) To specify the media type", "C) To specify the source file", "D) It is no longer required in HTML5"],
+      "correct_option": "D",
+      "explanation": "In HTML5, the default type for <script> is 'text/javascript', so it's not required.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 114,
+      "question": "Which statement is true about external JavaScript files?",
+      "options": ["A) They must contain <script> tags", "B) They allow code reusability across pages", "C) They cannot be cached", "D) They make HTML files larger"],
+      "correct_option": "B",
+      "explanation": "External JS files promote reusability and cleaner code separation.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 115,
+      "question": "How do you link an external script file named 'app.js'?",
+      "options": ["A) <script src='app.js'>", "B) <script href='app.js'>", "C) <script link='app.js'>", "D) <script file='app.js'>"],
+      "correct_option": "A",
+      "explanation": "The 'src' attribute is used to point to the external file.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 116,
+      "question": "Can JavaScript run without a browser?",
+      "options": ["A) No", "B) Yes, using Node.js", "C) Yes, using Java", "D) Only on Linux"],
+      "correct_option": "B",
+      "explanation": "Node.js is a runtime that allows JS to run on servers and desktops.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 117,
+      "question": "Which JavaScript engine is used in Chrome and Node.js?",
+      "options": ["A) SpiderMonkey", "B) Chakra", "C) V8", "D) JavaScriptCore"],
+      "correct_option": "C",
+      "explanation": "Google's V8 engine powers both Chrome and Node.js.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 118,
+      "question": "What is the role of a JavaScript Engine?",
+      "options": ["A) To render CSS", "B) To execute JavaScript code", "C) To fetch data from API", "D) To compile HTML"],
+      "correct_option": "B",
+      "explanation": "A JS engine interprets and executes the script.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 119,
+      "question": "Is JavaScript the same as Java?",
+      "options": ["A) Yes", "B) No", "C) JavaScript is a version of Java", "D) Java is a version of JavaScript"],
+      "correct_option": "B",
+      "explanation": "Java and JavaScript are entirely different languages in concept and design.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 120,
+      "question": "Which of the following is a multi-paradigm language?",
+      "options": ["A) C", "B) JavaScript", "C) HTML", "D) CSS"],
+      "correct_option": "B",
+      "explanation": "JavaScript supports procedural, object-oriented, and functional programming.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 121,
+      "question": "How do you write 'Hello World' in an alert box?",
+      "options": ["A) alertBox('Hello World');", "B) msg('Hello World');", "C) alert('Hello World');", "D) msgBox('Hello World');"],
+      "correct_option": "C",
+      "explanation": "The alert() function displays a dialog with a message.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 122,
+      "question": "How do you write a comment in JavaScript?",
+      "options": ["A) <!-- Comment -->", "B) // Comment", "C) # Comment", "D) /* Comment */"],
+      "correct_option": "B",
+      "explanation": "// is for single-line comments.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 123,
+      "question": "Which of the following is for multi-line comments?",
+      "options": ["A) // Comment", "B) # Comment", "C) /* Comment */", "D) \\* Comment *\\"],
+      "correct_option": "C",
+      "explanation": "/* ... */ is for multi-line comments.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 124,
+      "question": "JavaScript was standardized by which committee?",
+      "options": ["A) TC39", "B) W3C", "C) IEEE", "D) ISO"],
+      "correct_option": "A",
+      "explanation": "TC39 is the committee within ECMA that evolves JavaScript.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 125,
+      "question": "Which of the following is used to write to the browser console?",
+      "options": ["A) console.print()", "B) console.log()", "C) console.write()", "D) print()"],
+      "correct_option": "B",
+      "explanation": "console.log() is the standard way to debug/output to the console.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 126,
+      "question": "What happens if you omit the semicolon in JavaScript?",
+      "options": ["A) Syntax Error", "B) Program crashes", "C) Automatic Semicolon Insertion (ASI) applies", "D) It only works in strict mode"],
+      "correct_option": "C",
+      "explanation": "JS engine attempts to insert semicolons where they are missing using ASI.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 127,
+      "question": "Which statement is used to stop the execution of a script and wait for the debugger?",
+      "options": ["A) stop", "B) pause", "C) debugger", "D) wait"],
+      "correct_option": "C",
+      "explanation": "The 'debugger' keyword triggers the debugger tools if they are open.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 128,
+      "question": "Which is the first version of ECMAScript?",
+      "options": ["A) ES1", "B) ES3", "C) ES5", "D) ES6"],
+      "correct_option": "A",
+      "explanation": "ES1 was the first standard released in 1997.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 129,
+      "question": "JavaScript is 'high-level' which means:",
+      "options": ["A) It is very difficult", "B) It is close to machine code", "C) It provides strong abstraction from hardware", "D) It only runs on high-end PCs"],
+      "correct_option": "C",
+      "explanation": "High-level languages are easier for humans to read and abstract away memory management.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 130,
+      "question": "Which of these is a JavaScript runtime environment?",
+      "options": ["A) VS Code", "B) Git", "C) Node.js", "D) Docker"],
+      "correct_option": "C",
+      "explanation": "Node.js provides the environment to run JS outside of a browser.",
+      "difficulty": "easy"
+    }
+  ],
+  "theory_questions": [
+    {
+      "id": 151,
+      "question": "What is JavaScript and why is it called a 'scripting' language?",
+      "model_answer": "JavaScript is a high-level, interpreted (just-in-time compiled) programming language used to make web pages interactive. It is called a scripting language because it was originally designed to be a lightweight language that scripts browser behaviors without needing a separate compilation step.",
+      "key_points": ["Interpreted", "Lightweight", "Client-side interactivity", "Non-compiled"],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 152,
+      "question": "Explain the difference between Java and JavaScript.",
+      "model_answer": "Java is a statically typed, compiled, class-based OOP language that runs on the JVM. JavaScript is a dynamically typed, interpreted, prototype-based scripting language primarily used in browsers. They share a similar name due to a marketing deal but are technically very different.",
+      "key_points": ["Static vs Dynamic", "Compiled vs Interpreted", "JVM vs Browser Engine", "Prototypal vs Class-based"],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 153,
+      "question": "What is the purpose of the ECMAScript standard?",
+      "model_answer": "ECMAScript is the official specification that defines the rules and guidelines for implementing JavaScript. It ensures that JavaScript code behaves consistently across different browsers and environments by providing a standard for syntax, types, and APIs.",
+      "key_points": ["Standardization", "Cross-browser compatibility", "Language evolution", "TC39"],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 154,
+      "question": "Describe the benefits of using external JavaScript files.",
+      "model_answer": "External JS files allow for separation of concerns (keeping logic out of HTML), promote code reusability across multiple pages, allow for easier maintenance, and improve performance as browsers can cache the external files.",
+      "key_points": ["Separation of concerns", "Reusability", "Caching", "Maintenance"],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 155,
+      "question": "What is a JavaScript Engine? Give examples.",
+      "model_answer": "A JavaScript engine is a program or interpreter that executes JavaScript code. It takes JS source code and converts it into machine code that the CPU can understand. Examples include V8 (Chrome/Node.js), SpiderMonkey (Firefox), and JavaScriptCore (Safari).",
+      "key_points": ["Code execution", "Interpreter/JIT", "Machine code conversion", "V8, SpiderMonkey"],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 156,
+      "question": "Explain Automatic Semicolon Insertion (ASI) in JavaScript.",
+      "model_answer": "ASI is a feature where the JavaScript engine automatically inserts semicolons during parsing if they are omitted by the developer at the end of statements. While helpful, it can sometimes lead to unexpected bugs, particularly with 'return' statements.",
+      "key_points": ["Implicit semicolons", "Parsing feature", "Potential bugs", "Return statement risk"],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 157,
+      "question": "What does it mean that JavaScript is 'multi-paradigm'?",
+      "model_answer": "It means the language supports different programming styles. JavaScript allows developers to write code using Procedural (step-by-step), Object-Oriented (using objects and prototypes), and Functional (using first-class functions and immutability) approaches.",
+      "key_points": ["Procedural", "OOP", "Functional", "First-class functions"],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 158,
+      "question": "Discuss the evolution of JavaScript from ES1 to ES6+.",
+      "model_answer": "Starting from ES1 in 1997, JS evolved slowly until the major ES5 update in 2009. ES6 (2015) was a massive leap, introducing classes, arrow functions, and modules. Since then, yearly updates (ES2016, ES2017, etc.) bring smaller, incremental features to the language.",
+      "key_points": ["ES1 (1997)", "ES5 (2009)", "ES6/ES2015 (Major leap)", "Yearly release cycle"],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 159,
+      "question": "How does 'Strict Mode' affect JavaScript execution?",
+      "model_answer": "Strict mode ('use strict';) enforces stricter parsing and error handling. It prevents the use of undeclared variables, makes 'this' undefined in global functions, and disallows certain legacy features, leading to cleaner and more secure code.",
+      "key_points": ["use strict", "Error prevention", "Security", "Legacy removal"],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 160,
+      "question": "What is the difference between client-side and server-side JavaScript?",
+      "model_answer": "Client-side JS runs in the web browser and manages DOM manipulation, user interactions, and visual effects. Server-side JS (like Node.js) runs on the server machine and handles file systems, databases, network requests, and application logic.",
+      "key_points": ["Browser vs Server", "DOM vs File System", "Interactivity vs Logic", "Environment"],
+      "marks": 5,
+      "difficulty": "easy"
+    }
+  ],
+  "coding_questions": [
+    {
+      "id": 181,
+      "problem_statement": "Write a JavaScript program to print 'Hello, World!' to the console.",
+      "input_format": "None",
+      "output_format": "A string 'Hello, World!' in the console.",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Hello, World!",
+      "solution_explanation": "The console.log() function is used to output text to the browser's debugging console.",
+      "code_solution": "console.log('Hello, World!');",
+      "difficulty": "easy"
+    },
+    {
+      "id": 182,
+      "problem_statement": "Create a script that displays an alert box with the message 'Welcome to JavaScript'.",
+      "input_format": "None",
+      "output_format": "A pop-up alert box.",
+      "constraints": "Browser environment required.",
+      "sample_input": "None",
+      "sample_output": "Alert box popup",
+      "solution_explanation": "Use the alert() built-in function to trigger a browser dialog.",
+      "code_solution": "alert('Welcome to JavaScript');",
+      "difficulty": "easy"
+    },
+    {
+      "id": 183,
+      "problem_statement": "Write a script that uses console.warn() to display a warning 'Careful!' and console.error() to display an error 'System Failure!'.",
+      "input_format": "None",
+      "output_format": "A warning and an error message in the console.",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Careful! (Yellow) \n System Failure! (Red)",
+      "solution_explanation": "console.warn and console.error provide styled logging for different severity levels.",
+      "code_solution": "console.warn('Careful!');\nconsole.error('System Failure!');",
+      "difficulty": "easy"
+    },
+    {
+      "id": 184,
+      "problem_statement": "Write a JavaScript comment describing what a variable is, using both single-line and multi-line formats.",
+      "input_format": "None",
+      "output_format": "Comments in code.",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Code with comments",
+      "solution_explanation": "// is for single line, /* */ is for multi-line.",
+      "code_solution": "// This is a single-line comment\n/* This is a multi-line \ncomment that explains variables */",
+      "difficulty": "easy"
+    },
+    {
+      "id": 185,
+      "problem_statement": "Write a script to demonstrate 'Strict Mode' by attempting to assign a value to an undeclared variable (which should fail).",
+      "input_format": "None",
+      "output_format": "ReferenceError in console.",
+      "constraints": "Strict mode enabled.",
+      "sample_input": "None",
+      "sample_output": "ReferenceError: x is not defined",
+      "solution_explanation": "'use strict' prevents the creation of global variables by mistake.",
+      "code_solution": "'use strict';\nx = 10; // This will throw an error",
+      "difficulty": "medium"
+    },
+    {
+      "id": 186,
+      "problem_statement": "Write a program that uses console.table() to display an array of fruits ['Apple', 'Banana', 'Cherry'] in a tabular format.",
+      "input_format": "None",
+      "output_format": "A table in the console.",
+      "constraints": "Console support for tables.",
+      "sample_input": "None",
+      "sample_output": "Tabular visualization",
+      "solution_explanation": "console.table() is useful for visualizing arrays and objects.",
+      "code_solution": "const fruits = ['Apple', 'Banana', 'Cherry'];\nconsole.table(fruits);",
+      "difficulty": "medium"
+    },
+    {
+      "id": 187,
+      "problem_statement": "Write a script that calculates the speed (distance/time) where distance is 100 and time is 2, then prints 'The speed is 50' using string concatenation.",
+      "input_format": "None",
+      "output_format": "The speed is 50",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "The speed is 50",
+      "solution_explanation": "Variables hold values and operators perform math.",
+      "code_solution": "let distance = 100;\nlet time = 2;\nlet speed = distance / time;\nconsole.log('The speed is ' + speed);",
+      "difficulty": "medium"
+    },
+    {
+      "id": 188,
+      "problem_statement": "Create a simple HTML structure that links an external JS file 'script.js' and also contains an internal script that prints 'Internal script' to the console.",
+      "input_format": "None",
+      "output_format": "HTML code snippet.",
+      "constraints": "Use <script> tags.",
+      "sample_input": "None",
+      "sample_output": "HTML code",
+      "solution_explanation": "Use src for external and tag body for internal script.",
+      "code_solution": "<!-- script.js link -->\n<script src='script.js'></script>\n<!-- Internal script -->\n<script>\n  console.log('Internal script');\n</script>",
+      "difficulty": "medium"
+    }
+  ]
+}

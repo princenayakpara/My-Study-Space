@@ -1,0 +1,625 @@
+{
+  "unit_name": "5. Control Structures – Loops",
+  "mcqs": [
+    {
+      "id": 501,
+      "question": "Which loop is used when the number of iterations is known in advance?",
+      "options": [
+        "A) while",
+        "B) for",
+        "C) do-while",
+        "D) foreach"
+      ],
+      "correct_option": "B",
+      "explanation": "A 'for' loop is typically used for bounded iterations.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 502,
+      "question": "What is the correct syntax for a for loop?",
+      "options": [
+        "A) for (i <= 5; i++)",
+        "B) for (let i = 0; i <= 5)",
+        "C) for (let i = 0; i <= 5; i++)",
+        "D) for i = 1 to 5"
+      ],
+      "correct_option": "C",
+      "explanation": "Syntax: for (initialization; condition; increment).",
+      "difficulty": "easy"
+    },
+    {
+      "id": 503,
+      "question": "Which loop executes at least once, even if the condition is false?",
+      "options": [
+        "A) for",
+        "B) while",
+        "C) do-while",
+        "D) for-in"
+      ],
+      "correct_option": "C",
+      "explanation": "do-while checks the condition after executing the body.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 504,
+      "question": "What keyword is used to skip the current iteration of a loop?",
+      "options": [
+        "A) stop",
+        "B) break",
+        "C) continue",
+        "D) next"
+      ],
+      "correct_option": "C",
+      "explanation": "The 'continue' keyword jumps to the next iteration.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 505,
+      "question": "What keyword is used to exit a loop completely?",
+      "options": [
+        "A) exit",
+        "B) stop",
+        "C) break",
+        "D) return"
+      ],
+      "correct_option": "C",
+      "explanation": "The 'break' keyword terminates the loop expression.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 506,
+      "question": "Which loop is best suited for iterating over properties of an object?",
+      "options": [
+        "A) for-in",
+        "B) for-of",
+        "C) while",
+        "D) do-while"
+      ],
+      "correct_option": "A",
+      "explanation": "for-in iterates over enumerable property keys of an object.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 507,
+      "question": "Which loop is designed to iterate over values of an iterable object (like an array)?",
+      "options": [
+        "A) for-in",
+        "B) while",
+        "C) for-of",
+        "D) case"
+      ],
+      "correct_option": "C",
+      "explanation": "for-of iterates over the values of arrays, strings, etc.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 508,
+      "question": "What happens if the loop condition is always true?",
+      "options": [
+        "A) Syntax error",
+        "B) Loop terminates after 100 times",
+        "C) Infinite loop",
+        "D) Execution skips the loop"
+      ],
+      "correct_option": "C",
+      "explanation": "An infinite loop runs forever until the program crashes or is manually stopped.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 509,
+      "question": "In a for loop, which part is optional?",
+      "options": [
+        "A) Initialization",
+        "B) Condition",
+        "C) Increment",
+        "D) All are optional"
+      ],
+      "correct_option": "D",
+      "explanation": "for (;;) is valid syntax for an infinite loop.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 510,
+      "question": "What is the output: for(let i=0; i<3; i++) { break; console.log(i); }",
+      "options": [
+        "A) 0",
+        "B) 0 1 2",
+        "C) No output",
+        "D) Error"
+      ],
+      "correct_option": "C",
+      "explanation": "The break statement executes before the log, exiting the loop immediately.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 511,
+      "question": "What is the output: let i=0; while(i<3) { console.log(i++) }",
+      "options": [
+        "A) 1 2 3",
+        "B) 0 1 2",
+        "C) 0 1 2 3",
+        "D) 0"
+      ],
+      "correct_option": "B",
+      "explanation": "i starts at 0, logs, then becomes 1. Loop continues while i is 0, 1, 2.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 512,
+      "question": "Which loop should be used when you don't know how many times it will run?",
+      "options": [
+        "A) for",
+        "B) while",
+        "C) for-of",
+        "D) for-in"
+      ],
+      "correct_option": "B",
+      "explanation": "While loops are perfect for condition-based (unbounded) repetition.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 513,
+      "question": "Can you declare a variable inside a for loop using 'const'?",
+      "options": [
+        "A) No",
+        "B) Only in for-of/for-in",
+        "C) Yes, always",
+        "D) Only if it's not incremented"
+      ],
+      "correct_option": "B",
+      "explanation": "In standard for(let i=0;...), const would error during increment. for-of creates a new binding per iteration.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 514,
+      "question": "What is a 'nested loop'?",
+      "options": [
+        "A) A loop that returns a loop",
+        "B) A loop inside another loop",
+        "C) A loop that runs backwards",
+        "D) A loop with multiple conditions"
+      ],
+      "correct_option": "B",
+      "explanation": "Standard definition: outer loop contains an inner loop.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 515,
+      "question": "What is the time complexity of a nested loop (n inside m)?",
+      "options": [
+        "A) O(n+m)",
+        "B) O(n*m)",
+        "C) O(n)",
+        "D) O(1)"
+      ],
+      "correct_option": "B",
+      "explanation": "Every iteration of the outer loop triggers all iterations of the inner loop.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 516,
+      "question": "Which of these will create an infinite loop?",
+      "options": [
+        "A) for(;;)",
+        "B) while(true)",
+        "C) do{} while(1)",
+        "D) All of the above"
+      ],
+      "correct_option": "D",
+      "explanation": "All represent conditions that are always truthy.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 517,
+      "question": "What is 'label' in JavaScript loops?",
+      "options": [
+        "A) A comment",
+        "B) An identifier for nested loop control",
+        "C) A type of loop",
+        "D) Error handler"
+      ],
+      "correct_option": "B",
+      "explanation": "Labels allow break/continue to target specific outer loops.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 518,
+      "question": "What is the output: for(let i=0; i<5; i++) { if(i==2) continue; console.log(i); }",
+      "options": [
+        "A) 0 1 2",
+        "B) 0 1 3 4",
+        "C) 3 4",
+        "D) 0 1 2 3 4"
+      ],
+      "correct_option": "B",
+      "explanation": "When i is 2, the log is skipped.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 519,
+      "question": "How do you iterate backward from 10 to 1?",
+      "options": [
+        "A) for(let i=10; i>0; i--)",
+        "B) for(let i=10; i<1; i++)",
+        "C) for(let i=1; i<10; i--)",
+        "D) while(i==10)"
+      ],
+      "correct_option": "A",
+      "explanation": "Initialization at 10, decrementing, condition i > 0.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 520,
+      "question": "What does for...of return for an array?",
+      "options": [
+        "A) Indices",
+        "B) Values",
+        "C) Objects",
+        "D) Functions"
+      ],
+      "correct_option": "B",
+      "explanation": "for...of is for iterating over values.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 521,
+      "question": "What does for...in return for an array?",
+      "options": [
+        "A) Indices (as strings)",
+        "B) Values",
+        "C) Length",
+        "D) Slices"
+      ],
+      "correct_option": "A",
+      "explanation": "for...in iterates over keys (indices in arrays).",
+      "difficulty": "hard"
+    },
+    {
+      "id": 522,
+      "question": "Which method is also used to loop over arrays but is not a statement?",
+      "options": [
+        "A) forEach",
+        "B) map",
+        "C) filter",
+        "D) All of the above"
+      ],
+      "correct_option": "D",
+      "explanation": "These are higher-order array methods for iteration.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 523,
+      "question": "What is the output: let i=5; do { console.log(i); } while (i < 5);",
+      "options": [
+        "A) No output",
+        "B) 5",
+        "C) infinite",
+        "D) Error"
+      ],
+      "correct_option": "B",
+      "explanation": "Do run once, then condition (5 < 5) is false, so it stops.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 524,
+      "question": "What is the danger of using for...in on arrays?",
+      "options": [
+        "A) It is slow",
+        "B) It may iterate over prototype properties",
+        "C) It only works on small arrays",
+        "D) It returns undefined"
+      ],
+      "correct_option": "B",
+      "explanation": "for...in picks up all enumerable properties, including inherited ones.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 525,
+      "question": "Which loop is ES6 specific?",
+      "options": [
+        "A) for",
+        "B) while",
+        "C) for...of",
+        "D) do...while"
+      ],
+      "correct_option": "C",
+      "explanation": "for...of was introduced in ECMAScript 2015 (ES6).",
+      "difficulty": "medium"
+    },
+    {
+      "id": 526,
+      "question": "In for loop, when is the 'increment' part executed?",
+      "options": [
+        "A) Before the body",
+        "B) Simultaneously with the body",
+        "C) After the body iteration",
+        "D) Only if condition is true"
+      ],
+      "correct_option": "C",
+      "explanation": "The update expression runs after each execution of the loop block.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 527,
+      "question": "What is the output: for(var i=0; i<3; i++) { setTimeout(() => console.log(i), 0); }",
+      "options": [
+        "A) 0 1 2",
+        "B) 3 3 3",
+        "C) undefined",
+        "D) 1 2 3"
+      ],
+      "correct_option": "B",
+      "explanation": "Because 'var' is function-scoped, all three callbacks share the final value of i (3).",
+      "difficulty": "hard"
+    },
+    {
+      "id": 528,
+      "question": "What is the output: for(let i=0; i<3; i++) { setTimeout(() => console.log(i), 0); }",
+      "options": [
+        "A) 0 1 2",
+        "B) 3 3 3",
+        "C) undefined",
+        "D) 1 2 3"
+      ],
+      "correct_option": "A",
+      "explanation": "Because 'let' is block-scoped, each iteration gets a fresh binding of i.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 529,
+      "question": "Which of these is a 'sentinel' value?",
+      "options": [
+        "A) The starting index",
+        "B) The increment step",
+        "C) A special value used to terminate a loop",
+        "D) The loop name"
+      ],
+      "correct_option": "C",
+      "explanation": "A sentinel value is a dummy value used to mark end of input/processing.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 530,
+      "question": "Which loop iterates over characters of a string?",
+      "options": [
+        "A) for...of",
+        "B) for...in",
+        "C) for",
+        "D) All of the above"
+      ],
+      "correct_option": "D",
+      "explanation": "Strings are iterables (for-of), have indices (for-in), and length (standard for).",
+      "difficulty": "medium"
+    }
+  ],
+  "theory_questions": [
+    {
+      "id": 551,
+      "question": "Explain the three parts of a standard 'for' loop declaration.",
+      "model_answer": "1. Initialization: Executed once before the loop starts (e.g., let i=0). 2. Condition: Checked before every iteration; if false, loop stops. 3. Final Expression (Increment): Executed after every iteration body.",
+      "key_points": [
+        "Initialization",
+        "Condition",
+        "Increment/Decrement",
+        "Flow of control"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 552,
+      "question": "Distinguish between 'while' and 'do-while' loops.",
+      "model_answer": "'while' is an entry-controlled loop; it checks the condition before executing. 'do-while' is an exit-controlled loop; it executes the body once and then checks the condition. Therefore, 'do-while' body runs at least once.",
+      "key_points": [
+        "Entry-controlled",
+        "Exit-controlled",
+        "Minimum execution count",
+        "Syntax differences"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 553,
+      "question": "What is the difference between for...in and for...of loops?",
+      "model_answer": "for...in iterates over the *keys* (properties) of an object or indices of an array. for...of iterates over the *values* of an iterable (Array, String, Map, etc.). Use for...of for arrays and for...in for objects.",
+      "key_points": [
+        "Keys vs Values",
+        "Object properties vs Iterable values",
+        "Collection types",
+        "ES6 context"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 554,
+      "question": "Describe the purpose and behavior of 'break' and 'continue' in loops.",
+      "model_answer": "'break' immediately terminates the loop and jumps to the next statement outside it. 'continue' terminates only the current iteration and jumps to the condition check (or increment step in 'for' loop).",
+      "key_points": [
+        "Full termination",
+        "Iteration skip",
+        "Control jump",
+        "Nested loop impact"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 555,
+      "question": "How do nested loops work and what are their performance implications?",
+      "model_answer": "A nested loop is a loop inside another loop. For every single iteration of the outer loop, the inner loop runs its full cycle. This results in O(N^2) complexity if both loops have size N, which can be very slow for large data sets.",
+      "key_points": [
+        "Outer vs Inner",
+        "Matrix/Grid processing",
+        "Polynomial time complexity",
+        "N^2 penalty"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 556,
+      "question": "Why is 'Infinite Loop' dangerous and how can it happen?",
+      "model_answer": "An infinite loop never hits its terminating condition, consuming CPU resources and causing the program to hang or crash. It happens due to missing increments, conditions that never become false, or logic errors in complex loops.",
+      "key_points": [
+        "CPU hogging",
+        "Program freezing",
+        "Invalid conditions",
+        "Missing updates"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 557,
+      "question": "Explain 'Labels' in JavaScript and how they interact with break/continue.",
+      "model_answer": "Labels (e.g., outerloop:) provide a name to a loop. They allow 'break' or 'continue' to apply to a specific outer loop instead of just the innermost one, which is useful in deeply nested structures.",
+      "key_points": [
+        "Identifier:",
+        "Targeted break",
+        "Targeted continue",
+        "Nested management"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 558,
+      "question": "How does using 'var' vs 'let' in a for loop header change the loop's behavior?",
+      "model_answer": "'var' is function-scoped, so the loop variable exists outside the loop and is shared by all iterations (problematic with async). 'let' is block-scoped, creating a unique variable for every single iteration of the loop.",
+      "key_points": [
+        "Scope",
+        "Async callbacks",
+        "Per-iteration binding",
+        "Hoisting"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 559,
+      "question": "What is an iterable in JavaScript? List examples.",
+      "model_answer": "An iterable is an object that implements the @@iterator method, allowing it to be used in for...of loops. Examples include Arrays, Strings, Sets, Maps, and the 'arguments' object in functions.",
+      "key_points": [
+        "Symbol.iterator",
+        "for...of usage",
+        "Array, String, Map, Set",
+        "Protocols"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 560,
+      "question": "When should you use higher-order methods (forEach, map) over traditional loops?",
+      "model_answer": "Higher-order methods are more declarative and cleaner for simple array transformations. Traditional loops are better when you need to use 'break' or 'continue', handles async/await better in some cases, or need maximum performance.",
+      "key_points": [
+        "Declarative vs Imperative",
+        "Break/Continue support",
+        "Readability",
+        "Functional programming"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    }
+  ],
+  "coding_questions": [
+    {
+      "id": 581,
+      "problem_statement": "Write a for loop to print numbers from 1 to 10.",
+      "input_format": "None",
+      "output_format": "Numbers 1, 2, ..., 10",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "1 to 10 logged",
+      "solution_explanation": "Initialize at 1, loop till <= 10, increment.",
+      "code_solution": "for (let i = 1; i <= 10; i++) {\n  console.log(i);\n}",
+      "difficulty": "easy"
+    },
+    {
+      "id": 582,
+      "problem_statement": "Use a while loop to find the sum of numbers from 1 to 100.",
+      "input_format": "None",
+      "output_format": "Resulting sum",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "5050",
+      "solution_explanation": "Accumulate value in a sum variable.",
+      "code_solution": "let i = 1, sum = 0;\nwhile (i <= 100) {\n  sum += i;\n  i++;\n}\nconsole.log(sum);",
+      "difficulty": "easy"
+    },
+    {
+      "id": 583,
+      "problem_statement": "Iterate over an array of fruits ['Apple', 'Orange', 'Pear'] using a for...of loop and log each one.",
+      "input_format": "Array",
+      "output_format": "Values",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Apple, Orange, Pear logged",
+      "solution_explanation": "for...of extracts values directly.",
+      "code_solution": "const fruits = ['Apple', 'Orange', 'Pear'];\nfor (const fruit of fruits) {\n  console.log(fruit);\n}",
+      "difficulty": "easy"
+    },
+    {
+      "id": 584,
+      "problem_statement": "Write a program to print the first 10 even numbers starting from 2.",
+      "input_format": "None",
+      "output_format": "2, 4, ..., 20",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "2 to 20",
+      "solution_explanation": "Use increment of 2 or check modulo.",
+      "code_solution": "for (let i = 1; i <= 10; i++) {\n  console.log(i * 2);\n}",
+      "difficulty": "easy"
+    },
+    {
+      "id": 585,
+      "problem_statement": "Use a for...in loop to log all keys and values of the object: { name: 'Peter', age: 40, city: 'London' }.",
+      "input_format": "Object",
+      "output_format": "Key: Value pairs",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "name: Peter, etc.",
+      "solution_explanation": "for...in gets keys, use keys to access values.",
+      "code_solution": "const person = { name: 'Peter', age: 40, city: 'London' };\nfor (let key in person) {\n  console.log(`${key}: ${person[key]}`);\n}",
+      "difficulty": "medium"
+    },
+    {
+      "id": 586,
+      "problem_statement": "Write a script to print a pattern of stars: \n*\n**\n***\n****\n*****",
+      "input_format": "None",
+      "output_format": "Star pattern",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Triangular stars",
+      "solution_explanation": "Use nested loops: outer for lines, inner for stars per line.",
+      "code_solution": "for (let i = 1; i <= 5; i++) {\n  let line = '';\n  for (let j = 1; j <= i; j++) {\n    line += '*';\n  }\n  console.log(line);\n}",
+      "difficulty": "medium"
+    },
+    {
+      "id": 587,
+      "problem_statement": "Using a loop, find the largest number in the array [10, 5, 20, 8, 12].",
+      "input_format": "Array",
+      "output_format": "Max value",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "20",
+      "solution_explanation": "Compare each element to a max tracking variable.",
+      "code_solution": "const nums = [10, 5, 20, 8, 12];\nlet max = nums[0];\nfor (let n of nums) {\n  if (n > max) max = n;\n}\nconsole.log(max);",
+      "difficulty": "medium"
+    },
+    {
+      "id": 588,
+      "problem_statement": "Write a script that uses a loop and 'break' to find the first index of 'Banana' in the array ['Apple', 'Orange', 'Banana', 'Grape'].",
+      "input_format": "Array",
+      "output_format": "Index",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "2",
+      "solution_explanation": "Loop with index and break when found.",
+      "code_solution": "const arr = ['Apple', 'Orange', 'Banana', 'Grape'];\nlet foundIndex = -1;\nfor (let i = 0; i < arr.length; i++) {\n  if (arr[i] === 'Banana') {\n    foundIndex = i;\n    break;\n  }\n}\nconsole.log(foundIndex);",
+      "difficulty": "medium"
+    }
+  ]
+}

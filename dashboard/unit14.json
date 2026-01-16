@@ -1,0 +1,625 @@
+{
+  "unit_name": "14. JavaScript Execution, Sync vs Async, Callbacks, Promises, Async/Await",
+  "mcqs": [
+    {
+      "id": 1401,
+      "question": "What is the primary nature of JavaScript's execution model?",
+      "options": [
+        "A) Multi-threaded",
+        "B) Single-threaded",
+        "C) Distributed",
+        "D) Blocking only"
+      ],
+      "correct_option": "B",
+      "explanation": "JavaScript runs on a single main thread using an Event Loop.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1402,
+      "question": "Which component of JS manages asynchronous tasks like setTimeout or Fetch?",
+      "options": [
+        "A) Call Stack",
+        "B) Event Loop",
+        "C) Memory Heap",
+        "D) Execution Context"
+      ],
+      "correct_option": "B",
+      "explanation": "The Event Loop coordinates the execution of code, collecting and processing events.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1403,
+      "question": "Where are synchronous function calls stored while they are executing?",
+      "options": [
+        "A) Callback Queue",
+        "B) Microtask Queue",
+        "C) Call Stack",
+        "D) Web APIs"
+      ],
+      "correct_option": "C",
+      "explanation": "The stack follows LIFO (Last In First Out) for function execution.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1404,
+      "question": "What is 'Blocking Code'?",
+      "options": [
+        "A) Code that runs in the background",
+        "B) Code that prevents the execution of other code until it finishes",
+        "C) A type of syntax error",
+        "D) Encrypted code"
+      ],
+      "correct_option": "B",
+      "explanation": "Heavy synchronous tasks block the Event Loop, making the app unresponsive.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1405,
+      "question": "What are the three states of a Promise?",
+      "options": [
+        "A) Start, Stop, End",
+        "B) Pending, Fulfilled, Rejected",
+        "C) Working, Success, Failure",
+        "D) Open, Closed, Error"
+      ],
+      "correct_option": "B",
+      "explanation": "These are the standard internal states defined by the Promise specification.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1406,
+      "question": "Which method is called when a Promise is successfully resolved?",
+      "options": [
+        "A) .catch()",
+        "B) .then()",
+        "C) .finally()",
+        "D) .done()"
+      ],
+      "correct_option": "B",
+      "explanation": ".then() registers the success handler.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1407,
+      "question": "Which method is called when a Promise fails/rejects?",
+      "options": [
+        "A) .error()",
+        "B) .catch()",
+        "C) .fail()",
+        "D) .then(null)"
+      ],
+      "correct_option": "B",
+      "explanation": ".catch() is the standard for error handling in Promises.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1408,
+      "question": "What keyword is used to wait for a Promise to resolve inside an async function?",
+      "options": [
+        "A) wait",
+        "B) pause",
+        "C) await",
+        "D) hold"
+      ],
+      "correct_option": "C",
+      "explanation": "'await' pauses execution of the async function until the promise settles.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1409,
+      "question": "How do you handle errors when using async/await?",
+      "options": [
+        "A) Use .catch() only",
+        "B) Use try...catch blocks",
+        "C) Use if/else",
+        "D) Errors are ignored"
+      ],
+      "correct_option": "B",
+      "explanation": "try...catch is the preferred way to handle async errors in await-based code.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1410,
+      "question": "What does an 'async' function ALWAYS return?",
+      "options": [
+        "A) A value",
+        "B) undefined",
+        "C) A Promise",
+        "D) A Callback"
+      ],
+      "correct_option": "C",
+      "explanation": "Async functions are wrapped in Promises automatically.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1411,
+      "question": "What is 'Callback Hell'?",
+      "options": [
+        "A) A syntax error",
+        "B) Deeply nested callbacks making code hard to read",
+        "C) A recursive loop",
+        "D) A type of server crash"
+      ],
+      "correct_option": "B",
+      "explanation": "Nested callbacks (Pyramid of Doom) are solved by Promises and Async/Await.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1412,
+      "question": "Which has higher priority: Microtask Queue or Callback (Task) Queue?",
+      "options": [
+        "A) Callback Queue",
+        "B) Microtask Queue",
+        "C) They are the same",
+        "D) Depends on the browser"
+      ],
+      "correct_option": "B",
+      "explanation": "Microtasks (Promises) are processed immediately after the call stack clears, before the next task in the Callback Queue.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1413,
+      "question": "What is the output: console.log('1'); setTimeout(()=>console.log('2'), 0); console.log('3');",
+      "options": [
+        "A) 1, 2, 3",
+        "B) 1, 3, 2",
+        "C) 2, 1, 3",
+        "D) 3, 2, 1"
+      ],
+      "correct_option": "B",
+      "explanation": "setTimeout is asynchronous and moves to the task queue, even with 0ms delay.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1414,
+      "question": "What is the result: Promise.resolve().then(() => console.log('P')); console.log('C');",
+      "options": [
+        "A) P, C",
+        "B) C, P",
+        "C) P",
+        "D) C"
+      ],
+      "correct_option": "B",
+      "explanation": "Synchronous code (C) runs before microtasks (P).",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1415,
+      "question": "Which Promise method waits for all promises to resolve or one to reject?",
+      "options": [
+        "A) Promise.all()",
+        "B) Promise.race()",
+        "C) Promise.any()",
+        "D) Promise.settle()"
+      ],
+      "correct_option": "A",
+      "explanation": "Promise.all() fails fast if any promise fails.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1416,
+      "question": "Which Promise method returns as soon as the first promise settles (either resolve or reject)?",
+      "options": [
+        "A) Promise.all()",
+        "B) Promise.race()",
+        "C) Promise.first()",
+        "D) Promise.any()"
+      ],
+      "correct_option": "B",
+      "explanation": "race() is useful for timeouts.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1417,
+      "question": "In the context of the Event Loop, what are Web APIs (in browsers) or C++ APIs (in Node)?",
+      "options": [
+        "A) Memory storage",
+        "B) External environments that handle async tasks like timers or network",
+        "C) Compiler tools",
+        "D) Variable containers"
+      ],
+      "correct_option": "B",
+      "explanation": "JS offloads async tasks to these environments.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1418,
+      "question": "What happens if a Promise is rejected but there is no .catch()?",
+      "options": [
+        "A) It is ignored",
+        "B) An 'Uncaught (in promise)' error is thrown",
+        "C) The server restarts",
+        "D) The UI refreshes"
+      ],
+      "correct_option": "B",
+      "explanation": "Always handle rejections to avoid unhandled errors.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1419,
+      "question": "Can 'await' be used at the top level of a script?",
+      "options": [
+        "A) Yes, always",
+        "B) No, only in async functions",
+        "C) Yes, in ES modules (Top-level await)",
+        "D) Only in Node.js"
+      ],
+      "correct_option": "C",
+      "explanation": "Modern JS supports top-level await in modules.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1420,
+      "question": "Which of these is a valid way to create a Promise?",
+      "options": [
+        "A) new Promise((resolve, reject) => { })",
+        "B) create Promise(res, rej)",
+        "C) Promise.new()",
+        "D) function Promise() {}"
+      ],
+      "correct_option": "A",
+      "explanation": "The Promise constructor takes an 'executor' function.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1421,
+      "question": "What is 'Starvation' in the Event Loop?",
+      "options": [
+        "A) Running out of memory",
+        "B) Microtasks continuously adding more microtasks, preventing Task Queue from ever running",
+        "C) Long internet wait",
+        "D) Variable deletion"
+      ],
+      "correct_option": "B",
+      "explanation": "Microtasks have priority; if they never end, UI tasks (like clicks) are never processed.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1422,
+      "question": "What is the 'Pyramid of Doom'?",
+      "options": [
+        "A) High CPU usage",
+        "B) Heavily nested callback structures",
+        "C) Recursive crash",
+        "D) A type of 404 error"
+      ],
+      "correct_option": "B",
+      "explanation": "Identical to Callback Hell.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1423,
+      "question": "What is the difference between Promise.all() and Promise.allSettled()?",
+      "options": [
+        "A) No difference",
+        "B) .all() fails if one rejects; .allSettled() waits for all to finish regardless of result",
+        "C) .allSettled() is faster",
+        "D) .all() is only for Node"
+      ],
+      "correct_option": "B",
+      "explanation": "allSettled() gives a report of all outcomes.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1424,
+      "question": "What is 'Inversion of Control' in callbacks?",
+      "options": [
+        "A) Faster logic",
+        "B) Trusting a third-party function to call your callback correctly",
+        "C) Reversing an array",
+        "D) Error handling"
+      ],
+      "correct_option": "B",
+      "explanation": "A major drawback of callbacks; solved by Promises which allow *you* to handle the result.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1425,
+      "question": "Which of these is processed in the Microtask queue?",
+      "options": [
+        "A) Promise .then/catch",
+        "B) MutationObserver",
+        "C) queueMicrotask()",
+        "D) All of the above"
+      ],
+      "correct_option": "D",
+      "explanation": "All these tasks have priority over standard callbacks.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1426,
+      "question": "What happens to the single thread if you run: while(true) {}?",
+      "options": [
+        "A) Background process starts",
+        "B) The Event Loop freezes and the app crashes/hangs",
+        "C) JS switches to another thread",
+        "D) It only blocks for 5 seconds"
+      ],
+      "correct_option": "B",
+      "explanation": "Synchronous infinite loops freeze the entire environment.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1427,
+      "question": "Promise.any() resolves as soon as:",
+      "options": [
+        "A) Any promise finishes",
+        "B) The first promise successfullly fulfills",
+        "C) All promises fulfill",
+        "D) One promise rejects"
+      ],
+      "correct_option": "B",
+      "explanation": "Unlike .race(), .any() ignores rejections unless *all* fail.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1428,
+      "question": "Which keyword makes an ordinary function return a Promise?",
+      "options": [
+        "A) promise",
+        "B) wrap",
+        "C) async",
+        "D) defer"
+      ],
+      "correct_option": "C",
+      "explanation": "Async functions always return Promises.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1429,
+      "question": "The second argument to a Promise constructor is:",
+      "options": [
+        "A) resolve",
+        "B) reject",
+        "C) catch",
+        "D) status"
+      ],
+      "correct_option": "B",
+      "explanation": "Execution function: (res, rej) => { ... }",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1430,
+      "question": "Is 'await' blocking?",
+      "options": [
+        "A) Yes, it blocks the whole thread",
+        "B) No, it only pauses the async function execution, not the Event Loop",
+        "C) Only in Node.js",
+        "D) Only for disk operations"
+      ],
+      "correct_option": "B",
+      "explanation": "Awaiting allows other code (outside the async function) to continue running.",
+      "difficulty": "hard"
+    }
+  ],
+  "theory_questions": [
+    {
+      "id": 1451,
+      "question": "Describe the Event Loop and its components (Stack, Heap, Web APIs, Task Queue, Microtask Queue).",
+      "model_answer": "The Event Loop is a mechanism that allows JS to perform non-blocking I/O. 1. Call Stack (execution). 2. Heap (memory). 3. Web APIs (offloaded tasks). 4. Task Queue (callbacks for timers, events). 5. Microtask Queue (Promises). The Loop checks if the stack is empty, then processes Microtasks, then Tasks.",
+      "key_points": [
+        "Single-threaded nature",
+        "Non-blocking mechanism",
+        "Priority of Microtasks",
+        "Offloading tasks"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1452,
+      "question": "What is the difference between Synchronous and Asynchronous programming?",
+      "model_answer": "Synchronous code runs line-by-line, and each line must wait for the previous to finish. Asynchronous code allows tasks to start now and finish later, letting the main thread continue with other work in the meantime.",
+      "key_points": [
+        "Blocking vs Non-blocking",
+        "Execution flow",
+        "User experience",
+        "Concurrency"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 1453,
+      "question": "Explain 'Callback Hell' and how Promises provide a solution.",
+      "model_answer": "Callback Hell occurs when multiple asynchronous tasks depend on each other, resulting in deeply nested code. Promises solve this by 'flattening' the code through chaining (.then().then()), making it more readable and easier to handle errors via .catch().",
+      "key_points": [
+        "Pyramid of Doom",
+        "Readability",
+        "Chainability",
+        "Error propagation"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1454,
+      "question": "Discuss the internal states of a Promise: Pending, Fulfilled, Rejected.",
+      "model_answer": "Pending: Initial state, neither fulfilled nor rejected. Fulfilled: The operation completed successfully (yields a value). Rejected: The operation failed (yields a reason/error). A promise is 'settled' once it is either fulfilled or rejected.",
+      "key_points": [
+        "Initial state",
+        "Successful resolution",
+        "Failure resolution",
+        "Finality (Once settled, state cannot change)"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 1455,
+      "question": "What is Async/Await and how does it relate to Promises?",
+      "model_answer": "Async/Await is syntactical sugar over Promises. 'async' ensures a function returns a promise, and 'await' pauses the function until the promise is settled. It allows writing asynchronous code that looks and behaves like synchronous code, improving maintainability.",
+      "key_points": [
+        "Syntactical sugar",
+        "Readability",
+        "Wait mechanism",
+        "try-catch integration"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1456,
+      "question": "Explain Promise.all() vs Promise.allSettled(). When to use which?",
+      "model_answer": "Promise.all() waits for all to succeed; if one fails, it rejects immediately. Use when all data is mandatory. Promise.allSettled() waits for all to finish regardless of success/failure. Use when you want a report of all results even if some fail.",
+      "key_points": [
+        "Short-circuit behavior",
+        "Outcome reporting",
+        "Usage scenarios",
+        "Returns array"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 1457,
+      "question": "Compare the Priority of Microtasks and Macrotasks (Tasks). Give examples of each.",
+      "model_answer": "Microtasks (Promises, queueMicrotask) have higher priority; the loop processes all microtasks before the next macrotask. Macrotasks (setTimeout, setInterval, I/O events) have lower priority. This ensures Promises are handled as soon as possible.",
+      "key_points": [
+        "Queue precedence",
+        "Starvation risk",
+        "Examples (Promises vs setTimeout)",
+        "Loop iteration"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 1458,
+      "question": "What are the disadvantages of using callbacks for async operations?",
+      "model_answer": "1. Nested structure (Hell). 2. Inversion of control (trusting external code). 3. Difficult error handling (must manually pass error in every level). 4. Lack of built-in coordination for parallel tasks.",
+      "key_points": [
+        "Trust issues",
+        "Complexity",
+        "Error handling difficulty",
+        "Formatting"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1459,
+      "question": "How does Error Handling work in chaining Promises?",
+      "model_answer": "Errors in a Promise chain propagate down until they encounter a .catch(). If a mistake happens in any .then(), the remaining success handlers are skipped, and the .catch() is triggered, centralizing error management for the entire chain.",
+      "key_points": [
+        "Propagation",
+        "Skipping handlers",
+        "Centralized catch",
+        "Graceful recovery"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1460,
+      "question": "What is 'Promisification' and why is it useful in Node.js?",
+      "model_answer": "Promisification is the conversion of an older callback-based function (e.g., Node's fs.readFile) into a function that returns a Promise. This allows the use of modern Async/Await with legacy APIs, leading to cleaner code.",
+      "key_points": [
+        "Transition from callbacks",
+        "util.promisify",
+        "Modernizing APIs",
+        "Clean flow"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    }
+  ],
+  "coding_questions": [
+    {
+      "id": 1481,
+      "problem_statement": "Write a script that logs 'Start', then logs 'End', but uses setTimeout to log 'Async' after 1 second between them.",
+      "input_format": "None",
+      "output_format": "'Start', 'End', 'Async'",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Start, End, Async",
+      "solution_explanation": "Demonstrates non-blocking nature.",
+      "code_solution": "console.log('Start');\nsetTimeout(() => console.log('Async'), 1000);\nconsole.log('End');",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1482,
+      "problem_statement": "Create a Promise that resolves with the string 'Success!' after 500ms. Consume it using .then().",
+      "input_format": "None",
+      "output_format": "'Success!'",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Success!",
+      "solution_explanation": "Standard Promise construction and consumption.",
+      "code_solution": "const p = new Promise(resolve => {\n  setTimeout(() => resolve('Success!'), 500);\n});\np.then(res => console.log(res));",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1483,
+      "problem_statement": "Write an async function 'getData' that awaits a promise returning 'Data' and logs it. Wrap in try-catch.",
+      "input_format": "None",
+      "output_format": "'Data'",
+      "constraints": "Use async/await.",
+      "sample_input": "None",
+      "sample_output": "Data",
+      "solution_explanation": "Pausing execution with await.",
+      "code_solution": "async function getData() {\n  try {\n    const data = await Promise.resolve('Data');\n    console.log(data);\n  } catch (err) {\n    console.error(err);\n  }\n}\ngetData();",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1484,
+      "problem_statement": "Combine two promises using Promise.all(). P1 resolves to 5, P2 resolves to 10. Log the sum of both values.",
+      "input_format": "None",
+      "output_format": "15",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "15",
+      "solution_explanation": "Promise.all returns an array of results.",
+      "code_solution": "const p1 = Promise.resolve(5);\nconst p2 = Promise.resolve(10);\nPromise.all([p1, p2]).then(vals => {\n  console.log(vals[0] + vals[1]);\n});",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1485,
+      "problem_statement": "Simulate a coin flip using a Promise: resolve if heads (>0.5), reject if tails (<=0.5). Handle both cases.",
+      "input_format": "None",
+      "output_format": "Result or Error",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Heads or Tails",
+      "solution_explanation": "Conditional settlement.",
+      "code_solution": "const flip = new Promise((res, rej) => {\n  Math.random() > 0.5 ? res('Heads') : rej('Tails');\n});\nflip.then(v => console.log(v)).catch(e => console.log(e));",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1486,
+      "problem_statement": "Demonstrate the priority of Microtasks by logging in this order: Sync1, Sync2, Promise, Timeout.",
+      "input_format": "None",
+      "output_format": "Correct sequence",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Sync1, Sync2, Promise, Timeout",
+      "solution_explanation": "Microtasks run after stack, before next event loop tick.",
+      "code_solution": "console.log('Sync1');\nsetTimeout(() => console.log('Timeout'), 0);\nPromise.resolve().then(() => console.log('Promise'));\nconsole.log('Sync2');",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1487,
+      "problem_statement": "Write a 'delay' function that returns a Promise resolving after 'ms' milliseconds. Use it to wait 2 seconds in an async function.",
+      "input_format": "Number ms",
+      "output_format": "Delayed log",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Logged after 2s",
+      "solution_explanation": "Reusable delay utility.",
+      "code_solution": "const delay = ms => new Promise(res => setTimeout(res, ms));\nasync function run() {\n  await delay(2000);\n  console.log('Wait over');\n}\nrun();",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1488,
+      "problem_statement": "Implement retry logic for a function that returns a Promise. If it fails, try again up to 2 times, then give up.",
+      "input_format": "Failing promise",
+      "output_format": "Final result",
+      "constraints": "Use async/await loop.",
+      "sample_input": "None",
+      "sample_output": "Error after retries",
+      "solution_explanation": "Combine loops with try-catch.",
+      "code_solution": "async function retry(fn, count) {\n  for(let i=0; i<count; i++) {\n    try { return await fn(); }\n    catch(e) { if(i === count-1) throw e; }\n  }\n}\n// Usage: retry(failingTask, 3);",
+      "difficulty": "hard"
+    }
+  ]
+}

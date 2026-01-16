@@ -725,8 +725,9 @@ const TestManager = {
         let dataPath = null;
         if (subjectKey === 'c_lang') dataPath = 'test_data/c_language.json';
         else if (subjectKey === 'maths') dataPath = 'test_data/maths.json';
-        else if (subjectKey === 'html') dataPath = 'test_data/html_css_js.json'; // Future
-        // Add others...
+        else if (subjectKey === 'html') dataPath = 'test_data/html_css_js.json';
+        else if (subjectKey === 'js_backend') dataPath = 'test_data/js_backend.json';
+        else if (subjectKey === 'git') dataPath = 'test_data/git_github.json'; 
 
         let units = [];
 
@@ -761,7 +762,7 @@ const TestManager = {
                 <div class="test-actions">
                     <button class="start-test-btn btn-mcq" onclick="TestManager.startTest(${index}, 'mcq')">MCQ</button>
                     <button class="start-test-btn btn-theory" onclick="TestManager.startTest(${index}, 'theory')">Theory</button>
-                    ${subjectKey !== 'maths' ? `<button class="start-test-btn btn-coding" onclick="TestManager.startTest(${index}, 'coding')">Coding</button>` : ''}
+                    ${subjectKey !== 'maths' ? `<button class="start-test-btn btn-coding" onclick="TestManager.startTest(${index}, 'coding')">${subjectKey === 'git' ? 'Practical' : 'Coding'}</button>` : ''}
                 </div>
             </div>
         `).join('');
@@ -790,7 +791,7 @@ const TestManager = {
             const unit = this.state.currentSubjectData.units[unitIndex];
             if (type === 'mcq') this.state.questions = unit.mcqs || [];
             else if (type === 'theory') this.state.questions = unit.theory_questions || [];
-            else if (type === 'coding') this.state.questions = unit.coding_questions || [];
+            else if (type === 'coding') this.state.questions = (unit.coding_questions || unit.practical_questions || []);
         } else {
              this.state.questions = this.getMockQuestions(type);
         }
@@ -834,7 +835,8 @@ const TestManager = {
         document.getElementById('submit-btn').classList.toggle('hidden', this.state.currentIndex !== total - 1);
 
         // Content
-        let html = `<h3>Q${this.state.currentIndex+1}. ${q.question || q.problem_statement}</h3>`;
+        let html = `<h3>Q${this.state.currentIndex+1}. ${q.question || q.problem_statement || q.scenario || 'Question'}</h3>`;
+        if (q.task) html += `<p style='margin-top:-0.5rem; color:#888;'>${q.task}</p>`;
         
         if (type === 'mcq') {
             const opts = ['a','b','c','d']; // Lowercase keys in my specific JSON generator? 
@@ -878,17 +880,23 @@ const TestManager = {
             html += `<textarea class="code-editor" style="height:200px" placeholder="Type answer..." oninput="TestManager.saveAnswer(${q.id}, this.value)">${val}</textarea>`;
             // Show Model Answer Toggle if reviewing?
         } else if (type === 'coding') {
-            const val = this.state.answers[q.id] || q.code_c || '// Write code here';
+            const val = this.state.answers[q.id] || q.code_c || '';
+            const isPractical = !!q.scenario;
             html += `
                 <div class="coding-layout">
                     <div class="problem-pane">
-                        <p><strong>Input:</strong> ${q.input_format}</p>
-                        <p><strong>Output:</strong> ${q.output_format}</p>
-                        <p><strong>Sample Input:</strong> <pre>${q.sample_input}</pre></p>
-                        <p><strong>Sample Output:</strong> <pre>${q.sample_output}</pre></p>
+                        ${isPractical ? `
+                            <p><strong>Scenario:</strong> ${q.scenario}</p>
+                            <p><strong>Expected:</strong> Command based solution</p>
+                        ` : `
+                            <p><strong>Input:</strong> ${q.input_format}</p>
+                            <p><strong>Output:</strong> ${q.output_format}</p>
+                        `}
                     </div>
-                    <div class="compiler-pane" style="background:#000;">
-                        <textarea class="code-editor" style="height:100%; border:none;" oninput="TestManager.saveAnswer(${q.id}, this.value)">${val}</textarea>
+                    <div class="compiler-pane" style="background:#1e1e1e; color:#fff; border-radius: 8px; padding: 10px;">
+                        <textarea class="code-editor" style="height:100%; width:100%; border:none; background:transparent; color:#0f0; font-family:monospace;" 
+                                  placeholder="${isPractical ? 'Enter git commands here...' : 'Write code here...'}"
+                                  oninput="TestManager.saveAnswer(${q.id}, this.value)">${val}</textarea>
                     </div>
                 </div>
             `;
@@ -1143,15 +1151,26 @@ const QuestionBankManager = {
             `).join('');
         }
 
-        // Render Coding
-        if (unit.coding_questions?.length > 0) {
-            html += `<h3 class="qb-section-title">💻 Coding Challenges (${unit.coding_questions.length})</h3>`;
-            html += unit.coding_questions.map((q, i) => `
-                <div class="qb-question-card coding">
-                    <div class="qb-question-text">Q${i + 1}. ${q.problem_statement}</div>
-                    <div class="qb-code-preview">
-                        <pre><code>${(q.code_html || q.code_css || q.code_js || q.code_c || "").replace(/</g, "&lt;")}</code></pre>
-                    </div>
+        // Render Coding / Practical
+        if ((unit.coding_questions?.length > 0) || (unit.practical_questions?.length > 0)) {
+            const items = unit.coding_questions || unit.practical_questions;
+            const isPractical = !!unit.practical_questions;
+            html += `<h3 class="qb-section-title">${isPractical ? '📖 Practical Scenarios' : '💻 Coding Challenges'} (${items.length})</h3>`;
+            html += items.map((q, i) => `
+                <div class="qb-question-card ${isPractical ? 'theory' : 'coding'}">
+                    <div class="qb-question-text">Q${i + 1}. ${isPractical ? q.scenario : q.problem_statement}</div>
+                    ${isPractical ? `
+                        <div class="qb-answer-box">
+                            <strong>Task:</strong> ${q.task}
+                        </div>
+                        <div class="qb-explanation">
+                            <strong>Expected Commands:</strong> <code>${(q.expected_git_commands || []).join(', ')}</code>
+                        </div>
+                    ` : `
+                        <div class="qb-code-preview">
+                            <pre><code>${(q.code_html || q.code_css || q.code_js || q.code_c || "").replace(/</g, "&lt;")}</code></pre>
+                        </div>
+                    `}
                     <div class="qb-meta">Difficulty: ${q.difficulty}</div>
                 </div>
             `).join('');
@@ -1177,7 +1196,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     const testBanks = [
         { id: 'c_language', paths: ['test_data/c_language.json', 'intro_to_c.json'] },
         { id: 'maths', paths: ['test_data/maths.json'] },
-        { id: 'html_css_js', paths: ['test_data/html_css_js.json'] }
+        { id: 'html_css_js', paths: ['test_data/html_css_js.json'] },
+        { id: 'js_backend', paths: ['test_data/js_backend.json'] },
+        { id: 'git_github', paths: ['test_data/git_github.json'] }
     ];
     
     for (const bank of testBanks) {

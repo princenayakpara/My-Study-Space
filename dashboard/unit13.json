@@ -1,0 +1,625 @@
+{
+  "unit_name": "13. Modules, Iterators and Generators",
+  "mcqs": [
+    {
+      "id": 1301,
+      "question": "Which keyword is used to make a function or variable available to other files in ES6 modules?",
+      "options": [
+        "A) public",
+        "B) share",
+        "C) export",
+        "D) out"
+      ],
+      "correct_option": "C",
+      "explanation": "'export' exposes code to other modules.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1302,
+      "question": "Which keyword is used to pull in exported code from another file?",
+      "options": [
+        "A) load",
+        "B) require",
+        "C) import",
+        "D) include"
+      ],
+      "correct_option": "C",
+      "explanation": "'import' is the ES6 keyword for module inclusion.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1303,
+      "question": "How many 'default' exports can a single module have?",
+      "options": [
+        "A) One",
+        "B) Unlimited",
+        "C) Two",
+        "D) None"
+      ],
+      "correct_option": "A",
+      "explanation": "A module can have many named exports but only one default export.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1304,
+      "question": "Which symbol is used to define a Generator function?",
+      "options": [
+        "A) &",
+        "B) *",
+        "C) #",
+        "D) !"
+      ],
+      "correct_option": "B",
+      "explanation": "Syntax: function* myGenerator() { }",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1305,
+      "question": "Which keyword is used inside a generator to pause execution and return a value?",
+      "options": [
+        "A) pause",
+        "B) stop",
+        "C) yield",
+        "D) return"
+      ],
+      "correct_option": "C",
+      "explanation": "'yield' pauses the generator and yields an object { value, done }.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1306,
+      "question": "What does a generator function return when called?",
+      "options": [
+        "A) The first yielded value",
+        "B) An Iterator object",
+        "C) A Promise",
+        "D) undefined"
+      ],
+      "correct_option": "B",
+      "explanation": "Generators return an object that adheres to the iterator protocol.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1307,
+      "question": "What method must an 'Iterator' object implement?",
+      "options": [
+        "A) iterate()",
+        "B) run()",
+        "C) next()",
+        "D) proceed()"
+      ],
+      "correct_option": "C",
+      "explanation": "next() is called to get the next item from the iterator.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1308,
+      "question": "An object is 'Iterable' if it has a property with the key:",
+      "options": [
+        "A) Symbol.iterator",
+        "B) Array.iterator",
+        "C) Object.loop",
+        "D) Global.iterate"
+      ],
+      "correct_option": "A",
+      "explanation": "Symbol.iterator is a built-in symbol that defines the default iterator for an object.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1309,
+      "question": "Which of these is NOT an iterable in JS?",
+      "options": [
+        "A) Array",
+        "B) String",
+        "C) Set",
+        "D) Regular Object"
+      ],
+      "correct_option": "D",
+      "explanation": "Plain objects { } are not iterable by default unless Symbol.iterator is manually added.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1310,
+      "question": "What is the result of calling .next() on a finished iterator?",
+      "options": [
+        "A) { value: undefined, done: true }",
+        "B) Error",
+        "C) { value: null, done: true }",
+        "D) undefined"
+      ],
+      "correct_option": "A",
+      "explanation": "Once done, value is undefined and done is true.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1311,
+      "question": "Which syntax in ES6 modules allows importing all named exports as an object?",
+      "options": [
+        "A) import * as myUtils from './utils'",
+        "B) import all from './utils'",
+        "C) import { * } from './utils'",
+        "D) include './utils'"
+      ],
+      "correct_option": "A",
+      "explanation": "Namespace import gathers everything under one name.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1312,
+      "question": "Can you use 'yield' outside of a generator function?",
+      "options": [
+        "A) Yes",
+        "B) No",
+        "C) Only in async functions",
+        "D) Only in modules"
+      ],
+      "correct_option": "B",
+      "explanation": "yield is a Reserved Word allowed only in function*.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1313,
+      "question": "Destructuring is often used with modules to:",
+      "options": [
+        "A) Import specific named exports",
+        "B) Hide variables",
+        "C) Rename the file",
+        "D) Loop through imports"
+      ],
+      "correct_option": "A",
+      "explanation": "import { sum, sub } from './math' uses destructuring-like syntax.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1314,
+      "question": "What is a 'Well-formed' iterator?",
+      "options": [
+        "A) One that has a next() method",
+        "B) One that is itself iterable (Symbol.iterator returns itself)",
+        "C) One that returns only numbers",
+        "D) One that never finishes"
+      ],
+      "correct_option": "B",
+      "explanation": "Being iterable allows it to be used in for...of loops directly.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1315,
+      "question": "Which loop is designed specifically for Iterables?",
+      "options": [
+        "A) for...in",
+        "B) for...of",
+        "C) while",
+        "D) do...while"
+      ],
+      "correct_option": "B",
+      "explanation": "for...of uses the iterator protocol under the hood.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1316,
+      "question": "Can generators be infinite?",
+      "options": [
+        "A) No, they crash the memory",
+        "B) Yes, since they pause and only resume when asked",
+        "C) Only if they return strings",
+        "D) Only in strict mode"
+      ],
+      "correct_option": "B",
+      "explanation": "Infinite generators (like a custom ID generator) are common and safe.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1317,
+      "question": "To use ES6 modules in the browser, the <script> tag needs:",
+      "options": [
+        "A) type='module'",
+        "B) type='javascript/es6'",
+        "C) script-type='module'",
+        "D) async='true'"
+      ],
+      "correct_option": "A",
+      "explanation": "type='module' enables the use of import/export in browsers.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1318,
+      "question": "What is 'Tree Shaking'?",
+      "options": [
+        "A) Cleaning up files",
+        "B) A process during bundling to remove unused exports",
+        "C) Sorting imports",
+        "D) A type of recursion"
+      ],
+      "correct_option": "B",
+      "explanation": "Static analysis of imports/exports allows bundles to stay small.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1319,
+      "question": "Can you call .next(value) with an argument?",
+      "options": [
+        "A) No",
+        "B) Yes, it becomes the result of the 'yield' expression inside the generator",
+        "C) Only for the first call",
+        "D) Only if the generator returns an object"
+      ],
+      "correct_option": "B",
+      "explanation": "This allows two-way communication with the generator.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1320,
+      "question": "What does yield* (yield with asterisk) do?",
+      "options": [
+        "A) Multiplies the value",
+        "B) Delegates to another generator or iterable",
+        "C) Finishes the generator",
+        "D) Throws an error"
+      ],
+      "correct_option": "B",
+      "explanation": "yield* allows nesting or flattening of generators.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1321,
+      "question": "What happens if a module is imported multiple times?",
+      "options": [
+        "A) It is executed multiple times",
+        "B) It is only executed once (cached)",
+        "C) It causes an error",
+        "D) It only imports variables"
+      ],
+      "correct_option": "B",
+      "explanation": "Modules are singleton; code only runs during the first import.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1322,
+      "question": "ES6 Modules are always in ________ mode.",
+      "options": [
+        "A) relaxed",
+        "B) strict",
+        "C) legacy",
+        "D) debug"
+      ],
+      "correct_option": "B",
+      "explanation": "Modules automatically apply 'use strict'.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1323,
+      "question": "Which keyword renames an export or import?",
+      "options": [
+        "A) to",
+        "B) as",
+        "C) with",
+        "D) alias"
+      ],
+      "correct_option": "B",
+      "explanation": "import { name as alias } from ...",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1324,
+      "question": "What is the default behavior of 'this' in an ES6 module's top level?",
+      "options": [
+        "A) window",
+        "B) undefined",
+        "C) exports",
+        "D) global"
+      ],
+      "correct_option": "B",
+      "explanation": "In modules, the top-level 'this' is undefined to prevent global pollution.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1325,
+      "question": "How do you create an 'Async Generator'?",
+      "options": [
+        "A) async function*()",
+        "B) await function*()",
+        "C) function* async()",
+        "D) Generator.async()"
+      ],
+      "correct_option": "A",
+      "explanation": "They allow yielding values as Promises.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1326,
+      "question": "Which interface allows an object to have custom iteration behavior?",
+      "options": [
+        "A) Loopable",
+        "B) Iterable",
+        "C) Cycle",
+        "D) Walker"
+      ],
+      "correct_option": "B",
+      "explanation": "Implementing Iterator protocol makes any object iterable.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1327,
+      "question": "What does yielding after a 'return' statement do in a generator?",
+      "options": [
+        "A) Yields the value",
+        "B) It is ignored as the generator is finished",
+        "C) Throws error",
+        "D) Only works in Node"
+      ],
+      "correct_option": "B",
+      "explanation": "return ends the generator.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1328,
+      "question": "What does a 'spread' operator do to an iterable?",
+      "options": [
+        "A) Destroys it",
+        "B) Consumes it and puts elements into an array/arguments",
+        "C) Reverses it",
+        "D) Copies its reference"
+      ],
+      "correct_option": "B",
+      "explanation": "Spread uses the iterator protocol internally.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1329,
+      "question": "Which of these is used to export items anonymously as the main export?",
+      "options": [
+        "A) module.default",
+        "B) export default",
+        "C) export anonymous",
+        "D) export first"
+      ],
+      "correct_option": "B",
+      "explanation": "export default is the syntax for the principal shipment.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1330,
+      "question": "What is 'Side Effect' import?",
+      "options": [
+        "A) import './style.css'",
+        "B) import { x } from './x'",
+        "C) import default from './x'",
+        "D) None of the above"
+      ],
+      "correct_option": "A",
+      "explanation": "Importing a file for its side effects (like running code) without binding variables.",
+      "difficulty": "hard"
+    }
+  ],
+  "theory_questions": [
+    {
+      "id": 1351,
+      "question": "What are ES6 Modules and what problem do they solve?",
+      "model_answer": "ES6 modules are a standardized system for organizing and sharing code across files. They solve the problem of global namespace pollution, dependency management, and allow features like 'Tree Shaking' by being statically analyzable.",
+      "key_points": [
+        "Code organization",
+        "Encapsulation",
+        "Global namespace safety",
+        "Dependency resolution"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 1352,
+      "question": "Compare 'Named Exports' vs 'Default Exports'.",
+      "model_answer": "Named exports: must use curly braces on import, can have multiple per file. Default exports: no curly braces needed, only one per file, can be renamed easily during import. Generally, use default for the main entity and named for utilities.",
+      "key_points": [
+        "Braces usage",
+        "Quantity constraint",
+        "Naming flexibility",
+        "Best practices"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 1353,
+      "question": "Explain the interaction between Generator functions and the Iterator protocol.",
+      "model_answer": "A generator function (function*) is a factory for iterators. When called, it doesn't run the code but returns an Iterator. This iterator has a 'next()' method. Every time next() is called, the generator runs until it hits 'yield', then returns that value and pauses.",
+      "key_points": [
+        "Iterator factory",
+        "Pause and Resume",
+        "next() method",
+        "State preservation"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1354,
+      "question": "What is the role of Symbol.iterator in making an object iterable?",
+      "model_answer": "Symbol.iterator is a well-known symbol that acts as a key for a method. If an object has this method and it returns an iterator (an object with next()), the original object becomes 'iterable' and can be used in for...of loops and spread operators.",
+      "key_points": [
+        "Built-in Symbol",
+        "Custom iteration logic",
+        "Standard protocols",
+        "Interface implementation"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 1355,
+      "question": "Describe the internal state of a Generator: Suspended, Closed, Running.",
+      "model_answer": "Suspended: Paused at a yield. Running: Currently executing code between two yields. Closed: Reached the end of the function or a return statement. The iterator's 'done' property reflects if it is closed.",
+      "key_points": [
+        "Lifecycle",
+        "State transitions",
+        "done property",
+        "Yield vs Return"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1356,
+      "question": "What is 'Namespace Import' and when is it useful?",
+      "model_answer": "Namespace import (import * as Utils from './utils') gathers all exported members into a single object. It is useful when a file has many small related exports and you want to avoid cluttering your import list or when you want to use them like a library.",
+      "key_points": [
+        "Gathering exports",
+        "Clutter reduction",
+        "Object binding",
+        "Usage pattern"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1357,
+      "question": "Explain 'Two-Way Communication' in Generators using .next(value).",
+      "model_answer": "The next() method can accept an argument. This argument is received by the generator as the result of the 'yield' expression where it was previously paused. This allows the consumer to inject data into the generator's internal logic at any step.",
+      "key_points": [
+        "Passing values back",
+        "Expression result",
+        "Control flow",
+        "Interactive logic"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 1358,
+      "question": "What does yield* (Yield Delegation) do?",
+      "model_answer": "Yield* is used to delegate to another iterable or generator. Instead of yielding the collection itself, it iterates over the collection and yields each element one by one. This is useful for flattening logic or combining multiple generators.",
+      "key_points": [
+        "Flattening",
+        "Sub-iteration",
+        "Syntax sugar for loops",
+        "Composition"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 1359,
+      "question": "Why are modules 'Strict' by default? What impact does this have?",
+      "model_answer": "Static modules are designed for modern performance and safety. Strict mode prevents common mistakes (like using undeclared variables) and ensures 'this' is undefined in the top level, avoiding accidental global pollution.",
+      "key_points": [
+        "Safety",
+        "Global scope protection",
+        "Modern standards",
+        "Syntax enforcement"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1360,
+      "question": "Discuss the difference between Iterating with for...in vs for...of.",
+      "model_answer": "for...in iterates over the enumerable property keys of an object (including prototype keys). for...of iterates over the values of an iterable object (like items in an array) using the iterator protocol.",
+      "key_points": [
+        "Keys vs Values",
+        "Object vs Iterable",
+        "Prototype inclusion",
+        "Protocol dependency"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    }
+  ],
+  "coding_questions": [
+    {
+      "id": 1381,
+      "problem_statement": "Write a snippet that exports a function 'multiply' and a constant 'PI' using named exports.",
+      "input_format": "None",
+      "output_format": "Export strings",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "export ...",
+      "solution_explanation": "Use export keyword.",
+      "code_solution": "export const PI = 3.14;\nexport function multiply(a, b) { return a * b; }",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1382,
+      "problem_statement": "Write an import statement that brings in 'multiply' as 'prod' and the default export as 'MathLib' from './libs'.",
+      "input_format": "None",
+      "output_format": "Import string",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "import MathLib, { multiply as prod } ...",
+      "solution_explanation": "Alias with 'as'.",
+      "code_solution": "import MathLib, { multiply as prod } from './libs';",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1383,
+      "problem_statement": "Create a simple generator 'countUp' that yields 1, 2, and 3.",
+      "input_format": "None",
+      "output_format": "Generator object",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "1, 2, 3",
+      "solution_explanation": "Use yield keyword.",
+      "code_solution": "function* countUp() {\n  yield 1;\n  yield 2;\n  yield 3;\n}\nconst g = countUp();\nconsole.log(g.next().value);",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1384,
+      "problem_statement": "Use the 'for...of' loop to iterate over the string 'JS-DEV' and log each character.",
+      "input_format": "String",
+      "output_format": "Characters",
+      "constraints": "None",
+      "sample_input": "'JS-DEV'",
+      "sample_output": "J, S, -, D, E, V",
+      "solution_explanation": "Strings are built-in iterables.",
+      "code_solution": "for (let char of 'JS-DEV') {\n  console.log(char);\n}",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1385,
+      "problem_statement": "Implement an infinite ID generator function* that yields sequential numbers starting from 1.",
+      "input_format": "None",
+      "output_format": "IDs",
+      "constraints": "None",
+      "sample_input": "3 calls",
+      "sample_output": "1, 2, 3",
+      "solution_explanation": "Use while(true) and yield.",
+      "code_solution": "function* idMaker() {\n  let id = 1;\n  while(true) yield id++;\n}\nconst ids = idMaker();",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1386,
+      "problem_statement": "Define an object 'myCollection' and add a Symbol.iterator that yields 'Hello' then 'World'. Use spread to convert it to an array.",
+      "input_format": "None",
+      "output_format": "['Hello', 'World']",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "['Hello', 'World']",
+      "solution_explanation": "Manual protocol implementation.",
+      "code_solution": "const myColl = {\n  [Symbol.iterator]: function*() {\n    yield 'Hello';\n    yield 'World';\n  }\n};\nconsole.log([...myColl]);",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1387,
+      "problem_statement": "Use yield* to create a generator 'combined' that yields values from [1, 2] then yields from another generator that yields [3, 4].",
+      "input_format": "None",
+      "output_format": "1, 2, 3, 4",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "1, 2, 3, 4",
+      "solution_explanation": "Delegation logic.",
+      "code_solution": "function* inner() { yield 3; yield 4; }\nfunction* combined() {\n  yield* [1, 2];\n  yield* inner();\n}\nconsole.log([...combined()]);",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1388,
+      "problem_statement": "Write a generator that receives a value via next(). It should yield a number, take input, and yield (number + input).",
+      "input_format": "Number",
+      "output_format": "Sum",
+      "constraints": "None",
+      "sample_input": "init: 10, next(5)",
+      "sample_output": "15",
+      "solution_explanation": "Capture the result of yield.",
+      "code_solution": "function* calc() {\n  let extra = yield 10;\n  yield 10 + extra;\n}\nconst g = calc();\ng.next(); // starts, yields 10\nconsole.log(g.next(5).value); // resumes with 5, yields 15",
+      "difficulty": "hard"
+    }
+  ]
+}

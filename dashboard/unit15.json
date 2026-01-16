@@ -1,0 +1,625 @@
+{
+  "unit_name": "15. Node.js, Modules, HTTP Server, REST APIs, Express & CRUD",
+  "mcqs": [
+    {
+      "id": 1501,
+      "question": "What is Node.js?",
+      "options": [
+        "A) A Frontend framework",
+        "B) A JavaScript runtime built on Chrome's V8 engine",
+        "C) A type of database",
+        "D) A CSS preprocessor"
+      ],
+      "correct_option": "B",
+      "explanation": "Node.js allows JS to run outside the browser on the server side.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1502,
+      "question": "Which command is used to initialize a new Node.js project?",
+      "options": [
+        "A) node init",
+        "B) npm start",
+        "C) npm init",
+        "D) node create"
+      ],
+      "correct_option": "C",
+      "explanation": "npm init creates the package.json file.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1503,
+      "question": "Which built-in module is used to create a web server in Node.js?",
+      "options": [
+        "A) fs",
+        "B) path",
+        "C) http",
+        "D) url"
+      ],
+      "correct_option": "C",
+      "explanation": "The 'http' module provides lower-level server functionality.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1504,
+      "question": "Which command installs a package and adds it to dependencies?",
+      "options": [
+        "A) npm get [name]",
+        "B) npm install [name]",
+        "C) node install [name]",
+        "D) npm add [name]"
+      ],
+      "correct_option": "B",
+      "explanation": "npm install (or npm i) downloads packages from the registry.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1505,
+      "question": "What is 'Express.js'?",
+      "options": [
+        "A) A browser",
+        "B) A minimal and flexible Node.js web application framework",
+        "C) A database engine",
+        "D) A code compiler"
+      ],
+      "correct_option": "B",
+      "explanation": "Express is the most popular framework for building Node servers.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1506,
+      "question": "What does CRUD stand for?",
+      "options": [
+        "A) Create, Read, Update, Delete",
+        "B) Clear, Run, Undo, Done",
+        "C) Create, Replace, Upload, Destroy",
+        "D) Check, Read, Undergo, Deliver"
+      ],
+      "correct_option": "A",
+      "explanation": "CRUD represents the four basic operations of persistent storage.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1507,
+      "question": "Which HTTP method is used to create new data in a REST API?",
+      "options": [
+        "A) GET",
+        "B) POST",
+        "C) PUT",
+        "D) DELETE"
+      ],
+      "correct_option": "B",
+      "explanation": "POST is typically used for creating resources.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1508,
+      "question": "Which HTTP method is used to retrieve data?",
+      "options": [
+        "A) GET",
+        "B) POST",
+        "C) PUT",
+        "D) DELETE"
+      ],
+      "correct_option": "A",
+      "explanation": "GET requests are read-only and retrieve information.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1509,
+      "question": "Which HTTP method is used to update existing data?",
+      "options": [
+        "A) GET",
+        "B) HEAD",
+        "C) PUT",
+        "D) PATCH"
+      ],
+      "correct_option": "C",
+      "explanation": "PUT or PATCH are used for updates (PUT replaces, PATCH modifies).",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1510,
+      "question": "What is 'Middleware' in Express?",
+      "options": [
+        "A) Code that runs between receiving a request and sending a response",
+        "B) A type of CSS",
+        "C) The database layer",
+        "D) The client-side logic"
+      ],
+      "correct_option": "A",
+      "explanation": "Middleware functions have access to req, res, and the next middleware function.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1511,
+      "question": "What is the purpose of 'package.json'?",
+      "options": [
+        "A) To store CSS",
+        "B) To store metadata about the project and list dependencies",
+        "C) To hold the main logic",
+        "D) To configure the database"
+      ],
+      "correct_option": "B",
+      "explanation": "It is the heart of every Node.js project.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1512,
+      "question": "Which module system does Node.js use by default?",
+      "options": [
+        "A) ES Modules",
+        "B) CommonJS",
+        "C) AMD",
+        "D) UMD"
+      ],
+      "correct_option": "B",
+      "explanation": "CommonJS (require/module.exports) is the legacy default, though ESM is now supported.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1513,
+      "question": "What is 'npm'?",
+      "options": [
+        "A) Node Property Manager",
+        "B) Node Package Manager",
+        "C) Network Prototype Module",
+        "D) New Program Method"
+      ],
+      "correct_option": "B",
+      "explanation": "npm is the default package manager for JavaScript.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1514,
+      "question": "How do you access URL parameters in Express (e.g., /user/:id)?",
+      "options": [
+        "A) req.query",
+        "B) req.params",
+        "C) req.body",
+        "D) req.data"
+      ],
+      "correct_option": "B",
+      "explanation": "req.params contains the values from the route segments.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1515,
+      "question": "What is 'REPL' in Node.js?",
+      "options": [
+        "A) Read-Eval-Print Loop",
+        "B) Remote Execution Program List",
+        "C) Redundant Engine Process Loader",
+        "D) Run Every Partial Line"
+      ],
+      "correct_option": "A",
+      "explanation": "The interactive shell where you can type JS and see immediate results.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1516,
+      "question": "Which status code represents 'Internal Server Error'?",
+      "options": [
+        "A) 404",
+        "B) 200",
+        "C) 500",
+        "D) 403"
+      ],
+      "correct_option": "C",
+      "explanation": "5xx codes are for server-side errors.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1517,
+      "question": "Which status code represents 'Not Found'?",
+      "options": [
+        "A) 401",
+        "B) 403",
+        "C) 404",
+        "D) 502"
+      ],
+      "correct_option": "C",
+      "explanation": "404 is the standard code for missing resources.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1518,
+      "question": "What is the utility of the 'fs' module?",
+      "options": [
+        "A) Formatting Strings",
+        "B) File System operations",
+        "C) Finding Servers",
+        "D) Fixing Scripts"
+      ],
+      "correct_option": "B",
+      "explanation": "fs is used to read, write, and manage files.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1519,
+      "question": "In Express, what does app.listen(3000) do?",
+      "options": [
+        "A) Stops the server",
+        "B) Starts the server on port 3000",
+        "C) Listens for keyboard input",
+        "D) Deletes the app"
+      ],
+      "correct_option": "B",
+      "explanation": "It binds the app to a specific port to start receiving requests.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1520,
+      "question": "What is 'Environment Variable' primarily used for?",
+      "options": [
+        "A) Faster code",
+        "B) Storing sensitive information like API keys and DB credentials",
+        "C) Cleaning the UI",
+        "D) Defining variables in HTML"
+      ],
+      "correct_option": "B",
+      "explanation": "Security best practice: use .env files and process.env.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1521,
+      "question": "Which package is commonly used to refresh the server automatically during development?",
+      "options": [
+        "A) nodemon",
+        "B) node-watch",
+        "C) refresh",
+        "D) express-sync"
+      ],
+      "correct_option": "A",
+      "explanation": "Nodemon restarts the node app when file changes are detected.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1522,
+      "question": "What is a 'REST API'?",
+      "options": [
+        "A) A library for relaxing",
+        "B) An architectural style for network applications using HTTP",
+        "C) A type of database",
+        "D) A browser extension"
+      ],
+      "correct_option": "B",
+      "explanation": "Representational State Transfer (REST) uses HTTP methods and URIs.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1523,
+      "question": "What is the purpose of 'body-parser' (or express.json())?",
+      "options": [
+        "A) To design the body of the web page",
+        "B) To parse the JSON payload from incoming POST/PUT requests",
+        "C) To clean the memory",
+        "D) To highlight syntax"
+      ],
+      "correct_option": "B",
+      "explanation": "Without it, req.body remains undefined for JSON requests.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1524,
+      "question": "Which of these is used to export data in CommonJS?",
+      "options": [
+        "A) export { }",
+        "B) module.exports = { }",
+        "C) out = { }",
+        "D) send { }"
+      ],
+      "correct_option": "B",
+      "explanation": "Node's classical module system uses module.exports.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1525,
+      "question": "What is 'Global' object in Node.js (equivalent to window in browser)?",
+      "options": [
+        "A) global",
+        "B) root",
+        "C) process",
+        "D) system"
+      ],
+      "correct_option": "A",
+      "explanation": "The 'global' object holds global variables and functions.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1526,
+      "question": "How do you get the current directory in a Node.js script?",
+      "options": [
+        "A) window.dir",
+        "B) __dirname",
+        "C) process.dir",
+        "D) path.current"
+      ],
+      "correct_option": "B",
+      "explanation": "__dirname is a built-in variable providing the absolute path.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1527,
+      "question": "Which status code means 'Created'?",
+      "options": [
+        "A) 200",
+        "B) 201",
+        "C) 202",
+        "D) 204"
+      ],
+      "correct_option": "B",
+      "explanation": "201 is used after a successful POST request creates a resource.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1528,
+      "question": "Express response method .send() can accept:",
+      "options": [
+        "A) Strings",
+        "B) Objects/JSON",
+        "C) Buffers",
+        "D) All of the above"
+      ],
+      "correct_option": "D",
+      "explanation": "res.send() is versatile and automatically sets Content-Type.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1529,
+      "question": "What is the 'node_modules' folder?",
+      "options": [
+        "A) Your source code",
+        "B) The location where npm downloads your dependencies",
+        "C) Configuration files",
+        "D) Temporary build files"
+      ],
+      "correct_option": "B",
+      "explanation": "This folder should usually be ignored in Git (.gitignore).",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1530,
+      "question": "What happens when you call next() in Express middleware?",
+      "options": [
+        "A) The request is finished",
+        "B) Control is passed to the next middleware function in the stack",
+        "C) The page refreshes",
+        "D) The server stops"
+      ],
+      "correct_option": "B",
+      "explanation": "next() is critical for moving the request flow forward.",
+      "difficulty": "medium"
+    }
+  ],
+  "theory_questions": [
+    {
+      "id": 1551,
+      "question": "What is Node.js and how does it differ from browser-side JavaScript?",
+      "model_answer": "Node.js is a runtime that executes JS on the server. Unlike the browser, it lacks the DOM/Window APIs but provides access to system-level features like the File System (fs), Networking (http), and OS (os). It uses CommonJS by default.",
+      "key_points": [
+        "Server-side runtime",
+        "V8 engine",
+        "No DOM/BOM",
+        "System access"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 1552,
+      "question": "Explain the role of NPM and package.json in a Node project.",
+      "model_answer": "NPM is the package manager used to install libraries. package.json acts as the manifest for the project, listing its name, version, and dependencies, making it easy to share and rebuild the project in other environments using 'npm install'.",
+      "key_points": [
+        "Dependency management",
+        "Metadata storage",
+        "npm install logic",
+        "Project configuration"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 1553,
+      "question": "What is Express.js and why is it preferred over built-in 'http' module?",
+      "model_answer": "Express is a web framework built on top of the http module. It simplifies server creation by providing high-level features like Routing, Middleware support, easier Request/Response handling, and template engine integration, which would require significant boilerplate with 'http'.",
+      "key_points": [
+        "Abstraction layer",
+        "Routing efficiency",
+        "Middleware architecture",
+        "Less boilerplate"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1554,
+      "question": "Describe the concept of Middleware in Express. Provide examples.",
+      "model_answer": "Middleware functions are blocks of code that execute between receiving a request and sending a response. They can log requests, authenticate users, or parse bodies. Example: app.use(express.json()) for parsing, or a custom logging function.",
+      "key_points": [
+        "req/res/next",
+        "Interception",
+        "Request pipelining",
+        "Built-in vs Custom"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1555,
+      "question": "Explain REST API principles and the four main HTTP methods.",
+      "model_answer": "REST uses standard HTTP methods to act on Resources (identified by URLs). 1. GET (Read). 2. POST (Create). 3. PUT/PATCH (Update). 4. DELETE (Remove). It should be stateless and uniform.",
+      "key_points": [
+        "Statelessness",
+        "Standardized methods",
+        "Resource-based URIs",
+        "Uniform interface"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1556,
+      "question": "What are the common HTTP status codes (200, 201, 400, 404, 500) and what do they mean?",
+      "model_answer": "200: OK (Success). 201: Created (Resource made). 400: Bad Request (Client error). 404: Not Found (Missing URL). 500: Internal Server Error (Server crashed).",
+      "key_points": [
+        "Success (2xx)",
+        "Redirection (3xx)",
+        "Client Errors (4xx)",
+        "Server Errors (5xx)"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 1557,
+      "question": "How does Node.js handle concurrency with its single-threaded model?",
+      "model_answer": "Node uses an 'Event-Driven, Non-blocking I/O' model. Heavy operations (like reading from disk) are offloaded to Libuv (the underlying C++ pool). When finished, an event is placed in the queue, and the single thread processes it via the Event Loop when it becomes free.",
+      "key_points": [
+        "Libuv thread pool",
+        "Event Loop",
+        "Non-blocking I/O",
+        "Concurrency without threads"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 1558,
+      "question": "What is the difference between req.params and req.query?",
+      "model_answer": "req.params refers to variables in the route path (e.g., /user/:id). req.query refers to variables after the question mark in the URL (e.g., /search?q=js).",
+      "key_points": [
+        "Route parameters",
+        "Query strings",
+        "Parsing",
+        "Mapping"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1559,
+      "question": "Describe the Node.js File System (fs) module with sync vs async methods.",
+      "model_answer": "The 'fs' module allows file manipulation. It provides synchronous methods (readFileSync) which block execution, and asynchronous methods (readFile) which take callbacks or return promises. Async is always preferred to keep the server responsive.",
+      "key_points": [
+        "Blocking vs Non-blocking",
+        "Callbacks/Promises",
+        "Input/Output",
+        "Efficiency"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1560,
+      "question": "What is 'Environment Configuration' and why utilize it in backend development?",
+      "model_answer": "Environment configuration involves using .env files to store settings and secrets that vary between local, staging, and production. It prevents hardcoding sensitive keys in the source code, enhancing security and flexibility.",
+      "key_points": [
+        "Secret management",
+        "process.env",
+        "dotenv package",
+        "Security"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    }
+  ],
+  "coding_questions": [
+    {
+      "id": 1581,
+      "problem_statement": "Write a basic Express server that listens on port 5000 and logs 'Server running' to the console.",
+      "input_format": "None",
+      "output_format": "Log message",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Server running",
+      "solution_explanation": "Import express and call .listen().",
+      "code_solution": "const express = require('express');\nconst app = express();\napp.listen(5000, () => console.log('Server running'));",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1582,
+      "problem_statement": "Create a GET route at '/' that sends the string 'Welcome to the API' to the client.",
+      "input_format": "None",
+      "output_format": "'Welcome to the API'",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Welcome to the API",
+      "solution_explanation": "Use app.get(path, handler).",
+      "code_solution": "app.get('/', (req, res) => {\n  res.send('Welcome to the API');\n});",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1583,
+      "problem_statement": "Create a route '/user/:name' that responds with 'Hello [name]'. Use req.params.",
+      "input_format": "URL param",
+      "output_format": "Custom greeting",
+      "constraints": "None",
+      "sample_input": "/user/Prince",
+      "sample_output": "Hello Prince",
+      "solution_explanation": "Extraction from params object.",
+      "code_solution": "app.get('/user/:name', (req, res) => {\n  res.send(`Hello ${req.params.name}`);\n});",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1584,
+      "problem_statement": "Implement a POST route '/data' that echoes back the JSON body it receives. Set up JSON parsing middleware first.",
+      "input_format": "JSON Body",
+      "output_format": "Same JSON Body",
+      "constraints": "Use express.json().",
+      "sample_input": "{'a':1}",
+      "sample_output": "{'a':1}",
+      "solution_explanation": "Middleware enables body access.",
+      "code_solution": "app.use(express.json());\napp.post('/data', (req, res) => {\n  res.json(req.body);\n});",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1585,
+      "problem_statement": "Write a custom logging middleware that logs the Request Method (GET/POST) and URL for every request.",
+      "input_format": "None",
+      "output_format": "Logs in terminal",
+      "constraints": "Must call next().",
+      "sample_input": "GET /api",
+      "sample_output": "GET /api",
+      "solution_explanation": "app.use(fn) applies to all routes.",
+      "code_solution": "app.use((req, res, next) => {\n  console.log(`${req.method} ${req.url}`);\n  next();\n});",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1586,
+      "problem_statement": "Use the 'fs' module to read the content of a file 'config.txt' asynchronously and log the output.",
+      "input_format": "None",
+      "output_format": "File contents",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Content of file",
+      "solution_explanation": "Pass a callback for the result.",
+      "code_solution": "const fs = require('fs');\nfs.readFile('config.txt', 'utf8', (err, data) => {\n  if (err) throw err;\n  console.log(data);\n});",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1587,
+      "problem_statement": "Create a 404 handler that matches any unhandled route and sends a 404 status with JSON: { error: 'Not Found' }.",
+      "input_format": "Any invalid path",
+      "output_format": "404 Error",
+      "constraints": "None",
+      "sample_input": "/random",
+      "sample_output": "{'error':'Not Found'}",
+      "solution_explanation": "Place at the end of routes.",
+      "code_solution": "app.use((req, res) => {\n  res.status(404).json({ error: 'Not Found' });\n});",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1588,
+      "problem_statement": "Define a router-level middleware for a '/api' path using express.Router(). Create one GET route inside it.",
+      "input_format": "None",
+      "output_format": "'API Route'",
+      "constraints": "None",
+      "sample_input": "/api/test",
+      "sample_output": "API Route",
+      "solution_explanation": "Modularizing routes.",
+      "code_solution": "const router = express.Router();\nrouter.get('/test', (req, res) => res.send('API Route'));\napp.use('/api', router);",
+      "difficulty": "hard"
+    }
+  ]
+}

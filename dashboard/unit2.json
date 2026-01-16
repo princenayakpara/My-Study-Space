@@ -1,0 +1,626 @@
+{
+  "unit_name": "2. Variables and Data Types",
+  "mcqs": [
+    {
+      "id": 201,
+      "question": "Which keyword is used to declare a variable that can be reassigned?",
+      "options": [
+        "A) const",
+        "B) var",
+        "C) let",
+        "D) Both B and C"
+      ],
+      "correct_option": "D",
+      "explanation": "Both 'var' and 'let' allow reassignment, while 'const' does not.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 202,
+      "question": "What is the data type of the value 'true'?",
+      "options": [
+        "A) String",
+        "B) Boolean",
+        "C) Number",
+        "D) Undefined"
+      ],
+      "correct_option": "B",
+      "explanation": "True and false are boolean values.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 203,
+      "question": "Which of these is NOT a primitive data type in JavaScript?",
+      "options": [
+        "A) String",
+        "B) Object",
+        "C) Symbol",
+        "D) BigInt"
+      ],
+      "correct_option": "B",
+      "explanation": "Object is a non-primitive (reference) type.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 204,
+      "question": "What is the result of typeof null?",
+      "options": [
+        "A) 'null'",
+        "B) 'undefined'",
+        "C) 'object'",
+        "D) 'number'"
+      ],
+      "correct_option": "C",
+      "explanation": "In JavaScript, typeof null is historical bug that returns 'object'.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 205,
+      "question": "Which of the following is a valid variable name?",
+      "options": [
+        "A) 2names",
+        "B) _variable",
+        "C) first-name",
+        "D) let"
+      ],
+      "correct_option": "B",
+      "explanation": "Variables can start with letters, $, or _. They cannot start with numbers or use hyphens.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 206,
+      "question": "What value does an uninitialized variable hold?",
+      "options": [
+        "A) null",
+        "B) 0",
+        "C) undefined",
+        "D) NaN"
+      ],
+      "correct_option": "C",
+      "explanation": "Declared but unassigned variables are automatically 'undefined'.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 207,
+      "question": "How do you define a BigInt in JavaScript?",
+      "options": [
+        "A) 100",
+        "B) 100B",
+        "C) 100n",
+        "D) BigInt(100)"
+      ],
+      "correct_option": "C",
+      "explanation": "Appending 'n' to an integer makes it a BigInt.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 208,
+      "question": "Which data type is used for unique identifiers?",
+      "options": [
+        "A) String",
+        "B) Symbol",
+        "C) BigInt",
+        "D) Number"
+      ],
+      "correct_option": "B",
+      "explanation": "Symbols are unique and immutable primitive values used as object keys.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 209,
+      "question": "What is the result of 10 + '20'?",
+      "options": [
+        "A) 30",
+        "B) '1020'",
+        "C) NaN",
+        "D) Error"
+      ],
+      "correct_option": "B",
+      "explanation": "JavaScript performs string concatenation when a number is added to a string.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 210,
+      "question": "Which of the following represents 'no value' or 'nothing'?",
+      "options": [
+        "A) undefined",
+        "B) NaN",
+        "C) null",
+        "D) false"
+      ],
+      "correct_option": "C",
+      "explanation": "null is an intentional absence of any object value.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 211,
+      "question": "What is the type of an array in JavaScript?",
+      "options": [
+        "A) Array",
+        "B) Collection",
+        "C) Object",
+        "D) List"
+      ],
+      "correct_option": "C",
+      "explanation": "typeof [ ] returns 'object'.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 212,
+      "question": "How do you represent a string with multi-line support and interpolation?",
+      "options": [
+        "A) ' '",
+        "B) \" \"",
+        "C) ` `",
+        "D) [ ]"
+      ],
+      "correct_option": "C",
+      "explanation": "Backticks ` ` define Template Literals.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 213,
+      "question": "Which variable declaration is block-scoped?",
+      "options": [
+        "A) var",
+        "B) let",
+        "C) const",
+        "D) Both B and C"
+      ],
+      "correct_option": "D",
+      "explanation": "let and const are block-scoped, while var is function-scoped.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 214,
+      "question": "What is NaN?",
+      "options": [
+        "A) Not a Null",
+        "B) Not a Number",
+        "C) New and Next",
+        "D) Number and Name"
+      ],
+      "correct_option": "B",
+      "explanation": "NaN stands for Not-a-Number, representing an invalid numeric operation.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 215,
+      "question": "What is the result of typeof NaN?",
+      "options": [
+        "A) 'number'",
+        "B) 'NaN'",
+        "C) 'undefined'",
+        "D) 'object'"
+      ],
+      "correct_option": "A",
+      "explanation": "Oddly, the type of Not-a-Number is 'number'.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 216,
+      "question": "Can you redeclare a variable using 'let' in the same scope?",
+      "options": [
+        "A) Yes",
+        "B) No",
+        "C) Only in loops",
+        "D) Only in functions"
+      ],
+      "correct_option": "B",
+      "explanation": "let and const do not allow redeclaration within the same scope.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 217,
+      "question": "Which data type is used for integers larger than 2^53 - 1?",
+      "options": [
+        "A) Number",
+        "B) Double",
+        "C) BigInt",
+        "D) Long"
+      ],
+      "correct_option": "C",
+      "explanation": "BigInt is designed for arbitrary-precision integers.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 218,
+      "question": "What is Coercion in JavaScript?",
+      "options": [
+        "A) Type of function",
+        "B) Automatic conversion of values from one type to another",
+        "C) A way to stop a loop",
+        "D) Error handling"
+      ],
+      "correct_option": "B",
+      "explanation": "Type coercion happens when operators encounter different types.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 219,
+      "question": "What is the result of Boolean('')?",
+      "options": [
+        "A) true",
+        "B) false",
+        "C) undefined",
+        "D) Error"
+      ],
+      "correct_option": "B",
+      "explanation": "An empty string is a 'falsy' value.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 220,
+      "question": "Variables created without a keyword (e.g., x = 10) become:",
+      "options": [
+        "A) Local variables",
+        "B) Errors",
+        "C) Global variables",
+        "D) Private variables"
+      ],
+      "correct_option": "C",
+      "explanation": "Assigning to an undeclared variable creates it as a property of the global object.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 221,
+      "question": "How many primitive types are there in ES6?",
+      "options": [
+        "A) 5",
+        "B) 6",
+        "C) 7",
+        "D) 8"
+      ],
+      "correct_option": "C",
+      "explanation": "String, Number, Boolean, Null, Undefined, Symbol, BigInt (BigInt added in ES2020, but often grouped with ES6+ primitives).",
+      "difficulty": "hard"
+    },
+    {
+      "id": 222,
+      "question": "What is the difference between undefined and null?",
+      "options": [
+        "A) They are the same",
+        "B) undefined is for variables, null is for objects",
+        "C) undefined is assigned by engine, null is assigned by programmer",
+        "D) null is a type, undefined is a value"
+      ],
+      "correct_option": "C",
+      "explanation": "Undefined represents an uninitialized state, while null is an intentional empty value.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 223,
+      "question": "Which constant prevents re-assignment but allows mutation of object properties?",
+      "options": [
+        "A) var",
+        "B) let",
+        "C) const",
+        "D) immutable"
+      ],
+      "correct_option": "C",
+      "explanation": "const prevents changing the binding but the object it points to can be modified.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 224,
+      "question": "What does 'dynamic typing' mean?",
+      "options": [
+        "A) You must define types manually",
+        "B) Types are checked at compile time",
+        "C) The same variable can hold different data types over time",
+        "D) Code runs faster"
+      ],
+      "correct_option": "C",
+      "explanation": "Variables are not bound to a specific type.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 225,
+      "question": "Which of these is a 'falsy' value?",
+      "options": [
+        "A) 'false'",
+        "B) [ ]",
+        "C) { }",
+        "D) 0"
+      ],
+      "correct_option": "D",
+      "explanation": "0, null, undefined, '', and NaN are falsy.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 226,
+      "question": "Which of these is a 'truthy' value?",
+      "options": [
+        "A) 0",
+        "B) ' ' (space)",
+        "C) undefined",
+        "D) NaN"
+      ],
+      "correct_option": "B",
+      "explanation": "A non-empty string (even with a space) is truthy.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 227,
+      "question": "What is the maximum safe integer in JavaScript Number type?",
+      "options": [
+        "A) 2^32",
+        "B) 2^53 - 1",
+        "C) 2^64",
+        "D) Infinite"
+      ],
+      "correct_option": "B",
+      "explanation": "Number.MAX_SAFE_INTEGER is 9007199254740991 (2^53 - 1).",
+      "difficulty": "hard"
+    },
+    {
+      "id": 228,
+      "question": "Which type is used to represent floating-point numbers?",
+      "options": [
+        "A) Float",
+        "B) Double",
+        "C) Integer",
+        "D) Number"
+      ],
+      "correct_option": "D",
+      "explanation": "JavaScript has only one numeric type: 64-bit float (Number).",
+      "difficulty": "easy"
+    },
+    {
+      "id": 229,
+      "question": "What is the result of '5' - 2?",
+      "options": [
+        "A) '3'",
+        "B) 3",
+        "C) '52'",
+        "D) NaN"
+      ],
+      "correct_option": "B",
+      "explanation": "The minus operator triggers numeric conversion of the string.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 230,
+      "question": "What is the result of '5' + 2?",
+      "options": [
+        "A) 7",
+        "B) '52'",
+        "C) NaN",
+        "D) '7'"
+      ],
+      "correct_option": "B",
+      "explanation": "The plus operator triggers string concatenation if one operand is a string.",
+      "difficulty": "medium"
+    }
+  ],
+  "theory_questions": [
+    {
+      "id": 251,
+      "question": "Differentiate between var, let, and const.",
+      "model_answer": "var is function-scoped and can be redeclared. let and const are block-scoped and cannot be redeclared. const also requires initialization and its binding cannot be reassigned. let and const solve issues like hoisting bugs and variable leakage.",
+      "key_points": [
+        "Scope (Function vs Block)",
+        "Redeclaration",
+        "Hoisting behavior",
+        "Reassignment"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 252,
+      "question": "List and explain the primitive data types in JavaScript.",
+      "model_answer": "1. String (text), 2. Number (int/float), 3. Boolean (true/false), 4. Undefined (uninitialized), 5. Null (empty value), 6. Symbol (unique keys), 7. BigInt (large integers). Primitives are immutable and passed by value.",
+      "key_points": [
+        "Number",
+        "String",
+        "Boolean",
+        "Null",
+        "Undefined",
+        "Symbol",
+        "BigInt"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 253,
+      "question": "What are template literals and how do they differ from normal strings?",
+      "model_answer": "Template literals use backticks (`) instead of quotes. They support multi-line strings, string interpolation using ${expression} syntax, and tagged templates. They make complex string building much cleaner than concatenation.",
+      "key_points": [
+        "Backticks",
+        "Interpolation",
+        "Multi-line",
+        "Clean syntax"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 254,
+      "question": "Explain the concept of 'Dynamic Typing' in JavaScript.",
+      "model_answer": "Dynamic typing means that variables are not associated with a specific data type at declaration. The type is determined by the value currently assigned, and a single variable can change its type from a string to a number later in the code.",
+      "key_points": [
+        "No type declaration",
+        "Runtime type assignment",
+        "Flexibility",
+        "Type changes"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 255,
+      "question": "What is the difference between Primitive types and Reference types?",
+      "model_answer": "Primitive types (e.g., Number, String) are stored directly on the stack and passed by value. Reference types (Objects, Arrays) are stored in the heap, and variables hold a reference (memory address) to that data, meaning they are passed by reference.",
+      "key_points": [
+        "Stack vs Heap",
+        "Value vs Reference",
+        "Immutability vs Mutability"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 256,
+      "question": "Why is typeof null equal to 'object'?",
+      "model_answer": "This is a well-known bug in the original implementation of JavaScript. In the first version of JS, values were represented with a type tag and the value. The object tag was 0, and null was represented as a null pointer (0), causing the engine to interpret it as an object.",
+      "key_points": [
+        "Historical bug",
+        "Type tag 0",
+        "Null pointer",
+        "Not a real object"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 257,
+      "question": "What are Symbol data types used for?",
+      "model_answer": "Symbols are unique, irreducible primitive values. They are primarily used as unique property keys for objects to prevent property name collisions (e.g., when adding properties to an object from different libraries).",
+      "key_points": [
+        "Uniqueness",
+        "Immutability",
+        "Object keys",
+        "Collisions prevention"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 258,
+      "question": "Explain BigInt and why it was introduced.",
+      "model_answer": "BigInt is a numeric primitive that can represent integers with arbitrary precision. It was introduced because the standard Number type (64-bit float) loses precision for integers larger than Number.MAX_SAFE_INTEGER (2^53 - 1).",
+      "key_points": [
+        "Arbitrary precision",
+        "Large integers",
+        "Precision loss in Number",
+        "n suffix"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 259,
+      "question": "What is type coercion? Give an example of implicit and explicit coercion.",
+      "model_answer": "Coercion is the automatic or manual conversion of values from one type to another. Implicit: '5' * 2 = 10 (string to number). Explicit: Number('42') = 42. Implicit coercion can sometimes lead to confusing results.",
+      "key_points": [
+        "Type conversion",
+        "Implicit vs Explicit",
+        "Operator effects",
+        "Casting functions"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 260,
+      "question": "What are 'falsy' values in JavaScript? List them all.",
+      "model_answer": "Falsy values are values that evaluate to false when encountered in a boolean context. The complete list is: false, 0, -0, 0n (BigInt), '', null, undefined, and NaN. All other values are truthy.",
+      "key_points": [
+        "Boolean context",
+        "Evaluates to false",
+        "List of 8 specific values"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    }
+  ],
+  "coding_questions": [
+    {
+      "id": 281,
+      "problem_statement": "Declare three variables: a string 'name', a number 'age', and a boolean 'isStudent'. Log their types using typeof.",
+      "input_format": "None",
+      "output_format": "Types of the variables.",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "string, number, boolean",
+      "solution_explanation": "Use let/const and typeof operator.",
+      "code_solution": "let name = 'Alice';\nlet age = 25;\nlet isStudent = true;\nconsole.log(typeof name, typeof age, typeof isStudent);",
+      "difficulty": "easy"
+    },
+    {
+      "id": 282,
+      "problem_statement": "Use a template literal to create a message: 'Hello, my name is [name] and I am [age] years old.'",
+      "input_format": "None",
+      "output_format": "The message string.",
+      "constraints": "Use backticks.",
+      "sample_input": "name='Bob', age=30",
+      "sample_output": "Hello, my name is Bob and I am 30 years old.",
+      "solution_explanation": "Interpolate variables using ${}.",
+      "code_solution": "const name = 'Bob';\nconst age = 30;\nconst msg = `Hello, my name is ${name} and I am ${age} years old.`;\nconsole.log(msg);",
+      "difficulty": "easy"
+    },
+    {
+      "id": 283,
+      "problem_statement": "Show the difference between reassignment of 'let' and 'const' by trying to change their values.",
+      "input_format": "None",
+      "output_format": "Result of reassignment.",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Value of let changes, const throws error.",
+      "solution_explanation": "let can be updated, const cannot.",
+      "code_solution": "let x = 10; x = 20; // OK\nconst y = 10; y = 20; // TypeError",
+      "difficulty": "medium"
+    },
+    {
+      "id": 284,
+      "problem_statement": "Convert the string '123.45' into a Number and an Integer. Log both.",
+      "input_format": "None",
+      "output_format": "Numeric values.",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "123.45, 123",
+      "solution_explanation": "Use parseFloat and parseInt.",
+      "code_solution": "let str = '123.45';\nconsole.log(parseFloat(str));\nconsole.log(parseInt(str));",
+      "difficulty": "easy"
+    },
+    {
+      "id": 285,
+      "problem_statement": "Create a BigInt variable and add it to another BigInt. Demonstrate that you cannot add a BigInt to a regular Number directly.",
+      "input_format": "None",
+      "output_format": "Sum and error message.",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Sum of BigInts, then TypeError.",
+      "solution_explanation": "BigInts only operate with other BigInts.",
+      "code_solution": "let big1 = 100n;\nlet big2 = 200n;\nconsole.log(big1 + big2);\n// console.log(big1 + 10); // Throws TypeError",
+      "difficulty": "hard"
+    },
+    {
+      "id": 286,
+      "problem_statement": "Create an object 'user' with name, age, and a nested object 'address' with city. Log the city property.",
+      "input_format": "None",
+      "output_format": "City value.",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "City name",
+      "solution_explanation": "Access properties using dot notation.",
+      "code_solution": "const user = {\n  name: 'Alice',\n  age: 22,\n  address: { city: 'New York' }\n};\nconsole.log(user.address.city);",
+      "difficulty": "easy"
+    },
+    {
+      "id": 287,
+      "problem_statement": "Write a script that check if a variable is null or undefined using a single if statement.",
+      "input_format": "None",
+      "output_format": "Message if nullish.",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Variable is nullish",
+      "solution_explanation": "x == null checks for both null and undefined.",
+      "code_solution": "let x = null;\nif (x == null) {\n  console.log('Variable is nullish');\n}",
+      "difficulty": "hard"
+    },
+    {
+      "id": 288,
+      "problem_statement": "Demonstrate that 'const' allows object mutation but not reassignment.",
+      "input_format": "None",
+      "output_format": "Updated object property.",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Object name changed",
+      "solution_explanation": "const protects the reference, not the content.",
+      "code_solution": "const car = { brand: 'Tesla' };\ncar.brand = 'Toyota'; // OK\nconsole.log(car.brand);\n// car = { brand: 'Ford' }; // Error",
+      "difficulty": "medium"
+    }
+  ]
+}

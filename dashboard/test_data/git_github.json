@@ -1,0 +1,7382 @@
+{
+  "subject_id": "git_github",
+  "subject_name": "Git & GitHub",
+  "units": [
+    {
+      "unit_name": "1. Version Control Basics",
+      "mcqs": [
+        {
+          "id": 1100,
+          "question": "What is Version Control?",
+          "options": [
+            "A) Tracking changes in source code",
+            "B) Compiling code",
+            "C) Improving UI",
+            "D) Database management"
+          ],
+          "correct_option": "A",
+          "explanation": "VCS manages variations of source code.",
+          "difficulty": "easy"
+        },
+        {
+          "id": 1101,
+          "question": "Which of these is a centralized VCS?",
+          "options": [
+            "A) Git",
+            "B) SVN",
+            "C) Mercurial",
+            "D) Bazaar"
+          ],
+          "correct_option": "B",
+          "explanation": "Subversion (SVN) is centralized.",
+          "difficulty": "easy"
+        },
+        {
+          "id": 1102,
+          "question": "What does DVCS stand for?",
+          "options": [
+            "A) Data Virtual Control System",
+            "B) Distributed Version Control System",
+            "C) Digital View Control System",
+            "D) Distributed Variable Control System"
+          ],
+          "correct_option": "B",
+          "explanation": "DVCS stands for Distributed Version Control System.",
+          "difficulty": "easy"
+        },
+        {
+          "id": 1103,
+          "question": "Who is the primary creator of Git?",
+          "options": [
+            "A) Linus Torvalds",
+            "B) Guido van Rossum",
+            "C) Anders Hejlsberg",
+            "D) Yukihiro Matsumoto"
+          ],
+          "correct_option": "A",
+          "explanation": "Linus Torvalds created Git.",
+          "difficulty": "easy"
+        },
+        {
+          "id": 1104,
+          "question": "In Git, every contributor has a:",
+          "options": [
+            "A) Full copy of the repository",
+            "B) Only their own files",
+            "C) Just the latest snapshot",
+            "D) List of instructions"
+          ],
+          "correct_option": "A",
+          "explanation": "Git is distributed.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1105,
+          "question": "Topic: VCS concepts. Question 0...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1106,
+          "question": "Topic: VCS concepts. Question 1...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1107,
+          "question": "Topic: VCS concepts. Question 2...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1108,
+          "question": "Topic: VCS concepts. Question 3...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1109,
+          "question": "Topic: VCS concepts. Question 4...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1110,
+          "question": "Topic: VCS concepts. Question 5...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1111,
+          "question": "Topic: VCS concepts. Question 6...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1112,
+          "question": "Topic: VCS concepts. Question 7...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1113,
+          "question": "Topic: VCS concepts. Question 8...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1114,
+          "question": "Topic: VCS concepts. Question 9...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1115,
+          "question": "Topic: VCS concepts. Question 10...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1116,
+          "question": "Topic: VCS concepts. Question 11...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1117,
+          "question": "Topic: VCS concepts. Question 12...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1118,
+          "question": "Topic: VCS concepts. Question 13...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1119,
+          "question": "Topic: VCS concepts. Question 14...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1120,
+          "question": "Topic: VCS concepts. Question 15...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1121,
+          "question": "Topic: VCS concepts. Question 16...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1122,
+          "question": "Topic: VCS concepts. Question 17...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1123,
+          "question": "Topic: VCS concepts. Question 18...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1124,
+          "question": "Topic: VCS concepts. Question 19...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1125,
+          "question": "Topic: VCS concepts. Question 20...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1126,
+          "question": "Topic: VCS concepts. Question 21...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1127,
+          "question": "Topic: VCS concepts. Question 22...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1128,
+          "question": "Topic: VCS concepts. Question 23...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1129,
+          "question": "Topic: VCS concepts. Question 24...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 1500,
+          "question": "What is the primary purpose of a Version Control System?",
+          "model_answer": "To track changes, manage versions, and enable collaboration.",
+          "key_points": [
+            "Change tracking",
+            "Collaboration",
+            "Rollback"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 1501,
+          "question": "Theory Question 0 on VCS Basics",
+          "model_answer": "Answer.",
+          "key_points": [
+            "Point"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 1502,
+          "question": "Theory Question 1 on VCS Basics",
+          "model_answer": "Answer.",
+          "key_points": [
+            "Point"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 1503,
+          "question": "Theory Question 2 on VCS Basics",
+          "model_answer": "Answer.",
+          "key_points": [
+            "Point"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 1504,
+          "question": "Theory Question 3 on VCS Basics",
+          "model_answer": "Answer.",
+          "key_points": [
+            "Point"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 1505,
+          "question": "Theory Question 4 on VCS Basics",
+          "model_answer": "Answer.",
+          "key_points": [
+            "Point"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 1506,
+          "question": "Theory Question 5 on VCS Basics",
+          "model_answer": "Answer.",
+          "key_points": [
+            "Point"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 1507,
+          "question": "Theory Question 6 on VCS Basics",
+          "model_answer": "Answer.",
+          "key_points": [
+            "Point"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 1508,
+          "question": "Theory Question 7 on VCS Basics",
+          "model_answer": "Answer.",
+          "key_points": [
+            "Point"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 1509,
+          "question": "Theory Question 8 on VCS Basics",
+          "model_answer": "Answer.",
+          "key_points": [
+            "Point"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        }
+      ],
+      "practical_questions": [
+        {
+          "id": 1800,
+          "scenario": "A team wants to switch from SVN to Git.",
+          "task": "Explain why they would benefit from a Distributed model.",
+          "expected_git_commands": [],
+          "explanation": "Distributed provides offline access and safety.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1801,
+          "scenario": "Practical Scenario 0",
+          "task": "Action required.",
+          "expected_git_commands": [
+            "git"
+          ],
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1802,
+          "scenario": "Practical Scenario 1",
+          "task": "Action required.",
+          "expected_git_commands": [
+            "git"
+          ],
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1803,
+          "scenario": "Practical Scenario 2",
+          "task": "Action required.",
+          "expected_git_commands": [
+            "git"
+          ],
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1804,
+          "scenario": "Practical Scenario 3",
+          "task": "Action required.",
+          "expected_git_commands": [
+            "git"
+          ],
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1805,
+          "scenario": "Practical Scenario 4",
+          "task": "Action required.",
+          "expected_git_commands": [
+            "git"
+          ],
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1806,
+          "scenario": "Practical Scenario 5",
+          "task": "Action required.",
+          "expected_git_commands": [
+            "git"
+          ],
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 1807,
+          "scenario": "Practical Scenario 6",
+          "task": "Action required.",
+          "expected_git_commands": [
+            "git"
+          ],
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "unit_name": "2. Git Installation and Configuration",
+      "mcqs": [
+        {
+          "id": 2100,
+          "question": "Which command checks the Git version?",
+          "options": [
+            "A) git --version",
+            "B) git ver",
+            "C) git -v",
+            "D) git check"
+          ],
+          "correct_option": "A",
+          "explanation": "--version is standard.",
+          "difficulty": "easy"
+        },
+        {
+          "id": 2101,
+          "question": "How do you set your username globally?",
+          "options": [
+            "A) git config --global user.name 'Name'",
+            "B) git set name 'Name'",
+            "C) git user 'Name'",
+            "D) git config name 'Name'"
+          ],
+          "correct_option": "A",
+          "explanation": "config --global is used.",
+          "difficulty": "easy"
+        },
+        {
+          "id": 2102,
+          "question": "Config Question 0...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2103,
+          "question": "Config Question 1...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2104,
+          "question": "Config Question 2...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2105,
+          "question": "Config Question 3...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2106,
+          "question": "Config Question 4...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2107,
+          "question": "Config Question 5...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2108,
+          "question": "Config Question 6...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2109,
+          "question": "Config Question 7...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2110,
+          "question": "Config Question 8...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2111,
+          "question": "Config Question 9...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2112,
+          "question": "Config Question 10...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2113,
+          "question": "Config Question 11...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2114,
+          "question": "Config Question 12...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2115,
+          "question": "Config Question 13...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2116,
+          "question": "Config Question 14...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2117,
+          "question": "Config Question 15...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2118,
+          "question": "Config Question 16...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2119,
+          "question": "Config Question 17...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2120,
+          "question": "Config Question 18...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2121,
+          "question": "Config Question 19...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2122,
+          "question": "Config Question 20...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2123,
+          "question": "Config Question 21...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2124,
+          "question": "Config Question 22...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2125,
+          "question": "Config Question 23...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2126,
+          "question": "Config Question 24...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2127,
+          "question": "Config Question 25...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2128,
+          "question": "Config Question 26...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2129,
+          "question": "Config Question 27...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 2500,
+          "question": "Describe the three levels of Git configuration.",
+          "model_answer": "System, Global, and Local.",
+          "key_points": [
+            "System",
+            "Global",
+            "Local"
+          ],
+          "marks": 5,
+          "difficulty": "medium"
+        },
+        {
+          "id": 2501,
+          "question": "Theory 0",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 2502,
+          "question": "Theory 1",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 2503,
+          "question": "Theory 2",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 2504,
+          "question": "Theory 3",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 2505,
+          "question": "Theory 4",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 2506,
+          "question": "Theory 5",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 2507,
+          "question": "Theory 6",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 2508,
+          "question": "Theory 7",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 2509,
+          "question": "Theory 8",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        }
+      ],
+      "practical_questions": [
+        {
+          "id": 2800,
+          "scenario": "A user wants to use a specific email for just one project.",
+          "task": "Configure Git accordingly.",
+          "expected_git_commands": [
+            "git config user.email 'email@example.com'"
+          ],
+          "explanation": "Local config overrides global.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2801,
+          "scenario": "P 0",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2802,
+          "scenario": "P 1",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2803,
+          "scenario": "P 2",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2804,
+          "scenario": "P 3",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2805,
+          "scenario": "P 4",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2806,
+          "scenario": "P 5",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2807,
+          "scenario": "P 6",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "unit_name": "3. Basic Git Commands",
+      "mcqs": [
+        {
+          "id": 3100,
+          "question": "Which command creates a new repository?",
+          "options": [
+            "A) git start",
+            "B) git new",
+            "C) git init",
+            "D) git repo"
+          ],
+          "correct_option": "C",
+          "explanation": "git init initializes a repo.",
+          "difficulty": "easy"
+        },
+        {
+          "id": 3101,
+          "question": "Which command stages a file named 'index.html'?",
+          "options": [
+            "A) git commit index.html",
+            "B) git add index.html",
+            "C) git stage index.html",
+            "D) git put index.html"
+          ],
+          "correct_option": "B",
+          "explanation": "git add stages files.",
+          "difficulty": "easy"
+        },
+        {
+          "id": 3102,
+          "question": "Basic Cmd Question 0...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3103,
+          "question": "Basic Cmd Question 1...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3104,
+          "question": "Basic Cmd Question 2...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3105,
+          "question": "Basic Cmd Question 3...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3106,
+          "question": "Basic Cmd Question 4...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3107,
+          "question": "Basic Cmd Question 5...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3108,
+          "question": "Basic Cmd Question 6...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3109,
+          "question": "Basic Cmd Question 7...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3110,
+          "question": "Basic Cmd Question 8...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3111,
+          "question": "Basic Cmd Question 9...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3112,
+          "question": "Basic Cmd Question 10...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3113,
+          "question": "Basic Cmd Question 11...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3114,
+          "question": "Basic Cmd Question 12...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3115,
+          "question": "Basic Cmd Question 13...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3116,
+          "question": "Basic Cmd Question 14...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3117,
+          "question": "Basic Cmd Question 15...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3118,
+          "question": "Basic Cmd Question 16...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3119,
+          "question": "Basic Cmd Question 17...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3120,
+          "question": "Basic Cmd Question 18...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3121,
+          "question": "Basic Cmd Question 19...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3122,
+          "question": "Basic Cmd Question 20...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3123,
+          "question": "Basic Cmd Question 21...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3124,
+          "question": "Basic Cmd Question 22...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3125,
+          "question": "Basic Cmd Question 23...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3126,
+          "question": "Basic Cmd Question 24...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3127,
+          "question": "Basic Cmd Question 25...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3128,
+          "question": "Basic Cmd Question 26...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3129,
+          "question": "Basic Cmd Question 27...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "Explanation.",
+          "difficulty": "medium"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 3500,
+          "question": "What is the 'Staging Area'?",
+          "model_answer": "A middle ground where changes are prepared before commit.",
+          "key_points": [
+            "Index",
+            "Intermediate section",
+            "Selective commits"
+          ],
+          "marks": 5,
+          "difficulty": "medium"
+        },
+        {
+          "id": 3501,
+          "question": "T 0",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 3502,
+          "question": "T 1",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 3503,
+          "question": "T 2",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 3504,
+          "question": "T 3",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 3505,
+          "question": "T 4",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 3506,
+          "question": "T 5",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 3507,
+          "question": "T 6",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 3508,
+          "question": "T 7",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 3509,
+          "question": "T 8",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        }
+      ],
+      "practical_questions": [
+        {
+          "id": 3800,
+          "scenario": "You changed a file but haven't staged it.",
+          "task": "Check the status.",
+          "expected_git_commands": [
+            "git status"
+          ],
+          "explanation": "git status shows the state.",
+          "difficulty": "easy"
+        },
+        {
+          "id": 3801,
+          "scenario": "P 0",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3802,
+          "scenario": "P 1",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3803,
+          "scenario": "P 2",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3804,
+          "scenario": "P 3",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3805,
+          "scenario": "P 4",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3806,
+          "scenario": "P 5",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3807,
+          "scenario": "P 6",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "unit_name": "4. Git Workflow Understanding",
+      "mcqs": [
+        {
+          "id": 4100,
+          "question": "The three states of Git are Modified, Staged, and:",
+          "options": [
+            "A) Committed",
+            "B) Saved",
+            "C) Fixed",
+            "D) Uploaded"
+          ],
+          "correct_option": "A",
+          "explanation": "Committed is the final state in a local repo.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4101,
+          "question": "Workflow 0...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4102,
+          "question": "Workflow 1...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4103,
+          "question": "Workflow 2...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4104,
+          "question": "Workflow 3...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4105,
+          "question": "Workflow 4...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4106,
+          "question": "Workflow 5...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4107,
+          "question": "Workflow 6...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4108,
+          "question": "Workflow 7...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4109,
+          "question": "Workflow 8...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4110,
+          "question": "Workflow 9...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4111,
+          "question": "Workflow 10...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4112,
+          "question": "Workflow 11...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4113,
+          "question": "Workflow 12...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4114,
+          "question": "Workflow 13...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4115,
+          "question": "Workflow 14...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4116,
+          "question": "Workflow 15...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4117,
+          "question": "Workflow 16...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4118,
+          "question": "Workflow 17...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4119,
+          "question": "Workflow 18...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4120,
+          "question": "Workflow 19...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4121,
+          "question": "Workflow 20...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4122,
+          "question": "Workflow 21...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4123,
+          "question": "Workflow 22...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4124,
+          "question": "Workflow 23...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4125,
+          "question": "Workflow 24...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4126,
+          "question": "Workflow 25...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4127,
+          "question": "Workflow 26...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4128,
+          "question": "Workflow 27...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4129,
+          "question": "Workflow 28...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 4500,
+          "question": "Explain the life cycle of a Git file.",
+          "model_answer": "Untracked, Unmodified, Modified, Staged.",
+          "key_points": [
+            "Untracked",
+            "Unmodified",
+            "Modified",
+            "Staged"
+          ],
+          "marks": 5,
+          "difficulty": "hard"
+        },
+        {
+          "id": 4501,
+          "question": "T 0",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 4502,
+          "question": "T 1",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 4503,
+          "question": "T 2",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 4504,
+          "question": "T 3",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 4505,
+          "question": "T 4",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 4506,
+          "question": "T 5",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 4507,
+          "question": "T 6",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 4508,
+          "question": "T 7",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 4509,
+          "question": "T 8",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        }
+      ],
+      "practical_questions": [
+        {
+          "id": 4800,
+          "scenario": "You want to undo changes in the working directory.",
+          "task": "Revert to the last commit.",
+          "expected_git_commands": [
+            "git checkout -- filename"
+          ],
+          "explanation": "Restores the file.",
+          "difficulty": "hard"
+        },
+        {
+          "id": 4801,
+          "scenario": "P 0",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4802,
+          "scenario": "P 1",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4803,
+          "scenario": "P 2",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4804,
+          "scenario": "P 3",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4805,
+          "scenario": "P 4",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4806,
+          "scenario": "P 5",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4807,
+          "scenario": "P 6",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "unit_name": "5. Creating and Cloning Repositories",
+      "mcqs": [
+        {
+          "id": 5100,
+          "question": "Which command copies an existing repository?",
+          "options": [
+            "A) git copy",
+            "B) git clone",
+            "C) git download",
+            "D) git replicate"
+          ],
+          "correct_option": "B",
+          "explanation": "clone is used for copying.",
+          "difficulty": "easy"
+        },
+        {
+          "id": 5101,
+          "question": "Clone 0...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5102,
+          "question": "Clone 1...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5103,
+          "question": "Clone 2...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5104,
+          "question": "Clone 3...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5105,
+          "question": "Clone 4...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5106,
+          "question": "Clone 5...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5107,
+          "question": "Clone 6...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5108,
+          "question": "Clone 7...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5109,
+          "question": "Clone 8...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5110,
+          "question": "Clone 9...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5111,
+          "question": "Clone 10...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5112,
+          "question": "Clone 11...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5113,
+          "question": "Clone 12...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5114,
+          "question": "Clone 13...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5115,
+          "question": "Clone 14...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5116,
+          "question": "Clone 15...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5117,
+          "question": "Clone 16...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5118,
+          "question": "Clone 17...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5119,
+          "question": "Clone 18...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5120,
+          "question": "Clone 19...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5121,
+          "question": "Clone 20...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5122,
+          "question": "Clone 21...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5123,
+          "question": "Clone 22...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5124,
+          "question": "Clone 23...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5125,
+          "question": "Clone 24...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5126,
+          "question": "Clone 25...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5127,
+          "question": "Clone 26...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5128,
+          "question": "Clone 27...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5129,
+          "question": "Clone 28...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 5500,
+          "question": "Difference between git init and git clone.",
+          "model_answer": "Init starts new; clone copies existing.",
+          "key_points": [
+            "New vs Copy"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 5501,
+          "question": "T 0",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 5502,
+          "question": "T 1",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 5503,
+          "question": "T 2",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 5504,
+          "question": "T 3",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 5505,
+          "question": "T 4",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 5506,
+          "question": "T 5",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 5507,
+          "question": "T 6",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 5508,
+          "question": "T 7",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 5509,
+          "question": "T 8",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        }
+      ],
+      "practical_questions": [
+        {
+          "id": 5800,
+          "scenario": "Get a copy of 'linux-kernel' from GitHub.",
+          "task": "Use the URL to clone.",
+          "expected_git_commands": [
+            "git clone https://github.com/torvalds/linux"
+          ],
+          "explanation": "Clones the repo.",
+          "difficulty": "easy"
+        },
+        {
+          "id": 5801,
+          "scenario": "P 0",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5802,
+          "scenario": "P 1",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5803,
+          "scenario": "P 2",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5804,
+          "scenario": "P 3",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5805,
+          "scenario": "P 4",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5806,
+          "scenario": "P 5",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5807,
+          "scenario": "P 6",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "unit_name": "6. Commits and Commit Messages",
+      "mcqs": [
+        {
+          "id": 6100,
+          "question": "What flag is used to provide a commit message directly?",
+          "options": [
+            "A) -m",
+            "B) -msg",
+            "C) -text",
+            "D) -c"
+          ],
+          "correct_option": "A",
+          "explanation": "-m is for message.",
+          "difficulty": "easy"
+        },
+        {
+          "id": 6101,
+          "question": "Commit 0...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6102,
+          "question": "Commit 1...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6103,
+          "question": "Commit 2...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6104,
+          "question": "Commit 3...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6105,
+          "question": "Commit 4...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6106,
+          "question": "Commit 5...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6107,
+          "question": "Commit 6...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6108,
+          "question": "Commit 7...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6109,
+          "question": "Commit 8...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6110,
+          "question": "Commit 9...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6111,
+          "question": "Commit 10...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6112,
+          "question": "Commit 11...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6113,
+          "question": "Commit 12...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6114,
+          "question": "Commit 13...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6115,
+          "question": "Commit 14...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6116,
+          "question": "Commit 15...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6117,
+          "question": "Commit 16...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6118,
+          "question": "Commit 17...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6119,
+          "question": "Commit 18...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6120,
+          "question": "Commit 19...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6121,
+          "question": "Commit 20...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6122,
+          "question": "Commit 21...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6123,
+          "question": "Commit 22...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6124,
+          "question": "Commit 23...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6125,
+          "question": "Commit 24...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6126,
+          "question": "Commit 25...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6127,
+          "question": "Commit 26...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6128,
+          "question": "Commit 27...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6129,
+          "question": "Commit 28...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 6500,
+          "question": "Why are clear commit messages important?",
+          "model_answer": "Context for future developers.",
+          "key_points": [
+            "History",
+            "Teammates",
+            "Bugs"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 6501,
+          "question": "T 0",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 6502,
+          "question": "T 1",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 6503,
+          "question": "T 2",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 6504,
+          "question": "T 3",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 6505,
+          "question": "T 4",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 6506,
+          "question": "T 5",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 6507,
+          "question": "T 6",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 6508,
+          "question": "T 7",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 6509,
+          "question": "T 8",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        }
+      ],
+      "practical_questions": [
+        {
+          "id": 6800,
+          "scenario": "Finish your work on 'feature-x'.",
+          "task": "Commit with message 'Fixed bug x'.",
+          "expected_git_commands": [
+            "git commit -m 'Fixed bug x'"
+          ],
+          "explanation": "Records the changes.",
+          "difficulty": "easy"
+        },
+        {
+          "id": 6801,
+          "scenario": "P 0",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6802,
+          "scenario": "P 1",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6803,
+          "scenario": "P 2",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6804,
+          "scenario": "P 3",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6805,
+          "scenario": "P 4",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6806,
+          "scenario": "P 5",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6807,
+          "scenario": "P 6",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "unit_name": "7. Commit History",
+      "mcqs": [
+        {
+          "id": 7100,
+          "question": "Which command displays the commit history?",
+          "options": [
+            "A) git history",
+            "B) git log",
+            "C) git view",
+            "D) git commits"
+          ],
+          "correct_option": "B",
+          "explanation": "log shows history.",
+          "difficulty": "easy"
+        },
+        {
+          "id": 7101,
+          "question": "History 0...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7102,
+          "question": "History 1...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7103,
+          "question": "History 2...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7104,
+          "question": "History 3...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7105,
+          "question": "History 4...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7106,
+          "question": "History 5...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7107,
+          "question": "History 6...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7108,
+          "question": "History 7...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7109,
+          "question": "History 8...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7110,
+          "question": "History 9...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7111,
+          "question": "History 10...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7112,
+          "question": "History 11...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7113,
+          "question": "History 12...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7114,
+          "question": "History 13...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7115,
+          "question": "History 14...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7116,
+          "question": "History 15...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7117,
+          "question": "History 16...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7118,
+          "question": "History 17...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7119,
+          "question": "History 18...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7120,
+          "question": "History 19...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7121,
+          "question": "History 20...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7122,
+          "question": "History 21...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7123,
+          "question": "History 22...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7124,
+          "question": "History 23...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7125,
+          "question": "History 24...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7126,
+          "question": "History 25...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7127,
+          "question": "History 26...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7128,
+          "question": "History 27...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7129,
+          "question": "History 28...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 7500,
+          "question": "What is HEAD in Git?",
+          "model_answer": "A pointer to the latest commit in current branch.",
+          "key_points": [
+            "Pointer",
+            "Current branch"
+          ],
+          "marks": 5,
+          "difficulty": "medium"
+        },
+        {
+          "id": 7501,
+          "question": "T 0",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 7502,
+          "question": "T 1",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 7503,
+          "question": "T 2",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 7504,
+          "question": "T 3",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 7505,
+          "question": "T 4",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 7506,
+          "question": "T 5",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 7507,
+          "question": "T 6",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 7508,
+          "question": "T 7",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 7509,
+          "question": "T 8",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        }
+      ],
+      "practical_questions": [
+        {
+          "id": 7800,
+          "scenario": "See the last 3 commits briefly.",
+          "task": "Run log with options.",
+          "expected_git_commands": [
+            "git log -n 3 --oneline"
+          ],
+          "explanation": "Concise view.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7801,
+          "scenario": "P 0",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7802,
+          "scenario": "P 1",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7803,
+          "scenario": "P 2",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7804,
+          "scenario": "P 3",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7805,
+          "scenario": "P 4",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7806,
+          "scenario": "P 5",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7807,
+          "scenario": "P 6",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "unit_name": "8. Branching and Merging",
+      "mcqs": [
+        {
+          "id": 8100,
+          "question": "What is the default primary branch name in Git traditionally?",
+          "options": [
+            "A) main",
+            "B) master",
+            "C) base",
+            "D) prod"
+          ],
+          "correct_option": "B",
+          "explanation": "Traditionally 'master', though changing to 'main'.",
+          "difficulty": "easy"
+        },
+        {
+          "id": 8101,
+          "question": "Branch 0...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8102,
+          "question": "Branch 1...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8103,
+          "question": "Branch 2...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8104,
+          "question": "Branch 3...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8105,
+          "question": "Branch 4...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8106,
+          "question": "Branch 5...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8107,
+          "question": "Branch 6...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8108,
+          "question": "Branch 7...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8109,
+          "question": "Branch 8...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8110,
+          "question": "Branch 9...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8111,
+          "question": "Branch 10...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8112,
+          "question": "Branch 11...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8113,
+          "question": "Branch 12...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8114,
+          "question": "Branch 13...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8115,
+          "question": "Branch 14...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8116,
+          "question": "Branch 15...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8117,
+          "question": "Branch 16...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8118,
+          "question": "Branch 17...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8119,
+          "question": "Branch 18...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8120,
+          "question": "Branch 19...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8121,
+          "question": "Branch 20...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8122,
+          "question": "Branch 21...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8123,
+          "question": "Branch 22...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8124,
+          "question": "Branch 23...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8125,
+          "question": "Branch 24...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8126,
+          "question": "Branch 25...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8127,
+          "question": "Branch 26...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8128,
+          "question": "Branch 27...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8129,
+          "question": "Branch 28...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 8500,
+          "question": "Explain branching in Git.",
+          "model_answer": "A lightweight pointer to a commit.",
+          "key_points": [
+            "Parallel development",
+            "Isolation"
+          ],
+          "marks": 5,
+          "difficulty": "medium"
+        },
+        {
+          "id": 8501,
+          "question": "T 0",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 8502,
+          "question": "T 1",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 8503,
+          "question": "T 2",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 8504,
+          "question": "T 3",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 8505,
+          "question": "T 4",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 8506,
+          "question": "T 5",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 8507,
+          "question": "T 6",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 8508,
+          "question": "T 7",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 8509,
+          "question": "T 8",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        }
+      ],
+      "practical_questions": [
+        {
+          "id": 8800,
+          "scenario": "Check which branch you are on.",
+          "task": "Show branches.",
+          "expected_git_commands": [
+            "git branch"
+          ],
+          "explanation": "Shows all branches.",
+          "difficulty": "easy"
+        },
+        {
+          "id": 8801,
+          "scenario": "P 0",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8802,
+          "scenario": "P 1",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8803,
+          "scenario": "P 2",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8804,
+          "scenario": "P 3",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8805,
+          "scenario": "P 4",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8806,
+          "scenario": "P 5",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8807,
+          "scenario": "P 6",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "unit_name": "9. Creating and Working with Branches",
+      "mcqs": [
+        {
+          "id": 9100,
+          "question": "How to create and switch to a branch in one command?",
+          "options": [
+            "A) git branch -c name",
+            "B) git checkout -b name",
+            "C) git switch name",
+            "D) git move -b name"
+          ],
+          "correct_option": "B",
+          "explanation": "checkout -b creates and switches.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9101,
+          "question": "WorkBranch 0...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9102,
+          "question": "WorkBranch 1...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9103,
+          "question": "WorkBranch 2...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9104,
+          "question": "WorkBranch 3...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9105,
+          "question": "WorkBranch 4...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9106,
+          "question": "WorkBranch 5...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9107,
+          "question": "WorkBranch 6...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9108,
+          "question": "WorkBranch 7...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9109,
+          "question": "WorkBranch 8...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9110,
+          "question": "WorkBranch 9...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9111,
+          "question": "WorkBranch 10...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9112,
+          "question": "WorkBranch 11...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9113,
+          "question": "WorkBranch 12...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9114,
+          "question": "WorkBranch 13...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9115,
+          "question": "WorkBranch 14...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9116,
+          "question": "WorkBranch 15...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9117,
+          "question": "WorkBranch 16...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9118,
+          "question": "WorkBranch 17...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9119,
+          "question": "WorkBranch 18...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9120,
+          "question": "WorkBranch 19...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9121,
+          "question": "WorkBranch 20...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9122,
+          "question": "WorkBranch 21...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9123,
+          "question": "WorkBranch 22...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9124,
+          "question": "WorkBranch 23...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9125,
+          "question": "WorkBranch 24...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9126,
+          "question": "WorkBranch 25...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9127,
+          "question": "WorkBranch 26...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9128,
+          "question": "WorkBranch 27...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9129,
+          "question": "WorkBranch 28...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 9500,
+          "question": "Why use feature branches?",
+          "model_answer": "Keeps main code stable while developing parts.",
+          "key_points": [
+            "Stability",
+            "Isolation"
+          ],
+          "marks": 5,
+          "difficulty": "medium"
+        },
+        {
+          "id": 9501,
+          "question": "T 0",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 9502,
+          "question": "T 1",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 9503,
+          "question": "T 2",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 9504,
+          "question": "T 3",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 9505,
+          "question": "T 4",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 9506,
+          "question": "T 5",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 9507,
+          "question": "T 6",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 9508,
+          "question": "T 7",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 9509,
+          "question": "T 8",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        }
+      ],
+      "practical_questions": [
+        {
+          "id": 9800,
+          "scenario": "Create a branch for 'login-fix'.",
+          "task": "Create branch.",
+          "expected_git_commands": [
+            "git branch login-fix"
+          ],
+          "explanation": "Creates but doesn't switch.",
+          "difficulty": "easy"
+        },
+        {
+          "id": 9801,
+          "scenario": "P 0",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9802,
+          "scenario": "P 1",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9803,
+          "scenario": "P 2",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9804,
+          "scenario": "P 3",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9805,
+          "scenario": "P 4",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9806,
+          "scenario": "P 5",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9807,
+          "scenario": "P 6",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "unit_name": "10. Merging Branches",
+      "mcqs": [
+        {
+          "id": 10100,
+          "question": "Which command merges 'feature' into 'main'?",
+          "options": [
+            "A) git join",
+            "B) git combine",
+            "C) git merge feature",
+            "D) git append feature"
+          ],
+          "correct_option": "C",
+          "explanation": "merge brings changes in.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10101,
+          "question": "Merge 0...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10102,
+          "question": "Merge 1...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10103,
+          "question": "Merge 2...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10104,
+          "question": "Merge 3...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10105,
+          "question": "Merge 4...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10106,
+          "question": "Merge 5...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10107,
+          "question": "Merge 6...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10108,
+          "question": "Merge 7...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10109,
+          "question": "Merge 8...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10110,
+          "question": "Merge 9...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10111,
+          "question": "Merge 10...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10112,
+          "question": "Merge 11...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10113,
+          "question": "Merge 12...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10114,
+          "question": "Merge 13...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10115,
+          "question": "Merge 14...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10116,
+          "question": "Merge 15...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10117,
+          "question": "Merge 16...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10118,
+          "question": "Merge 17...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10119,
+          "question": "Merge 18...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10120,
+          "question": "Merge 19...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10121,
+          "question": "Merge 20...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10122,
+          "question": "Merge 21...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10123,
+          "question": "Merge 22...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10124,
+          "question": "Merge 23...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10125,
+          "question": "Merge 24...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10126,
+          "question": "Merge 25...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10127,
+          "question": "Merge 26...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10128,
+          "question": "Merge 27...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10129,
+          "question": "Merge 28...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 10500,
+          "question": "What is a 'Fast-Forward' merge?",
+          "model_answer": "Moving the branch pointer forward when no divergent paths exist.",
+          "key_points": [
+            "No commit created",
+            "Straight line"
+          ],
+          "marks": 5,
+          "difficulty": "hard"
+        },
+        {
+          "id": 10501,
+          "question": "T 0",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 10502,
+          "question": "T 1",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 10503,
+          "question": "T 2",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 10504,
+          "question": "T 3",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 10505,
+          "question": "T 4",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 10506,
+          "question": "T 5",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 10507,
+          "question": "T 6",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 10508,
+          "question": "T 7",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 10509,
+          "question": "T 8",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        }
+      ],
+      "practical_questions": [
+        {
+          "id": 10800,
+          "scenario": "Merge 'experimental' into 'master'.",
+          "task": "Run merge command.",
+          "expected_git_commands": [
+            "git merge experimental"
+          ],
+          "explanation": "Integrates experimental code.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10801,
+          "scenario": "P 0",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10802,
+          "scenario": "P 1",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10803,
+          "scenario": "P 2",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10804,
+          "scenario": "P 3",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10805,
+          "scenario": "P 4",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10806,
+          "scenario": "P 5",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10807,
+          "scenario": "P 6",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "unit_name": "11. Resolving Merge Conflicts",
+      "mcqs": [
+        {
+          "id": 11100,
+          "question": "When does a merge conflict occur?",
+          "options": [
+            "A) Different files are changed",
+            "B) Same line is changed differently in two branches",
+            "C) A branch is deleted",
+            "D) Commit message is too long"
+          ],
+          "correct_option": "B",
+          "explanation": "Ambiguity in code changes.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11101,
+          "question": "Conflict 0...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11102,
+          "question": "Conflict 1...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11103,
+          "question": "Conflict 2...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11104,
+          "question": "Conflict 3...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11105,
+          "question": "Conflict 4...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11106,
+          "question": "Conflict 5...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11107,
+          "question": "Conflict 6...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11108,
+          "question": "Conflict 7...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11109,
+          "question": "Conflict 8...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11110,
+          "question": "Conflict 9...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11111,
+          "question": "Conflict 10...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11112,
+          "question": "Conflict 11...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11113,
+          "question": "Conflict 12...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11114,
+          "question": "Conflict 13...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11115,
+          "question": "Conflict 14...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11116,
+          "question": "Conflict 15...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11117,
+          "question": "Conflict 16...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11118,
+          "question": "Conflict 17...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11119,
+          "question": "Conflict 18...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11120,
+          "question": "Conflict 19...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11121,
+          "question": "Conflict 20...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11122,
+          "question": "Conflict 21...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11123,
+          "question": "Conflict 22...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11124,
+          "question": "Conflict 23...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11125,
+          "question": "Conflict 24...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11126,
+          "question": "Conflict 25...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11127,
+          "question": "Conflict 26...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11128,
+          "question": "Conflict 27...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11129,
+          "question": "Conflict 28...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 11500,
+          "question": "How to resolve a conflict?",
+          "model_answer": "Edit files manually, remove markers, and commit.",
+          "key_points": [
+            "Edit",
+            "Markers",
+            "Commit"
+          ],
+          "marks": 5,
+          "difficulty": "hard"
+        },
+        {
+          "id": 11501,
+          "question": "T 0",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 11502,
+          "question": "T 1",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 11503,
+          "question": "T 2",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 11504,
+          "question": "T 3",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 11505,
+          "question": "T 4",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 11506,
+          "question": "T 5",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 11507,
+          "question": "T 6",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 11508,
+          "question": "T 7",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 11509,
+          "question": "T 8",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        }
+      ],
+      "practical_questions": [
+        {
+          "id": 11800,
+          "scenario": "You see 'CONFLICT (content)' in index.html.",
+          "task": "Abandom the merge.",
+          "expected_git_commands": [
+            "git merge --abort"
+          ],
+          "explanation": "Resets state.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11801,
+          "scenario": "P 0",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11802,
+          "scenario": "P 1",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11803,
+          "scenario": "P 2",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11804,
+          "scenario": "P 3",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11805,
+          "scenario": "P 4",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11806,
+          "scenario": "P 5",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11807,
+          "scenario": "P 6",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "unit_name": "12. Deleting and Renaming Branches",
+      "mcqs": [
+        {
+          "id": 12100,
+          "question": "Which flag deletes a merged branch?",
+          "options": [
+            "A) -d",
+            "B) -D",
+            "C) -del",
+            "D) -r"
+          ],
+          "correct_option": "A",
+          "explanation": "-d is for safe delete.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12101,
+          "question": "DelRename 0...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12102,
+          "question": "DelRename 1...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12103,
+          "question": "DelRename 2...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12104,
+          "question": "DelRename 3...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12105,
+          "question": "DelRename 4...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12106,
+          "question": "DelRename 5...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12107,
+          "question": "DelRename 6...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12108,
+          "question": "DelRename 7...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12109,
+          "question": "DelRename 8...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12110,
+          "question": "DelRename 9...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12111,
+          "question": "DelRename 10...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12112,
+          "question": "DelRename 11...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12113,
+          "question": "DelRename 12...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12114,
+          "question": "DelRename 13...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12115,
+          "question": "DelRename 14...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12116,
+          "question": "DelRename 15...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12117,
+          "question": "DelRename 16...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12118,
+          "question": "DelRename 17...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12119,
+          "question": "DelRename 18...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12120,
+          "question": "DelRename 19...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12121,
+          "question": "DelRename 20...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12122,
+          "question": "DelRename 21...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12123,
+          "question": "DelRename 22...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12124,
+          "question": "DelRename 23...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12125,
+          "question": "DelRename 24...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12126,
+          "question": "DelRename 25...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12127,
+          "question": "DelRename 26...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12128,
+          "question": "DelRename 27...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12129,
+          "question": "DelRename 28...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 12500,
+          "question": "Why delete branches after merge?",
+          "model_answer": "Keeps the repo clean and organized.",
+          "key_points": [
+            "Organization",
+            "Clarity"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 12501,
+          "question": "T 0",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 12502,
+          "question": "T 1",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 12503,
+          "question": "T 2",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 12504,
+          "question": "T 3",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 12505,
+          "question": "T 4",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 12506,
+          "question": "T 5",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 12507,
+          "question": "T 6",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 12508,
+          "question": "T 7",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 12509,
+          "question": "T 8",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        }
+      ],
+      "practical_questions": [
+        {
+          "id": 12800,
+          "scenario": "Delete branch 'old-feature'.",
+          "task": "Delete it.",
+          "expected_git_commands": [
+            "git branch -d old-feature"
+          ],
+          "explanation": "Removes pointer.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12801,
+          "scenario": "P 0",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12802,
+          "scenario": "P 1",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12803,
+          "scenario": "P 2",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12804,
+          "scenario": "P 3",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12805,
+          "scenario": "P 4",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12806,
+          "scenario": "P 5",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12807,
+          "scenario": "P 6",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "unit_name": "13. Understanding and Using Git Stash",
+      "mcqs": [
+        {
+          "id": 13100,
+          "question": "Which command saves uncommitted work temporarily?",
+          "options": [
+            "A) git save",
+            "B) git stash",
+            "C) git hide",
+            "D) git temporary"
+          ],
+          "correct_option": "B",
+          "explanation": "stash saves work for later.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13101,
+          "question": "Stash 0...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13102,
+          "question": "Stash 1...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13103,
+          "question": "Stash 2...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13104,
+          "question": "Stash 3...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13105,
+          "question": "Stash 4...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13106,
+          "question": "Stash 5...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13107,
+          "question": "Stash 6...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13108,
+          "question": "Stash 7...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13109,
+          "question": "Stash 8...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13110,
+          "question": "Stash 9...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13111,
+          "question": "Stash 10...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13112,
+          "question": "Stash 11...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13113,
+          "question": "Stash 12...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13114,
+          "question": "Stash 13...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13115,
+          "question": "Stash 14...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13116,
+          "question": "Stash 15...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13117,
+          "question": "Stash 16...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13118,
+          "question": "Stash 17...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13119,
+          "question": "Stash 18...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13120,
+          "question": "Stash 19...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13121,
+          "question": "Stash 20...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13122,
+          "question": "Stash 21...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13123,
+          "question": "Stash 22...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13124,
+          "question": "Stash 23...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13125,
+          "question": "Stash 24...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13126,
+          "question": "Stash 25...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13127,
+          "question": "Stash 26...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13128,
+          "question": "Stash 27...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13129,
+          "question": "Stash 28...",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_option": "A",
+          "explanation": "E",
+          "difficulty": "medium"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 13500,
+          "question": "When is stashing useful?",
+          "model_answer": "When you need to switch branches but aren't ready to commit.",
+          "key_points": [
+            "Context switch",
+            "Unfinished work"
+          ],
+          "marks": 5,
+          "difficulty": "medium"
+        },
+        {
+          "id": 13501,
+          "question": "T 0",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 13502,
+          "question": "T 1",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 13503,
+          "question": "T 2",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 13504,
+          "question": "T 3",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 13505,
+          "question": "T 4",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 13506,
+          "question": "T 5",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 13507,
+          "question": "T 6",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 13508,
+          "question": "T 7",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        },
+        {
+          "id": 13509,
+          "question": "T 8",
+          "model_answer": "A",
+          "key_points": [
+            "P"
+          ],
+          "marks": 5,
+          "difficulty": "easy"
+        }
+      ],
+      "practical_questions": [
+        {
+          "id": 13800,
+          "scenario": "Retrieve the last stashed item.",
+          "task": "Apply stash.",
+          "expected_git_commands": [
+            "git stash apply"
+          ],
+          "explanation": "Brings work back.",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13801,
+          "scenario": "P 0",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13802,
+          "scenario": "P 1",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13803,
+          "scenario": "P 2",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13804,
+          "scenario": "P 3",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13805,
+          "scenario": "P 4",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13806,
+          "scenario": "P 5",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13807,
+          "scenario": "P 6",
+          "task": "T",
+          "expected_git_commands": [],
+          "explanation": "E",
+          "difficulty": "medium"
+        }
+      ]
+    }
+  ]
+}

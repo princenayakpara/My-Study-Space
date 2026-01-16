@@ -1,5 +1,5 @@
 ﻿window.OFFLINE_TEST_BANKS = {
-  " c_language\: 
+  "c_language": 
 {
   "subject_name": "C Language",
   "units": [
@@ -2461,7 +2461,7 @@
   ]
 }
 ,
- \maths\: 
+  "maths": 
 {
   "subject_name": "Maths",
   "units": [
@@ -5275,7 +5275,7 @@
   ]
 }
 ,
- \html_css_js\: 
+  "html_css_js": 
 {
   "subject_name": "HTML / CSS / JavaScript",
   "units": [

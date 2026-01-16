@@ -1,0 +1,625 @@
+{
+  "unit_name": "10. Arrow Functions",
+  "mcqs": [
+    {
+      "id": 1001,
+      "question": "In which version of ECMAScript were arrow functions introduced?",
+      "options": [
+        "A) ES5",
+        "B) ES6",
+        "C) ES2017",
+        "D) ES3"
+      ],
+      "correct_option": "B",
+      "explanation": "Arrow functions are a core feature of ES6 (ES2015).",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1002,
+      "question": "What is the syntax for a basic arrow function?",
+      "options": [
+        "A) function() => { }",
+        "B) () => { }",
+        "C) ( ) -> { }",
+        "D) arrow function() { }"
+      ],
+      "correct_option": "B",
+      "explanation": "The 'fat arrow' => is the hallmark of this syntax.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1003,
+      "question": "If an arrow function has exactly one parameter, are parentheses mandatory?",
+      "options": [
+        "A) Yes",
+        "B) No",
+        "C) Only if it's a string",
+        "D) Only in strict mode"
+      ],
+      "correct_option": "B",
+      "explanation": "x => x + 1 is valid, but (x, y) => x + y requires them.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1004,
+      "question": "What is 'Implicit Return' in arrow functions?",
+      "options": [
+        "A) Automatically returning undefined",
+        "B) Returning a value without the 'return' keyword if braces are omitted",
+        "C) Returning only objects",
+        "D) Returning only booleans"
+      ],
+      "correct_option": "B",
+      "explanation": "() => 10 automatically returns 10.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1005,
+      "question": "How do you implicitly return an object literal?",
+      "options": [
+        "A) () => { key: val }",
+        "B) () => ({ key: val })",
+        "C) () => object{ key: val }",
+        "D) () => return { key: val }"
+      ],
+      "correct_option": "B",
+      "explanation": "Parentheses are needed to distinguish the object braces from function body braces.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1006,
+      "question": "What is the primary difference between regular functions and arrow functions regarding 'this'?",
+      "options": [
+        "A) Arrow functions have no 'this'",
+        "B) Regular functions inherit 'this' from parent",
+        "C) Arrow functions inherit 'this' lexically from surrounding scope",
+        "D) Arrow functions 'this' refers to the function itself"
+      ],
+      "correct_option": "C",
+      "explanation": "Arrow functions do not bind their own 'this'.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1007,
+      "question": "Can arrow functions be used as constructors (with 'new' keyword)?",
+      "options": [
+        "A) Yes",
+        "B) No",
+        "C) Only in classes",
+        "D) Only if they return an object"
+      ],
+      "correct_option": "B",
+      "explanation": "Arrow functions lack a [[Construct]] method.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1008,
+      "question": "Do arrow functions have the 'arguments' object?",
+      "options": [
+        "A) Yes",
+        "B) No",
+        "C) Only in Node.js",
+        "D) Only if passed as strings"
+      ],
+      "correct_option": "B",
+      "explanation": "Arrow functions do not have their own 'arguments' object; they inherit it from parent non-arrow scope.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1009,
+      "question": "Which of these is a benefit of arrow functions?",
+      "options": [
+        "A) Shorter syntax",
+        "B) Fixed 'this' context",
+        "C) Faster execution",
+        "D) Both A and B"
+      ],
+      "correct_option": "D",
+      "explanation": "They provide conciseness and solve the 'that = this' problem.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1010,
+      "question": "What is the output: const f = x => x * x; console.log(f(4));",
+      "options": [
+        "A) 4",
+        "B) 16",
+        "C) undefined",
+        "D) Error"
+      ],
+      "correct_option": "B",
+      "explanation": "Implicit return of 4 * 4.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1011,
+      "question": "What is the output: const f = () => { 5 }; console.log(f());",
+      "options": [
+        "A) 5",
+        "B) undefined",
+        "C) 0",
+        "D) Syntax Error"
+      ],
+      "correct_option": "B",
+      "explanation": "When braces { } are used, 'return' is mandatory to get a value.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1012,
+      "question": "Arrow functions are always:",
+      "options": [
+        "A) Named",
+        "B) Anonymous",
+        "C) Recursive",
+        "D) Public"
+      ],
+      "correct_option": "B",
+      "explanation": "Arrow functions cannot have a name themselves; they are assigned to variables.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1013,
+      "question": "Can you use .call(), .apply(), or .bind() to change 'this' in an arrow function?",
+      "options": [
+        "A) Yes",
+        "B) No, it is ignored",
+        "C) Only .bind()",
+        "D) Only in non-strict mode"
+      ],
+      "correct_option": "B",
+      "explanation": "The 'this' in an arrow function is permanent and fixed at creation.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1014,
+      "question": "Which of these is invalid syntax?",
+      "options": [
+        "A) x => { return x; }",
+        "B) (x, y) => x + y",
+        "C) x, y => x + y",
+        "D) () => true"
+      ],
+      "correct_option": "C",
+      "explanation": "Multiple parameters must be in parentheses.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1015,
+      "question": "How do you write an arrow function with no parameters?",
+      "options": [
+        "A) => { }",
+        "B) () => { }",
+        "C) _ => { }",
+        "D) Both B and C"
+      ],
+      "correct_option": "D",
+      "explanation": "The underscore _ is often used as a throwaway parameter placeholder.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1016,
+      "question": "Can you have line breaks between the parameters and the =>?",
+      "options": [
+        "A) Yes",
+        "B) No",
+        "C) Only with parentheses",
+        "D) Only if indented"
+      ],
+      "correct_option": "B",
+      "explanation": "A line break after parameters causes a syntax error.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1017,
+      "question": "What is the result of typeof (() => {})?",
+      "options": [
+        "A) 'function'",
+        "B) 'object'",
+        "C) 'arrow'",
+        "D) 'undefined'"
+      ],
+      "correct_option": "A",
+      "explanation": "They are still functions.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1018,
+      "question": "Are arrow functions suitable for object methods that need access to the object properties?",
+      "options": [
+        "A) Yes, always",
+        "B) No, because 'this' will not refer to the object",
+        "C) Only if using 'let'",
+        "D) Only if the object is frozen"
+      ],
+      "correct_option": "B",
+      "explanation": "Use regular functions for methods to ensure 'this' refers to the instance.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1019,
+      "question": "The 'prototype' property in arrow functions is:",
+      "options": [
+        "A) { }",
+        "B) undefined",
+        "C) null",
+        "D) pointing to Object"
+      ],
+      "correct_option": "B",
+      "explanation": "They do not have a prototype property as they cannot be used with 'new'.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1020,
+      "question": "What is the result: [1,2,3].map(n => n * 2)?",
+      "options": [
+        "A) [1,2,3]",
+        "B) [2,4,6]",
+        "C) 6",
+        "D) undefined"
+      ],
+      "correct_option": "B",
+      "explanation": "Common use case: concise callbacks in array methods.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1021,
+      "question": "Arrow functions were primarily created for:",
+      "options": [
+        "A) To replace regular functions entirely",
+        "B) To solve 'this' binding issues and reduce boilerplate",
+        "C) To make JS look like Python",
+        "D) To increase security"
+      ],
+      "correct_option": "B",
+      "explanation": "Key goals: conciseness and predictable 'this'.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1022,
+      "question": "Implicit return only works if:",
+      "options": [
+        "A) There is only one line of code",
+        "B) There are no curly braces",
+        "C) The code is in parentheses",
+        "D) Both A and B"
+      ],
+      "correct_option": "D",
+      "explanation": "Braces { } define a block and suppress implicit return.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1023,
+      "question": "Can an arrow function be async?",
+      "options": [
+        "A) Yes",
+        "B) No",
+        "C) Only if it uses await inside",
+        "D) Only in Node.js"
+      ],
+      "correct_option": "A",
+      "explanation": "async () => { ... } is common in promise handling.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1024,
+      "question": "What happens if you use 'super' inside an arrow function?",
+      "options": [
+        "A) Error",
+        "B) It refers to the super of the parent regular function",
+        "C) It refers to the object",
+        "D) It is undefined"
+      ],
+      "correct_option": "B",
+      "explanation": "Arrow functions also capture the lexical 'super'.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1025,
+      "question": "Which of these is a 'lexical binding'?",
+      "options": [
+        "A) this",
+        "B) arguments",
+        "C) super",
+        "D) All of the above"
+      ],
+      "correct_option": "D",
+      "explanation": "Arrow functions bind all three from their surrounding scope.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1026,
+      "question": "How do you pass multiple arguments to an arrow function?",
+      "options": [
+        "A) x, y =>",
+        "B) (x, y) =>",
+        "C) [x, y] =>",
+        "D) {x, y} =>"
+      ],
+      "correct_option": "B",
+      "explanation": "Parentheses are mandatory for multiple parameters.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1027,
+      "question": "What is the 'return' type of: () => {}",
+      "options": [
+        "A) undefined",
+        "B) null",
+        "C) object",
+        "D) void"
+      ],
+      "correct_option": "A",
+      "explanation": "With braces and no return, it returns undefined.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1028,
+      "question": "Can you give an arrow function a name during definition?",
+      "options": [
+        "A) Yes: (funcName) => {}",
+        "B) No, they are always anonymous",
+        "C) Only if using 'let'",
+        "D) Only if exported"
+      ],
+      "correct_option": "B",
+      "explanation": "Labels cannot be attached to the function itself.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1029,
+      "question": "What is the result: ((a, b) => a + b)(5, 5)?",
+      "options": [
+        "A) 10",
+        "B) Function",
+        "C) undefined",
+        "D) Error"
+      ],
+      "correct_option": "A",
+      "explanation": "This is an arrow-based IIFE.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1030,
+      "question": "Arrow functions were standard in ES5?",
+      "options": [
+        "A) Yes",
+        "B) No",
+        "C) Only in strict mode",
+        "D) Only with polyfills"
+      ],
+      "correct_option": "B",
+      "explanation": "Introduced in ES6.",
+      "difficulty": "easy"
+    }
+  ],
+  "theory_questions": [
+    {
+      "id": 1051,
+      "question": "Discuss the syntax variations of arrow functions (no params, one param, multiple params).",
+      "model_answer": "No params: () => {}. One param (parentheses optional): x => {}. Multiple params (mandatory parentheses): (x, y) => {}. No braces means implicit return.",
+      "key_points": [
+        "No parameters",
+        "Single parameter",
+        "Multiple parameters",
+        "Parentheses rules"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 1052,
+      "question": "Explain 'Implicit Return' and its limitations.",
+      "model_answer": "Implicit return occurs when braces { } are omitted; the result of the expression is returned. Limitation: only works for single expressions. Returning objects requires wrapping the literal in parentheses to avoid ambiguity.",
+      "key_points": [
+        "Conciseness",
+        "Single line limitation",
+        "Object literal syntax",
+        "Braces impact"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1053,
+      "question": "What does it mean that arrow functions have 'Lexical this'?",
+      "model_answer": "Arrow functions do not have their own 'this' value. Instead, they look up the 'this' value from their surrounding code context at the time they are created. This makes them ideal for callbacks where you want 'this' to remain the same.",
+      "key_points": [
+        "Static binding",
+        "Parent scope resolution",
+        "No 'this' binding",
+        "Callback benefits"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 1054,
+      "question": "Why can't arrow functions be used as constructors?",
+      "model_answer": "Constructors require a 'prototype' property and a [[Construct]] internal method to create a new object and bind 'this' to it. Arrow functions lack both, so using 'new' on them results in a TypeError.",
+      "key_points": [
+        "No prototype",
+        "No [[Construct]]",
+        "new keyword failure",
+        "Static context"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1055,
+      "question": "How do arrow functions handle the 'arguments' object?",
+      "model_answer": "They don't have an 'arguments' object. If you use 'arguments' in an arrow function, it will refer to the 'arguments' of the nearest enclosing non-arrow function. To handle variable arguments in arrow functions, use 'Rest Parameters' (...) instead.",
+      "key_points": [
+        "Lack of arguments object",
+        "Lexical capture",
+        "Rest parameters alternative",
+        "Binding"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 1056,
+      "question": "Contrast regular functions vs arrow functions in three key points.",
+      "model_answer": "1. 'this' behavior (dynamic vs lexical). 2. Constructor capability (regular can, arrow cannot). 3. Syntax conciseness and implicit return (arrow is more concise).",
+      "key_points": [
+        "this binding",
+        "Constructors",
+        "Arguments object",
+        "Implicit return"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1057,
+      "question": "What is the impact of using arrow functions for object methods?",
+      "model_answer": "It is usually a bad idea because 'this' inside the arrow function will not point to the object instance, but to the global scope or parent object. Regular functions are preferred for method definitions.",
+      "key_points": [
+        "this mismatch",
+        "Global binding",
+        "Prototypal methods",
+        "Correct usage"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1058,
+      "question": "Explain how to return an object literal implicitly from an arrow function.",
+      "model_answer": "Wrapp the object literal in parentheses: const f = () => ({ a: 1 });. Without the parentheses, JS thinks the curly braces are the start of a function body block and will fail to return the object.",
+      "key_points": [
+        "Parentheses role",
+        "Ambiguity resolution",
+        "Braces as blocks",
+        "Short syntax"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1059,
+      "question": "Are arrow functions 'hoisted'? Explain.",
+      "model_answer": "Arrow functions are usually assigned to let/const variables, so they follow variable hoisting rules. They are hoisted to the top of the block but remain in the Temporal Dead Zone, meaning they cannot be called before definition.",
+      "key_points": [
+        "Variable hoisting",
+        "TDZ",
+        "Execution order",
+        "Assignments"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1060,
+      "question": "Describe a scenario where an arrow function is better than a regular function.",
+      "model_answer": "When using callbacks inside a class method (like a timer or fetch). Arrow functions preserve the class instance as 'this', avoiding the need for .bind(this) or 'const self = this'.",
+      "key_points": [
+        "Callbacks",
+        "Class context",
+        "bind avoidance",
+        "Clean async code"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    }
+  ],
+  "coding_questions": [
+    {
+      "id": 1081,
+      "problem_statement": "Convert the following function into an arrow function: function add(a, b) { return a + b; }",
+      "input_format": "None",
+      "output_format": "Arrow function code",
+      "constraints": "Use implicit return.",
+      "sample_input": "None",
+      "sample_output": "const add = (a, b) => a + b;",
+      "solution_explanation": "Remove function keyword and use arrow.",
+      "code_solution": "const add = (a, b) => a + b;",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1082,
+      "problem_statement": "Write a one-line arrow function 'square' that takes one parameter n and returns n*n.",
+      "input_format": "Number",
+      "output_format": "Square",
+      "constraints": "No parentheses for parameter.",
+      "sample_input": "5",
+      "sample_output": "25",
+      "solution_explanation": "Single param doesn't need ( ).",
+      "code_solution": "const square = n => n * n;",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1083,
+      "problem_statement": "Write an arrow function 'greet' that returns an object { msg: 'Hello [name]' } implicitly.",
+      "input_format": "String",
+      "output_format": "Object",
+      "constraints": "None",
+      "sample_input": "'Alice'",
+      "sample_output": "{ msg: 'Hello Alice' }",
+      "solution_explanation": "Wrap object in ( ).",
+      "code_solution": "const greet = name => ({ msg: `Hello ${name}` });",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1084,
+      "problem_statement": "Use an arrow function with '.filter()' to get all numbers greater than 10 from the array [5, 12, 8, 130, 44].",
+      "input_format": "Array",
+      "output_format": "Filtered Array",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "[12, 130, 44]",
+      "solution_explanation": "Concise filtering logic.",
+      "code_solution": "const nums = [5, 12, 8, 130, 44];\nconst overTen = nums.filter(n => n > 10);\nconsole.log(overTen);",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1085,
+      "problem_statement": "Write an arrow function that takes no arguments and logs 'Activated'.",
+      "input_format": "None",
+      "output_format": "Log message",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Activated",
+      "solution_explanation": "Use empty parentheses.",
+      "code_solution": "const activate = () => console.log('Activated');\nactivate();",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1086,
+      "problem_statement": "Demonstrate that an arrow function inherits 'this' by using one inside a 'setTimeout' within an object method.",
+      "input_format": "None",
+      "output_format": "Log of property",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Property value logged",
+      "solution_explanation": "Arrow captures 'this' from method scope.",
+      "code_solution": "const person = {\n  name: 'Bob',\n  walk: function() {\n    setTimeout(() => console.log(this.name), 100);\n  }\n};\nperson.walk();",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1087,
+      "problem_statement": "Write a multi-line arrow function that takes a number, and if it's positive, returns its square, otherwise returns 0.",
+      "input_format": "Number",
+      "output_format": "Result",
+      "constraints": "Must use curly braces.",
+      "sample_input": "4",
+      "sample_output": "16",
+      "solution_explanation": "Braces require explicit return.",
+      "code_solution": "const calc = n => {\n  if (n > 0) return n * n;\n  return 0;\n};",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1088,
+      "problem_statement": "Explain the error in this code: const person = { age: 10, grow: () => this.age++ }; person.grow();",
+      "input_format": "None",
+      "output_format": "Explanation",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Reason why it fails",
+      "solution_explanation": "Arrow 'this' refers to window/global, not person object.",
+      "code_solution": "// It fails because the arrow function binds 'this' to the global scope,\n// where 'age' is undefined. Use a regular function instead.",
+      "difficulty": "hard"
+    }
+  ]
+}

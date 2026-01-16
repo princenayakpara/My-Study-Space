@@ -1,0 +1,625 @@
+{
+  "unit_name": "12. Classes and Inheritance",
+  "mcqs": [
+    {
+      "id": 1201,
+      "question": "Which keyword is used to create a class in ES6?",
+      "options": [
+        "A) create class",
+        "B) class",
+        "C) object",
+        "D) def class"
+      ],
+      "correct_option": "B",
+      "explanation": "The 'class' keyword is used to define a class.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1202,
+      "question": "What is the purpose of the 'constructor' method in a class?",
+      "options": [
+        "A) To delete the class",
+        "B) To initialize object properties",
+        "C) To add methods",
+        "D) To export the class"
+      ],
+      "correct_option": "B",
+      "explanation": "The constructor runs when a new instance is created.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1203,
+      "question": "How do you create an instance of a class named 'User'?",
+      "options": [
+        "A) let u = User();",
+        "B) let u = create User();",
+        "C) let u = new User();",
+        "D) let u = User.new();"
+      ],
+      "correct_option": "C",
+      "explanation": "The 'new' keyword invokes the constructor and returns a new object.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1204,
+      "question": "Which keyword is used for inheritance in ES6 classes?",
+      "options": [
+        "A) inherits",
+        "B) extends",
+        "C) subclass",
+        "D) base"
+      ],
+      "correct_option": "B",
+      "explanation": "'class Student extends User { }' is the syntax for inheritance.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1205,
+      "question": "What must you call inside a child class constructor if it has its own constructor?",
+      "options": [
+        "A) base()",
+        "B) parent()",
+        "C) super()",
+        "D) this.super()"
+      ],
+      "correct_option": "C",
+      "explanation": "super() calls the parent class constructor and must be called before using 'this'.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1206,
+      "question": "What are 'Static Methods'?",
+      "options": [
+        "A) Methods that cannot be changed",
+        "B) Methods belonging to the class itself, not instances",
+        "C) Methods that require 'new'",
+        "D) Methods only used for math"
+      ],
+      "correct_option": "B",
+      "explanation": "Static methods are called on the class name (e.g., Math.random()).",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1207,
+      "question": "How do you define a static method in a class?",
+      "options": [
+        "A) static method() {}",
+        "B) public static method() {}",
+        "C) static method() {}",
+        "D) class static method() {}"
+      ],
+      "correct_option": "C",
+      "explanation": "The 'static' keyword is used before the method name.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1208,
+      "question": "Which of these is used to implement 'encapsulation' in modern JS (ES2022+)?",
+      "options": [
+        "A) private variable",
+        "B) # (hash prefix)",
+        "C) _ (underscore)",
+        "D) private keyword"
+      ],
+      "correct_option": "B",
+      "explanation": "#variableName creates a private class field.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1209,
+      "question": "What is 'Method Overriding'?",
+      "options": [
+        "A) Creating a method with the same name as parent's method in child class",
+        "B) Deleting a parent method",
+        "C) Renaming a method",
+        "D) Passing too many arguments"
+      ],
+      "correct_option": "A",
+      "explanation": "The child implementation replaces the parent one.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1210,
+      "question": "What is the output: class A {} console.log(typeof A);",
+      "options": [
+        "A) 'object'",
+        "B) 'class'",
+        "C) 'function'",
+        "D) 'undefined'"
+      ],
+      "correct_option": "C",
+      "explanation": "Classes are special functions in JavaScript.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1211,
+      "question": "Can you have multiple constructors in a JS class?",
+      "options": [
+        "A) Yes",
+        "B) No",
+        "C) Only in strict mode",
+        "D) Only if parameters differ"
+      ],
+      "correct_option": "B",
+      "explanation": "A class can only have one constructor method.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1212,
+      "question": "What is 'Getters' and 'Setters'?",
+      "options": [
+        "A) Tools for internet requests",
+        "B) Methods that look like properties for getting/setting values",
+        "C) Special variables",
+        "D) Class constructors"
+      ],
+      "correct_option": "B",
+      "explanation": "get and set keywords allow controlled property interaction.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1213,
+      "question": "What does super.methodName() do?",
+      "options": [
+        "A) Calls the parent's version of the method",
+        "B) Deletes the method",
+        "C) Runs method in a new thread",
+        "D) Returns the class name"
+      ],
+      "correct_option": "A",
+      "explanation": "super is used to access parent methods/constructor.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1214,
+      "question": "In a static method, 'this' refers to:",
+      "options": [
+        "A) The instance",
+        "B) The class itself",
+        "C) window",
+        "D) undefined"
+      ],
+      "correct_option": "B",
+      "explanation": "Static methods are not bound to instances, so 'this' is the class constructor.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1215,
+      "question": "Which of these is true about classes?",
+      "options": [
+        "A) They are hoisted like functions",
+        "B) They are NOT hoisted; must be defined before use",
+        "C) They can only contain primitive data",
+        "D) They cannot have properties"
+      ],
+      "correct_option": "B",
+      "explanation": "Classes follow TDZ rules similar to let/const.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1216,
+      "question": "Which operator is used to check if an object is an instance of a specific class?",
+      "options": [
+        "A) isMemberOf",
+        "B) instanceOf",
+        "C) instanceof",
+        "D) typeOf"
+      ],
+      "correct_option": "C",
+      "explanation": "obj instanceof ClassName returns a boolean.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1217,
+      "question": "Class methods are:",
+      "options": [
+        "A) Enumerable by default",
+        "B) Non-enumerable by default",
+        "C) Deleted after execution",
+        "D) Only accessible via static calls"
+      ],
+      "correct_option": "B",
+      "explanation": "Unlike property definitions in literal objects, class methods are not seen in for...in loops.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1218,
+      "question": "The 'constructor' method is called automatically when:",
+      "options": [
+        "A) The page loads",
+        "B) A new instance is created using 'new'",
+        "C) The class is exported",
+        "D) The script is parsed"
+      ],
+      "correct_option": "B",
+      "explanation": "Initialization logic goes here.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1219,
+      "question": "Can a class extend from a regular constructor function?",
+      "options": [
+        "A) No, only classes can be extended",
+        "B) Yes",
+        "C) Only in Node.js",
+        "D) Only in ES5"
+      ],
+      "correct_option": "B",
+      "explanation": "Classes can extend any constructible object/function.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1220,
+      "question": "Is it possible to redefine a method in a child class?",
+      "options": [
+        "A) Yes (Method Overloading)",
+        "B) Yes (Method Overriding)",
+        "C) No",
+        "D) Only if parent is empty"
+      ],
+      "correct_option": "B",
+      "explanation": "Overrides replace parent implementation.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1221,
+      "question": "A class definition uses:",
+      "options": [
+        "A) Parentheses ()",
+        "B) Curly braces {}",
+        "C) Square brackets []",
+        "D) Single quotes ''"
+      ],
+      "correct_option": "B",
+      "explanation": "Syntax: class Name { ... }",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1222,
+      "question": "What is the primary benefit of ES6 classes?",
+      "options": [
+        "A) Better performance",
+        "B) More readable and industry-standard OOP syntax",
+        "C) Strong typing",
+        "D) Automatic memory management"
+      ],
+      "correct_option": "B",
+      "explanation": "It's a cleaner wrapper over Prototype-based inheritance.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1223,
+      "question": "Can you call a static method from an instance (e.g., user.staticMethod())?",
+      "options": [
+        "A) Yes",
+        "B) No, it must be called on the Class name",
+        "C) Only in non-strict mode",
+        "D) Only if exported"
+      ],
+      "correct_option": "B",
+      "explanation": "Static methods are not accessible on instances.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1224,
+      "question": "Class fields (properties defined directly inside class) are available in:",
+      "options": [
+        "A) ES6 (2015)",
+        "B) ES2022",
+        "C) Original JS",
+        "D) Node v10 only"
+      ],
+      "correct_option": "B",
+      "explanation": "Public/Private class fields are a newer standard feature.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1225,
+      "question": "What is 'this' inside the constructor?",
+      "options": [
+        "A) The Class",
+        "B) The new instance being created",
+        "C) window",
+        "D) null"
+      ],
+      "correct_option": "B",
+      "explanation": "Constructor populates the blank new instance.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1226,
+      "question": "Which of these creates a GET accessor?",
+      "options": [
+        "A) get field()",
+        "B) getter field()",
+        "C) receive field()",
+        "D) get: field"
+      ],
+      "correct_option": "A",
+      "explanation": "Syntax: get name() { return this._name; }",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1227,
+      "question": "Which of these is used to invoke the parent class method from an overridden method?",
+      "options": [
+        "A) this.super.method()",
+        "B) parent.method()",
+        "C) super.method()",
+        "D) base.method()"
+      ],
+      "correct_option": "C",
+      "explanation": "The 'super' keyword allows access to parent context.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1228,
+      "question": "Are class declarations mandatory to use strict mode?",
+      "options": [
+        "A) No",
+        "B) Yes, class bodies are always in strict mode",
+        "C) Only if inheriting",
+        "D) Only if using private fields"
+      ],
+      "correct_option": "B",
+      "explanation": "Code within class bodies is executed in strict mode automatically.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1229,
+      "question": "What is the output: class Person {} let p = new Person(); typeof p;",
+      "options": [
+        "A) 'Person'",
+        "B) 'object'",
+        "C) 'function'",
+        "D) 'instance'"
+      ],
+      "correct_option": "B",
+      "explanation": "Instances of classes are objects.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1230,
+      "question": "Can classes be anonymous (assigned to variables)?",
+      "options": [
+        "A) Yes: const MyClass = class { }",
+        "B) No, they must have a name",
+        "C) Only in TypeScript",
+        "D) Only when extending"
+      ],
+      "correct_option": "A",
+      "explanation": "These are called 'Class Expressions'.",
+      "difficulty": "hard"
+    }
+  ],
+  "theory_questions": [
+    {
+      "id": 1251,
+      "question": "What is 'Syntactical Sugar'? Explain in the context of ES6 classes.",
+      "model_answer": "Syntactical sugar refers to syntax that is easier to read/type but doesn't change how the language works under the hood. ES6 classes still use Prototypal Inheritance; they just provide a cleaner syntax that looks like Java or C++.",
+      "key_points": [
+        "Readability",
+        "No change to core engine",
+        "Prototypal backend",
+        "Industry standard parity"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 1252,
+      "question": "Describe the sequence of actions when 'new MyClass()' is executed.",
+      "model_answer": "1. A new blank object is created. 2. The prototype of the object is set to MyClass.prototype. 3. The constructor is called with 'this' bound to the new object. 4. The object is returned (unless constructor returns another object).",
+      "key_points": [
+        "Blank object",
+        "this binding",
+        "Constructor execution",
+        "Implicit return"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1253,
+      "question": "What is the purpose of 'super()'? When and where must it be called?",
+      "model_answer": "super() is used to call the parent class's constructor. In a child class that has its own constructor, super() MUST be called before accessing 'this'. It ensures the parent's properties are initialized correctly.",
+      "key_points": [
+        "Parent initialization",
+        "this availability",
+        "Child constructor rule",
+        "Arguments passing"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1254,
+      "question": "Explain Static Methods and Properties. Provide a use case.",
+      "model_answer": "Static members belong to the class itself, not to instances. Use case: Utility functions that relate to the class but don't need instance data. Example: User.compareAge(u1, u2) or Math.sqrt().",
+      "key_points": [
+        "Class-level vs Instance-level",
+        "static keyword",
+        "Utility functions",
+        "Memory efficiency"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1255,
+      "question": "What are Getters and Setters and why are they used?",
+      "model_answer": "Getters allow retrieving a computed value as a property. Setters allow validating or processing data before assigning it to a property. They provide better control and encapsulation over internal state.",
+      "key_points": [
+        "get/set syntax",
+        "Data validation",
+        "Computed properties",
+        "Encapsulation"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1256,
+      "question": "Difference between Class Method and Instance Property.",
+      "model_answer": "Instance properties (usually in constructor) are unique to each object. Methods (defined in class body) exist on the prototype and are shared by all instances to save memory.",
+      "key_points": [
+        "Prototype sharing",
+        "Unique instance data",
+        "Memory usage",
+        "Definitions"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1257,
+      "question": "Explain Method Overriding and how to use parent logic within it.",
+      "model_answer": "Overriding is when a child class redefines a method from the parent. To still use parent logic, you use 'super.methodName()'. This allows 'extending' the parent's behavior rather than just replacing it.",
+      "key_points": [
+        "Successive refinement",
+        "super keyword",
+        "Redefinition",
+        "Logic extension"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1258,
+      "question": "Discuss Private Class Fields (#variable) and why they were added.",
+      "model_answer": "Added in ES2022, private fields use the # prefix to make properties truly inaccessible from outside the class. This enforces hard encapsulation, preventing external code from accidentally corrupting internal state.",
+      "key_points": [
+        "# prefix",
+        "Encapsulation",
+        "Privacy",
+        "Security"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 1259,
+      "question": "Contrast Function Constructors (ES5) vs Classes (ES6).",
+      "model_answer": "ES5 uses 'function Name() { ... }' and 'Name.prototype.method = ...'. ES6 uses 'class Name { constructor() { ... } method() { ... } }'. The ES6 version is more concise, supports extends/super easily, and is clearer for OOP devs.",
+      "key_points": [
+        "Syntax cleanup",
+        "Prototype assignment",
+        "Boilerplate reduction",
+        "Extensibility"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1260,
+      "question": "Can classes be passed as arguments or returned from functions? Why?",
+      "model_answer": "Yes. In JS, classes are just special types of functions (first-class citizens). You can create 'Higher-Order Classes' (mixins) that return a class based on some configuration.",
+      "key_points": [
+        "First-class citizens",
+        "Class expressions",
+        "Mixins",
+        "Dynamic creation"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    }
+  ],
+  "coding_questions": [
+    {
+      "id": 1281,
+      "problem_statement": "Define a class 'Car' with a constructor that takes 'brand' and 'year'. Log a message 'Brand: X, Year: Y' when initialized.",
+      "input_format": "brand, year",
+      "output_format": "Log message",
+      "constraints": "None",
+      "sample_input": "'Toyota', 2020",
+      "sample_output": "Brand: Toyota, Year: 2020",
+      "solution_explanation": "Use constructor and this.",
+      "code_solution": "class Car {\n  constructor(brand, year) {\n    this.brand = brand;\n    this.year = year;\n    console.log(`Brand: ${brand}, Year: ${year}`);\n  }\n}\nnew Car('Toyota', 2020);",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1282,
+      "problem_statement": "Add a method 'drive()' to the 'Car' class that logs 'Driving...'. Create instance and call it.",
+      "input_format": "None",
+      "output_format": "'Driving...'",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Driving...",
+      "solution_explanation": "Method inside class body.",
+      "code_solution": "class Car {\n  drive() {\n    console.log('Driving...');\n  }\n}\nconst myCar = new Car();\nmyCar.drive();",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1283,
+      "problem_statement": "Create a class 'ElectricCar' that extends 'Car'. In its constructor, call super() and add a property 'battery'.",
+      "input_format": "brand, year, battery",
+      "output_format": "ElectricCar instance with 3 properties",
+      "constraints": "Use extends and super.",
+      "sample_input": "'Tesla', 2022, 100",
+      "sample_output": "{brand:'Tesla', year:2022, battery:100}",
+      "solution_explanation": "Child class inheritance.",
+      "code_solution": "class Car {\n  constructor(brand, year) { this.brand = brand; this.year = year; }\n}\nclass ElectricCar extends Car {\n  constructor(brand, year, battery) {\n    super(brand, year);\n    this.battery = battery;\n  }\n}\nconst e = new ElectricCar('Tesla', 2022, 100);",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1284,
+      "problem_statement": "Implement a static method 'isEcoFriendly(type)' in the 'Car' class that returns true if type is 'Electric'.",
+      "input_format": "String",
+      "output_format": "Boolean",
+      "constraints": "Use static keyword.",
+      "sample_input": "'Electric'",
+      "sample_output": "true",
+      "solution_explanation": "Call on the class name.",
+      "code_solution": "class Car {\n  static isEcoFriendly(type) {\n    return type === 'Electric';\n  }\n}\nconsole.log(Car.isEcoFriendly('Electric'));",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1285,
+      "problem_statement": "Override the 'drive()' method in 'ElectricCar' to log 'Driving silently...'. Use super.drive() inside it.",
+      "input_format": "None",
+      "output_format": "Two log messages",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Driving..., Driving silently...",
+      "solution_explanation": "super access to parent methods.",
+      "code_solution": "class Car { drive() { console.log('Driving...'); } }\nclass ElectricCar extends Car {\n  drive() {\n    super.drive();\n    console.log('Driving silently...');\n  }\n}\nnew ElectricCar().drive();",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1286,
+      "problem_statement": "Use Getters and Setters to control a 'price' property. Price cannot be negative (set to 0 if negative).",
+      "input_format": "Number",
+      "output_format": "Validated price",
+      "constraints": "None",
+      "sample_input": "-500",
+      "sample_output": "0",
+      "solution_explanation": "Use get/set with a private-prefix variable.",
+      "code_solution": "class Product {\n  set price(val) {\n    this._price = val < 0 ? 0 : val;\n  }\n  get price() {\n    return this._price;\n  }\n}\nconst p = new Product(); p.price = -500; console.log(p.price);",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1287,
+      "problem_statement": "Demonstrate private fields by creating a class with a private property '#id'. Try to access it from outside and catch the error.",
+      "input_format": "None",
+      "output_format": "SyntaxError (or error message)",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Error on access",
+      "solution_explanation": "Direct access outside class is forbidden.",
+      "code_solution": "class Secret {\n  #id = 123;\n}\nconst s = new Secret();\n// console.log(s.#id); // This will throw SyntaxError",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1288,
+      "problem_statement": "Write a function 'createClass(className)' that returns a class with that name (Class Expression).",
+      "input_format": "String",
+      "output_format": "Dynamic Class",
+      "constraints": "None",
+      "sample_input": "'Admin'",
+      "sample_output": "A class named Admin",
+      "solution_explanation": "Classes as values.",
+      "code_solution": "function createClass(name) {\n  return class {\n    constructor() { this.name = name; } \n  }\n}\nconst Dynamic = createClass('Admin');\nconsole.log(new Dynamic().name);",
+      "difficulty": "hard"
+    }
+  ]
+}

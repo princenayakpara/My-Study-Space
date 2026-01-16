@@ -1,0 +1,625 @@
+{
+  "unit_name": "3. Operators",
+  "mcqs": [
+    {
+      "id": 301,
+      "question": "Which operator is used to assign a value to a variable?",
+      "options": [
+        "A) *",
+        "B) =",
+        "C) -",
+        "D) x"
+      ],
+      "correct_option": "B",
+      "explanation": "The = operator is the assignment operator.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 302,
+      "question": "What is the result of 10 % 3?",
+      "options": [
+        "A) 3",
+        "B) 1",
+        "C) 0",
+        "D) 3.33"
+      ],
+      "correct_option": "B",
+      "explanation": "The modulo operator (%) returns the remainder of a division. 10 / 3 = 3 with remainder 1.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 303,
+      "question": "Which operator returns true if the two operands are not equal?",
+      "options": [
+        "A) <>",
+        "B) !=",
+        "C) ==",
+        "D) !==="
+      ],
+      "correct_option": "B",
+      "explanation": "!= is the inequality operator.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 304,
+      "question": "What is the difference between == and ===?",
+      "options": [
+        "A) There is no difference",
+        "B) == compares value and type, === only value",
+        "C) === compares value and type, == only value",
+        "D) == is for strings, === is for numbers"
+      ],
+      "correct_option": "C",
+      "explanation": "=== is the strict equality operator, which does not perform type coercion.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 305,
+      "question": "Which operator is the exponentiation operator in ES6?",
+      "options": [
+        "A) ^",
+        "B) **",
+        "C) ^^^",
+        "D) exp()"
+      ],
+      "correct_option": "B",
+      "explanation": "** is used for power calculations (e.g., 2 ** 3 = 8).",
+      "difficulty": "easy"
+    },
+    {
+      "id": 306,
+      "question": "What is the result of '5' == 5?",
+      "options": [
+        "A) true",
+        "B) false",
+        "C) undefined",
+        "D) Error"
+      ],
+      "correct_option": "A",
+      "explanation": "== performs type coercion, converting the string '5' to the number 5.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 307,
+      "question": "What is the result of '5' === 5?",
+      "options": [
+        "A) true",
+        "B) false",
+        "C) undefined",
+        "D) Error"
+      ],
+      "correct_option": "B",
+      "explanation": "=== checks both value and type. String '5' is not the same type as Number 5.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 308,
+      "question": "Which operator is used for logical AND?",
+      "options": [
+        "A) &",
+        "B) &&",
+        "C) |",
+        "D) ||"
+      ],
+      "correct_option": "B",
+      "explanation": "&& is the logical AND operator.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 309,
+      "question": "Which operator is used for logical OR?",
+      "options": [
+        "A) |",
+        "B) ||",
+        "C) &",
+        "D) &&"
+      ],
+      "correct_option": "B",
+      "explanation": "|| is the logical OR operator.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 310,
+      "question": "What is the result of !true?",
+      "options": [
+        "A) true",
+        "B) false",
+        "C) null",
+        "D) undefined"
+      ],
+      "correct_option": "B",
+      "explanation": "The logical NOT (!) operator inverts the boolean value.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 311,
+      "question": "What is the ternary operator syntax?",
+      "options": [
+        "A) condition ? true_val : false_val",
+        "B) condition : true_val ? false_val",
+        "C) condition ? true_val ? false_val",
+        "D) if ? then : else"
+      ],
+      "correct_option": "A",
+      "explanation": "The conditional (ternary) operator takes three operands.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 312,
+      "question": "What is the result of 5 + '5'?",
+      "options": [
+        "A) 10",
+        "B) '55'",
+        "C) 55",
+        "D) NaN"
+      ],
+      "correct_option": "B",
+      "explanation": "Number + String results in string concatenation.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 313,
+      "question": "What is the result of 5 - '2'?",
+      "options": [
+        "A) 3",
+        "B) '3'",
+        "C) '52'",
+        "D) NaN"
+      ],
+      "correct_option": "A",
+      "explanation": "The minus operator forces numeric conversion of the string.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 314,
+      "question": "What does the ++ operator do?",
+      "options": [
+        "A) Adds 2",
+        "B) Multiplies by 2",
+        "C) Increments by 1",
+        "D) Squares the number"
+      ],
+      "correct_option": "C",
+      "explanation": "The increment operator (++) increases a value by 1.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 315,
+      "question": "What is the difference between prefix ++ (e.g., ++x) and postfix ++ (e.g., x++)?",
+      "options": [
+        "A) No difference",
+        "B) Prefix increments before returning, postfix after",
+        "C) Postfix increments before returning, prefix after",
+        "D) Prefix only works on constants"
+      ],
+      "correct_option": "B",
+      "explanation": "++x increments and then returns the new value. x++ returns the old value and then increments.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 316,
+      "question": "Which of the following is a bitwise AND operator?",
+      "options": [
+        "A) &&",
+        "B) &",
+        "C) ||",
+        "D) |"
+      ],
+      "correct_option": "B",
+      "explanation": "& is the bitwise AND, while && is logical AND.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 317,
+      "question": "What is the Nullish Coalescing operator?",
+      "options": [
+        "A) ||",
+        "B) ??",
+        "C) ?:",
+        "D) &&"
+      ],
+      "correct_option": "B",
+      "explanation": "?? returns the right-hand operand only if the left-hand operand is null or undefined.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 318,
+      "question": "What is the result of 0 || 'hello'?",
+      "options": [
+        "A) 0",
+        "B) 'hello'",
+        "C) true",
+        "D) false"
+      ],
+      "correct_option": "B",
+      "explanation": "The OR operator returns the first truthy value. 0 is falsy, so it returns 'hello'.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 319,
+      "question": "What is the result of 0 ?? 'hello'?",
+      "options": [
+        "A) 0",
+        "B) 'hello'",
+        "C) null",
+        "D) undefined"
+      ],
+      "correct_option": "A",
+      "explanation": "The nullish coalescing operator only falls back for null or undefined. 0 is a valid value.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 320,
+      "question": "Which operator is used to find the type of a variable?",
+      "options": [
+        "A) type",
+        "B) typeof",
+        "C) checkType",
+        "D) instanceOf"
+      ],
+      "correct_option": "B",
+      "explanation": "typeof is a unary operator that returns a string indicating the type.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 321,
+      "question": "Which operator checks if an object is an instance of a specific class?",
+      "options": [
+        "A) type",
+        "B) typeof",
+        "C) instanceof",
+        "D) isClass"
+      ],
+      "correct_option": "C",
+      "explanation": "instanceof checks the prototype chain.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 322,
+      "question": "What is the comma operator (,) used for?",
+      "options": [
+        "A) To join strings",
+        "B) To evaluate multiple expressions and return the last one",
+        "C) To create an array",
+        "D) To end a statement"
+      ],
+      "correct_option": "B",
+      "explanation": "The comma operator evaluates operands from left to right and returns the value of the last operand.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 323,
+      "question": "What is the result of true && 'apple'?",
+      "options": [
+        "A) true",
+        "B) 'apple'",
+        "C) false",
+        "D) Error"
+      ],
+      "correct_option": "B",
+      "explanation": "In logical AND, if the first operand is truthy, the second operand is returned.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 324,
+      "question": "What is the bitwise XOR operator?",
+      "options": [
+        "A) ^",
+        "B) **",
+        "C) &",
+        "D) ~"
+      ],
+      "correct_option": "A",
+      "explanation": "^ is the bitwise XOR operator in JavaScript.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 325,
+      "question": "Which of these has the highest operator precedence?",
+      "options": [
+        "A) +",
+        "B) *",
+        "C) ( )",
+        "D) ="
+      ],
+      "correct_option": "C",
+      "explanation": "Parentheses have the highest precedence in JS operators.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 326,
+      "question": "What is the result of delete x where x is a declared variable?",
+      "options": [
+        "A) true",
+        "B) false",
+        "C) Error",
+        "D) undefined"
+      ],
+      "correct_option": "B",
+      "explanation": "The delete operator cannot delete variables declared with var, let, or const.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 327,
+      "question": "Which operator is used to concatenate strings?",
+      "options": [
+        "A) &",
+        "B) +",
+        "C) .",
+        "D) ,"
+      ],
+      "correct_option": "B",
+      "explanation": "The plus (+) operator is used for both addition and string concatenation.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 328,
+      "question": "What is the 'void' operator used for?",
+      "options": [
+        "A) To clear a variable",
+        "B) To return undefined after evaluating an expression",
+        "C) To declare a function with no return",
+        "D) To delete an object"
+      ],
+      "correct_option": "B",
+      "explanation": "void 0 is a common way to get an 'undefined' value.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 329,
+      "question": "What is the result of 10 > 5 > 2?",
+      "options": [
+        "A) true",
+        "B) false",
+        "C) Error",
+        "D) 1"
+      ],
+      "correct_option": "B",
+      "explanation": "It evaluates (10 > 5) which is true. Then (true > 2). True is coerced to 1. (1 > 2) is false.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 330,
+      "question": "Which operator is used for optional chaining?",
+      "options": [
+        "A) ?.",
+        "B) ??",
+        "C) ?:",
+        "D) !!?"
+      ],
+      "correct_option": "A",
+      "explanation": "?. allows reading properties of deep nested objects without checking if each level exists.",
+      "difficulty": "medium"
+    }
+  ],
+  "theory_questions": [
+    {
+      "id": 351,
+      "question": "Explain the difference between Arithmetic and Assignment operators.",
+      "model_answer": "Arithmetic operators (+, -, *, /, %, **) perform mathematical calculations and return a numeric result. Assignment operators (=, +=, -=, etc.) are used to assign values to variables, often combining a calculation with an assignment.",
+      "key_points": [
+        "Math vs Storage",
+        "Return values",
+        "Operator examples",
+        "Compound assignment"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 352,
+      "question": "Why is the strict equality operator (===) preferred over the abstract equality operator (==)?",
+      "model_answer": "The strict equality operator (===) checks both the value and the type of the operands, whereas the abstract equality operator (==) performs type coercion if the types are different. Using === prevents subtle bugs caused by unexpected type conversions.",
+      "key_points": [
+        "Type coercion",
+        "Predictability",
+        "Bug prevention",
+        "Strict check"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 353,
+      "question": "How do logical AND (&&) and OR (||) operators work with non-boolean values?",
+      "model_answer": "In JS, && returns the first falsy operand or the last truthy operand. || returns the first truthy operand or the last falsy operand. This is known as short-circuit evaluation.",
+      "key_points": [
+        "Short-circuiting",
+        "Falsy check",
+        "Truthy check",
+        "Returned values"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 354,
+      "question": "Explain the Ternary (Conditional) operator with syntax and example.",
+      "model_answer": "The ternary operator is a shorthand for if-else. Syntax: condition ? expr1 : expr2. If condition is true, it returns expr1, otherwise expr2. Example: age >= 18 ? 'Adult' : 'Minor'.",
+      "key_points": [
+        "Syntax",
+        "Three operands",
+        "Shorthand if-else",
+        "Example"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 355,
+      "question": "What is the Nullish Coalescing operator (??) and how does it differ from logical OR (||)?",
+      "model_answer": "?? only falls back to the right operand if the left is null or undefined. || falls back for any falsy value (like 0 or ''). ?? is safer when 0 or '' are valid inputs.",
+      "key_points": [
+        "null/undefined only",
+        "Any falsy vs nullish",
+        "Case: 0 and empty strings",
+        "ES2020 feature"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 356,
+      "question": "Describe Operator Precedence and Associativity.",
+      "model_answer": "Operator precedence determines the order in which operators are evaluated (e.g., * before +). Associativity determines the order when operators have the same precedence (e.g., left-to-right for +).",
+      "key_points": [
+        "Evaluation order",
+        "Precedence levels",
+        "Left vs Right associativity",
+        "Parentheses role"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 357,
+      "question": "What are Unary operators? Give three examples.",
+      "model_answer": "Unary operators work with only one operand. Examples: typeof (check type), ! (logical NOT), ++ (increment), void (returns undefined), delete (removes object prop).",
+      "key_points": [
+        "One operand",
+        "typeof",
+        "NOT",
+        "Incremental"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 358,
+      "question": "Explain Bitwise operators in JavaScript.",
+      "model_answer": "Bitwise operators (&, |, ^, ~, <<, >>) treat operands as 32-bit integers and operate on them bit-by-bit. They are commonly used for low-level tasks like flag management or performance-critical math.",
+      "key_points": [
+        "32-bit integers",
+        "Bit-by-bit operations",
+        "Performance",
+        "Flag manipulation"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 359,
+      "question": "What is the use of the exponentiation operator (**)?",
+      "model_answer": "Introduced in ES2016, ** is a cleaner alternative to Math.pow(). It calculates the base to the power of the exponent. Example: 2 ** 3 = 8.",
+      "key_points": [
+        "Math.pow alternative",
+        "Exponent calculation",
+        "ES2016",
+        "Syntax"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 360,
+      "question": "Explain the Optional Chaining operator (?.) and its benefits.",
+      "model_answer": "The ?. operator lets you read the value of a property located deep within a chain of connected objects without having to check that each reference in the chain is valid. It returns undefined if any level is null/undefined instead of crashing.",
+      "key_points": [
+        "Prevention of crashes",
+        "Deep nesting",
+        "Short-circuiting",
+        "Undefined fallback"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    }
+  ],
+  "coding_questions": [
+    {
+      "id": 381,
+      "problem_statement": "Write a script to calculate the area of a circle with radius 7. (Area = PI * r * r). Use Math.PI.",
+      "input_format": "None",
+      "output_format": "Area value.",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "153.938...",
+      "solution_explanation": "Use multiplication and exponentiation.",
+      "code_solution": "const radius = 7;\nconst area = Math.PI * radius ** 2;\nconsole.log(area);",
+      "difficulty": "easy"
+    },
+    {
+      "id": 382,
+      "problem_statement": "Compare the number 10 and the string '10' using both == and ===. Log the results.",
+      "input_format": "None",
+      "output_format": "true, false",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "true, false",
+      "solution_explanation": "== coereces, === does not.",
+      "code_solution": "console.log(10 == '10');\nconsole.log(10 === '10');",
+      "difficulty": "easy"
+    },
+    {
+      "id": 383,
+      "problem_statement": "Use the ternary operator to check if a number 'x' is even or odd.",
+      "input_format": "None",
+      "output_format": "'Even' or 'Odd'",
+      "constraints": "None",
+      "sample_input": "x = 4",
+      "sample_output": "Even",
+      "solution_explanation": "Check if x % 2 is 0.",
+      "code_solution": "let x = 4;\nlet result = (x % 2 === 0) ? 'Even' : 'Odd';\nconsole.log(result);",
+      "difficulty": "easy"
+    },
+    {
+      "id": 384,
+      "problem_statement": "Demonstrate the difference between prefix and postfix increment by logging values of y = ++x and z = x++.",
+      "input_format": "None",
+      "output_format": "Original, Prefix Result, Postfix Result.",
+      "constraints": "None",
+      "sample_input": "x = 5",
+      "sample_output": "x=6, x=7",
+      "solution_explanation": "Prefix updates before use, postfix after.",
+      "code_solution": "let x = 5;\nlet y = ++x; // x=6, y=6\nlet z = x++; // z=6, x=7\nconsole.log(x, y, z);",
+      "difficulty": "hard"
+    },
+    {
+      "id": 385,
+      "problem_statement": "Use the nullish coalescing operator to assign a default greeting 'Hello' to a variable 'customGreeting' if 'userInput' is null or undefined.",
+      "input_format": "None",
+      "output_format": "Greeting text.",
+      "constraints": "None",
+      "sample_input": "userInput = null",
+      "sample_output": "Hello",
+      "solution_explanation": "?? handles null/undefined.",
+      "code_solution": "let userInput = null;\nlet customGreeting = userInput ?? 'Hello';\nconsole.log(customGreeting);",
+      "difficulty": "medium"
+    },
+    {
+      "id": 386,
+      "problem_statement": "Write a program that uses logical AND (&&) to log 'Pass' only if 'score' is >= 50 AND 'attendance' is >= 75.",
+      "input_format": "None",
+      "output_format": "'Pass' or nothing.",
+      "constraints": "None",
+      "sample_input": "score=60, attendance=80",
+      "sample_output": "Pass",
+      "solution_explanation": "Both conditions must be true.",
+      "code_solution": "let score = 60, attendance = 80;\nif (score >= 50 && attendance >= 75) {\n  console.log('Pass');\n}",
+      "difficulty": "easy"
+    },
+    {
+      "id": 387,
+      "problem_statement": "Swap two variables 'a' and 'b' without using a third temporary variable, using addition and subtraction operators.",
+      "input_format": "None",
+      "output_format": "Swapped values.",
+      "constraints": "None",
+      "sample_input": "a=5, b=10",
+      "sample_output": "a=10, b=5",
+      "solution_explanation": "a = a+b, b = a-b, a = a-b.",
+      "code_solution": "let a = 5, b = 10;\na = a + b;\nb = a - b;\na = a - b;\nconsole.log(a, b);",
+      "difficulty": "hard"
+    },
+    {
+      "id": 388,
+      "problem_statement": "Use the typeof operator to check if a variable 'input' is a string before calling .toUpperCase() on it.",
+      "input_format": "None",
+      "output_format": "Uppercase string or error message.",
+      "constraints": "None",
+      "sample_input": "input = 'hello'",
+      "sample_output": "HELLO",
+      "solution_explanation": "Type checking prevents runtime errors.",
+      "code_solution": "let input = 'hello';\nif (typeof input === 'string') {\n  console.log(input.toUpperCase());\n} else {\n  console.log('Not a string');\n}",
+      "difficulty": "medium"
+    }
+  ]
+}

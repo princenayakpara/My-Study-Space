@@ -1,0 +1,625 @@
+{
+  "unit_name": "7. Arrays and Objects",
+  "mcqs": [
+    {
+      "id": 701,
+      "question": "How do you create an array in JavaScript?",
+      "options": [
+        "A) let a = (1,2,3);",
+        "B) let a = [1,2,3];",
+        "C) let a = {1,2,3};",
+        "D) let a = <1,2,3>;"
+      ],
+      "correct_option": "B",
+      "explanation": "Square brackets [ ] are used to define literals for arrays.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 702,
+      "question": "Which method is used to add an element at the end of an array?",
+      "options": [
+        "A) shift()",
+        "B) unshift()",
+        "C) push()",
+        "D) pop()"
+      ],
+      "correct_option": "C",
+      "explanation": "push() adds to the end, whereas unshift() adds to the beginning.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 703,
+      "question": "Which method removes the last element of an array?",
+      "options": [
+        "A) shift()",
+        "B) pop()",
+        "C) delete()",
+        "D) remove()"
+      ],
+      "correct_option": "B",
+      "explanation": "pop() removes and returns the last element.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 704,
+      "question": "Which method removes the first element of an array?",
+      "options": [
+        "A) shift()",
+        "B) unshift()",
+        "C) pop()",
+        "D) slice()"
+      ],
+      "correct_option": "A",
+      "explanation": "shift() removes the first element and shifts all others down.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 705,
+      "question": "What is the result of [1,2].concat([3,4])?",
+      "options": [
+        "A) [1,2,3,4]",
+        "B) [[1,2],[3,4]]",
+        "C) [1,2,3]",
+        "D) Error"
+      ],
+      "correct_option": "A",
+      "explanation": "concat() merges two or more arrays into a new array.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 706,
+      "question": "Which method returns a portion of an array as a new array?",
+      "options": [
+        "A) splice()",
+        "B) slice()",
+        "C) split()",
+        "D) cut()"
+      ],
+      "correct_option": "B",
+      "explanation": "slice() returns a shallow copy of a portion of an array.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 707,
+      "question": "Which method changes the content of an array by removing or replacing existing elements?",
+      "options": [
+        "A) slice()",
+        "B) shift()",
+        "C) splice()",
+        "D) join()"
+      ],
+      "correct_option": "C",
+      "explanation": "splice() is used for adding/removing elements at any position.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 708,
+      "question": "How do you find the index of a specific element in an array?",
+      "options": [
+        "A) find()",
+        "B) indexOf()",
+        "C) search()",
+        "D) locate()"
+      ],
+      "correct_option": "B",
+      "explanation": "indexOf() returns the first index at which a given element can be found.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 709,
+      "question": "Which property returns the number of elements in an array?",
+      "options": [
+        "A) size",
+        "B) count",
+        "C) length",
+        "D) limit"
+      ],
+      "correct_option": "C",
+      "explanation": "The 'length' property tracks the number of elements.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 710,
+      "question": "Array elements are accessed using:",
+      "options": [
+        "A) Keys",
+        "B) Indices",
+        "C) Names",
+        "D) IDs"
+      ],
+      "correct_option": "B",
+      "explanation": "Arrays are zero-indexed collections.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 711,
+      "question": "How do you define an object in JavaScript?",
+      "options": [
+        "A) let o = (name: 'A');",
+        "B) let o = { name: 'A' };",
+        "C) let o = [ name: 'A' ];",
+        "D) let o = < name: 'A' >;"
+      ],
+      "correct_option": "B",
+      "explanation": "Curly braces { } define object literals.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 712,
+      "question": "Which operator is used to access object properties?",
+      "options": [
+        "A) . (dot)",
+        "B) [ ] (brackets)",
+        "C) Both A and B",
+        "D) -> (arrow)"
+      ],
+      "correct_option": "C",
+      "explanation": "Both dot notation and bracket notation allow property access.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 713,
+      "question": "Which of the following is used to loop over object keys?",
+      "options": [
+        "A) for...of",
+        "B) for...in",
+        "C) map()",
+        "D) while"
+      ],
+      "correct_option": "B",
+      "explanation": "for...in iterates over enumerable string properties of an object.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 714,
+      "question": "How do you delete a property from an object?",
+      "options": [
+        "A) delete",
+        "B) remove",
+        "C) clear",
+        "D) unset"
+      ],
+      "correct_option": "A",
+      "explanation": "The 'delete' operator removes a property from an object.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 715,
+      "question": "Which method returns an array of an object's keys?",
+      "options": [
+        "A) Object.values()",
+        "B) Object.keys()",
+        "C) Object.entries()",
+        "D) Object.all()"
+      ],
+      "correct_option": "B",
+      "explanation": "Object.keys() provides an array of own enumerable property names.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 716,
+      "question": "Which method returns an array of an object's property values?",
+      "options": [
+        "A) Object.values()",
+        "B) Object.keys()",
+        "C) Object.data()",
+        "D) Object.list()"
+      ],
+      "correct_option": "A",
+      "explanation": "Object.values() returns an array containing values of own properties.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 717,
+      "question": "What is the 'this' keyword in an object method?",
+      "options": [
+        "A) Refers to the function",
+        "B) Refers to the global window",
+        "C) Refers to the object that owns the method",
+        "D) Refers to the first property"
+      ],
+      "correct_option": "C",
+      "explanation": "In an object's method, 'this' refers to the object itself.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 718,
+      "question": "What happens if you access a non-existent property of an object?",
+      "options": [
+        "A) Throws Error",
+        "B) Returns null",
+        "C) Returns undefined",
+        "D) Returns false"
+      ],
+      "correct_option": "C",
+      "explanation": "Accessing missing properties results in 'undefined'.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 719,
+      "question": "What is an 'Array of Objects'?",
+      "options": [
+        "A) Multi-dimensional array",
+        "B) A collection where each element is an object",
+        "C) A nested set",
+        "D) A class instance"
+      ],
+      "correct_option": "B",
+      "explanation": "Commonly used for datasets like [ {id:1}, {id:2} ].",
+      "difficulty": "easy"
+    },
+    {
+      "id": 720,
+      "question": "How can you check if a specific key exists in an object?",
+      "options": [
+        "A) obj.hasKey('key')",
+        "B) 'key' in obj",
+        "C) obj.contains('key')",
+        "D) obj.exists('key')"
+      ],
+      "correct_option": "B",
+      "explanation": "The 'in' operator checks if a property exists in the object or its prototype chain.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 721,
+      "question": "What is the difference between shallow copy and deep copy?",
+      "options": [
+        "A) There is no difference",
+        "B) Shallow copies only top-level; Deep copies nested structures",
+        "C) Deep copies only top-level; Shallow copies nested structures",
+        "D) Shallow copy uses Object.assign, Deep copy uses JSON.parse"
+      ],
+      "correct_option": "B",
+      "explanation": "Shallow copies share nested references, while deep copies create entirely new instances of everything.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 722,
+      "question": "Which ES6 feature allow expanding an array into separate elements?",
+      "options": [
+        "A) Rest parameter",
+        "B) Spread operator",
+        "C) Expansion tag",
+        "D) Split method"
+      ],
+      "correct_option": "B",
+      "explanation": "The spread operator (...) expands an array into its elements.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 723,
+      "question": "Which method creates a string from an array by joining elements with a separator?",
+      "options": [
+        "A) toString()",
+        "B) join()",
+        "C) split()",
+        "D) merge()"
+      ],
+      "correct_option": "B",
+      "explanation": "join() concatenates all elements into a string using a specified separator.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 724,
+      "question": "Which of these is a way to verify if a variable is an array?",
+      "options": [
+        "A) typeof array === 'array'",
+        "B) Array.isArray(variable)",
+        "C) variable instanceof Object",
+        "D) variable.type === 'array'"
+      ],
+      "correct_option": "B",
+      "explanation": "Since typeof array returns 'object', Array.isArray() is the reliable check.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 725,
+      "question": "Object.entries() returns an array of:",
+      "options": [
+        "A) Keys",
+        "B) Values",
+        "C) [key, value] pairs",
+        "D) IDs"
+      ],
+      "correct_option": "C",
+      "explanation": "Object.entries( ) creates a 2D array of property pairs.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 726,
+      "question": "What is 'Destructuring'?",
+      "options": [
+        "A) Deleting an object",
+        "B) A syntax to extract values from arrays/objects into variables",
+        "C) Reversing an array",
+        "D) Closing a database connection"
+      ],
+      "correct_option": "B",
+      "explanation": "Destructuring is a concise way to unpack values.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 727,
+      "question": "What is the output: const [a, b] = [1, 2, 3]; console.log(a, b);",
+      "options": [
+        "A) 1 2",
+        "B) 1 3",
+        "C) [1, 2]",
+        "D) Error"
+      ],
+      "correct_option": "A",
+      "explanation": "The first two elements map to a and b; the rest are ignored.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 728,
+      "question": "What is a 'Method' in an object?",
+      "options": [
+        "A) A special property that holds a function",
+        "B) A variable inside a function",
+        "C) A type of array",
+        "D) A class definition"
+      ],
+      "correct_option": "A",
+      "explanation": "Methods are functions defined as property values.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 729,
+      "question": "Which of the following creates a read-only object that cannot be modified?",
+      "options": [
+        "A) const obj = { }",
+        "B) Object.freeze(obj)",
+        "C) Object.seal(obj)",
+        "D) Object.const(obj)"
+      ],
+      "correct_option": "B",
+      "explanation": "Object.freeze() prevents adding, deleting, or modifying properties.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 730,
+      "question": "Which array method checks if at least one element satisfies a condition?",
+      "options": [
+        "A) every()",
+        "B) some()",
+        "C) filter()",
+        "D) check()"
+      ],
+      "correct_option": "B",
+      "explanation": "some() returns true if any element matches.",
+      "difficulty": "medium"
+    }
+  ],
+  "theory_questions": [
+    {
+      "id": 751,
+      "question": "Explain the difference between Arrays and Objects in JavaScript.",
+      "model_answer": "Arrays are ordered lists with numeric indices, best for collections of similar items. Objects are unordered collections of key-value pairs, best for representing complex entities with named properties.",
+      "key_points": [
+        "Ordered vs Unordered",
+        "Indices vs Keys",
+        "Iterables vs Entities",
+        "Use cases"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 752,
+      "question": "Compare the push/pop methods with shift/unshift methods.",
+      "model_answer": "push() and pop() operate on the *end* of the array (fast). shift() and unshift() operate on the *beginning* (slower because they require re-indexing all existing elements).",
+      "key_points": [
+        "End vs Start",
+        "Speed/Performance",
+        "Re-indexing",
+        "Method pairs"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 753,
+      "question": "Differentiate between slice() and splice() methods.",
+      "model_answer": "slice() does NOT modify the original array; it returns a new partial copy. splice() DOES modify the original array by removing or adding elements at specific indices.",
+      "key_points": [
+        "Original mutation",
+        "Return value",
+        "Arguments syntax",
+        "Utility"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 754,
+      "question": "What is Object Destructuring and how does it improve code quality?",
+      "model_answer": "Destructuring is a syntax that lets you unpack properties from objects into distinct variables: const {name} = user;. It makes code cleaner, reduces repetition, and is very useful for extracting function arguments.",
+      "key_points": [
+        "Cleaning code",
+        "Unpacking",
+        "Property matching",
+        "ES6 syntax"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 755,
+      "question": "Explain the use of the Spread operator (...) with arrays and objects.",
+      "model_answer": "The spread operator can be used to copy arrays/objects (shallow copy), merge collections, or pass array elements as separate arguments to a function. Example: [...arr1, ...arr2] merges two arrays.",
+      "key_points": [
+        "Copying",
+        "Merging",
+        "Expansion",
+        "Shallow copy warning"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 756,
+      "question": "Describe the behavior of 'this' in object methods vs arrow functions inside objects.",
+      "model_answer": "In regular methods, 'this' refers to the object calling the method. Arrow functions, however, do not have their own 'this' and inherit it from the surrounding (lexical) scope, usually resulting in 'this' being window/undefined.",
+      "key_points": [
+        "Lexical scoping",
+        "Object binding",
+        "Lexical 'this'",
+        "Arrow function limitation"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 757,
+      "question": "What are the methods for iterating over an Object's properties?",
+      "model_answer": "1. for...in loop (iterates keys). 2. Object.keys() (array of keys). 3. Object.values() (array of values). 4. Object.entries() (array of pairs).",
+      "key_points": [
+        "for...in",
+        "Object.keys",
+        "Object.values",
+        "Object.entries"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 758,
+      "question": "Explain Shallow Copy vs Deep Copy in the context of nested objects.",
+      "model_answer": "A shallow copy (via Object.assign or {...}) only copies the top level. If an object is nested, the copy still refers to the original nested object. A deep copy (via JSON.parse(JSON.stringify()) or libraries) creates new versions of all levels.",
+      "key_points": [
+        "Reference sharing",
+        "Memory allocation",
+        "Spread syntax limitation",
+        "Recursive copying"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 759,
+      "question": "What is an 'Associative Array' and does JavaScript support them?",
+      "model_answer": "Associative arrays are arrays with named indexes. In JS, arrays only use numeric indexes. If you add named indexes to an array, it technically becomes an object property, and 'length' will not reflect them. For named keys, Objects or Maps should be used.",
+      "key_points": [
+        "Numeric indices",
+        "Object properties",
+        "Length behavior",
+        "Maps as alternative"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 760,
+      "question": "What is 'Object.freeze()' vs 'Object.seal()'?",
+      "model_answer": "Object.freeze() makes an object immutable (cannot add, delete, or change properties). Object.seal() prevents adding or deleting properties, but allows modifying existings ones.",
+      "key_points": [
+        "Immutability",
+        "Adding/Deleting",
+        "Modifying",
+        "Security/Integrity"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    }
+  ],
+  "coding_questions": [
+    {
+      "id": 781,
+      "problem_statement": "Create an array 'colors' with 'Red', 'Green', 'Blue'. Add 'Yellow' at the end and 'White' at the start. Print the final array.",
+      "input_format": "None",
+      "output_format": "Array",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "['White', 'Red', 'Green', 'Blue', 'Yellow']",
+      "solution_explanation": "Use push and unshift.",
+      "code_solution": "const colors = ['Red', 'Green', 'Blue'];\ncolors.push('Yellow');\ncolors.unshift('White');\nconsole.log(colors);",
+      "difficulty": "easy"
+    },
+    {
+      "id": 782,
+      "problem_statement": "Write a script that extracts the first two elements of an array into variables 'first' and 'second' using destructuring.",
+      "input_format": "Array",
+      "output_format": "Variables",
+      "constraints": "None",
+      "sample_input": "[10, 20, 30]",
+      "sample_output": "10, 20",
+      "solution_explanation": "Array destructuring syntax.",
+      "code_solution": "const numbers = [10, 20, 30];\nconst [first, second] = numbers;\nconsole.log(first, second);",
+      "difficulty": "easy"
+    },
+    {
+      "id": 783,
+      "problem_statement": "Create an object 'book' with title, author, and year. Update the year and add a new property 'genre'.",
+      "input_format": "None",
+      "output_format": "Object",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Updated object",
+      "solution_explanation": "Access with dot notation to set values.",
+      "code_solution": "const book = { title: '1984', author: 'George Orwell', year: 1949 };\nbook.year = 1950;\nbook.genre = 'Dystopian';\nconsole.log(book);",
+      "difficulty": "easy"
+    },
+    {
+      "id": 784,
+      "problem_statement": "Remove the second element of the array [1, 2, 3, 4, 5] using splice and log the array.",
+      "input_format": "None",
+      "output_format": "Modified array",
+      "constraints": "Use splice.",
+      "sample_input": "None",
+      "sample_output": "[1, 3, 4, 5]",
+      "solution_explanation": "splice(index, count).",
+      "code_solution": "const arr = [1, 2, 3, 4, 5];\narr.splice(1, 1);\nconsole.log(arr);",
+      "difficulty": "medium"
+    },
+    {
+      "id": 785,
+      "problem_statement": "Write a function that merges two objects { name: 'Alice' } and { age: 25 } into one using the spread operator.",
+      "input_format": "None",
+      "output_format": "Merged object",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "{ name: 'Alice', age: 25 }",
+      "solution_explanation": "Object spread merging.",
+      "code_solution": "const o1 = { name: 'Alice' };\nconst o2 = { age: 25 };\nconst merged = { ...o1, ...o2 };\nconsole.log(merged);",
+      "difficulty": "medium"
+    },
+    {
+      "id": 786,
+      "problem_statement": "Use Object.keys() and a loop to print all keys of the object { brand: 'Apple', model: 'iPhone 13', storage: '128GB' }.",
+      "input_format": "None",
+      "output_format": "Log of keys",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "brand, model, storage",
+      "solution_explanation": "Object.keys returns an array, then loop it.",
+      "code_solution": "const phone = { brand: 'Apple', model: 'iPhone 13', storage: '128GB' };\nObject.keys(phone).forEach(key => console.log(key));",
+      "difficulty": "medium"
+    },
+    {
+      "id": 787,
+      "problem_statement": "Write a script to check if an array includes the value 'Banana'. If yes, log its index, otherwise log 'Not Found'.",
+      "input_format": "Array",
+      "output_format": "Index or message",
+      "constraints": "None",
+      "sample_input": "['Apple', 'Banana']",
+      "sample_output": "1",
+      "solution_explanation": "Use includes() and indexOf().",
+      "code_solution": "const fruits = ['Apple', 'Banana'];\nif (fruits.includes('Banana')) {\n  console.log(fruits.indexOf('Banana'));\n} else {\n  console.log('Not Found');\n}",
+      "difficulty": "medium"
+    },
+    {
+      "id": 788,
+      "problem_statement": "Implement a simple 'Shallow Copy' of an array containing an object [ { a: 1 } ]. Change the object's value in the copy and prove it also changes in the original.",
+      "input_format": "None",
+      "output_format": "Both values",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Both originals show changed value",
+      "solution_explanation": "Objects within arrays are only referenced.",
+      "code_solution": "let original = [{ a: 1 }];\nlet copy = [...original];\ncopy[0].a = 2;\nconsole.log(original[0].a); // 2\nconsole.log(copy[0].a); // 2",
+      "difficulty": "hard"
+    }
+  ]
+}

@@ -1,0 +1,625 @@
+{
+  "unit_name": "11. Major ES6 Features",
+  "mcqs": [
+    {
+      "id": 1101,
+      "question": "Which of these is NOT an ES6 feature?",
+      "options": [
+        "A) let/const",
+        "B) Arrow Functions",
+        "C) var",
+        "D) Destructuring"
+      ],
+      "correct_option": "C",
+      "explanation": "var has been in JS since the beginning; let/const were added in ES6.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1102,
+      "question": "What is the Spread operator symbol?",
+      "options": [
+        "A) ...",
+        "B) ###",
+        "C) @@@",
+        "D) ---"
+      ],
+      "correct_option": "A",
+      "explanation": "The three dots ... represent both spread and rest.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1103,
+      "question": "Which operator is used to collect multiple arguments into a single array?",
+      "options": [
+        "A) Spread",
+        "B) Rest",
+        "C) Collect",
+        "D) Gather"
+      ],
+      "correct_option": "B",
+      "explanation": "The Rest operator collects remaining arguments.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1104,
+      "question": "What is 'Template Literal' syntax?",
+      "options": [
+        "A) 'string'",
+        "B) \"string\"",
+        "C) `string`",
+        "D) [string]"
+      ],
+      "correct_option": "C",
+      "explanation": "Backticks define template literals.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1105,
+      "question": "How do you extract properties from an object in one line in ES6?",
+      "options": [
+        "A) Extrapolating",
+        "B) Destructuring",
+        "C) Deleting",
+        "D) Collapsing"
+      ],
+      "correct_option": "B",
+      "explanation": "Destructuring is used for both objects and arrays.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1106,
+      "question": "Which method is used to determine if a string starts with certain characters?",
+      "options": [
+        "A) hasStart()",
+        "B) startsWith()",
+        "C) beginWith()",
+        "D) contains()"
+      ],
+      "correct_option": "B",
+      "explanation": "startsWith() is a new string method in ES6.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1107,
+      "question": "What is the purpose of the Set object?",
+      "options": [
+        "A) To store key-value pairs",
+        "B) To store unique values of any type",
+        "C) To define variables",
+        "D) To create timers"
+      ],
+      "correct_option": "B",
+      "explanation": "A Set is a collection of unique items.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1108,
+      "question": "What is the purpose of the Map object?",
+      "options": [
+        "A) To display a world map",
+        "B) To store key-value pairs where keys can be any type",
+        "C) To iterate over arrays",
+        "D) To style HTML"
+      ],
+      "correct_option": "B",
+      "explanation": "Maps allow keys of any data type, unlike standard Objects which only allow strings/symbols.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1109,
+      "question": "Which feature allows setting a value for a parameter if it's missing?",
+      "options": [
+        "A) Default Parameters",
+        "B) Fallback Values",
+        "C) missing()",
+        "D) Optionals"
+      ],
+      "correct_option": "A",
+      "explanation": "ES6 introduced default parameter values.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1110,
+      "question": "How do you export a function in ES6 modules?",
+      "options": [
+        "A) module.export = sum",
+        "B) export { sum }",
+        "C) exports.sum = sum",
+        "D) out sum"
+      ],
+      "correct_option": "B",
+      "explanation": "ES6 uses 'export' and 'import' keywords.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1111,
+      "question": "Symbols are primarily used for:",
+      "options": [
+        "A) Complex math",
+        "B) Unique object property keys",
+        "C) String concatenation",
+        "D) Arrays"
+      ],
+      "correct_option": "B",
+      "explanation": "Symbols prevent property name collisions.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1112,
+      "question": "Which of these is a way to find an element in an array in ES6?",
+      "options": [
+        "A) indexOf()",
+        "B) find()",
+        "C) contains()",
+        "D) exists()"
+      ],
+      "correct_option": "B",
+      "explanation": "find() returns the first element satisfying a condition.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1113,
+      "question": "What is 'Object Shorthand' in ES6?",
+      "options": [
+        "A) { x } instead of { x: x }",
+        "B) { x: 5 }",
+        "C) delete obj.x",
+        "D) new Object()"
+      ],
+      "correct_option": "A",
+      "explanation": "If key and variable name match, you can omit one.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1114,
+      "question": "How do you define a method in an object literal without the 'function' keyword in ES6?",
+      "options": [
+        "A) eat: () {}",
+        "B) eat() {}",
+        "C) method eat() {}",
+        "D) def eat() {}"
+      ],
+      "correct_option": "B",
+      "explanation": "Enhanced object literals allow shorter method syntax.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1115,
+      "question": "What is the result of using a template literal for multi-line strings?",
+      "options": [
+        "A) Error",
+        "B) The string preserves newlines as written in code",
+        "C) It removes newlines",
+        "D) It only works for HTML"
+      ],
+      "correct_option": "B",
+      "explanation": "Backticks support truly multi-line strings without \\n.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1116,
+      "question": "The 'for...of' loop iterates over:",
+      "options": [
+        "A) Property keys",
+        "B) Iterable values",
+        "C) Indices as strings",
+        "D) CSS selectors"
+      ],
+      "correct_option": "B",
+      "explanation": "for...of is the ES6 way to iterate over collection values.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1117,
+      "question": "Which feature allows you to unpack values from an array into separate variables?",
+      "options": [
+        "A) Rest",
+        "B) Spread",
+        "C) Array Destructuring",
+        "D) Array Slicing"
+      ],
+      "correct_option": "C",
+      "explanation": "Example: const [a, b] = arr;",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1118,
+      "question": "Promise is a feature introduced to handle:",
+      "options": [
+        "A) Synchronous code",
+        "B) Asynchronous operations",
+        "C) Math operations",
+        "D) UI design"
+      ],
+      "correct_option": "B",
+      "explanation": "Promises were standardized in ES6 to simplify async logic.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1119,
+      "question": "What is the result: `2 + 2 = ${2+2}`?",
+      "options": [
+        "A) 2 + 2 = ${2+2}",
+        "B) 2 + 2 = 4",
+        "C) Error",
+        "D) 2+2=2+2"
+      ],
+      "correct_option": "B",
+      "explanation": "${ } is the interpolation placeholder.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1120,
+      "question": "Which collection stores only weak references to objects as keys?",
+      "options": [
+        "A) Map",
+        "B) Set",
+        "C) WeakMap",
+        "D) Object"
+      ],
+      "correct_option": "C",
+      "explanation": "WeakMap prevents memory leaks by allowing keys to be garbage collected.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1121,
+      "question": "The 'default' keyword in ES6 modules is used for:",
+      "options": [
+        "A) Error handling",
+        "B) Exporting a single main thing from a file",
+        "C) Standard variable values",
+        "D) Default parameters"
+      ],
+      "correct_option": "B",
+      "explanation": "Default exports can be imported without curly braces.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1122,
+      "question": "Which string method checks if a string ends with a specific substring?",
+      "options": [
+        "A) endsWith()",
+        "B) lastContains()",
+        "C) finishedWith()",
+        "D) hasEnd()"
+      ],
+      "correct_option": "A",
+      "explanation": "endsWith() returns a boolean.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1123,
+      "question": "Can you compute property names dynamically in ES6 object literals?",
+      "options": [
+        "A) No",
+        "B) Yes, using [expression] : value",
+        "C) Yes, using {expression} : value",
+        "D) Only for string keys"
+      ],
+      "correct_option": "B",
+      "explanation": "This is called 'Computed Property Names'.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1124,
+      "question": "What is the result of {...[1,2]}?",
+      "options": [
+        "A) {0: 1, 1: 2}",
+        "B) [1,2]",
+        "C) Error",
+        "D) undefined"
+      ],
+      "correct_option": "A",
+      "explanation": "Spreading an array into an object uses indices as keys.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1125,
+      "question": "Which method fills all elements of an array with a static value?",
+      "options": [
+        "A) static()",
+        "B) fill()",
+        "C) replace()",
+        "D) setAll()"
+      ],
+      "correct_option": "B",
+      "explanation": "arr.fill(0) makes all elements zero.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1126,
+      "question": "What is the use of Array.from()?",
+      "options": [
+        "A) To create a new array from an iterable or array-like object",
+        "B) To delete an array",
+        "C) To sort an array",
+        "D) To copy an object"
+      ],
+      "correct_option": "A",
+      "explanation": "Useful for converting 'arguments' or NodeList into real arrays.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1127,
+      "question": "Does ES6 support binary and octal literals?",
+      "options": [
+        "A) No",
+        "B) Yes, using 0b and 0o prefixes",
+        "C) Only in Node.js",
+        "D) Only for integers"
+      ],
+      "correct_option": "B",
+      "explanation": "0b1010 (binary) and 0o777 (octal).",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1128,
+      "question": "The 'includes()' method on strings returns:",
+      "options": [
+        "A) Index of the string",
+        "B) Boolean (true/false)",
+        "C) The matched substring",
+        "D) The search count"
+      ],
+      "correct_option": "B",
+      "explanation": "Case-sensitive boolean check.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1129,
+      "question": "Classes in ES6 are syntactical sugar for:",
+      "options": [
+        "A) Arrays",
+        "B) Prototypes",
+        "C) Objects",
+        "D) Functions"
+      ],
+      "correct_option": "B",
+      "explanation": "Classes provide a cleaner OOP syntax over prototypal inheritance.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1130,
+      "question": "Which of these allows matching a pattern without using indexOf?",
+      "options": [
+        "A) includes()",
+        "B) startsWith()",
+        "C) endsWith()",
+        "D) All of the above"
+      ],
+      "correct_option": "D",
+      "explanation": "These ES6 methods provide better string searching APIs.",
+      "difficulty": "easy"
+    }
+  ],
+  "theory_questions": [
+    {
+      "id": 1151,
+      "question": "What is the difference between the Spread operator and the Rest operator?",
+      "model_answer": "Spread operator (...) expands an iterable into individual elements. Rest operator (...) collects multiple elements into a single array. Spread is used in calls and array/object literals; Rest is used in destructuring and function parameters.",
+      "key_points": [
+        "Expansion vs Collection",
+        "Literal usage vs Argument usage",
+        "Syntactic positions",
+        "Examples"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1152,
+      "question": "Explain Destructuring for both Arrays and Objects with examples.",
+      "model_answer": "Array destructuring: const [a, b] = [1, 2]; maps by position. Object destructuring: const {name} = {name: 'John'}; maps by key name. It simplifies extracting data from complex structures.",
+      "key_points": [
+        "Unpacking syntax",
+        "Position-based (Array)",
+        "Key-based (Object)",
+        "Default values"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1153,
+      "question": "What are Template Literals and what three main features do they provide?",
+      "model_answer": "Template literals are strings enclosed in backticks (`). They provide: 1. Multi-line strings. 2. String interpolation (${variable}). 3. Tagged templates for custom parsing.",
+      "key_points": [
+        "Backticks syntax",
+        "Interpolation",
+        "Multi-line support",
+        "Tagged templates"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 1154,
+      "question": "Explain the use and advantages of the Map object over a standard Object.",
+      "model_answer": "Map allows any type for keys (including objects), tracks the size automatically, preserves insertion order, and is more efficient for frequent additions/removals. Objects only support string/symbol keys.",
+      "key_points": [
+        "Key types",
+        "Size property",
+        "Order preservation",
+        "Performance"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1155,
+      "question": "What is the Set object and how does it handle duplicate values?",
+      "model_answer": "A Set is a collection of unique values. If you try to add a duplicate value (e.g., set.add(1) then set.add(1)), it effectively ignores the subsequent calls, maintaining only one instance. NaN and objects are also handled correctly.",
+      "key_points": [
+        "Uniqueness",
+        "add/has/delete methods",
+        "Iterability",
+        "NaN handling"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 1156,
+      "question": "Describe Enhanced Object Literals in ES6.",
+      "model_answer": "1. Property shorthand (e.g., {x} instead of {x:x}). 2. Method shorthand (e.g., greet() {}). 3. Computed property names (e.g., {['key'+id]: true}). It results in more concise code.",
+      "key_points": [
+        "Shorthand properties",
+        "Method syntax",
+        "Computed keys",
+        "Conciseness"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1157,
+      "question": "How do ES6 Modules (import/export) differ from CommonJS (require)?",
+      "model_answer": "ES6 modules are static (parsed at author-time), use 'import/export', and support default/named exports. CommonJS is dynamic (parsed at runtime), uses 'module.exports/require', and is traditional in Node.js.",
+      "key_points": [
+        "Static vs Dynamic",
+        "import/export vs require",
+        "Browser support",
+        "Strict mode by default"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 1158,
+      "question": "Explain the concept of 'Computed Property Names'.",
+      "model_answer": "This feature allows you to use square brackets in an object literal to derive a key name from an expression. Example: const k = 'name'; const obj = { [k]: 'John' }; results in { name: 'John' }.",
+      "key_points": [
+        "Dynamic keys",
+        "Bracket notation",
+        "Author-time flexibility",
+        "Expressions"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 1159,
+      "question": "What are Symbols and why are they considered a new primitive type?",
+      "model_answer": "Symbols are unique and immutable primitives. They are used to create unique property keys for objects that are guaranteed not to clash with any other keys, even if they have the same description.",
+      "key_points": [
+        "Uniqueness",
+        "Immutability",
+        "Primitive type",
+        "Collision prevention"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 1160,
+      "question": "Discuss the addition of String methods inside ES6 like includes(), startsWith(), and endsWith().",
+      "model_answer": "These methods return booleans and provide a cleaner, more readable alternative to using indexOf() checks (like indexOf(...) !== -1). They also allow an optional start/end position index.",
+      "key_points": [
+        "Boolean return",
+        "indexOf alternative",
+        "Readability",
+        "Position arguments"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    }
+  ],
+  "coding_questions": [
+    {
+      "id": 1181,
+      "problem_statement": "Merge two arrays [1, 2] and [3, 4] into a new array [1, 2, 3, 4] using the spread operator.",
+      "input_format": "None",
+      "output_format": "Merged array",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "[1, 2, 3, 4]",
+      "solution_explanation": "Combine using ... notation.",
+      "code_solution": "const a1 = [1, 2];\nconst a2 = [3, 4];\nconst merged = [...a1, ...a2];",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1182,
+      "problem_statement": "Use object destructuring to extract 'name' and 'age' from: { name: 'Alice', age: 25, job: 'Dev' } into separate variables.",
+      "input_format": "None",
+      "output_format": "Extracted variables",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Alice, 25",
+      "solution_explanation": "Curly brace unpack.",
+      "code_solution": "const user = { name: 'Alice', age: 25, job: 'Dev' };\nconst { name, age } = user;\nconsole.log(name, age);",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1183,
+      "problem_statement": "Create a Set from the array [1, 2, 2, 3, 4, 4, 5] and convert it back into an array to remove duplicates.",
+      "input_format": "None",
+      "output_format": "Unique array",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "[1, 2, 3, 4, 5]",
+      "solution_explanation": "Set removes dupes, spread converts back.",
+      "code_solution": "const nums = [1, 2, 2, 3, 4, 4, 5];\nconst unique = [...new Set(nums)];\nconsole.log(unique);",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1184,
+      "problem_statement": "Write a function 'sumAll' that uses the Rest parameter to sum any number of numeric arguments passed to it.",
+      "input_format": "Unlimited numbers",
+      "output_format": "Total sum",
+      "constraints": "Use ... syntax.",
+      "sample_input": "1, 2, 3, 4",
+      "sample_output": "10",
+      "solution_explanation": "...args collects into array.",
+      "code_solution": "function sumAll(...args) {\n  return args.reduce((sum, n) => sum + n, 0);\n}\nconsole.log(sumAll(1, 2, 3, 4));",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1185,
+      "problem_statement": "Create a Map and add two keys: a string 'name' with value 'Bob' and an object { id: 1 } with value 'User Data'. Retrieve the object key's value.",
+      "input_format": "None",
+      "output_format": "Object key value",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "'User Data'",
+      "solution_explanation": "Map allows object keys.",
+      "code_solution": "const map = new Map();\nconst keyObj = { id: 1 };\nmap.set('name', 'Bob');\nmap.set(keyObj, 'User Data');\nconsole.log(map.get(keyObj));",
+      "difficulty": "hard"
+    },
+    {
+      "id": 1186,
+      "problem_statement": "Use Template Literals to log a three-line address for a user (Name, City, Zip).",
+      "input_format": "User obj",
+      "output_format": "3-line string",
+      "constraints": "None",
+      "sample_input": "{n:'A', c:'NY', z:'10001'}",
+      "sample_output": "Multline text",
+      "solution_explanation": "Backticks preserve newlines.",
+      "code_solution": "const u = {n:'Alice', c:'NY', z:'10001'};\nconsole.log(`${u.n}\n${u.c}\n${u.z}`);",
+      "difficulty": "easy"
+    },
+    {
+      "id": 1187,
+      "problem_statement": "Use computed property names to create an object where the key name is stored in a variable 'pref' and value is 'Dark'.",
+      "input_format": "None",
+      "output_format": "Object { theme: 'Dark' }",
+      "constraints": "pref = 'theme'",
+      "sample_input": "None",
+      "sample_output": "{ theme: 'Dark' }",
+      "solution_explanation": "Use [variable] in literal.",
+      "code_solution": "const pref = 'theme';\nconst config = { [pref]: 'Dark' };\nconsole.log(config);",
+      "difficulty": "medium"
+    },
+    {
+      "id": 1188,
+      "problem_statement": "Demonstrate the use of Array.from() by converting the string 'HELLO' into an array of characters.",
+      "input_format": "None",
+      "output_format": "['H','E','L','L','O']",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Array",
+      "solution_explanation": "String is iterable.",
+      "code_solution": "console.log(Array.from('HELLO'));",
+      "difficulty": "medium"
+    }
+  ]
+}

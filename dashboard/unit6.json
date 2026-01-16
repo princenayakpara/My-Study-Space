@@ -1,0 +1,625 @@
+{
+  "unit_name": "6. Functions and Scope",
+  "mcqs": [
+    {
+      "id": 601,
+      "question": "Which of the following describes a reusable block of code?",
+      "options": [
+        "A) Array",
+        "B) Object",
+        "C) Function",
+        "D) Variable"
+      ],
+      "correct_option": "C",
+      "explanation": "Functions wrap code that can be called multiple times.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 602,
+      "question": "How do you define a function in JavaScript?",
+      "options": [
+        "A) function = myFunc()",
+        "B) function myFunc()",
+        "C) func myFunc()",
+        "D) call function myFunc()"
+      ],
+      "correct_option": "B",
+      "explanation": "The 'function' keyword followed by name and parentheses is the standard declaration.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 603,
+      "question": "How do you invoke a function named 'greet'?",
+      "options": [
+        "A) call greet()",
+        "B) greet[]",
+        "C) greet()",
+        "D) run greet"
+      ],
+      "correct_option": "C",
+      "explanation": "Functions are called by using their name followed by parentheses.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 604,
+      "question": "What is the return value of a function that does not have a 'return' statement?",
+      "options": [
+        "A) null",
+        "B) undefined",
+        "C) 0",
+        "D) false"
+      ],
+      "correct_option": "B",
+      "explanation": "If no return is specified, JS returns 'undefined' by default.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 605,
+      "question": "What are parameters in a function?",
+      "options": [
+        "A) Values passed during invocation",
+        "B) Variables listed in function definition",
+        "C) Result of the function",
+        "D) Global variables"
+      ],
+      "correct_option": "B",
+      "explanation": "Parameters are placeholders defined in the function signature.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 606,
+      "question": "What are arguments in a function?",
+      "options": [
+        "A) Variables listed in function definition",
+        "B) Logic inside the function",
+        "C) Actual values passed to the function when calling",
+        "D) Error messages"
+      ],
+      "correct_option": "C",
+      "explanation": "Arguments are the real values received by the function.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 607,
+      "question": "Which of the following is a function expression?",
+      "options": [
+        "A) function x() {}",
+        "B) let x = function() {}",
+        "C) x() {}",
+        "D) function() {}"
+      ],
+      "correct_option": "B",
+      "explanation": "A function assigned to a variable is an expression.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 608,
+      "question": "What is 'scope' in JavaScript?",
+      "options": [
+        "A) The level of indentation",
+        "B) The visibility and accessibility of variables",
+        "C) The size of the file",
+        "D) The speed of execution"
+      ],
+      "correct_option": "B",
+      "explanation": "Scope determines where variables can be accessed.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 609,
+      "question": "A variable declared outside any function has what scope?",
+      "options": [
+        "A) Local",
+        "B) Private",
+        "C) Global",
+        "D) Block"
+      ],
+      "correct_option": "C",
+      "explanation": "Global variables are accessible from anywhere in the script.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 610,
+      "question": "A variable declared inside a function is:",
+      "options": [
+        "A) Global",
+        "B) Local",
+        "C) Static",
+        "D) Public"
+      ],
+      "correct_option": "B",
+      "explanation": "Local variables are only accessible within the function.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 611,
+      "question": "What is 'Global Namespace Pollution'?",
+      "options": [
+        "A) Too many comments",
+        "B) Too many global variables",
+        "C) Slow internet connection",
+        "D) Large file sizes"
+      ],
+      "correct_option": "B",
+      "explanation": "Overusing global variables increases risk of name collisions and bugs.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 612,
+      "question": "What is 'Anonymous Function'?",
+      "options": [
+        "A) A function without a name",
+        "B) A function with a private name",
+        "C) A function that cannot be called",
+        "D) A function inside an object"
+      ],
+      "correct_option": "A",
+      "explanation": "Anonymous functions are often used as callbacks.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 613,
+      "question": "What is an IIFE?",
+      "options": [
+        "A) Internal Interface Function Extension",
+        "B) Immediately Invoked Function Expression",
+        "C) Indirect Instant Flow Execution",
+        "D) Inline Iterator Function Element"
+      ],
+      "correct_option": "B",
+      "explanation": "IIFE is a function that runs as soon as it is defined.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 614,
+      "question": "In 'pass by value', what happens when a primitive is passed to a function?",
+      "options": [
+        "A) The original is changed",
+        "B) A copy is made; changes don't affect original",
+        "C) An error occurs",
+        "D) The reference is passed"
+      ],
+      "correct_option": "B",
+      "explanation": "Primitives are copied when passed as arguments.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 615,
+      "question": "In JavaScript, objects are passed to functions by:",
+      "options": [
+        "A) Value",
+        "B) Reference",
+        "C) Name",
+        "D) Type"
+      ],
+      "correct_option": "B",
+      "explanation": "Passing an object passes its reference, so mutations affect the original.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 616,
+      "question": "What is 'Callback Function'?",
+      "options": [
+        "A) A function that calls itself",
+        "B) A function passed as an argument to another function",
+        "C) A function returned by a function",
+        "D) A global function"
+      ],
+      "correct_option": "B",
+      "explanation": "Callbacks are executed after another function completes or during an event.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 617,
+      "question": "What is the 'arguments' object?",
+      "options": [
+        "A) A list of errors",
+        "B) A special array-like object representing all arguments passed",
+        "C) A way to define parameters",
+        "D) None of the above"
+      ],
+      "correct_option": "B",
+      "explanation": "The 'arguments' object is available inside non-arrow functions.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 618,
+      "question": "What is 'Function Hoisting'?",
+      "options": [
+        "A) Elevating function priority",
+        "B) Ability to call a function before it's declared",
+        "C) Moving functions to a different file",
+        "D) Deleting unused functions"
+      ],
+      "correct_option": "B",
+      "explanation": "Function declarations (not expressions) are moved to the top by the engine.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 619,
+      "question": "What is output: console.log(sum(2,2)); function sum(a,b) { return a+b; }",
+      "options": [
+        "A) 4",
+        "B) ReferenceError",
+        "C) undefined",
+        "D) NaN"
+      ],
+      "correct_option": "A",
+      "explanation": "Due to hoisting, function declarations are available before they appear in code.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 620,
+      "question": "What is output: console.log(x(2,2)); let x = (a,b) => a+b;",
+      "options": [
+        "A) 4",
+        "B) ReferenceError",
+        "C) undefined",
+        "D) NaN"
+      ],
+      "correct_option": "B",
+      "explanation": "Function expressions (using let/const) are not hoisted.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 621,
+      "question": "What is a 'Higher-Order Function'?",
+      "options": [
+        "A) A very long function",
+        "B) A function that takes or returns another function",
+        "C) A function with many arguments",
+        "D) A recursive function"
+      ],
+      "correct_option": "B",
+      "explanation": "Functions that treat functions as data are 'Higher-Order'.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 622,
+      "question": "JavaScript functions are also:",
+      "options": [
+        "A) First-class citizens",
+        "B) Classes",
+        "C) Primitive types",
+        "D) Static items"
+      ],
+      "correct_option": "A",
+      "explanation": "They can be stored in variables, passed to functions, and returned.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 623,
+      "question": "What is the scope of a variable declared with 'var' inside a function?",
+      "options": [
+        "A) Block",
+        "B) Global",
+        "C) Function",
+        "D) Window"
+      ],
+      "correct_option": "C",
+      "explanation": "var has function-level scope.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 624,
+      "question": "What is 'Recursive Function'?",
+      "options": [
+        "A) A function that calls itself",
+        "B) A function that calls another function",
+        "C) A function that never ends",
+        "D) A function without parameters"
+      ],
+      "correct_option": "A",
+      "explanation": "Recursion involves a function solving a problem by calling itself.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 625,
+      "question": "Which keyword is used to return a value from a function?",
+      "options": [
+        "A) give",
+        "B) result",
+        "C) return",
+        "D) send"
+      ],
+      "correct_option": "C",
+      "explanation": "The 'return' statement stops execution and returns a value.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 626,
+      "question": "Default parameters allow:",
+      "options": [
+        "A) Automatic type conversion",
+        "B) Handling missing arguments with default values",
+        "C) Locking function inputs",
+        "D) Speeding up calls"
+      ],
+      "correct_option": "B",
+      "explanation": "Syntax: function f(name = 'Guest') { ... }",
+      "difficulty": "easy"
+    },
+    {
+      "id": 627,
+      "question": "What is the result: function f(a, b=2) { return a*b; } console.log(f(5));",
+      "options": [
+        "A) 10",
+        "B) 5",
+        "C) NaN",
+        "D) Error"
+      ],
+      "correct_option": "A",
+      "explanation": "a is 5, b defaults to 2. 5*2 = 10.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 628,
+      "question": "What is 'Scope Chain'?",
+      "options": [
+        "A) A list of variable names",
+        "B) The process of looking up variable values through outer scopes",
+        "C) A set of related functions",
+        "D) How closures are deleted"
+      ],
+      "correct_option": "B",
+      "explanation": "JS engine searches the local scope, then outer, up to global.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 629,
+      "question": "Can you have two functions with the same name in the same scope?",
+      "options": [
+        "A) Yes",
+        "B) No, the last one overwrites previous",
+        "C) Only in strict mode",
+        "D) Only if parameters differ"
+      ],
+      "correct_option": "B",
+      "explanation": "JavaScript doesn't support method overloading like Java/C#.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 630,
+      "question": "The 'this' keyword inside a simple function (not in strict mode) refers to:",
+      "options": [
+        "A) The function itself",
+        "B) The global object (window)",
+        "C) undefined",
+        "D) The first parameter"
+      ],
+      "correct_option": "B",
+      "explanation": "In non-strict mode, 'this' defaults to the window/global object.",
+      "difficulty": "hard"
+    }
+  ],
+  "theory_questions": [
+    {
+      "id": 651,
+      "question": "Explain the difference between Function Declaration and Function Expression.",
+      "model_answer": "Declarations (function name() {}) are hoisted, meaning they can be called before they appear. Expressions (const name = function() {}) are not hoisted and must be defined before they are used. Expressions can also be anonymous.",
+      "key_points": [
+        "Hoisting difference",
+        "Syntax",
+        "Anonymity",
+        "Assignment to variables"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 652,
+      "question": "What is Global scope and Local (Function) scope? Give examples.",
+      "model_answer": "Global scope variables are defined at the top level and can be accessed anywhere. Local scope variables are created inside a function and are only visible within that function. Example: let g = 1; function f() { let l = 2; } - g is global, l is local.",
+      "key_points": [
+        "Visibility",
+        "Accessibility",
+        "Top-level vs Function-level",
+        "Lifecycle"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 653,
+      "question": "Explain IIFE (Immediately Invoked Function Expression) and why it's used.",
+      "model_answer": "IIFE is a function that runs immediately after being defined: (function(){...})();. It is primarily used to create a private scope, preventing variables from polluting the global namespace and protecting them from being modified outside.",
+      "key_points": [
+        "(function(){})() syntax",
+        "Instant execution",
+        "Private scope",
+        "Avoids global pollution"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 654,
+      "question": "What does it mean that functions are 'First-Class Citizens' in JavaScript?",
+      "model_answer": "It means functions are treated like any other variable. They can be assigned to variables, passed as arguments to other functions (callbacks), and returned from other functions (higher-order functions).",
+      "key_points": [
+        "Assigned to variables",
+        "Passed as arguments",
+        "Returned from functions",
+        "Data-like behavior"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 655,
+      "question": "How do parameters and arguments work in JavaScript? What happens if they don't match?",
+      "model_answer": "Parameters are defined in the function head, arguments are passed during calling. If extra arguments are passed, they are accessible via 'arguments' but ignored by params. If fewer are passed, missing parameters become 'undefined' unless they have default values.",
+      "key_points": [
+        "Definitions",
+        "Mismatch handling",
+        "Undefined behavior",
+        "Extra args"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 656,
+      "question": "Explain Function Hoisting with examples.",
+      "model_answer": "JS engine moves function declarations to the top of their scope before execution. This allows calling 'add()' at line 1 even if 'function add()' is defined at line 10. Note: Arrow functions and expressions are NOT hoisted.",
+      "key_points": [
+        "Declaration hoisting",
+        "Call-before-define",
+        "Expression exception",
+        "Execution context"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 657,
+      "question": "What is the 'Scope Chain' and how does JavaScript look up variables?",
+      "model_answer": "The scope chain is a hierarchy of scopes. When a variable is used, JS looks in the current scope. If not found, it moves to the parent outer scope, continuing up until it reaches the global scope. If not found there, it throws a ReferenceError.",
+      "key_points": [
+        "Lookup process",
+        "Outer boundaries",
+        "Local to Global",
+        "ReferenceError"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": 658,
+      "question": "Describe Callback functions and provide a common use case.",
+      "model_answer": "A callback is a function passed into another function for later execution. Common in asynchronous programming like setTimeout(callback, 1000) or handling clicks in the browser. It ensures code runs after a specific task ends.",
+      "key_points": [
+        "Functions as arguments",
+        "Async execution",
+        "Event listeners",
+        "Control flow"
+      ],
+      "marks": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": 659,
+      "question": "Explain Default Parameters introduced in ES6.",
+      "model_answer": "Default parameters allow you to initialize functions with default values if no value or 'undefined' is passed. Syntax: function greet(name = 'Guest') { ... }. This replaces the old manual checks like 'name = name || 'Guest''.",
+      "key_points": [
+        "ES6 feature",
+        "Optional arguments",
+        "Clean syntax",
+        "Replacement for OR checks"
+      ],
+      "marks": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": 660,
+      "question": "What are Recursive Functions? When are they preferred over loops?",
+      "model_answer": "Recursive functions call themselves until they hit a base case. They are preferred for problems with repeating sub-problems and hierarchical data, such as tree traversal (DOM) or calculating factorials. They can be more readable but consume more memory.",
+      "key_points": [
+        "Self-calling",
+        "Base case",
+        "Tree traversal",
+        "Memory/Stack limit"
+      ],
+      "marks": 5,
+      "difficulty": "hard"
+    }
+  ],
+  "coding_questions": [
+    {
+      "id": 681,
+      "problem_statement": "Write a function 'sayHello' that takes a name and logs 'Hello [name]'.",
+      "input_format": "String",
+      "output_format": "'Hello [name]'",
+      "constraints": "None",
+      "sample_input": "'John'",
+      "sample_output": "Hello John",
+      "solution_explanation": "Standard declaration and string interpolation.",
+      "code_solution": "function sayHello(name) {\n  console.log(`Hello ${name}`);\n}\nsayHello('John');",
+      "difficulty": "easy"
+    },
+    {
+      "id": 682,
+      "problem_statement": "Create a function expression 'multiply' that returns the product of two numbers. Log the result of multiply(5, 6).",
+      "input_format": "Numbers",
+      "output_format": "Product",
+      "constraints": "Use function expression.",
+      "sample_input": "5, 6",
+      "sample_output": "30",
+      "solution_explanation": "Assign anonymous function to variable.",
+      "code_solution": "const multiply = function(a, b) {\n  return a * b;\n};\nconsole.log(multiply(5, 6));",
+      "difficulty": "easy"
+    },
+    {
+      "id": 683,
+      "problem_statement": "Write a function 'square' that takes a number and returns its square. Use a default parameter of 1.",
+      "input_format": "Number (optional)",
+      "output_format": "Result",
+      "constraints": "None",
+      "sample_input": "No input",
+      "sample_output": "1",
+      "solution_explanation": "Set default value for parameter.",
+      "code_solution": "function square(n = 1) {\n  return n * n;\n}\nconsole.log(square());",
+      "difficulty": "easy"
+    },
+    {
+      "id": 684,
+      "problem_statement": "Demonstrate scope by creating a global variable 'x' and a function that defines a local variable 'x'. Log both.",
+      "input_format": "None",
+      "output_format": "Two values",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "Outer value, Inner value",
+      "solution_explanation": "Inner x shadows the outer x.",
+      "code_solution": "let x = 'global';\nfunction checkScope() {\n  let x = 'local';\n  console.log(x); \n}\ncheckScope();\nconsole.log(x);",
+      "difficulty": "medium"
+    },
+    {
+      "id": 685,
+      "problem_statement": "Write a recursive function 'factorial' that calculates the factorial of a number n.",
+      "input_format": "Number n",
+      "output_format": "Factorial val",
+      "constraints": "Must be recursive.",
+      "sample_input": "5",
+      "sample_output": "120",
+      "solution_explanation": "n * factorial(n-1) until n is 1.",
+      "code_solution": "function factorial(n) {\n  if (n <= 1) return 1;\n  return n * factorial(n - 1);\n}\nconsole.log(factorial(5));",
+      "difficulty": "medium"
+    },
+    {
+      "id": 686,
+      "problem_statement": "Write an IIFE that calculates the area of a rectangle (10, 5) and logs the result immediately.",
+      "input_format": "None",
+      "output_format": "Result",
+      "constraints": "Use IIFE syntax.",
+      "sample_input": "None",
+      "sample_output": "50",
+      "solution_explanation": "Wrap function in parentheses and invoke immediately.",
+      "code_solution": "(function(w, h) {\n  console.log(w * h);\n})(10, 5);",
+      "difficulty": "medium"
+    },
+    {
+      "id": 687,
+      "problem_statement": "Write a higher-order function 'apply' that takes two numbers and a callback function. Call 'apply(10, 20, add)' where add is a function that returns the sum.",
+      "input_format": "Numbers and Function",
+      "output_format": "Sum",
+      "constraints": "None",
+      "sample_input": "None",
+      "sample_output": "30",
+      "solution_explanation": "Pass function as data.",
+      "code_solution": "function add(a, b) { return a + b; }\nfunction apply(n1, n2, callback) {\n  return callback(n1, n2);\n}\nconsole.log(apply(10, 20, add));",
+      "difficulty": "hard"
+    },
+    {
+      "id": 688,
+      "problem_statement": "Write a function that uses the 'arguments' object to return the sum of all passed numbers, regardless of how many are passed.",
+      "input_format": "Variable number of arguments",
+      "output_format": "Sum",
+      "constraints": "Use 'arguments' object.",
+      "sample_input": "1, 2, 3, 4",
+      "sample_output": "10",
+      "solution_explanation": "Loop through the arguments object.",
+      "code_solution": "function sumAll() {\n  let total = 0;\n  for (let i = 0; i < arguments.length; i++) {\n    total += arguments[i];\n  }\n  return total;\n}\nconsole.log(sumAll(1, 2, 3, 4));",
+      "difficulty": "hard"
+    }
+  ]
+}
