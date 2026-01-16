@@ -1,0 +1,2460 @@
+{
+  "subject_name": "C Language",
+  "units": [
+    {
+      "unit_name": "1. Introduction to C",
+      "mcqs": [
+        {
+          "id": 101,
+          "question": "Which of the following is correct about C language?",
+          "options": [
+            "C is a high level language",
+            "C is a low level language",
+            "C is a middle level language",
+            "C is a machine level language"
+          ],
+          "correct_option": "C",
+          "explanation": "C is often called a middle-level language because it combines the features of high-level languages with the functionality of assembly language.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 102,
+          "question": "Who is the father of C language?",
+          "options": [
+            "Steve Jobs",
+            "James Gosling",
+            "Dennis Ritchie",
+            "Rasmus Lerdorf"
+          ],
+          "correct_option": "C",
+          "explanation": "Dennis Ritchie created C at Bell Labs in 1972.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 103,
+          "question": "Which of the following consists of only valid variable names?",
+          "options": [
+            "int, float, 3_name",
+            "name, _name, $name",
+            "name, _name, name_3",
+            "#name, name, %name"
+          ],
+          "correct_option": "C",
+          "explanation": "Variable names cannot start with a digit or contain special characters other than underscore.",
+          "difficulty": "Medium"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 151,
+          "question": "Explain the structure of a C program.",
+          "model_answer": "A C program consists of preprocessor directives, global declarations, the main() function, local declarations, and program statements. It may also include user-defined functions.",
+          "key_points": [
+            "Preprocessor directives (#include)",
+            "main() function entry point",
+            "Variable declarations",
+            "Statements and Expressions",
+            "Comments"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        }
+      ],
+      "coding_questions": [
+        {
+          "id": 181,
+          "problem_statement": "Write a C program to print 'Hello, World!' to the console.",
+          "input_format": "None",
+          "output_format": "The string 'Hello, World!'",
+          "constraints": "None",
+          "sample_input": "None",
+          "sample_output": "Hello, World!",
+          "solution_explanation": "Use the standard output function printf().",
+          "code_c": "#include <stdio.h>\nint main() {\n    printf(\"Hello, World!\");\n    return 0;\n}",
+          "code_js": "console.log('Hello, World!');",
+          "code_py": "print('Hello, World!')",
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "unit_name": "2. Control Structures (If/Else, Switch)",
+      "mcqs": [
+        {
+          "id": 201,
+          "question": "What is the output of: if(5 > 10) printf('Yes'); else printf('No');",
+          "options": [
+            "Yes",
+            "No",
+            "Error",
+            "None"
+          ],
+          "correct_option": "B",
+          "explanation": "5 is not greater than 10, so the else block executes.",
+          "difficulty": "Easy"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 251,
+          "question": "Differentiate between 'while' and 'do-while' loops.",
+          "model_answer": "A while loop checks the condition before executing the body (entry-controlled). A do-while loop executes the body at least once before checking the condition (exit-controlled).",
+          "key_points": [
+            "Entry vs Exit control",
+            "Minimum execution count (0 vs 1)",
+            "Syntax difference"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        }
+      ],
+      "coding_questions": [
+        {
+          "id": 281,
+          "problem_statement": "Write a program to find the largest of three numbers.",
+          "input_format": "Three integers A, B, C",
+          "output_format": "The largest integer",
+          "constraints": "-1000 <= A,B,C <= 1000",
+          "sample_input": "10 20 5",
+          "sample_output": "20",
+          "solution_explanation": "Use nested if-else statements or logic operators (A>B && A>C).",
+          "code_c": "#include <stdio.h>\nint main() {\n    int a, b, c;\n    scanf(\"%d %d %d\", &a, &b, &c);\n    if(a>=b && a>=c) printf(\"%d\", a);\n    else if(b>=a && b>=c) printf(\"%d\", b);\n    else printf(\"%d\", c);\n    return 0;\n}",
+          "code_js": "",
+          "code_py": "",
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "unit_name": "3. Loops (For, While, Do-While)",
+      "mcqs": [
+        {
+          "id": 301,
+          "question": "Which loop is guaranteed to execute at least once?",
+          "options": [
+            "for",
+            "while",
+            "do-while",
+            "None"
+          ],
+          "correct_option": "C",
+          "explanation": "do-while is exit-controlled.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 302,
+          "question": "What comes after 'for(' in a for loop?",
+          "options": [
+            "Condition",
+            "Increment",
+            "Initialization",
+            "Statement"
+          ],
+          "correct_option": "C",
+          "explanation": "Syntax: for(initialization; condition; increment).",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 303,
+          "question": "What keyword skips the current iteration?",
+          "options": [
+            "break",
+            "continue",
+            "goto",
+            "return"
+          ],
+          "correct_option": "B",
+          "explanation": "continue skips to the next iteration.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 304,
+          "question": "Infinite loop syntax in for loop?",
+          "options": [
+            "for(;;)",
+            "for()",
+            "for(1)",
+            "for(0)"
+          ],
+          "correct_option": "A",
+          "explanation": "for(;;) is the standard infinite loop.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 305,
+          "question": "Output of: int i=0; while(i<3) printf(\"%d\", i++);",
+          "options": [
+            "012",
+            "123",
+            "0123",
+            "Infinite"
+          ],
+          "correct_option": "A",
+          "explanation": "Prints 0, increments to 1. Prints 1, inc to 2. Prints 2, inc to 3. 3<3 false.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 306,
+          "question": "Which header is required for loops?",
+          "options": [
+            "<stdio.h>",
+            "<conio.h>",
+            "<stdlib.h>",
+            "None"
+          ],
+          "correct_option": "D",
+          "explanation": "Loops are core language features, no header needed.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 307,
+          "question": "Can we nest loops in C?",
+          "options": [
+            "Yes",
+            "No",
+            "Only for loops",
+            "Only 2 levels"
+          ],
+          "correct_option": "A",
+          "explanation": "Any loop can be nested inside another.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 308,
+          "question": "Value of i after: for(i=0; i<=5; i++);",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "0"
+          ],
+          "correct_option": "C",
+          "explanation": "Loop runs 0 to 5. Last increment makes it 6, condition 6<=5 fails.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 309,
+          "question": "What is 'break' used for?",
+          "options": [
+            "Stop program",
+            "Exit loop/switch",
+            "Skip iteration",
+            "Restart loop"
+          ],
+          "correct_option": "B",
+          "explanation": "Terminates the nearest enclosing loop or switch.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 310,
+          "question": "Syntax for while loop?",
+          "options": [
+            "while(cond) {}",
+            "do {} while(cond)",
+            "while {}",
+            "loop {}"
+          ],
+          "correct_option": "A",
+          "explanation": "Standard syntax.",
+          "difficulty": "Easy"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 351,
+          "question": "Explain the syntax and flow of a for loop.",
+          "model_answer": "Initialization -> Condition Check -> Body Execution -> Increment/Decrement -> Condition Check...",
+          "key_points": [
+            "Initialization",
+            "Condition",
+            "Update expression"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 352,
+          "question": "Difference between break and continue.",
+          "model_answer": "Break exits the loop completely. Continue skips the rest of the current iteration and jumps to the update/condition step.",
+          "key_points": [
+            "Exit vs Skip",
+            "Control flow"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        }
+      ],
+      "coding_questions": [
+        {
+          "id": 381,
+          "problem_statement": "Print the first N natural numbers.",
+          "input_format": "Integer N",
+          "output_format": "Numbers 1 to N",
+          "code_c": "#include <stdio.h>\nint main() { int n; scanf(\"%d\", &n); for(int i=1;i<=n;i++) printf(\"%d \", i); return 0; }",
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "unit_name": "4. Arrays & Strings",
+      "mcqs": [
+        {
+          "id": 401,
+          "question": "Array index starts from?",
+          "options": [
+            "0",
+            "1",
+            "-1",
+            "undefined"
+          ],
+          "correct_option": "A",
+          "explanation": "0-based indexing.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 402,
+          "question": "Correct declaration of array size 10?",
+          "options": [
+            "int arr[10];",
+            "arr{10};",
+            "int arr(10);",
+            "array arr[10];"
+          ],
+          "correct_option": "A",
+          "explanation": "Standard C syntax.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 403,
+          "question": "Does C check array bounds?",
+          "options": [
+            "Yes",
+            "No",
+            "Sometimes",
+            "Compiler dependent"
+          ],
+          "correct_option": "B",
+          "explanation": "C does not perform bound checking, leading to possible memory corruption.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 404,
+          "question": "String terminator character?",
+          "options": [
+            "\\0",
+            "\\n",
+            "0",
+            "None"
+          ],
+          "correct_option": "A",
+          "explanation": "Null character \\0 terminates strings.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 405,
+          "question": "Size of char s[] = \"ABC\";?",
+          "options": [
+            "3",
+            "4",
+            "2",
+            "8"
+          ],
+          "correct_option": "B",
+          "explanation": "A, B, C, \\0 = 4 bytes.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 406,
+          "question": "Function to copy strings?",
+          "options": [
+            "strcpy",
+            "strcopy",
+            "copystr",
+            "memcpy"
+          ],
+          "correct_option": "A",
+          "explanation": "strcpy() from <string.h>.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 407,
+          "question": "What is an array?",
+          "options": [
+            "Collection of similar types",
+            "Collection of different types",
+            "Dynamic list",
+            "Primitive type"
+          ],
+          "correct_option": "A",
+          "explanation": "Homogeneous data collection.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 408,
+          "question": "Accessing arr[5] in int arr[5]; causes?",
+          "options": [
+            "Error",
+            "Warning",
+            "Undefined Behavior",
+            "0"
+          ],
+          "correct_option": "C",
+          "explanation": "Index 5 is out of bounds (0-4).",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 409,
+          "question": "2D array declaration?",
+          "options": [
+            "int arr[2][2]",
+            "int arr(2,2)",
+            "int arr[2,2]",
+            "int arr{2}{2}"
+          ],
+          "correct_option": "A",
+          "explanation": "Row and column brackets.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 410,
+          "question": "Format specifier for string input?",
+          "options": [
+            "%s",
+            "%c",
+            "%str",
+            "%a"
+          ],
+          "correct_option": "A",
+          "explanation": "%s is for strings.",
+          "difficulty": "Easy"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 451,
+          "question": "What is a string in C?",
+          "model_answer": "A 1D array of characters terminated by a null character (\\0).",
+          "key_points": [
+            "Array of chars",
+            "Null termination"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 452,
+          "question": "Explain how 2D arrays are stored in memory.",
+          "model_answer": "Row-major order typically. Contiguous memory blocks.",
+          "key_points": [
+            "Contiguous",
+            "Row-major"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        }
+      ],
+      "coding_questions": [
+        {
+          "id": 481,
+          "problem_statement": "Reverse a given string.",
+          "input_format": "String S",
+          "output_format": "Reversed String",
+          "code_c": "#include <stdio.h>\n#include <string.h>\nint main() { char s[100]; scanf(\"%s\", s); strrev(s); printf(\"%s\", s); return 0; }",
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "unit_name": "5. Functions & Recursion",
+      "mcqs": [
+        {
+          "id": 501,
+          "question": "What is the return type of a function that does not return any value?",
+          "options": [
+            "int",
+            "void",
+            "null",
+            "float"
+          ],
+          "correct_option": "B",
+          "explanation": "void return type specifies no return value.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 502,
+          "question": "By default, how are parameters passed in C?",
+          "options": [
+            "Pass by Reference",
+            "Pass by Value",
+            "Pass by Pointer",
+            "None"
+          ],
+          "correct_option": "B",
+          "explanation": "C uses pass-by-value strictly. Pointers simulate pass-by-reference.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 503,
+          "question": "What is recursion?",
+          "options": [
+            "Looping",
+            "Function calling itself",
+            "Function calling main",
+            "None"
+          ],
+          "correct_option": "B",
+          "explanation": "Self-referential function call.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 504,
+          "question": "Base case in recursion is used to?",
+          "options": [
+            "Start recursion",
+            "Teminate recursion",
+            "Skip recursion",
+            "Loop forever"
+          ],
+          "correct_option": "B",
+          "explanation": "Prevents infinite stack overflow.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 505,
+          "question": "Variables declared inside a function are called?",
+          "options": [
+            "Global",
+            "Local",
+            "Static",
+            "External"
+          ],
+          "correct_option": "B",
+          "explanation": "Scope is limited to the block.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 506,
+          "question": "Which storage class preserves value between function calls?",
+          "options": [
+            "auto",
+            "register",
+            "static",
+            "extern"
+          ],
+          "correct_option": "C",
+          "explanation": "Static variables retain value for program lifetime.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 507,
+          "question": "Where are local variables stored in memory?",
+          "options": [
+            "Stack",
+            "Heap",
+            "Data Segment",
+            "Code Segment"
+          ],
+          "correct_option": "A",
+          "explanation": "Stack frames.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 508,
+          "question": "Maximum number of arguments a function can take?",
+          "options": [
+            "10",
+            "100",
+            "Compiler dependent",
+            "Unlimited"
+          ],
+          "correct_option": "C",
+          "explanation": "Depends on system limits (stack size).",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 509,
+          "question": "What is the scope of an extern variable?",
+          "options": [
+            "Local",
+            "Global within file",
+            "Global across files",
+            "Function only"
+          ],
+          "correct_option": "C",
+          "explanation": "External linkage.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 510,
+          "question": "Recursion uses which data structure internally?",
+          "options": [
+            "Queue",
+            "Stack",
+            "Linked List",
+            "Tree"
+          ],
+          "correct_option": "B",
+          "explanation": "Call stack.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 511,
+          "question": "Output of: void f() { static int x=0; x++; printf(\"%d\", x); } called twice?",
+          "options": [
+            "0 0",
+            "1 1",
+            "1 2",
+            "0 1"
+          ],
+          "correct_option": "C",
+          "explanation": "Static x persists. 0->1, then 1->2.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 512,
+          "question": "Function prototype declaration tells compiler about?",
+          "options": [
+            "Return type",
+            "Parameters",
+            "Function name",
+            "All of above"
+          ],
+          "correct_option": "D",
+          "explanation": "Signature details.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 513,
+          "question": "Can a function return a function?",
+          "options": [
+            "Yes",
+            "No",
+            "Only via pointer",
+            "Runtime error"
+          ],
+          "correct_option": "C",
+          "explanation": "Can return a function pointer.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 514,
+          "question": "Can main() be called recursively?",
+          "options": [
+            "Yes",
+            "No",
+            "Compiler Error",
+            "Runtime Error"
+          ],
+          "correct_option": "A",
+          "explanation": "It's just a normal function.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 515,
+          "question": "What is an inline function?",
+          "options": [
+            "Executes faster",
+            "Code replaced at call site",
+            "Cannot have loops",
+            "All of above"
+          ],
+          "correct_option": "B",
+          "explanation": "Avoids overhead of function call.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 516,
+          "question": "Factorial of 5 using recursion needs how many stack frames?",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "1"
+          ],
+          "correct_option": "C",
+          "explanation": "f(5)..f(1) and main. ~6.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 517,
+          "question": "Correct syntax to pass array to function?",
+          "options": [
+            "void f(int arr[])",
+            "void f(int arr)",
+            "void f(arr[])",
+            "void f(int)"
+          ],
+          "correct_option": "A",
+          "explanation": "Array decays to pointer.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 518,
+          "question": "What happens if return statement is missing in non-void function?",
+          "options": [
+            "Error",
+            "Warning & Garbage value",
+            "Returns 0",
+            "Crash"
+          ],
+          "correct_option": "B",
+          "explanation": "Undefined behavior usually.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 519,
+          "question": "Call by value overhead?",
+          "options": [
+            "Memory for copy",
+            "Pointer dereference",
+            "None",
+            "Speed"
+          ],
+          "correct_option": "A",
+          "explanation": "Copying large structs is expensive.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 520,
+          "question": "Math functions like pow() are in which header?",
+          "options": [
+            "stdlib.h",
+            "math.h",
+            "stdio.h",
+            "conio.h"
+          ],
+          "correct_option": "B",
+          "explanation": "Standard math library.",
+          "difficulty": "Easy"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 551,
+          "question": "Differentiate between Call by Value and Call by Reference.",
+          "model_answer": "Call by Value: Copy of data passed, changes don't affect original. Call by Reference (via Pointers): Address passed, changes affect original variable.",
+          "key_points": [
+            "Copy vs Address",
+            "Memory usage",
+            "Side effects"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 552,
+          "question": "Explain Recursion with an example.",
+          "model_answer": "A process where a function calls itself. Example: valid/invalid checking or Factorial. Must have a base case.",
+          "key_points": [
+            "Base case",
+            "Recursive step",
+            "Stack usage"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 553,
+          "question": "What are Storage Classes in C? Name them.",
+          "model_answer": "They define scope, visibility, and lifetime of variables. 1. auto 2. register 3. static 4. extern.",
+          "key_points": [
+            "Scope/Lifetime",
+            "Auto/Register/Static/Extern"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 554,
+          "question": "Explain the use of 'static' keyword for a variable.",
+          "model_answer": "Inside function: Retains value between calls. Global: Limits scope to the file (internal linkage).",
+          "key_points": [
+            "Retains value",
+            "File scope",
+            "Lifetime"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 555,
+          "question": "Pros and Cons of Recursion.",
+          "model_answer": "Pros: Clean code for complex problems (Tree/Graph). Cons: High memory overhead (Stack), risk of overflow, usually slower than iteration.",
+          "key_points": [
+            "Code clarity",
+            "Stack overflow",
+            "Performance"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 556,
+          "question": "What is a Function Pointer? Syntax?",
+          "model_answer": "A pointer that stores the address of a function. Syntax: return_type (*ptr_name)(params). Used for callbacks.",
+          "key_points": [
+            "Pointer to code",
+            "(*ptr)(args)",
+            "Callbacks"
+          ],
+          "marks": 5,
+          "difficulty": "Hard"
+        },
+        {
+          "id": 557,
+          "question": "Explain 'register' storage class.",
+          "model_answer": "Requests compiler to store variable in CPU register for fast access. Address cannot be taken (&x invalid).",
+          "key_points": [
+            "CPU Register",
+            "Fast access",
+            "No address"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 558,
+          "question": "What is actual vs formal parameters?",
+          "model_answer": "Formal: Variables in function definition. Actual: Values passed during function call.",
+          "key_points": [
+            "Definition vs Call",
+            "Placeholders vs Values"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        }
+      ],
+      "coding_questions": []
+    },
+    {
+      "unit_name": "6. Pointers",
+      "mcqs": [
+        {
+          "id": 601,
+          "question": "What does a pointer store?",
+          "options": [
+            "Value",
+            "Address",
+            "Variable name",
+            "None"
+          ],
+          "correct_option": "B",
+          "explanation": "Stores memory address of another variable.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 602,
+          "question": "Size of a pointer in 64-bit system?",
+          "options": [
+            "2 bytes",
+            "4 bytes",
+            "8 bytes",
+            "16 bytes"
+          ],
+          "correct_option": "C",
+          "explanation": "64-bit address space requires 8 bytes.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 603,
+          "question": "Operator used to get address of variable?",
+          "options": [
+            "*",
+            "&",
+            "->",
+            "."
+          ],
+          "correct_option": "B",
+          "explanation": "Address-of operator (&).",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 604,
+          "question": "Operator used to access value at address?",
+          "options": [
+            "*",
+            "&",
+            "#",
+            "@"
+          ],
+          "correct_option": "A",
+          "explanation": "Dereference operator (*).",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 605,
+          "question": "What is a NULL pointer?",
+          "options": [
+            "Void pointer",
+            "Pointer equal to 0",
+            "Uninitialized",
+            "None"
+          ],
+          "correct_option": "B",
+          "explanation": "Points to nothing (address 0).",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 606,
+          "question": "Which arithmetic is valid on pointers?",
+          "options": [
+            "Multiplication",
+            "Division",
+            "Modulus",
+            "Subtraction"
+          ],
+          "correct_option": "D",
+          "explanation": "Can subtract two pointers (result is distance).",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 607,
+          "question": "int *ptr; ptr++; increases address by?",
+          "options": [
+            "1 byte",
+            "2 bytes",
+            "sizeof(int)",
+            "4 bytes"
+          ],
+          "correct_option": "C",
+          "explanation": "Increments by size of type it points to.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 608,
+          "question": "What is a void pointer?",
+          "options": [
+            "Pointer to function",
+            "Generic pointer",
+            "Null pointer",
+            "Invalid pointer"
+          ],
+          "correct_option": "B",
+          "explanation": "Can hold address of any type (void *).",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 609,
+          "question": "Variable that stores address of a pointer?",
+          "options": [
+            "Pointer",
+            "Double Pointer",
+            "Reference",
+            "Array"
+          ],
+          "correct_option": "B",
+          "explanation": "int **ptr.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 610,
+          "question": "Array name acts as?",
+          "options": [
+            "Constant pointer to first element",
+            "Variable pointer",
+            "Null pointer",
+            "Void pointer"
+          ],
+          "correct_option": "A",
+          "explanation": "Decays to &arr[0].",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 611,
+          "question": "Are (*ptr)++ and *ptr++ same?",
+          "options": [
+            "Yes",
+            "No",
+            "Always",
+            "Compiler dependent"
+          ],
+          "correct_option": "B",
+          "explanation": "Order of operations. *ptr++ increments pointer, (*ptr)++ increments value.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 612,
+          "question": "Dangling pointer is?",
+          "options": [
+            "Points to deleted memory",
+            "Points to NULL",
+            "Uninitialized",
+            "Global"
+          ],
+          "correct_option": "A",
+          "explanation": "Memory freed but pointer not cleared.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 613,
+          "question": "Which represents pointer to array of 5 ints?",
+          "options": [
+            "int *ptr[5]",
+            "int (*ptr)[5]",
+            "int *ptr",
+            "int **ptr"
+          ],
+          "correct_option": "B",
+          "explanation": "Parentheses required for precedence.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 614,
+          "question": "Illegal operation on pointers?",
+          "options": [
+            "Adding integer",
+            "Subtracting integer",
+            "Subtracting pointer",
+            "Adding two pointers"
+          ],
+          "correct_option": "D",
+          "explanation": "Adding addresses makes no sense.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 615,
+          "question": "Wild pointer is?",
+          "options": [
+            "Uninitialized pointer",
+            "NULL pointer",
+            "Void pointer",
+            "Function pointer"
+          ],
+          "correct_option": "A",
+          "explanation": "Contains garbage address.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 616,
+          "question": "Accessing 5th element via pointer p?",
+          "options": [
+            "*(p+4)",
+            "p[4]",
+            "Both",
+            "None"
+          ],
+          "correct_option": "C",
+          "explanation": "Array indexing is pointer arithmetic.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 617,
+          "question": "Indirection operator is?",
+          "options": [
+            "&",
+            "*",
+            "->",
+            "."
+          ],
+          "correct_option": "B",
+          "explanation": "Synonym for dereference.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 618,
+          "question": "Can we compare two pointers?",
+          "options": [
+            "Yes",
+            "No",
+            "Only for equality",
+            "Only if same array"
+          ],
+          "correct_option": "D",
+          "explanation": "Comparison undefined unless pointing to same object/array.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 619,
+          "question": "Which is faster?",
+          "options": [
+            "Array indexing",
+            "Pointer arithmetic",
+            "Same",
+            "None"
+          ],
+          "correct_option": "C",
+          "explanation": "Modern compilers optimize both equally.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 620,
+          "question": "const int *p means?",
+          "options": [
+            "Pointer is const",
+            "Value is const",
+            "Both",
+            "Neither"
+          ],
+          "correct_option": "B",
+          "explanation": "Pointer to constant integer (cannot change value).",
+          "difficulty": "Hard"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 651,
+          "question": "Differentiate between 'int *p' and 'int **p'.",
+          "model_answer": "'int *p' points to an integer. 'int **p' points to a pointer that points to an integer (Double Pointer), used for 2D arrays or changing pointer address.",
+          "key_points": [
+            "Level of indirection",
+            "Address of variable vs Address of pointer"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 652,
+          "question": "What is Pointer Arithmetic? Give rules.",
+          "model_answer": "Operations allowed on pointers. 1. Adding/Sub int (moves by sizeof type). 2. Sub two pointers (returns elements between). 3. Invalid: Add two pointers, Mul/Div.",
+          "key_points": [
+            "Scaling by size",
+            "Distance",
+            "Invalid ops"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 653,
+          "question": "Explain 'const char *p' vs 'char * const p'.",
+          "model_answer": "const char *p: Value pointed to is constant (cannot change *p). char * const p: Pointer itself is constant (cannot change p).",
+          "key_points": [
+            "Read-only data",
+            "Fixed address"
+          ],
+          "marks": 5,
+          "difficulty": "Hard"
+        },
+        {
+          "id": 654,
+          "question": "What is a Dangling Pointer? How to avoid?",
+          "model_answer": "Pointer pointing to memory location that has been deleted/freed. Avoid by setting pointer to NULL after free().",
+          "key_points": [
+            "Deallocated memory",
+            "Set to NULL"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 655,
+          "question": "How do Array Name and Pointer relate?",
+          "model_answer": "Array name decays to pointer to 1st element. arr[i] == *(arr+i). However, array name is a constant address (cannot increment arr++).",
+          "key_points": [
+            "Decay",
+            "Equivalence",
+            "Constant address"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        }
+      ],
+      "coding_questions": []
+    },
+    {
+      "unit_name": "7. Structures & Unions",
+      "mcqs": [
+        {
+          "id": 701,
+          "question": "Keyword to define structure?",
+          "options": [
+            "struct",
+            "class",
+            "union",
+            "object"
+          ],
+          "correct_option": "A",
+          "explanation": "Standard C keyword.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 702,
+          "question": "Difference between struct and union memory?",
+          "options": [
+            "Struct: Sum of members, Union: Max of members",
+            "Struct: Max, Union: Sum",
+            "Same",
+            "None"
+          ],
+          "correct_option": "A",
+          "explanation": "Union shares memory for all members.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 703,
+          "question": "Operator to access member of structure variable?",
+          "options": [
+            ".",
+            "->",
+            "*",
+            "&"
+          ],
+          "correct_option": "A",
+          "explanation": "Dot operator.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 704,
+          "question": "Operator to access member via structure pointer?",
+          "options": [
+            ".",
+            "->",
+            "*",
+            "&"
+          ],
+          "correct_option": "B",
+          "explanation": "Arrow operator (ptr->mem).",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 705,
+          "question": "Variable used in Bit Fields must be?",
+          "options": [
+            "int/unsigned int",
+            "float",
+            "double",
+            "array"
+          ],
+          "correct_option": "A",
+          "explanation": "Integral types only.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 706,
+          "question": "Can we compare two structures with == ?",
+          "options": [
+            "Yes",
+            "No",
+            "Sometimes",
+            "Only if same members"
+          ],
+          "correct_option": "B",
+          "explanation": "No built-in equality for structs (because of padding).",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 707,
+          "question": "Size of empty structure in C?",
+          "options": [
+            "0",
+            "1",
+            "Undefined/Error",
+            "2"
+          ],
+          "correct_option": "A",
+          "explanation": "Standard C allows 0 (GCC) but undefined in some standards. Usually 0/1.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 708,
+          "question": "Self-referential structure is used for?",
+          "options": [
+            "Arrays",
+            "Linked Lists/Trees",
+            "Loops",
+            "Math"
+          ],
+          "correct_option": "B",
+          "explanation": "Struct containing pointer to same struct type.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 709,
+          "question": "Padding in structures is for?",
+          "options": [
+            "Memory saving",
+            "Alignment/Speed",
+            "Security",
+            "Syntax"
+          ],
+          "correct_option": "B",
+          "explanation": "CPU fetch optimization.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 710,
+          "question": "typedef is used to?",
+          "options": [
+            "Create variables",
+            "Create alias for types",
+            "Define struct",
+            "Header"
+          ],
+          "correct_option": "B",
+          "explanation": "Renaming types.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 711,
+          "question": "Can a structure contain function?",
+          "options": [
+            "Yes",
+            "No",
+            "Only pointers",
+            "In C++ yes"
+          ],
+          "correct_option": "B",
+          "explanation": "C structs contain data only. Can contain function POINTERS.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 712,
+          "question": "Correct syntax to init struct?",
+          "options": [
+            "struct P p = {1, 2};",
+            "struct P p = (1, 2);",
+            "P p = {1, 2};",
+            "struct p = 1, 2;"
+          ],
+          "correct_option": "A",
+          "explanation": "Braces initialization.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 713,
+          "question": "Union useful for?",
+          "options": [
+            "Storing multiple values",
+            "Storing one of multiple types",
+            "Arrays",
+            "Functions"
+          ],
+          "correct_option": "B",
+          "explanation": "Polymorphic data storage.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 714,
+          "question": "Assigning value to new union member does what?",
+          "options": [
+            "Adds value",
+            "Overwrites previous value",
+            "Error",
+            "Nothing"
+          ],
+          "correct_option": "B",
+          "explanation": "Shared memory location.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 715,
+          "question": "Can we have array of structures?",
+          "options": [
+            "Yes",
+            "No",
+            "Max 10",
+            "Undefined"
+          ],
+          "correct_option": "A",
+          "explanation": "Common data structure.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 716,
+          "question": "Size of union {char a; int b; double c;} in 32-bit?",
+          "options": [
+            "13",
+            "8",
+            "4",
+            "1"
+          ],
+          "correct_option": "B",
+          "explanation": "Size is size of largest member (double = 8).",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 717,
+          "question": "How to pass structure to function efficiently?",
+          "options": [
+            "By Value",
+            "By Reference (Pointer)",
+            "Global",
+            "Array"
+          ],
+          "correct_option": "B",
+          "explanation": "Avoids copying entire structure.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 718,
+          "question": "Anonymous structure is?",
+          "options": [
+            "Struct without name",
+            "Struct without members",
+            "Struct without variable",
+            "Error"
+          ],
+          "correct_option": "A",
+          "explanation": "Used inside unions often.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 719,
+          "question": "Accessing struct member: (*ptr).mem is same as?",
+          "options": [
+            "ptr->mem",
+            "ptr.mem",
+            "ptr-mem",
+            "ptr*mem"
+          ],
+          "correct_option": "A",
+          "explanation": "Arrow syntax sugar.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 720,
+          "question": "Nested structure means?",
+          "options": [
+            "Struct inside function",
+            "Struct inside struct",
+            "Struct inside if",
+            "Loop in struct"
+          ],
+          "correct_option": "B",
+          "explanation": "Composition.",
+          "difficulty": "Easy"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 751,
+          "question": "Compare Structure and Union.",
+          "model_answer": "Structure: Separate memory for each member, all active, size = sum + padding. Union: Shared memory, only one active, size = largest member.",
+          "key_points": [
+            "Memory Allocation",
+            "Access",
+            "Size calculation"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 752,
+          "question": "What is Structure Padding and Packing?",
+          "model_answer": "Padding: Empty bytes inserted for alignment (faster access). Packing: #pragma pack(1) removes padding (saves memory, slower).",
+          "key_points": [
+            "Alignment",
+            "Holes",
+            "Pragma pack"
+          ],
+          "marks": 5,
+          "difficulty": "Hard"
+        },
+        {
+          "id": 753,
+          "question": "Explain Bit Fields with syntax.",
+          "model_answer": "Allows specifying number of bits for a member. struct { int age : 7; }. Saves space for booleans/small ints.",
+          "key_points": [
+            "Bit width",
+            "Space saving",
+            "colons"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 754,
+          "question": "What is a Self-Referential Structure?",
+          "model_answer": "A struct containing a pointer to an object of the same struct type. Essential for Linked Lists and Trees.",
+          "key_points": [
+            "Pointer to same type",
+            "Data Structures"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 755,
+          "question": "Use of 'typedef' with structures.",
+          "model_answer": "Creates alias to avoid typing 'struct Name' every time. typedef struct Name { ... } Alias;",
+          "key_points": [
+            "Alias",
+            "Syntax simplification"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        }
+      ],
+      "coding_questions": []
+    },
+    {
+      "unit_name": "8. File Handling",
+      "mcqs": [
+        {
+          "id": 801,
+          "question": "Function to open a file?",
+          "options": [
+            "fopen",
+            "open",
+            "file_open",
+            "start"
+          ],
+          "correct_option": "A",
+          "explanation": "Standard IO function.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 802,
+          "question": "Mode 'w' does what?",
+          "options": [
+            "Read only",
+            "Write (Truncate)",
+            "Append",
+            "Read/Write"
+          ],
+          "correct_option": "B",
+          "explanation": "Opens for writing, erases existing content.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 803,
+          "question": "Return type of fopen?",
+          "options": [
+            "int",
+            "FILE*",
+            "void",
+            "char*"
+          ],
+          "correct_option": "B",
+          "explanation": "Pointer to FILE structure.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 804,
+          "question": "Function to close file?",
+          "options": [
+            "fclose",
+            "close",
+            "end",
+            "exit"
+          ],
+          "correct_option": "A",
+          "explanation": "Flushes buffers and releases handle.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 805,
+          "question": "EOF stands for?",
+          "options": [
+            "End Of File",
+            "Error Of Function",
+            "End Of Function",
+            "None"
+          ],
+          "correct_option": "A",
+          "explanation": "Macro indicating end of stream.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 806,
+          "question": "fprintf is used for?",
+          "options": [
+            "Console output",
+            "File output",
+            "String output",
+            "Error"
+          ],
+          "correct_option": "B",
+          "explanation": "Formatted print to file stream.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 807,
+          "question": "Mode 'a' does what?",
+          "options": [
+            "Append",
+            "Accumulate",
+            "Add",
+            "Access"
+          ],
+          "correct_option": "A",
+          "explanation": "Write at end, preserve content.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 808,
+          "question": "fseek is used to?",
+          "options": [
+            "Find file",
+            "Move file pointer",
+            "Delete file",
+            "Read file"
+          ],
+          "correct_option": "B",
+          "explanation": "Random access.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 809,
+          "question": "SEEK_END refers to?",
+          "options": [
+            "Start of file",
+            "End of file",
+            "Current position",
+            "None"
+          ],
+          "correct_option": "B",
+          "explanation": "Offset from end.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 810,
+          "question": "ftell returns?",
+          "options": [
+            "File size",
+            "Current cursor position",
+            "File name",
+            "Error"
+          ],
+          "correct_option": "B",
+          "explanation": "Current byte offset.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 811,
+          "question": "Which specifices binary mode?",
+          "options": [
+            "b",
+            "bin",
+            "2",
+            "0"
+          ],
+          "correct_option": "A",
+          "explanation": "'rb', 'wb' etc.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 812,
+          "question": "rewind() is equivalent to?",
+          "options": [
+            "fseek(fp,0,SEEK_SET)",
+            "fseek(fp,0,SEEK_END)",
+            "fclose",
+            "fopen"
+          ],
+          "correct_option": "A",
+          "explanation": "Resets ptr to start.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 813,
+          "question": "fscanf reads from?",
+          "options": [
+            "Keyboard",
+            "File stream",
+            "String",
+            "Screen"
+          ],
+          "correct_option": "B",
+          "explanation": "Formatted read from file.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 814,
+          "question": "If fopen fails it returns?",
+          "options": [
+            "NULL",
+            "-1",
+            "0",
+            "Error"
+          ],
+          "correct_option": "A",
+          "explanation": "Error checking requirement.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 815,
+          "question": "feof() checks for?",
+          "options": [
+            "File error",
+            "End of File",
+            "File open",
+            "None"
+          ],
+          "correct_option": "B",
+          "explanation": "Returns true if EOF reached.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 816,
+          "question": "getc() reads?",
+          "options": [
+            "String",
+            "Integer",
+            "Character",
+            "Line"
+          ],
+          "correct_option": "C",
+          "explanation": "Single char.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 817,
+          "question": "Access mode 'r+' means?",
+          "options": [
+            "Read only",
+            "Read/Write (No truncate)",
+            "Read/Write (Truncate)",
+            "Append"
+          ],
+          "correct_option": "B",
+          "explanation": "Updates existing file.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 818,
+          "question": "Buffer flushing is done by?",
+          "options": [
+            "fflush",
+            "flush",
+            "clean",
+            "clear"
+          ],
+          "correct_option": "A",
+          "explanation": "Forces write to disk.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 819,
+          "question": "remove() function is used to?",
+          "options": [
+            "Delete file",
+            "Clear content",
+            "Remove permission",
+            "Close"
+          ],
+          "correct_option": "A",
+          "explanation": "Deletes file from system.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 820,
+          "question": "stdin, stdout, stderr are?",
+          "options": [
+            "File pointers",
+            "Ints",
+            "Strings",
+            "Functions"
+          ],
+          "correct_option": "A",
+          "explanation": "Standard streams.",
+          "difficulty": "Medium"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 851,
+          "question": "Explain file opening modes 'w', 'r', 'a', 'r+'.",
+          "model_answer": "w: Write(Overwrite). r: Read(Error if missing). a: Append. r+: Read/Write(No overwrite). Adding 'b' makes them binary.",
+          "key_points": [
+            "Read/Write/Append",
+            "Truncate behavior",
+            "r+ update"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 852,
+          "question": "Difference between Text and Binary files.",
+          "model_answer": "Text: ASCII, line translations (\\n -> \\r\\n). Binary: Raw bytes, exact image of memory, no translation.",
+          "key_points": [
+            "Encoding",
+            "Translation",
+            "Raw bytes"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 853,
+          "question": "Usage of fseek, ftell, rewind.",
+          "model_answer": "fseek: Move cursor to offset. ftell: Get current position. rewind: logic reset to 0.",
+          "key_points": [
+            "Navigation",
+            "Random Access"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 854,
+          "question": "Steps to process a file in C.",
+          "model_answer": "1. Declare FILE pointer. 2. fopen() and check NULL. 3. Read/Write ops. 4. fclose().",
+          "key_points": [
+            "Pointer",
+            "Open/Close",
+            "Operations"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 855,
+          "question": "How to handle errors during file I/O?",
+          "model_answer": "Check return value of fopen (NULL). Use ferror() to detect IO errors. Use feof() to check termination.",
+          "key_points": [
+            "NULL check",
+            "ferror",
+            "feof"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        }
+      ],
+      "coding_questions": []
+    },
+    {
+      "unit_name": "9. Dynamic Memory (malloc/calloc)",
+      "mcqs": [
+        {
+          "id": 901,
+          "question": "Which header file for malloc?",
+          "options": [
+            "stdlib.h",
+            "stdio.h",
+            "mem.h",
+            "alloc.h"
+          ],
+          "correct_option": "A",
+          "explanation": "Standard Library.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 902,
+          "question": "malloc returns pointer of type?",
+          "options": [
+            "void*",
+            "int*",
+            "char*",
+            "null"
+          ],
+          "correct_option": "A",
+          "explanation": "Generic pointer, must cast.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 903,
+          "question": "Difference malloc vs calloc?",
+          "options": [
+            "calloc initializes to 0",
+            "malloc initializes to 0",
+            "Same",
+            "calloc is faster"
+          ],
+          "correct_option": "A",
+          "explanation": "Cler Alloc vs Memory Alloc.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 904,
+          "question": "Function to free memory?",
+          "options": [
+            "delete",
+            "free",
+            "remove",
+            "dealloc"
+          ],
+          "correct_option": "B",
+          "explanation": "Returns memory to heap.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 905,
+          "question": "realloc is used to?",
+          "options": [
+            "Resize allocated memory",
+            "Free memory",
+            "Alloc new memory",
+            "None"
+          ],
+          "correct_option": "A",
+          "explanation": "Changes size of existing block.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 906,
+          "question": "Where is dynamic memory allocated?",
+          "options": [
+            "Stack",
+            "Heap",
+            "Data segment",
+            "Register"
+          ],
+          "correct_option": "B",
+          "explanation": "Program heap.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 907,
+          "question": "If malloc fails it returns?",
+          "options": [
+            "NULL",
+            "-1",
+            "Garbage",
+            "Crash"
+          ],
+          "correct_option": "A",
+          "explanation": "Out of memory.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 908,
+          "question": "Memory leak happens when?",
+          "options": [
+            "Memory not freed",
+            "Memory freed twice",
+            "Memory accessed after free",
+            "None"
+          ],
+          "correct_option": "A",
+          "explanation": "Lost reference to allocated block.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 909,
+          "question": "free(NULL) causes?",
+          "options": [
+            "Crash",
+            "Error",
+            "No action",
+            "Warning"
+          ],
+          "correct_option": "C",
+          "explanation": "Defined as safe no-op.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 910,
+          "question": "sizeof(pointer) depends on?",
+          "options": [
+            "Type pointed to",
+            "Architecture (32/64)",
+            "Value",
+            "None"
+          ],
+          "correct_option": "B",
+          "explanation": "Address bus width.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 911,
+          "question": "Accessing freed memory is called?",
+          "options": [
+            "Dangling pointer",
+            "Null pointer",
+            "Wild pointer",
+            "Void pointer"
+          ],
+          "correct_option": "A",
+          "explanation": "Use after free.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 912,
+          "question": "calloc takes arguments?",
+          "options": [
+            "1 (size)",
+            "2 (num, size)",
+            "3",
+            "0"
+          ],
+          "correct_option": "B",
+          "explanation": "Count and Element Size.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 913,
+          "question": "Heap memory is managed by?",
+          "options": [
+            "Compiler",
+            "Operating System/Programmer",
+            "CPU",
+            "None"
+          ],
+          "correct_option": "B",
+          "explanation": "Manual management in C.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 914,
+          "question": "Is heap slower than stack?",
+          "options": [
+            "Yes",
+            "No",
+            "Same",
+            "Depends"
+          ],
+          "correct_option": "A",
+          "explanation": "Allocation overhead + fragmentation.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 915,
+          "question": "Double free leads to?",
+          "options": [
+            "Undefined Behavior/Crash",
+            "Nothing",
+            "Memory check",
+            "Warning"
+          ],
+          "correct_option": "A",
+          "explanation": "Corruption of heap manager.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 916,
+          "question": "Can realloc move memory block?",
+          "options": [
+            "Yes",
+            "No",
+            "Always",
+            "Never"
+          ],
+          "correct_option": "A",
+          "explanation": "If cannot extend in place, finds new spot.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 917,
+          "question": "malloc(0) returns?",
+          "options": [
+            "NULL or Unique Ptr",
+            "Simple NULL",
+            "Error",
+            "1"
+          ],
+          "correct_option": "A",
+          "explanation": "Implementation defined, usually safe.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 918,
+          "question": "Which causes Segmentation Fault?",
+          "options": [
+            "Dereferencing NULL",
+            "Infinite loop",
+            "Large file",
+            "None"
+          ],
+          "correct_option": "A",
+          "explanation": "Access violation.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 919,
+          "question": "Why cast return of malloc?",
+          "options": [
+            "Explicit type safety (C++)",
+            "Required in C",
+            "Faster",
+            "Style"
+          ],
+          "correct_option": "A",
+          "explanation": "Not strictly needed in C (void* promotes), but good practice for C++ compat.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 920,
+          "question": "Maximum memory allocatable?",
+          "options": [
+            "RAM size",
+            "Virtual Memory limits",
+            "Hard disk size",
+            "2GB"
+          ],
+          "correct_option": "B",
+          "explanation": "Limited by address space/OS.",
+          "difficulty": "Medium"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 951,
+          "question": "Difference between Static and Dynamic Memory Allocation.",
+          "model_answer": "Static: Compile time, Stack/Data, Fixed size. Dynamic: Runtime, Heap, Resizable, Manual free required.",
+          "key_points": [
+            "Time of alloc",
+            "Location",
+            "Flexibility"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 952,
+          "question": "Explain malloc, calloc, realloc and free.",
+          "model_answer": "malloc: Alloc bytes. calloc: Alloc + Zero. realloc: Resize existing. free: Release.",
+          "key_points": [
+            "Functions",
+            "Purpose",
+            "Syntax"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 953,
+          "question": "What is a Memory Leak? Example.",
+          "model_answer": "Allocating memory but never freeing it. Loop { p = malloc(10); } without free leaks memory until crash.",
+          "key_points": [
+            "Resource leak",
+            "Exhaustion",
+            "Example"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 954,
+          "question": "Why check NULL after malloc?",
+          "model_answer": "Allocation can fail if memory is full. Dereferencing NULL causes SegFault.",
+          "key_points": [
+            "Safety",
+            "Crash prevention"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 955,
+          "question": "Structure of Heap vs Stack.",
+          "model_answer": "Stack: LIFO, Function Frames, Auto cleanup, Fast. Heap: Free pool, Manual control, Fragmentation issues, Slower.",
+          "key_points": [
+            "Organization",
+            "Speed",
+            "Management"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        }
+      ],
+      "coding_questions": []
+    },
+    {
+      "unit_name": "10. Preprocessor & Macros",
+      "mcqs": [
+        {
+          "id": 1001,
+          "question": "Preprocessor directive lines start with?",
+          "options": [
+            "#",
+            "//",
+            "/*",
+            "@"
+          ],
+          "correct_option": "A",
+          "explanation": "Hash symbol.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 1002,
+          "question": "#define is used for?",
+          "options": [
+            "Functions",
+            "Macros/Constants",
+            "Variables",
+            "Loops"
+          ],
+          "correct_option": "B",
+          "explanation": "Text substitution.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 1003,
+          "question": "#include <filename> looks for file in?",
+          "options": [
+            "Current dir",
+            "Standard include path",
+            "Both",
+            "Root"
+          ],
+          "correct_option": "B",
+          "explanation": "Angle brackets = System path.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 1004,
+          "question": "#include \"filename\" looks for file in?",
+          "options": [
+            "Current dir first",
+            "System path only",
+            "Root",
+            "Internet"
+          ],
+          "correct_option": "A",
+          "explanation": "Quotes = Local directory first.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 1005,
+          "question": "Macros are expanded at?",
+          "options": [
+            "Compile time",
+            "Pre-processing time",
+            "Runtime",
+            "Link time"
+          ],
+          "correct_option": "B",
+          "explanation": "Before compilation proper.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 1006,
+          "question": "Which is conditional compilation?",
+          "options": [
+            "#ifdef",
+            "#define",
+            "#include",
+            "#pragma"
+          ],
+          "correct_option": "A",
+          "explanation": "If Defined.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 1007,
+          "question": "__LINE__ macro yields?",
+          "options": [
+            "Current line number",
+            "File name",
+            "Date",
+            "Time"
+          ],
+          "correct_option": "A",
+          "explanation": "Standard predefined macro.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 1008,
+          "question": "Macro vs Function speed?",
+          "options": [
+            "Macro faster",
+            "Function faster",
+            "Same",
+            "None"
+          ],
+          "correct_option": "A",
+          "explanation": "No call overhead, but larger code size.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 1009,
+          "question": "#pragma is used for?",
+          "options": [
+            "Compiler specific instructions",
+            "Comments",
+            "Variables",
+            "Loops"
+          ],
+          "correct_option": "A",
+          "explanation": "Pack, poison, etc.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 1010,
+          "question": "To undefine a macro?",
+          "options": [
+            "#undef",
+            "#delete",
+            "#remove",
+            "#end"
+          ],
+          "correct_option": "A",
+          "explanation": "Standard directive.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 1011,
+          "question": "Avoid multiple inclusion of header?",
+          "options": [
+            "Include Guards",
+            "Comments",
+            "Loops",
+            "None"
+          ],
+          "correct_option": "A",
+          "explanation": "#ifndef HEADER_H ...",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 1012,
+          "question": "#error directive does what?",
+          "options": [
+            "Stops compilation with error",
+            "Prints warning",
+            "Runtime error",
+            "Nothing"
+          ],
+          "correct_option": "A",
+          "explanation": "Used for version checks etc.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 1013,
+          "question": "Can macros have arguments?",
+          "options": [
+            "Yes",
+            "No",
+            "Variables only",
+            "Ints only"
+          ],
+          "correct_option": "A",
+          "explanation": "Function-like macros.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 1014,
+          "question": "SQUARE(x) x*x. SQUARE(1+2) expands to?",
+          "options": [
+            "1+2*1+2",
+            "9",
+            "3",
+            "Error"
+          ],
+          "correct_option": "A",
+          "explanation": "Text substitution: 1+2*1+2 = 1+2+2 = 5. Needs parens (x)*(x).",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 1015,
+          "question": "#if directive tests?",
+          "options": [
+            "Constant expression",
+            "Variable value",
+            "Function return",
+            "String"
+          ],
+          "correct_option": "A",
+          "explanation": "Evaluated at compile time.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 1016,
+          "question": "__FILE__ yields?",
+          "options": [
+            "Filename string",
+            "File ptr",
+            "Lines",
+            "Size"
+          ],
+          "correct_option": "A",
+          "explanation": "Current source filename.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 1017,
+          "question": "Token pasting operator?",
+          "options": [
+            "##",
+            "#",
+            "@",
+            "&"
+          ],
+          "correct_option": "A",
+          "explanation": "Concatenates tokens.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 1018,
+          "question": "Stringizing operator?",
+          "options": [
+            "#",
+            "##",
+            "$",
+            "%"
+          ],
+          "correct_option": "A",
+          "explanation": "Turns argument into string.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 1019,
+          "question": "File inclusion limit?",
+          "options": [
+            "Memory/Compiler limit",
+            "10",
+            "1",
+            "100"
+          ],
+          "correct_option": "A",
+          "explanation": "Conceptually infinite nesting.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 1020,
+          "question": "Is preprocessor C code?",
+          "options": [
+            "No",
+            "Yes",
+            "Assembly",
+            "Binary"
+          ],
+          "correct_option": "A",
+          "explanation": "It's a text processor running before compiler.",
+          "difficulty": "Medium"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 1051,
+          "question": "Stages of Compilation in C.",
+          "model_answer": "Preprocessing -> Compilation -> Assembly -> Linking.",
+          "key_points": [
+            "4 stages",
+            "Expansion to Machine Code"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 1052,
+          "question": "Difference between #define and const.",
+          "model_answer": "#define: Text replacement, no type check, no memory. const: Variable with type, memory allocated, scoped.",
+          "key_points": [
+            "Text vs Var",
+            "Type safety",
+            "Scope"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 1053,
+          "question": "What are Header Guards? Why needed?",
+          "model_answer": "#ifndef MACRO #define MACRO ... #endif. Prevents duplicate definitions when header is included multiple times.",
+          "key_points": [
+            "Idempotence",
+            "Redefinition error prevention"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 1054,
+          "question": "Explain Macros with Arguments (Function-like macros). Pitfalls?",
+          "model_answer": "Faster than functions but dangerous due to operator precedence. #define ABS(x) ((x)<0?-(x):(x)). Pitfall: Side effects in args ABS(i++).",
+          "key_points": [
+            "Performance",
+            "Precedence issues",
+            "Side effects"
+          ],
+          "marks": 5,
+          "difficulty": "Hard"
+        },
+        {
+          "id": 1055,
+          "question": "Operators # and ## in Preprocessor.",
+          "model_answer": "#: Stringifies argument. ##: Concatenates two tokens into one.",
+          "key_points": [
+            "Stringify",
+            "Token Paste"
+          ],
+          "marks": 5,
+          "difficulty": "Hard"
+        }
+      ],
+      "coding_questions": []
+    }
+  ]
+}

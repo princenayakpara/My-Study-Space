@@ -1,0 +1,54 @@
+{
+  "subject": "C Language",
+  "unit": "Intro to C Programming",
+  "mcqs": [
+    {
+      "question": "Which of the following is the correct syntax to print 'Hello World' in C?",
+      "option_a": "System.out.println('Hello World');",
+      "option_b": "print('Hello World');",
+      "option_c": "printf('Hello World');",
+      "option_d": "Console.WriteLine('Hello World');",
+      "correct_option": "C",
+      "explanation": "printf() is the standard library function in C for formatted output.",
+      "difficulty": "Easy"
+    },
+    {
+      "question": "What is the size of an 'int' data type in C on a standard 32-bit compiler?",
+      "option_a": "2 bytes",
+      "option_b": "4 bytes",
+      "option_c": "8 bytes",
+      "option_d": "1 byte",
+      "correct_option": "B",
+      "explanation": "On most modern 32-bit and 64-bit systems, int is typically 4 bytes (32 bits).",
+      "difficulty": "Medium"
+    }
+  ],
+  "theory_questions": [
+    {
+      "question": "Explain the difference between a local variable and a global variable in C.",
+      "model_answer": "A local variable is declared inside a function and is accessible only within that function. Its lifetime ends when the function returns. A global variable is declared outside all functions and is accessible throughout the program. It exists for the entire duration of the program.",
+      "key_points": [
+        "Scope: Function vs File/Program",
+        "Lifetime: Function execution vs Program execution",
+        "Storage: Stack vs Data Segment"
+      ],
+      "marks": 5,
+      "difficulty": "Medium"
+    }
+  ],
+  "coding_questions": [
+    {
+      "problem_statement": "Write a C program to check if a given number is even or odd.",
+      "input_format": "A single integer N.",
+      "output_format": "Print 'Even' if the number is even, otherwise print 'Odd'.",
+      "constraints": "-10^9 <= N <= 10^9",
+      "sample_input": "4",
+      "sample_output": "Even",
+      "solution_explanation": "Use the modulus operator (%). If N % 2 == 0, it is even.",
+      "code_c": "#include <stdio.h>\n\nint main() {\n    int n;\n    scanf(\"%d\", &n);\n    if(n % 2 == 0) {\n        printf(\"Even\");\n    } else {\n        printf(\"Odd\");\n    }\n    return 0;\n}",
+      "code_js": "",
+      "code_py": "",
+      "difficulty": "Easy"
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Study Space</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Highlight.js for code syntax highlighting -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <h1>Study<span class="highlight">Dash</span></h1>
+            </div>
+
+            <nav class="nav-menu">
+                <div class="nav-section">
+                    <h3>Subjects</h3>
+                    <ul id="subject-list">
+                        <!-- Subjects will be populated by JS -->
+                        <li class="nav-item active" data-subject="intro">
+                            <span class="icon">🏠</span> Dashboard
+                        </li>
+                        <li class="nav-item" data-subject="html">
+                            <span class="icon">🎨</span> HTML/CSS/JS
+                        </li>
+                        <li class="nav-item" data-subject="c_lang">
+                            <span class="icon">💻</span> C Language
+                        </li>
+                        <li class="nav-item" data-subject="js_backend">
+                            <span class="icon">⚙️</span> JS Backend
+                        </li>
+                        <li class="nav-item" data-subject="git">
+                            <span class="icon">🐙</span> Git & Github
+                        </li>
+                        <li class="nav-item" data-subject="maths">
+                            <span class="icon">📐</span> Maths
+                        </li>
+                        <hr style="border: 0; border-top: 1px solid var(--border); margin: 10px 0;">
+                        <li class="nav-item" data-subject="question_bank">
+                            <span class="icon">📚</span> Question Bank
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="user-profile">
+                <div class="avatar">PN</div>
+                <div class="info">
+                    <p class="name">Prince Nayakpara</p>
+                    <p class="status">Semester 1</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="breadcrumbs">
+                    <span id="current-subject">Dashboard</span>
+                    <span class="separator">/</span>
+                    <span id="current-topic">Overview</span>
+                </div>
+
+                <div class="mode-switcher">
+                    <button id="mode-study" class="mode-btn active" onclick="switchMainMode('study')">📖 Study</button>
+                    <button id="mode-test-center" class="mode-btn" onclick="switchMainMode('test-center')">📝 Test
+                        Center</button>
+                </div>
+            </header>
+
+            <div class="content-wrapper">
+                <!-- File/Topic List for the selected subject -->
+                <div id="topic-sidebar" class="topic-list hidden">
+                    <div class="sidebar-header">
+                        <h3>Topics</h3>
+                        <div class="search-box">
+                            <input type="text" id="topic-search" placeholder="Search topics..." />
+                            <span class="search-icon">🔍</span>
+                        </div>
+                    </div>
+                    <ul id="topic-container">
+                        <!-- Topics populated by JS -->
+                    </ul>
+                </div>
+
+                <!-- Study View -->
+                <div id="study-view" class="view-container active">
+                    <div id="markdown-viewer" class="markdown-body">
+                        <div class="welcome-screen">
+                            <h2>Welcome back, Prince!</h2>
+                            <p>Select a subject to browse all files dynamically.</p>
+                            <div class="stats-grid">
+                                <div class="stat-card">
+                                    <h3>...</h3>
+                                    <p>Loading Files</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Test Center View -->
+                <div id="test-center-view" class="view-container hidden">
+
+                    <!-- 1. Subject Selection -->
+                    <div id="test-subjects" class="test-view-section active">
+                        <h2 class="section-title">Select a Subject for Testing</h2>
+                        <div class="subject-grid" id="subject-grid">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+
+                    <!-- 2. Unit Selection -->
+                    <div id="test-units" class="test-view-section hidden">
+                        <div class="section-header">
+                            <button class="back-btn" onclick="TestManager.showSubjects()">← Back</button>
+                            <h2 id="selected-subject-title">Subject Name</h2>
+                        </div>
+                        <div class="unit-list" id="unit-list">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+
+                    <!-- 3. Test Runner -->
+                    <div id="test-runner" class="test-view-section hidden">
+                        <div class="runner-header">
+                            <div class="timer-badge">
+                                <span>⏱️</span> <span id="test-timer">20:00</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" id="test-progress"></div>
+                                </div>
+                                <small id="progress-text">Question 1/10</small>
+                            </div>
+                            <button class="quit-btn" onclick="TestManager.quitTest()">Quit</button>
+                        </div>
+
+                        <div id="question-area" class="question-paper">
+                            <!-- Question Content Injected Here -->
+                        </div>
+
+                        <div class="controls">
+                            <button id="prev-btn" class="nav-btn" onclick="TestManager.prevQuestion()">Previous</button>
+                            <button id="next-btn" class="nav-btn primary"
+                                onclick="TestManager.nextQuestion()">Next</button>
+                            <button id="submit-btn" class="nav-btn success hidden"
+                                onclick="TestManager.submitTest()">Submit Test</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QUESTION BANK VIEW -->
+                <div id="question-bank-view" class="view-container hidden" style="flex-direction: column;">
+                    <div class="test-header">
+                        <h1 id="qb-header">Question Bank</h1>
+                        <button class="mode-btn" onclick="switchMainMode('study')">Back to Study</button>
+                    </div>
+                    <div style="flex:1; padding: 2rem; overflow-y:auto; width:100%">
+                        <div id="qb-subjects" class="test-grid"></div>
+                        <div id="qb-content" class="hidden">
+                            <button class="btn-mcq" onclick="QuestionBankManager.showSubjects()"
+                                style="margin-bottom:1rem">← Back to Subjects</button>
+                            <h2 id="qb-unit-title" style="margin-bottom:1rem; color:var(--primary)"></h2>
+                            <div id="qb-list" style="display:flex; flex-direction:column; gap:1.5rem;"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.1/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="test_data/test_banks_data.js"></script>
+    <script src="script.js?v=23"></script>
+</body>
+
+</html>

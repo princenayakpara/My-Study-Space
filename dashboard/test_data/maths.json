@@ -1,0 +1,2812 @@
+{
+  "subject_name": "Maths",
+  "units": [
+    {
+      "unit_name": "1. Foundation & Logic",
+      "mcqs": [
+        {
+          "id": 101,
+          "question": "Which of the following is a proposition?",
+          "options": [
+            "x + 2 = 5",
+            "Is it raining?",
+            "2 + 2 = 4",
+            "Sit down."
+          ],
+          "correct_option": "C",
+          "explanation": "A proposition describes a fact that is either true or false.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 102,
+          "question": "What is the negation of 'P OR Q'?",
+          "options": [
+            "NOT P OR NOT Q",
+            "NOT P AND NOT Q",
+            "P AND NOT Q",
+            "NOT P OR Q"
+          ],
+          "correct_option": "B",
+          "explanation": "De Morgan's Law: ~(P v Q) <=> ~P ^ ~Q.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 103,
+          "question": "A set with no elements is called?",
+          "options": [
+            "Null set",
+            "Singleton set",
+            "Finite set",
+            "Infinite set"
+          ],
+          "correct_option": "A",
+          "explanation": "Also called the empty set.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 104,
+          "question": "If A = {1, 2} and B = {a, b}, what is A x B?",
+          "options": [
+            "{(1,a), (2,b)}",
+            "{(1,a), (1,b), (2,a), (2,b)}",
+            "{1, 2, a, b}",
+            "{(a,1), (b,2)}"
+          ],
+          "correct_option": "B",
+          "explanation": "Cartesian product includes all ordered pairs.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 105,
+          "question": "Which represents a function?",
+          "options": [
+            "One input maps to multiple outputs",
+            "Multiple inputs map to one output",
+            "Vertical line intersects graph twice",
+            "Domain has unmapped elements"
+          ],
+          "correct_option": "B",
+          "explanation": "A function maps each input to exactly one output.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 106,
+          "question": "In logic, p -> q is false only when?",
+          "options": [
+            "p is true, q is true",
+            "p is false, q is true",
+            "p is true, q is false",
+            "p is false, q is false"
+          ],
+          "correct_option": "C",
+          "explanation": "Implication is false only if True implies False.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 107,
+          "question": "What is the cardinality of the power set of {1, 2, 3}?",
+          "options": [
+            "3",
+            "6",
+            "8",
+            "9"
+          ],
+          "correct_option": "C",
+          "explanation": "2^n where n=3, so 2^3 = 8.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 108,
+          "question": "Which symbol represents 'For All'?",
+          "options": [
+            "∃",
+            "∀",
+            "∈",
+            "⊂"
+          ],
+          "correct_option": "B",
+          "explanation": "Universal Quantifier.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 109,
+          "question": "If P is True and Q is False, P AND Q is?",
+          "options": [
+            "True",
+            "False",
+            "Undefined",
+            "Both"
+          ],
+          "correct_option": "B",
+          "explanation": "AND requires both operands to be True.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 110,
+          "question": "Inverse of function f(x) = x + 2 is?",
+          "options": [
+            "x - 2",
+            "x + 2",
+            "2x",
+            "x / 2"
+          ],
+          "correct_option": "A",
+          "explanation": "y = x + 2 => x = y - 2 => f^-1(x) = x - 2.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 111,
+          "question": "Which property does Intersection obey?",
+          "options": [
+            "Commutative",
+            "Associative",
+            "Both",
+            "None"
+          ],
+          "correct_option": "C",
+          "explanation": "A n B = B n A and (A n B) n C = A n (B n C).",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 112,
+          "question": "Truth table rows for 3 distinct variables?",
+          "options": [
+            "4",
+            "6",
+            "8",
+            "9"
+          ],
+          "correct_option": "C",
+          "explanation": "2^3 = 8 rows.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 113,
+          "question": "A logical statement that is always true is a?",
+          "options": [
+            "Contradiction",
+            "Tautology",
+            "Contingency",
+            "Fallacy"
+          ],
+          "correct_option": "B",
+          "explanation": "Definition of Tautology.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 114,
+          "question": "Which is not a boolean operator?",
+          "options": [
+            "AND",
+            "OR",
+            "XOR",
+            "MAYBE"
+          ],
+          "correct_option": "D",
+          "explanation": "MAYBE is not a standard boolean logic operator.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 115,
+          "question": "Range of f(x) = x^2 for real x?",
+          "options": [
+            "(-∞, ∞)",
+            "[0, ∞)",
+            "(0, ∞)",
+            "(-∞, 0]"
+          ],
+          "correct_option": "B",
+          "explanation": "Squaring a real number always yields a non-negative result.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 116,
+          "question": "Example of a tautology?",
+          "options": [
+            "P AND ~P",
+            "P OR ~P",
+            "P -> Q",
+            "P"
+          ],
+          "correct_option": "B",
+          "explanation": "Law of Excluded Middle.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 117,
+          "question": "If f: A->B is bijective, it must be?",
+          "options": [
+            "Injective only",
+            "Surjective only",
+            "Neither",
+            "Both Injective and Surjective"
+          ],
+          "correct_option": "D",
+          "explanation": "Definition of Bijective.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 118,
+          "question": "Complement of Set A (A') contains?",
+          "options": [
+            "Elements in A",
+            "Elements NOT in A but in U",
+            "Empty set",
+            "Universal set"
+          ],
+          "correct_option": "B",
+          "explanation": "A' = U - A.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 119,
+          "question": "Statement p <-> q is true if?",
+          "options": [
+            "p and q have same truth value",
+            "p is true",
+            "q is false",
+            "p and q differ"
+          ],
+          "correct_option": "A",
+          "explanation": "Biconditional is true when both are true or both are false.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 120,
+          "question": "Contrapositive of 'If P then Q'?",
+          "options": [
+            "If Q then P",
+            "If not P then not Q",
+            "If not Q then not P",
+            "If P then not Q"
+          ],
+          "correct_option": "C",
+          "explanation": "Contrapositive has same truth value as original.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 121,
+          "question": "{1, 2} ∪ {2, 3} equals?",
+          "options": [
+            "{1, 2, 2, 3}",
+            "{1, 2, 3}",
+            "{2}",
+            "{1, 3}"
+          ],
+          "correct_option": "B",
+          "explanation": "Union combines elements without duplication.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 122,
+          "question": "Is {a} a subset of {a, b}?",
+          "options": [
+            "Yes",
+            "No",
+            "Depends on a",
+            "Undefined"
+          ],
+          "correct_option": "A",
+          "explanation": "All elements of {a} are in {a, b}.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 123,
+          "question": "If A has m elements, B has n elements, how many relations A->B?",
+          "options": [
+            "m*n",
+            "m+n",
+            "2^(m*n)",
+            "2^(m+n)"
+          ],
+          "correct_option": "C",
+          "explanation": "Relations are subsets of A x B. |AxB| = mn, Power set = 2^mn.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 124,
+          "question": "Which represents 'There exists'?",
+          "options": [
+            "∀",
+            "∃",
+            "!",
+            "?"
+          ],
+          "correct_option": "B",
+          "explanation": "Existential Quantifier.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 125,
+          "question": "Type of proof: Assuming theorem false leads to contradiction.",
+          "options": [
+            "Direct",
+            "Induction",
+            "Contradiction",
+            "Exhaustion"
+          ],
+          "correct_option": "C",
+          "explanation": "Reductio ad absurdum.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 126,
+          "question": "P XOR Q is true whenever?",
+          "options": [
+            "P is true",
+            "Both true",
+            "One is true, other false",
+            "Both false"
+          ],
+          "correct_option": "C",
+          "explanation": "Exclusive OR.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 127,
+          "question": "Identity element for Set Union?",
+          "options": [
+            "Universal Set",
+            "Empty Set",
+            "Set itself",
+            "None"
+          ],
+          "correct_option": "B",
+          "explanation": "A U {} = A.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 128,
+          "question": "Modus Ponens rule?",
+          "options": [
+            "((P->Q) ^ P) -> Q",
+            "((P->Q) ^ ~Q) -> ~P",
+            "P -> P",
+            "P -> Q"
+          ],
+          "correct_option": "A",
+          "explanation": "Classic inference rule.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 129,
+          "question": "Let A = {1, 2}, B = {2, 3}. A - B is?",
+          "options": [
+            "{1, 3}",
+            "{1}",
+            "{2}",
+            "{3}"
+          ],
+          "correct_option": "B",
+          "explanation": "Elements in A but NOT in B.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 130,
+          "question": "Function f(x)=x^2 from Z to Z is?",
+          "options": [
+            "Injective",
+            "Surjective",
+            "Bijective",
+            "None of these"
+          ],
+          "correct_option": "D",
+          "explanation": "Not injective (f(-2)=f(2)), not surjective (no maps to negative integers).",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 131,
+          "question": "Predicate P(x): x > 3. P(2) is?",
+          "options": [
+            "True",
+            "False",
+            "Undefined",
+            "Invalid"
+          ],
+          "correct_option": "B",
+          "explanation": "2 > 3 is false.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 132,
+          "question": "De Morgan's law for Sets?",
+          "options": [
+            "(A U B)' = A' U B'",
+            "(A U B)' = A' n B'",
+            "(A n B)' = A' n B'",
+            "None"
+          ],
+          "correct_option": "B",
+          "explanation": "Complement of Union is Intersection of Complements.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 133,
+          "question": "A relation R is symmetric if?",
+          "options": [
+            "(a,b) in R => (b,a) in R",
+            "(a,a) in R",
+            "(a,b) and (b,c) => (a,c)",
+            "None"
+          ],
+          "correct_option": "A",
+          "explanation": "Definition of Symmetric.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 134,
+          "question": "Reflexive relation on A requires?",
+          "options": [
+            "(a,a) for some a",
+            "(a,a) for all a in A",
+            "(a,b) => (b,a)",
+            "No (a,a)"
+          ],
+          "correct_option": "B",
+          "explanation": "Must hold for every element.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 135,
+          "question": "Equivalence relation must be?",
+          "options": [
+            "Reflexive",
+            "Symmetric",
+            "Transitive",
+            "All of above"
+          ],
+          "correct_option": "D",
+          "explanation": "RST properties define equivalence.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 136,
+          "question": "P -> Q is equivalent to?",
+          "options": [
+            "~P v Q",
+            "P ^ ~Q",
+            "~P ^ Q",
+            "None"
+          ],
+          "correct_option": "A",
+          "explanation": "Standard logical equivalence.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 137,
+          "question": "Ceiling function ceil(2.3) is?",
+          "options": [
+            "2",
+            "3",
+            "2.5",
+            "2.0"
+          ],
+          "correct_option": "B",
+          "explanation": "Smallest integer >= x.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 138,
+          "question": "Floor function floor(-2.3) is?",
+          "options": [
+            "-2",
+            "-3",
+            "-2.5",
+            "-2.0"
+          ],
+          "correct_option": "B",
+          "explanation": "Largest integer <= x. -3 is less than -2.3.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 139,
+          "question": "Disjoint sets have intersection?",
+          "options": [
+            "Empty set",
+            "Universal set",
+            "Finite",
+            "Infinite"
+          ],
+          "correct_option": "A",
+          "explanation": "No common elements.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 140,
+          "question": "Sum of first n integers formula?",
+          "options": [
+            "n(n+1)",
+            "n(n+1)/2",
+            "n^2",
+            "n(n-1)/2"
+          ],
+          "correct_option": "B",
+          "explanation": "Standard arithmetic series sum.",
+          "difficulty": "Easy"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 151,
+          "question": "Define Tautology and Contradiction with examples.",
+          "model_answer": "Tautology: Always true statement (P OR NOT P). Contradiction: Always false statement (P AND NOT P).",
+          "key_points": [
+            "Always True",
+            "Always False",
+            "Truth Table examples"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 152,
+          "question": "Explain De Morgan's Laws of Logic.",
+          "model_answer": "1. NOT (P OR Q) is equivalent to (NOT P AND NOT Q). 2. NOT (P AND Q) is equivalent to (NOT P OR NOT Q). It distributes negation changing operators.",
+          "key_points": [
+            "Two laws",
+            "Logical equivalence",
+            "OR becomes AND",
+            "AND becomes OR"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 153,
+          "question": "Differentiate between Injective, Surjective, and Bijective functions.",
+          "model_answer": "Injective (One-to-One): Distinct inputs have distinct outputs. Surjective (Onto): Range equals Co-domain. Bijective: Both Injective and Surjective.",
+          "key_points": [
+            "One-to-One",
+            "Onto",
+            "Invertible"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 154,
+          "question": "Prove that for any sets A and B, (A ∪ B)' = A' ∩ B'.",
+          "model_answer": "Show x in LHS => x in RHS and vice versa. x not in AUB => x not in A AND x not in B => x in A' AND x in B' => x in A'nB'.",
+          "key_points": [
+            "Set builder notation or Logic proof",
+            "Double inclusion"
+          ],
+          "marks": 10,
+          "difficulty": "Hard"
+        },
+        {
+          "id": 155,
+          "question": "Explain Mathematical Induction principle.",
+          "model_answer": "Step 1: Base Case P(1) is true. Step 2: Inductive Hypothesis assume P(k). Step 3: Inductive Step show P(k+1) is true. Conclusion: P(n) is true for all n.",
+          "key_points": [
+            "Base case",
+            "Hypothesis",
+            "Inductive step"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 156,
+          "question": "Describe the Pigeonhole Principle.",
+          "model_answer": "If n items are put into m containers, with n > m, then at least one container must contain more than one item.",
+          "key_points": [
+            "n > m",
+            "at least one collision"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 157,
+          "question": "What is an Equivalence Relation?",
+          "model_answer": "A relation that is Reflexive, Symmetric, and Transitive. It partitions the set into equivalence classes.",
+          "key_points": [
+            "Reflexive",
+            "Symmetric",
+            "Transitive",
+            "Partitions"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 158,
+          "question": "Define Power Set.",
+          "model_answer": "The set of all subsets of a set S, including the empty set and S itself. Denoted P(S). Cardinality is 2^|S|.",
+          "key_points": [
+            "Set of subsets",
+            "Includes empty set",
+            "Size 2^n"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 159,
+          "question": "Explain Implication (P -> Q).",
+          "model_answer": "Logical connective 'If P then Q'. It is false only when P is true and Q is false. P is hypothesis, Q is conclusion.",
+          "key_points": [
+            "Truth table",
+            "Hypothesis/Conclusion",
+            "False case"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 160,
+          "question": "Show Truth Table for (P AND Q) -> R.",
+          "model_answer": "Construct table with 8 rows for P, Q, R. Calculate P AND Q column. Use implication rule to find final result.",
+          "key_points": [
+            "8 rows",
+            "Intermediate column",
+            "Final result"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 161,
+          "question": "Difference between Calculus and Discrete Math?",
+          "model_answer": "Calculus deals with continuous change, limits, and real numbers. Discrete Math deals with distinct, separate objects (integers, graphs, logic) without continuity.",
+          "key_points": [
+            "Continuous vs Discrete",
+            "Real numbers vs Integers/Objects"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 162,
+          "question": "What is a Quantifier?",
+          "model_answer": "A symbol used to state the extent of validity of a predicate. Universal (For all) and Existential (There exists).",
+          "key_points": [
+            "Extent of predicate",
+            "Universal",
+            "Existential"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 163,
+          "question": "Define Cartesian Product.",
+          "model_answer": "For sets A and B, A x B is the set of all ordered pairs (a, b) where a is in A and b is in B.",
+          "key_points": [
+            "Ordered pairs",
+            "Set definition"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 164,
+          "question": "What is Modus Tollens?",
+          "model_answer": "Inference rule: If P -> Q is true and Q is false (~Q), then P must be false (~P).",
+          "key_points": [
+            "Inference rule",
+            "~Q -> ~P"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 165,
+          "question": "Properties of Set Difference.",
+          "model_answer": "A - B is set of elements in A but not B. Not commutative (A-B != B-A). A - B = A intersection B'.",
+          "key_points": [
+            "Not commutative",
+            "Relative complement"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        }
+      ],
+      "coding_questions": []
+    },
+    {
+      "unit_name": "2. Graph Theory",
+      "mcqs": [
+        {
+          "id": 201,
+          "question": "A graph with no loops and no parallel edges is called?",
+          "options": [
+            "Simple Graph",
+            "Multi Graph",
+            "Pseudo Graph",
+            "Weighted Graph"
+          ],
+          "correct_option": "A",
+          "explanation": "Definition of simple graph.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 202,
+          "question": "Degree of a vertex in a simple graph is?",
+          "options": [
+            "Number of edges incident",
+            "Number of loops",
+            "Number of paths",
+            "None"
+          ],
+          "correct_option": "A",
+          "explanation": "Count of connected edges.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 203,
+          "question": "Handshaking Lemma states sum of degrees is?",
+          "options": [
+            "Odd",
+            "Even",
+            "Twice number of edges",
+            "Number of vertices"
+          ],
+          "correct_option": "C",
+          "explanation": "Sum(deg(v)) = 2|E|.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 204,
+          "question": "A connected graph with no cycles is a?",
+          "options": [
+            "Tree",
+            "Loop",
+            "Complete Graph",
+            "Bipartite Graph"
+          ],
+          "correct_option": "A",
+          "explanation": "Tree definition.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 205,
+          "question": "Maximum edges in a simple graph with n vertices?",
+          "options": [
+            "n",
+            "n(n-1)/2",
+            "n^2",
+            "2n"
+          ],
+          "correct_option": "B",
+          "explanation": "nC2 combinations.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 206,
+          "question": "A graph where every pair of distinct vertices is adjacent?",
+          "options": [
+            "Regular",
+            "Complete",
+            "Bipartite",
+            "Cyclic"
+          ],
+          "correct_option": "B",
+          "explanation": "Denoted by Kn.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 207,
+          "question": "Number of edges in K5?",
+          "options": [
+            "5",
+            "10",
+            "15",
+            "20"
+          ],
+          "correct_option": "B",
+          "explanation": "5*4/2 = 10.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 208,
+          "question": "A path that visits every vertex exactly once?",
+          "options": [
+            "Euler Path",
+            "Hamiltonian Path",
+            "Circuit",
+            "Loop"
+          ],
+          "correct_option": "B",
+          "explanation": "Hamiltonian touches vertices; Euler touches edges.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 209,
+          "question": "A circuit that contains every edge exactly once?",
+          "options": [
+            "Euler Circuit",
+            "Hamiltonian Circuit",
+            "Tree",
+            "Planar"
+          ],
+          "correct_option": "A",
+          "explanation": "Eulerian definition.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 210,
+          "question": "Is K3,3 planar?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "Undefined"
+          ],
+          "correct_option": "B",
+          "explanation": "Kuratowski's Theorem.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 211,
+          "question": "Adjacency Matrix of undirected graph is always?",
+          "options": [
+            "Symmetric",
+            "Skew-symmetric",
+            "Identity",
+            "Zero"
+          ],
+          "correct_option": "A",
+          "explanation": "If i is connected to j, j is connected to i.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 212,
+          "question": "Does a tree with n vertices have n-1 edges?",
+          "options": [
+            "Always",
+            "Never",
+            "Sometimes",
+            "Only if binary"
+          ],
+          "correct_option": "A",
+          "explanation": "Fundamental property of trees.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 213,
+          "question": "Chromatic number of K4?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "1"
+          ],
+          "correct_option": "C",
+          "explanation": "Every vertex connected to every other, need distinct colors.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 214,
+          "question": "Which algorithm finds shortest path?",
+          "options": [
+            "Prim's",
+            "Kruskal's",
+            "Dijkstra's",
+            "DFS"
+          ],
+          "correct_option": "C",
+          "explanation": "Dijkstra is for shortest paths.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 215,
+          "question": "A graph capable of being drawn without edge crossings?",
+          "options": [
+            "Planar",
+            "Non-planar",
+            "Complete",
+            "Bipartite"
+          ],
+          "correct_option": "A",
+          "explanation": "Planar definition.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 216,
+          "question": "Minimum colors to color a map (4 Color Theorem)?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "correct_option": "B",
+          "explanation": "Famous theorem.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 217,
+          "question": "Vertex with degree 0 is called?",
+          "options": [
+            "Pendant",
+            "Isolated",
+            "Root",
+            "Leaf"
+          ],
+          "correct_option": "B",
+          "explanation": "Isolated vertex.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 218,
+          "question": "Vertex with degree 1 is called?",
+          "options": [
+            "Pendant",
+            "Isolated",
+            "Internal",
+            "Cycle"
+          ],
+          "correct_option": "A",
+          "explanation": "Pendant vertex.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 219,
+          "question": "Sum of degrees in a graph with 10 edges?",
+          "options": [
+            "10",
+            "20",
+            "5",
+            "100"
+          ],
+          "correct_option": "B",
+          "explanation": "2 * 10 = 20.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 220,
+          "question": "Bipartite graph K2,3 has how many edges?",
+          "options": [
+            "5",
+            "6",
+            "2",
+            "3"
+          ],
+          "correct_option": "B",
+          "explanation": "2 * 3 = 6.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 221,
+          "question": "Complement of Complete Graph?",
+          "options": [
+            "Null Graph",
+            "Cycle Graph",
+            "Path Graph",
+            "Star Graph"
+          ],
+          "correct_option": "A",
+          "explanation": "No edges in complement.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 222,
+          "question": "Is C4 bipartite?",
+          "options": [
+            "Yes",
+            "No",
+            "Depends",
+            "None"
+          ],
+          "correct_option": "A",
+          "explanation": "Square cycle, even length, yes.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 223,
+          "question": "Is C5 bipartite?",
+          "options": [
+            "Yes",
+            "No",
+            "Depends",
+            "None"
+          ],
+          "correct_option": "B",
+          "explanation": "Odd cycle, no.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 224,
+          "question": "Walk with no repeated edges?",
+          "options": [
+            "Trail",
+            "Path",
+            "Circuit",
+            "Cycle"
+          ],
+          "correct_option": "A",
+          "explanation": "Trail allows repeated vertices but not edges.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 225,
+          "question": "Walk with no repeated vertices?",
+          "options": [
+            "Path",
+            "Trail",
+            "Circuit",
+            "Walk"
+          ],
+          "correct_option": "A",
+          "explanation": "Simple path.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 226,
+          "question": "Graph isomorphism checks?",
+          "options": [
+            "Structure preservation",
+            "Node names",
+            "Edge weights",
+            "Drawing style"
+          ],
+          "correct_option": "A",
+          "explanation": "Same connections.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 227,
+          "question": "Number of vertices in binary tree of depth d?",
+          "options": [
+            "2^d",
+            "2^(d+1)-1",
+            "d^2",
+            "2d"
+          ],
+          "correct_option": "B",
+          "explanation": "Sum of powers of 2.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 228,
+          "question": "Which traversal moves level by level?",
+          "options": [
+            "DFS",
+            "BFS",
+            "Inorder",
+            "Preorder"
+          ],
+          "correct_option": "B",
+          "explanation": "Breadth First Search.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 229,
+          "question": "Cut vertex removal does what?",
+          "options": [
+            "Increases components",
+            "Decreases components",
+            "No change",
+            "Adds edges"
+          ],
+          "correct_option": "A",
+          "explanation": "Disconnects graph.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 230,
+          "question": "Euler's Formula for planar graphs?",
+          "options": [
+            "V-E+R=2",
+            "V+E-R=2",
+            "V-E-R=2",
+            "V+E+R=2"
+          ],
+          "correct_option": "A",
+          "explanation": "Standard formula.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 231,
+          "question": "Minimal Spanning Tree algorithm?",
+          "options": [
+            "Kruskal's",
+            "DFS",
+            "BFS",
+            "Floyd's"
+          ],
+          "correct_option": "A",
+          "explanation": "Or Prim's.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 232,
+          "question": "In incidence matrix, sum of each column is?",
+          "options": [
+            "1",
+            "2",
+            "0",
+            "Degree"
+          ],
+          "correct_option": "B",
+          "explanation": "Each edge connects 2 vertices.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 233,
+          "question": "Height of a tree with single node?",
+          "options": [
+            "0",
+            "1",
+            "-1",
+            "Infinite"
+          ],
+          "correct_option": "A",
+          "explanation": "Depth 0.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 234,
+          "question": "Rooted tree has how many roots?",
+          "options": [
+            "1",
+            "2",
+            "0",
+            "n"
+          ],
+          "correct_option": "A",
+          "explanation": "Exactly one.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 235,
+          "question": "A graph is Eulerian if?",
+          "options": [
+            "All degrees even",
+            "All degrees odd",
+            "At least 2 odd",
+            "No edges"
+          ],
+          "correct_option": "A",
+          "explanation": "Condition for Euler Circuit.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 236,
+          "question": "Post order traversal?",
+          "options": [
+            "Left-Right-Root",
+            "Root-Left-Right",
+            "Left-Root-Right",
+            "Right-Answer"
+          ],
+          "correct_option": "A",
+          "explanation": "Standard tree traversal.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 237,
+          "question": "Wheel graph Wn has edges?",
+          "options": [
+            "2n",
+            "n",
+            "n-1",
+            "3n"
+          ],
+          "correct_option": "A",
+          "explanation": "Outer cycle n + n spokes.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 238,
+          "question": "Regular graph definition?",
+          "options": [
+            "All vertices same degree",
+            "No cycles",
+            "Connected",
+            "Planar"
+          ],
+          "correct_option": "A",
+          "explanation": "k-regular.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 239,
+          "question": "Cycle graph C3 is also?",
+          "options": [
+            "K3",
+            "K4",
+            "K2",
+            "Tree"
+          ],
+          "correct_option": "A",
+          "explanation": "Triangle is Complete graph of size 3.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 240,
+          "question": "Is network topology related to Graph Theory?",
+          "options": [
+            "Yes",
+            "No",
+            "Only for wireless",
+            "Only for Mesh"
+          ],
+          "correct_option": "A",
+          "explanation": "Foundation of networks.",
+          "difficulty": "Easy"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 251,
+          "question": "State and prove the Handshaking Theorem.",
+          "model_answer": "Sum of degrees equals twice the number of edges. Each edge contributes 2 to the sum (one for each endpoint).",
+          "key_points": [
+            "2|E|",
+            "Sum of degrees",
+            "Edge incidence"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 252,
+          "question": "Difference between Eulerian and Hamiltonian graphs.",
+          "model_answer": "Eulerian visits every edge exactly once. Hamiltonian visits every vertex exactly once.",
+          "key_points": [
+            "Edges vs Vertices",
+            "Circuits vs Cycles"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 253,
+          "question": "Define Planar Graph and Euler's Formula.",
+          "model_answer": "Graph drawn without crossing edges is planar. V-E+R=2 for connected planar logic.",
+          "key_points": [
+            "No crossing",
+            "v-e+r=2",
+            "Faces/Regions"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 254,
+          "question": "Explain Adjacency Matrix vs Incidence Matrix.",
+          "model_answer": "Adj Matrix: VxV, 1 if connected. Incidence: VxE, 1 if vertex is endpoint of edge.",
+          "key_points": [
+            "Square vs Rectangular",
+            "Relations"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 255,
+          "question": "Describe Dijkstra's Algorithm.",
+          "model_answer": "Greedy algo to find shortest path. Initialize dists to infinity, use priority queue to pick min distance, update neighbors.",
+          "key_points": [
+            "Shortest path",
+            "Relaxation",
+            "Greedy"
+          ],
+          "marks": 5,
+          "difficulty": "Hard"
+        },
+        {
+          "id": 256,
+          "question": "What is a Tree? List properties.",
+          "model_answer": "Connected acyclic graph. n vertices => n-1 edges. Unique path between any 2 nodes.",
+          "key_points": [
+            "Acyclic",
+            "Connected",
+            "n-1 edges"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 257,
+          "question": "State Kuratowski's Theorem.",
+          "model_answer": "A graph is non-planar iff it contains a subgraph homeomorphic to K5 or K3,3.",
+          "key_points": [
+            "Non-planar",
+            "K5",
+            "K3,3"
+          ],
+          "marks": 5,
+          "difficulty": "Hard"
+        },
+        {
+          "id": 258,
+          "question": "Algorithm for Minimal Spanning Tree?",
+          "model_answer": "Prim's: Grow tree from start node. Kruskal's: Add lightest valid edges sorted by weight.",
+          "key_points": [
+            "Spanning Tree",
+            "Min weight",
+            "No cycles"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 259,
+          "question": "Define Isomorphism of graphs.",
+          "model_answer": "Bijective mapping between vertex sets preserving adjacency.",
+          "key_points": [
+            "One-to-one mapping",
+            "Preserves structure"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 260,
+          "question": "What is Graph Coloring? Apply to map coloring.",
+          "model_answer": "Assignment of labels (colors) to vertices such that no adjacent vertices share same color. Map coloring is dual problem.",
+          "key_points": [
+            "Chromatic number",
+            "Adjacent distinct"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 261,
+          "question": "Explain BFS vs DFS.",
+          "model_answer": "BFS uses Queue (Level order). DFS uses Stack (Depth first).",
+          "key_points": [
+            "Queue vs Stack",
+            "Breadth vs Depth"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 262,
+          "question": "What is a Bipartite Graph?",
+          "model_answer": "Vertices can be divided into two disjoint sets U and V such that every edge connects a vertex in U to one in V.",
+          "key_points": [
+            "Two sets",
+            "No internal edges"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 263,
+          "question": "Define Walk, Trail, Path, and Cycle.",
+          "model_answer": "Walk: Sequence of V-E. Trail: No repeated edges. Path: No repeated vertices. Cycle: Closed path.",
+          "key_points": [
+            "Definitions",
+            "Differences"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 264,
+          "question": "Applications of Graph Theory in CS?",
+          "model_answer": "Networks, Social media, Routing, Dependency resolution, Garbage collection.",
+          "key_points": [
+            "Routing",
+            "Social networks",
+            "Databases"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 265,
+          "question": "Find Chromatic number of Cycle Graph C5.",
+          "model_answer": "Needs 3 colors. (Odd cycles need 3, Even need 2).",
+          "key_points": [
+            "3 colors",
+            "Odd cycle"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        }
+      ],
+      "coding_questions": []
+    },
+    {
+      "unit_name": "3. Probability & Statistics",
+      "mcqs": [
+        {
+          "id": 301,
+          "question": "Probability of an impossible event is?",
+          "options": [
+            "1",
+            "0",
+            "0.5",
+            "Infinite"
+          ],
+          "correct_option": "B",
+          "explanation": "Definition.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 302,
+          "question": "Sum of probabilities of all elementary events is?",
+          "options": [
+            "0",
+            "1",
+            "100",
+            "Undefined"
+          ],
+          "correct_option": "B",
+          "explanation": "Total probability is 1.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 303,
+          "question": "P(A U B) = ?",
+          "options": [
+            "P(A) + P(B)",
+            "P(A) * P(B)",
+            "P(A) + P(B) - P(A n B)",
+            "P(A) - P(B)"
+          ],
+          "correct_option": "C",
+          "explanation": "Addition Theorem.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 304,
+          "question": "If A and B are mutually exclusive, P(A n B) is?",
+          "options": [
+            "0",
+            "1",
+            "0.5",
+            "P(A)P(B)"
+          ],
+          "correct_option": "A",
+          "explanation": "Cannot happen together.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 305,
+          "question": "If A and B are independent, P(A n B) is?",
+          "options": [
+            "0",
+            "P(A)+P(B)",
+            "P(A)P(B)",
+            "1"
+          ],
+          "correct_option": "C",
+          "explanation": "Multiplication rule for independent events.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 306,
+          "question": "Valid range for probability P(E)?",
+          "options": [
+            "-1 to 1",
+            "0 to 1",
+            "0 to 100",
+            "-inf to inf"
+          ],
+          "correct_option": "B",
+          "explanation": "Axiom of probability.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 307,
+          "question": "Bayes' Theorem calculates?",
+          "options": [
+            "Prior Probability",
+            "Posterior Probability",
+            "Marginal Probability",
+            "Joint Probability"
+          ],
+          "correct_option": "B",
+          "explanation": "P(A|B) using P(B|A).",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 308,
+          "question": "Mean of Binomial Distribution?",
+          "options": [
+            "np",
+            "npq",
+            "sqrt(npq)",
+            "n/p"
+          ],
+          "correct_option": "A",
+          "explanation": "Expected value E[X] = np.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 309,
+          "question": "Variance of Poisson Distribution with parameter lambda?",
+          "options": [
+            "lambda",
+            "lambda^2",
+            "sqrt(lambda)",
+            "1/lambda"
+          ],
+          "correct_option": "A",
+          "explanation": "Mean = Variance = lambda.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 310,
+          "question": "Total area under Normal Distribution curve?",
+          "options": [
+            "0",
+            "0.5",
+            "1",
+            "100"
+          ],
+          "correct_option": "C",
+          "explanation": "Total probability.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 311,
+          "question": "In a deck of 52 cards, probability of drawing a King?",
+          "options": [
+            "1/13",
+            "1/52",
+            "1/4",
+            "1/2"
+          ],
+          "correct_option": "A",
+          "explanation": "4 Kings / 52 Cards = 1/13.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 312,
+          "question": "P(A|B) represents?",
+          "options": [
+            "Prob of A and B",
+            "Prob of A given B",
+            "Prob of B given A",
+            "Prob of A or B"
+          ],
+          "correct_option": "B",
+          "explanation": "Conditional Probability.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 313,
+          "question": "Number of ways to arrange letters of 'CAT'?",
+          "options": [
+            "3",
+            "6",
+            "9",
+            "27"
+          ],
+          "correct_option": "B",
+          "explanation": "3! = 3x2x1 = 6.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 314,
+          "question": "Combination formula nCr?",
+          "options": [
+            "n!/r!",
+            "n!/(n-r)!",
+            "n!/(r!(n-r)!)",
+            "r!/n!"
+          ],
+          "correct_option": "C",
+          "explanation": "Selection order doesn't matter.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 315,
+          "question": "Permutation formula nPr?",
+          "options": [
+            "n!/r!",
+            "n!/(n-r)!",
+            "n!/(r!(n-r)!)",
+            "n!"
+          ],
+          "correct_option": "B",
+          "explanation": "Selection order matters.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 316,
+          "question": "Random variable X takes values 1, 2, 3 with prob 0.2, 0.3, 0.5. Mean?",
+          "options": [
+            "2.0",
+            "2.3",
+            "2.5",
+            "3.0"
+          ],
+          "correct_option": "B",
+          "explanation": "1(0.2)+2(0.3)+3(0.5) = 0.2+0.6+1.5=2.3.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 317,
+          "question": "Which distribution models number of successes in n trials?",
+          "options": [
+            "Poisson",
+            "Normal",
+            "Binomial",
+            "Exponential"
+          ],
+          "correct_option": "C",
+          "explanation": "Bernoulli trials.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 318,
+          "question": "Which distribution models rare events in fixed interval?",
+          "options": [
+            "Poisson",
+            "Uniform",
+            "Binomial",
+            "Normal"
+          ],
+          "correct_option": "A",
+          "explanation": "Poisson process.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 319,
+          "question": "Standard Normal Distribution has Mean and SD?",
+          "options": [
+            "0, 1",
+            "1, 0",
+            "0, 0",
+            "1, 1"
+          ],
+          "correct_option": "A",
+          "explanation": "Z-distribution.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 320,
+          "question": "Empirical Rule: What % within 1 SD in Normal Dist?",
+          "options": [
+            "50%",
+            "68%",
+            "95%",
+            "99.7%"
+          ],
+          "correct_option": "B",
+          "explanation": "68-95-99.7 rule.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 321,
+          "question": "Correlation coefficient range?",
+          "options": [
+            "0 to 1",
+            "-1 to 1",
+            "0 to infinity",
+            "-inf to inf"
+          ],
+          "correct_option": "B",
+          "explanation": "Pearson's r.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 322,
+          "question": "Two coins tossed. Prob of exactly one Head?",
+          "options": [
+            "1/4",
+            "1/2",
+            "3/4",
+            "1"
+          ],
+          "correct_option": "B",
+          "explanation": "HT, TH out of HH, HT, TH, TT. 2/4 = 1/2.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 323,
+          "question": "Covariance of independent variables?",
+          "options": [
+            "1",
+            "0",
+            "-1",
+            "Undefined"
+          ],
+          "correct_option": "B",
+          "explanation": "No linear relationship.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 324,
+          "question": "Mode is?",
+          "options": [
+            "Average value",
+            "Middle value",
+            "Most frequent value",
+            "Difference max-min"
+          ],
+          "correct_option": "C",
+          "explanation": "Central tendency measure.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 325,
+          "question": "Median of 1, 3, 3, 6, 7, 8, 9?",
+          "options": [
+            "3",
+            "6",
+            "7",
+            "5"
+          ],
+          "correct_option": "B",
+          "explanation": "Sorted, middle element is 6.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 326,
+          "question": "Geometric distribution models?",
+          "options": [
+            "Number of trials to 1st success",
+            "Number of successes",
+            "Time between events",
+            "Height of people"
+          ],
+          "correct_option": "A",
+          "explanation": "Bernoulli trials until success.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 327,
+          "question": "Condition for PDF f(x)?",
+          "options": [
+            "Integral -inf to inf f(x)dx = 1",
+            "Sum f(x) = 0",
+            "f(x) < 0 allowed",
+            "None"
+          ],
+          "correct_option": "A",
+          "explanation": "Total prob is 1.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 328,
+          "question": "P(A') is?",
+          "options": [
+            "1 + P(A)",
+            "1 - P(A)",
+            "P(A)",
+            "1/P(A)"
+          ],
+          "correct_option": "B",
+          "explanation": "Complement rule.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 329,
+          "question": "Sample space of rolling a die?",
+          "options": [
+            "{1,2,3,4,5,6}",
+            "{1,6}",
+            "{H, T}",
+            "Real numbers"
+          ],
+          "correct_option": "A",
+          "explanation": "All possible outcomes.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 330,
+          "question": "If P(A)=0.4, P(B)=0.5, Mutually Excl, P(A U B)?",
+          "options": [
+            "0.9",
+            "0.2",
+            "0.1",
+            "0"
+          ],
+          "correct_option": "A",
+          "explanation": "0.4 + 0.5 = 0.9.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 331,
+          "question": "Coefficient of Variation?",
+          "options": [
+            "Mean/SD",
+            "SD/Mean * 100",
+            "Variance/Mean",
+            "Mean/Variance"
+          ],
+          "correct_option": "B",
+          "explanation": "Relative variability.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 332,
+          "question": "Bernoulli trial has how many outcomes?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "Infinite"
+          ],
+          "correct_option": "B",
+          "explanation": "Success or Failure.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 333,
+          "question": "Central Limit Theorem relates to?",
+          "options": [
+            "Sample Mean distribution",
+            "Sample Median",
+            "Population range",
+            "Outliers"
+          ],
+          "correct_option": "A",
+          "explanation": "Converges to Normal distribution.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 334,
+          "question": "Skewness measures?",
+          "options": [
+            "Peakedness",
+            "Asymmetry",
+            "Spread",
+            "Center"
+          ],
+          "correct_option": "B",
+          "explanation": "Symmtery around mean.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 335,
+          "question": "Kurtosis measures?",
+          "options": [
+            "Peakedness/Tail weight",
+            "Asymmetry",
+            "Centrality",
+            "None"
+          ],
+          "correct_option": "A",
+          "explanation": "Lepto/Meso/Platykurtic.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 336,
+          "question": "Discrete Random Variable takes?",
+          "options": [
+            "Countable values",
+            "Interval values",
+            "Any real value",
+            "Complex values"
+          ],
+          "correct_option": "A",
+          "explanation": "Finite or countably infinite.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 337,
+          "question": "Type I Error is?",
+          "options": [
+            "Reject True Null",
+            "Accept False Null",
+            "Reject False Null",
+            "Correct Decision"
+          ],
+          "correct_option": "A",
+          "explanation": "False Positive.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 338,
+          "question": "Type II Error is?",
+          "options": [
+            "Reject True Null",
+            "Accept False Null",
+            "Correct Decision",
+            "None"
+          ],
+          "correct_option": "B",
+          "explanation": "False Negative.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 339,
+          "question": "Power of a test is?",
+          "options": [
+            "1 - Alpha",
+            "1 - Beta",
+            "Alpha",
+            "Beta"
+          ],
+          "correct_option": "B",
+          "explanation": "Prob of correctly rejecting false null.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 340,
+          "question": "Regression line y = mx + c. m is?",
+          "options": [
+            "Intercept",
+            "Slope",
+            "Correlation",
+            "Error"
+          ],
+          "correct_option": "B",
+          "explanation": "Equation of line.",
+          "difficulty": "Easy"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 351,
+          "question": "State the three axioms of Probability.",
+          "model_answer": "1. P(E) >= 0. 2. P(S) = 1. 3. P(Un An) = Sum P(An) for exclusive events.",
+          "key_points": [
+            "Non-negativity",
+            "Normalization",
+            "Additivity"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 352,
+          "question": "State and Prove Bayes' Theorem.",
+          "model_answer": "P(A|B) = P(B|A)P(A) / P(B). Derived from P(AnB) = P(A|B)P(B) = P(B|A)P(A).",
+          "key_points": [
+            "Formula",
+            "Derivation",
+            "Posterior"
+          ],
+          "marks": 10,
+          "difficulty": "Hard"
+        },
+        {
+          "id": 353,
+          "question": "Explain Difference between Binomial and Poisson Distribution.",
+          "model_answer": "Binomial: Fixed n trials, constant p. Poisson: Infinite n, very small p, fixed lambda=np. Poisson is limit of Binomial.",
+          "key_points": [
+            "n fixed vs large",
+            "Success vs Rate",
+            "Limiting case"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 354,
+          "question": "Define Conditional Probability.",
+          "model_answer": "Probability of event A occurring given B has occurred. P(A|B) = P(AnB)/P(B).",
+          "key_points": [
+            "Definition",
+            "Formula",
+            "Reduced Sample Space"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 355,
+          "question": "What is a Random Variable?",
+          "model_answer": "A real-valued function defined on the sample space of a random experiment.",
+          "key_points": [
+            "Function",
+            "Mapping to Reals",
+            "Discrete/Continuous"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 356,
+          "question": "Explain Central Limit Theorem.",
+          "model_answer": "For large sample size n, the sampling distribution of the mean approaches a Normal Distribution regardless of population shape.",
+          "key_points": [
+            "Large n",
+            "Normal approximation",
+            "Mean sampling"
+          ],
+          "marks": 5,
+          "difficulty": "Hard"
+        },
+        {
+          "id": 357,
+          "question": "Define Expectation and Variance.",
+          "model_answer": "Expectation E[X] is probability-weighted average. Variance Var(X) is expected squared deviation from mean E[(X-mu)^2].",
+          "key_points": [
+            "Mean/Average",
+            "Spread/Dispersion",
+            "Formulas"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 358,
+          "question": "Differentiate between Correlation and Regression.",
+          "model_answer": "Correlation measures strength of association. Regression models the relationship to predict one variable from another.",
+          "key_points": [
+            "Association vs Prediction",
+            "Relationship"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 359,
+          "question": "What are Mutually Exclusive and Independent events?",
+          "model_answer": "Exclusive: Cannot happen together (Intersection is empty). Independent: Occurrence of one doesn't affect other P(AnB)=P(A)P(B).",
+          "key_points": [
+            "Disjoint",
+            "No influence"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 360,
+          "question": "Properties of Normal Distribution curve.",
+          "model_answer": "Bell-shaped, Symmetric about mean, Mean=Median=Mode, Asymptotic to x-axis, Area=1.",
+          "key_points": [
+            "Bell shape",
+            "Symmetric",
+            "Mean=Median=Mode"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 361,
+          "question": "Explain Law of Total Probability.",
+          "model_answer": "P(B) = Sum P(B|Ai)P(Ai) for a partition {Ai}.",
+          "key_points": [
+            "Partition",
+            "Summation",
+            "Formula"
+          ],
+          "marks": 5,
+          "difficulty": "Hard"
+        },
+        {
+          "id": 362,
+          "question": "What is a Cumulative Distribution Function (CDF)?",
+          "model_answer": "F(x) = P(X <= x). It is non-decreasing, F(-inf)=0, F(inf)=1.",
+          "key_points": [
+            "P(X<=x)",
+            "Right continuous",
+            "0 to 1"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 363,
+          "question": "Probability Mass Function vs Probability Density Function.",
+          "model_answer": "PMF for discrete RV (prob at a point). PDF for continuous RV (prob in an interval).",
+          "key_points": [
+            "Discrete vs Continuous",
+            "Point vs Interval"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 364,
+          "question": "Geometric vs Hypergeometric Distribution.",
+          "model_answer": "Geometric: Trials to first success (with replacement). Hypergeometric: Successes in sample without replacement.",
+          "key_points": [
+            "Replacement",
+            "Infinite vs Finite pop"
+          ],
+          "marks": 5,
+          "difficulty": "Hard"
+        },
+        {
+          "id": 365,
+          "question": "Chebyshev's Inequality statement.",
+          "model_answer": "At least 1-1/k^2 of data values fall within k standard deviations of the mean.",
+          "key_points": [
+            "Bound",
+            "Any distribution",
+            "k SDs"
+          ],
+          "marks": 5,
+          "difficulty": "Hard"
+        }
+      ],
+      "coding_questions": []
+    },
+    {
+      "unit_name": "4. Linear Algebra Basics",
+      "mcqs": [
+        {
+          "id": 401,
+          "question": "Order of matrix with m rows and n columns?",
+          "options": [
+            "m x n",
+            "n x m",
+            "m + n",
+            "m * n"
+          ],
+          "correct_option": "A",
+          "explanation": "Rows x Columns.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 402,
+          "question": "Matrix A is symmetric if?",
+          "options": [
+            "A = A^T",
+            "A = -A^T",
+            "A = A^-1",
+            "A = I"
+          ],
+          "correct_option": "A",
+          "explanation": "Transpose equals original.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 403,
+          "question": "Inverse of A exists only if?",
+          "options": [
+            "det(A) = 0",
+            "det(A) != 0",
+            "A is identity",
+            "A is singular"
+          ],
+          "correct_option": "B",
+          "explanation": "Non-singular requirement.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 404,
+          "question": "Identity matrix I has?",
+          "options": [
+            "1s on diagonal, 0 elsewhere",
+            "0s on diagonal, 1 elsewhere",
+            "All 1s",
+            "All 0s"
+          ],
+          "correct_option": "A",
+          "explanation": "Definition of I.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 405,
+          "question": "If AB = BA = I, then B is?",
+          "options": [
+            "Inverse of A",
+            "Transpose of A",
+            "Adjoint of A",
+            "Equal to A"
+          ],
+          "correct_option": "A",
+          "explanation": "Definition of Inverse.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 406,
+          "question": "Rank of a Matrix is?",
+          "options": [
+            "Number of non-zero rows in Echelon form",
+            "Number of columns",
+            "Number of elements",
+            "Determinant value"
+          ],
+          "correct_option": "A",
+          "explanation": "Dimension of column space.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 407,
+          "question": "System Ax=b has unique solution if?",
+          "options": [
+            "Rank(A) = Rank(A|b) = n",
+            "Rank(A) < Rank(A|b)",
+            "Rank(A) = Rank(A|b) < n",
+            "det(A) = 0"
+          ],
+          "correct_option": "A",
+          "explanation": "Consistent and full rank.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 408,
+          "question": "Eigenvalues are roots of?",
+          "options": [
+            "Characteristic equation",
+            "Linear equation",
+            "Differential equation",
+            "None"
+          ],
+          "correct_option": "A",
+          "explanation": "det(A - lambda*I) = 0.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 409,
+          "question": "Trace of a matrix is?",
+          "options": [
+            "Sum of diagonal elements",
+            "Product of diagonal elements",
+            "Sum of all elements",
+            "Determinant"
+          ],
+          "correct_option": "A",
+          "explanation": "Sum of a_ii.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 410,
+          "question": "For orthogonal matrix A, A^T is?",
+          "options": [
+            "A^-1",
+            "A",
+            "-A",
+            "I"
+          ],
+          "correct_option": "A",
+          "explanation": "A A^T = I.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 411,
+          "question": "Determinant of 2x2 matrix [a b; c d]?",
+          "options": [
+            "ad - bc",
+            "ac - bd",
+            "ab - cd",
+            "ad + bc"
+          ],
+          "correct_option": "A",
+          "explanation": "Standard formula.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 412,
+          "question": "Matrix multiplication AB is possible if?",
+          "options": [
+            "Cols of A = Rows of B",
+            "Rows of A = Cols of B",
+            "A and B same size",
+            "Square matrices only"
+          ],
+          "correct_option": "A",
+          "explanation": "Dimension compatibility.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 413,
+          "question": "Singular matrix has determinant?",
+          "options": [
+            "0",
+            "1",
+            "-1",
+            "Infinite"
+          ],
+          "correct_option": "A",
+          "explanation": "Not invertible.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 414,
+          "question": "Transpose of (AB) is?",
+          "options": [
+            "A^T B^T",
+            "B^T A^T",
+            "A^T + B^T",
+            "AB"
+          ],
+          "correct_option": "B",
+          "explanation": "Reversal rule.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 415,
+          "question": "Cayley-Hamilton theorem states?",
+          "options": [
+            "Every square matrix satisfies its characteristic eq",
+            "Matrix has real eigenvalues",
+            "Inverse exists",
+            "None"
+          ],
+          "correct_option": "A",
+          "explanation": "Key matrix theorem.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 416,
+          "question": "If A is 3x3 diagonal matrix with entries 1, 2, 3. Det(A)?",
+          "options": [
+            "6",
+            "5",
+            "0",
+            "1"
+          ],
+          "correct_option": "A",
+          "explanation": "Product of diagonal: 1*2*3=6.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 417,
+          "question": "Idempotent matrix satisfies?",
+          "options": [
+            "A^2 = A",
+            "A^2 = I",
+            "A^T = A",
+            "A^-1 = A"
+          ],
+          "correct_option": "A",
+          "explanation": "Projection matrices.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 418,
+          "question": "Nilpotent matrix satisfies?",
+          "options": [
+            "A^k = 0",
+            "A^2 = I",
+            "A^T = -A",
+            "det(A)=1"
+          ],
+          "correct_option": "A",
+          "explanation": "Some power is zero matrix.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 419,
+          "question": "Sum of eigenvalues equals?",
+          "options": [
+            "Trace",
+            "Determinant",
+            "Rank",
+            "0"
+          ],
+          "correct_option": "A",
+          "explanation": "Fundamental property.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 420,
+          "question": "Product of eigenvalues equals?",
+          "options": [
+            "Determinant",
+            "Trace",
+            "Rank",
+            "1"
+          ],
+          "correct_option": "A",
+          "explanation": "Fundamental property.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 421,
+          "question": "System with no solution is called?",
+          "options": [
+            "Inconsistent",
+            "Consistent",
+            "Trivial",
+            "Homogeneous"
+          ],
+          "correct_option": "A",
+          "explanation": "No x satisfies Ax=b.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 422,
+          "question": "Homogeneous system Ax=0 always has?",
+          "options": [
+            "Trivial solution",
+            "Unique solution",
+            "No solution",
+            "None"
+          ],
+          "correct_option": "A",
+          "explanation": "Zero vector always works.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 423,
+          "question": "Inverse of diagonal matrix?",
+          "options": [
+            "Reciprocals of diagonal entries",
+            "Same matrix",
+            "Negative entries",
+            "Identity"
+          ],
+          "correct_option": "A",
+          "explanation": "diag(1/d_ii).",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 424,
+          "question": "Skew-symmetric matrix diagonal entries are?",
+          "options": [
+            "All 0",
+            "All 1",
+            "Any value",
+            "Positive"
+          ],
+          "correct_option": "A",
+          "explanation": "a_ii = -a_ii => 2a_ii=0.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 425,
+          "question": "Cramer's Rule uses?",
+          "options": [
+            "Determinants",
+            "Integration",
+            "Differentiation",
+            "Graphing"
+          ],
+          "correct_option": "A",
+          "explanation": "Solving systems.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 426,
+          "question": "Two vectors u and v are orthogonal if?",
+          "options": [
+            "dot product is 0",
+            "cross product is 0",
+            "sum is 0",
+            "equal"
+          ],
+          "correct_option": "A",
+          "explanation": "Perpendicular.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 427,
+          "question": "Unit vector has magnitude?",
+          "options": [
+            "1",
+            "0",
+            "10",
+            "Infinite"
+          ],
+          "correct_option": "A",
+          "explanation": "Standard def.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 428,
+          "question": "Hermitian matrix satisfies?",
+          "options": [
+            "A = Conjugate Transpose of A",
+            "A = Transpose",
+            "A = Inverse",
+            "A = -A"
+          ],
+          "correct_option": "A",
+          "explanation": "Complex analogue of symmetric.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 429,
+          "question": "Rank of Null matrix?",
+          "options": [
+            "0",
+            "1",
+            "Undefined",
+            "n"
+          ],
+          "correct_option": "A",
+          "explanation": "No non-zero rows.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 430,
+          "question": "Involutory matrix satisfies?",
+          "options": [
+            "A^2 = I",
+            "A^2 = A",
+            "A^T = A",
+            "A^-1 = 0"
+          ],
+          "correct_option": "A",
+          "explanation": "Its own inverse.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 431,
+          "question": "Row Echelon Form involves?",
+          "options": [
+            "Zeros below pivots",
+            "Zeros above pivots",
+            "All ones",
+            "Diagonal only"
+          ],
+          "correct_option": "A",
+          "explanation": "Step-like structure.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 432,
+          "question": "A square matrix is invertible iff?",
+          "options": [
+            "It is full rank",
+            "It has zero row",
+            "Det is 0",
+            "Trace is 0"
+          ],
+          "correct_option": "A",
+          "explanation": "Non-singular.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 433,
+          "question": "Determinant of [2 0; 0 3]?",
+          "options": [
+            "6",
+            "5",
+            "0",
+            "2"
+          ],
+          "correct_option": "A",
+          "explanation": "2*3 - 0 = 6.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 434,
+          "question": "Adjoint matrix is transpose of?",
+          "options": [
+            "Cofactor matrix",
+            "Minor matrix",
+            "Inverse",
+            "Original"
+          ],
+          "correct_option": "A",
+          "explanation": "Adj A = C^T.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 435,
+          "question": "Vector space must be closed under?",
+          "options": [
+            "Addition & Scalar Mult",
+            "Subtraction & Div",
+            "Product",
+            "None"
+          ],
+          "correct_option": "A",
+          "explanation": "Linear combinations.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 436,
+          "question": "Dimension of R^3?",
+          "options": [
+            "3",
+            "2",
+            "1",
+            "Infinite"
+          ],
+          "correct_option": "A",
+          "explanation": "Basis has 3 vectors.",
+          "difficulty": "Easy"
+        },
+        {
+          "id": 437,
+          "question": "Linear independence means?",
+          "options": [
+            "No vector is combo of others",
+            "All vectors 0",
+            "Orthogonal",
+            "Parallel"
+          ],
+          "correct_option": "A",
+          "explanation": "Unique combination for zero.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 438,
+          "question": "Span of a set is?",
+          "options": [
+            "Set of all linear combos",
+            "Length",
+            "Determinant",
+            "Null space"
+          ],
+          "correct_option": "A",
+          "explanation": "Subspace generated.",
+          "difficulty": "Medium"
+        },
+        {
+          "id": 439,
+          "question": "Unitary Matrix condition?",
+          "options": [
+            "A A^dagger = I",
+            "A^T = A",
+            "A^2 = I",
+            "Det=0"
+          ],
+          "correct_option": "A",
+          "explanation": "Complex orthogonal.",
+          "difficulty": "Hard"
+        },
+        {
+          "id": 440,
+          "question": "Nullity is dimension of?",
+          "options": [
+            "Null Space",
+            "Column Space",
+            "Row Space",
+            "Total Space"
+          ],
+          "correct_option": "A",
+          "explanation": "Kernel dimension.",
+          "difficulty": "Medium"
+        }
+      ],
+      "theory_questions": [
+        {
+          "id": 451,
+          "question": "Define Rank of a Matrix.",
+          "model_answer": "Maximum number of linearly independent rows or columns. Dimension of image space.",
+          "key_points": [
+            "Linear Independence",
+            "Row/Col Space",
+            "Echelon form"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 452,
+          "question": "Explain Cayley-Hamilton Theorem.",
+          "model_answer": "Every square matrix satisfies its own characteristic equation. Use: Finding inverse or high powers.",
+          "key_points": [
+            "Satisfies char eqn",
+            "Inverse calculation"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 453,
+          "question": "What are Eigenvalues and Eigenvectors?",
+          "model_answer": "For Ax = lambda*x, lambda is eigenvalue, x is eigenvector. Vector direction invariant under transformation.",
+          "key_points": [
+            "Ax = lambda x",
+            "Characteristic Root",
+            "Direction invariant"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 454,
+          "question": "Conditions for Consistency of Linear System Ax=B.",
+          "model_answer": "System is consistent if Rank(A) = Rank(A|B). Unique sol if Rank=n, Infinite if Rank<n.",
+          "key_points": [
+            "Rank condition",
+            "Augmented matrix",
+            "n unknowns"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 455,
+          "question": "Properties of Determinants.",
+          "model_answer": "1. det(AB)=det(A)det(B). 2. det(A^T)=det(A). 3. Row swap changes sign. 4. Row add doesn't change value.",
+          "key_points": [
+            "Product rule",
+            "Transpose",
+            "Row ops"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 456,
+          "question": "Define Orthogonal Matrix.",
+          "model_answer": "Square matrix A where A^T = A^-1. Columns form orthonormal basis. det(A) is +1 or -1.",
+          "key_points": [
+            "A Transpose = A Inverse",
+            "Orthonormal columns"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 457,
+          "question": "What is Diagonalization?",
+          "model_answer": "Finding P such that P^-1 A P = D (diagonal). Possible if A has n independent eigenvectors.",
+          "key_points": [
+            "Similarity transform",
+            "Basis of eigenvectors"
+          ],
+          "marks": 5,
+          "difficulty": "Hard"
+        },
+        {
+          "id": 458,
+          "question": "Find Inverse of 2x2 matrix [a b; c d].",
+          "model_answer": "1/(ad-bc) * [d -b; -c a]. Exists if ad-bc != 0.",
+          "key_points": [
+            "Determinant",
+            "Swap diagonal",
+            "Sign off-diagonal"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 459,
+          "question": "Explain Cramer's Rule.",
+          "model_answer": "Method to solve linear system using determinants. x_i = det(A_i)/det(A).",
+          "key_points": [
+            "Determinant ratio",
+            "Only for unique solution"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 460,
+          "question": "Difference between Symmetric and Skew-Symmetric matrices.",
+          "model_answer": "Symmetric: A^T = A. Skew: A^T = -A (Diagonal must be 0 for skew).",
+          "key_points": [
+            "Transpose relation",
+            "Diagonal property"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 461,
+          "question": "Define Vector Space.",
+          "model_answer": "Set of vectors closed under addition and scalar multiplication, satisfying 8 axioms (associativity, identity, etc).",
+          "key_points": [
+            "Closure",
+            "Axioms",
+            "Linear combination"
+          ],
+          "marks": 5,
+          "difficulty": "Hard"
+        },
+        {
+          "id": 462,
+          "question": "What is Row Echelon Form?",
+          "model_answer": "Matrix form where leading entries move right, zeros below. Used for rank finding and Gaussian elimination.",
+          "key_points": [
+            "Step structure",
+            "Gaussian elimination"
+          ],
+          "marks": 5,
+          "difficulty": "Medium"
+        },
+        {
+          "id": 463,
+          "question": "Relationship between Trace and Eigenvalues.",
+          "model_answer": "Trace(A) = Sum of Eigenvalues.",
+          "key_points": [
+            "Sum check",
+            "Invariant"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 464,
+          "question": "Relationship between Determinant and Eigenvalues.",
+          "model_answer": "Det(A) = Product of Eigenvalues.",
+          "key_points": [
+            "Product check",
+            "Invariant"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        },
+        {
+          "id": 465,
+          "question": "What is a Homogeneous System?",
+          "model_answer": "System where all constant terms are zero (Ax=0). Always consistent (trivial solution 0).",
+          "key_points": [
+            "Ax=0",
+            "Always consistent"
+          ],
+          "marks": 5,
+          "difficulty": "Easy"
+        }
+      ],
+      "coding_questions": []
+    }
+  ]
+}
