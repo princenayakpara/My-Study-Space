@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "name": "my-study-space-dashboard",
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/$1"
+    }
+  ]
+}

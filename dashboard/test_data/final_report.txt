@@ -1,0 +1,10 @@
+UNIT 1: UNIT 1: Introduction to C Programming -> 40 MCQs
+UNIT 2: UNIT 2: Data Types -> 40 MCQs
+UNIT 3: UNIT 3: Operators and Expressions -> 40 MCQs
+UNIT 4: UNIT 4: Control Flow -> 40 MCQs
+UNIT 5: UNIT 5: Arrays and Strings -> 40 MCQs
+UNIT 6: UNIT 6: Functions and Debugging -> 40 MCQs
+UNIT 7: UNIT 7: Program Structure and Memory -> 40 MCQs
+UNIT 8: UNIT 8: User Defined Data Types -> 40 MCQs
+UNIT 9: UNIT 9: File Handling and Standard Libraries -> 40 MCQs
+UNIT 10: UNIT 10: Advanced C Concepts -> 40 MCQs

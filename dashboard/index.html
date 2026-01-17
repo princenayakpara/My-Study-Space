@@ -40,13 +40,13 @@
                         <li class="nav-item" data-subject="html">
                             <span class="icon">🎨</span> HTML/CSS/JS
                         </li>
-                        <li class="nav-item" data-subject="c_lang">
+                        <li class="nav-item hide-in-exam-mode" data-subject="c_lang">
                             <span class="icon">💻</span> C Language
                         </li>
                         <li class="nav-item" data-subject="js_backend">
                             <span class="icon">⚙️</span> JS Backend
                         </li>
-                        <li class="nav-item" data-subject="git">
+                        <li class="nav-item hide-in-exam-mode" data-subject="git">
                             <span class="icon">🐙</span> Git & Github
                         </li>
                         <li class="nav-item" data-subject="maths">
@@ -78,10 +78,19 @@
                     <span id="current-topic">Overview</span>
                 </div>
 
-                <div class="mode-switcher">
-                    <button id="mode-study" class="mode-btn active" onclick="switchMainMode('study')">📖 Study</button>
-                    <button id="mode-test-center" class="mode-btn" onclick="switchMainMode('test-center')">📝 Test
-                        Center</button>
+                <div class="exam-mode-controls">
+                    <div class="mode-toggle">
+                        <button id="normal-mode-btn" class="mode-btn active" onclick="toggleExamMode(false)">📖 Normal
+                            Study</button>
+                        <button id="exam-mode-btn" class="mode-btn" onclick="toggleExamMode(true)">🔥 Exam Mode (4
+                            Days)</button>
+                    </div>
+                    <div class="day-selector hidden" id="day-selector">
+                        <button class="day-btn" data-day="1" onclick="selectDay(1)">Day 1</button>
+                        <button class="day-btn" data-day="2" onclick="selectDay(2)">Day 2</button>
+                        <button class="day-btn" data-day="3" onclick="selectDay(3)">Day 3</button>
+                        <button class="day-btn" data-day="4" onclick="selectDay(4)">Day 4</button>
+                    </div>
                 </div>
             </header>
 
@@ -180,6 +189,33 @@
                                 style="margin-bottom:1rem">← Back to Subjects</button>
                             <h2 id="qb-unit-title" style="margin-bottom:1rem; color:var(--primary)"></h2>
                             <div id="qb-list" style="display:flex; flex-direction:column; gap:1.5rem;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EXAM MODE VIEW -->
+                <div id="exam-view" class="view-container hidden">
+                    <div class="exam-content-wrapper">
+                        <!-- MCQ Bank Panel -->
+                        <div class="exam-panel mcq-panel">
+                            <h2>1️⃣ MCQ BANK</h2>
+                            <div class="mcq-stats">
+                                <span>Accuracy: <strong id="mcq-accuracy">0%</strong></span>
+                                <span>Weak MCQs: <strong id="weak-mcqs-count">0</strong></span>
+                            </div>
+                            <div id="mcq-container" class="scrollable-content"></div>
+                        </div>
+
+                        <!-- 3-Mark Answer Bank Panel -->
+                        <div class="exam-panel answer-panel">
+                            <h2>2️⃣ 3-MARK ANSWER BANK</h2>
+                            <div id="answer-container" class="scrollable-content"></div>
+                        </div>
+
+                        <!-- Last-Day Revision Panel -->
+                        <div class="exam-panel revision-panel">
+                            <h2>3️⃣ LAST-DAY REVISION</h2>
+                            <div id="revision-container" class="scrollable-content"></div>
                         </div>
                     </div>
                 </div>

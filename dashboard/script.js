@@ -18,7 +18,7 @@ const CACHE_dURATION = 60 * 60 * 1000; // 1 hour
 // Maps Repository Folder Name -> Internal Subject Key
 const SUBJECT_FOLDERS = {
     'html_css_js(sem_01)': 'html',
-    'c_language(sem_01)': 'c_lang',
+    'c_language(sem_01)': 'c_language',
     'javascript_for_backend(sem_01)': 'js_backend',
     'git_&_github(sem_01)': 'git',
     'maths(sem_01)': 'maths'
@@ -27,7 +27,7 @@ const SUBJECT_FOLDERS = {
 // Maps Subject Key -> UI Display Name & Icon
 const UI_CONFIG = {
     'html': { name: 'HTML/CSS/JS', icon: '🎨' },
-    'c_lang': { name: 'C Language', icon: '💻' },
+    'c_language': { name: 'C Language', icon: '💻' },
     'js_backend': { name: 'JS Backend', icon: '⚙️' },
     'git': { name: 'Git & Github', icon: '🐙' },
     'maths': { name: 'Maths', icon: '📐' }
@@ -723,7 +723,7 @@ const TestManager = {
 
         // PATH MAPPING
         let dataPath = null;
-        if (subjectKey === 'c_lang') dataPath = 'test_data/c_language.json';
+        if (subjectKey === 'c_language') dataPath = 'test_data/c_language.json';
         else if (subjectKey === 'maths') dataPath = 'test_data/maths.json';
         else if (subjectKey === 'html') dataPath = 'test_data/html_css_js.json';
         else if (subjectKey === 'js_backend') dataPath = 'test_data/js_backend.json';
@@ -1167,9 +1167,17 @@ const QuestionBankManager = {
                             <strong>Expected Commands:</strong> <code>${(q.expected_git_commands || []).join(', ')}</code>
                         </div>
                     ` : `
-                        <div class="qb-code-preview">
-                            <pre><code>${(q.code_html || q.code_css || q.code_js || q.code_c || "").replace(/</g, "&lt;")}</code></pre>
-                        </div>
+                        ${q.code_solution ? `
+                            <div class="qb-code-solutions">
+                                <div class="code-sol"><strong>C:</strong> <pre><code>${(q.code_solution.C || "").replace(/</g, "&lt;")}</code></pre></div>
+                                <div class="code-sol"><strong>JS:</strong> <pre><code>${(q.code_solution.JavaScript || "").replace(/</g, "&lt;")}</code></pre></div>
+                                <div class="code-sol"><strong>Py:</strong> <pre><code>${(q.code_solution.Python || "").replace(/</g, "&lt;")}</code></pre></div>
+                            </div>
+                        ` : `
+                            <div class="qb-code-preview">
+                                <pre><code>${(q.code_html || q.code_css || q.code_js || q.code_c || "").replace(/</g, "&lt;")}</code></pre>
+                            </div>
+                        `}
                     `}
                     <div class="qb-meta">Difficulty: ${q.difficulty}</div>
                 </div>
@@ -1233,3 +1241,347 @@ document.addEventListener('DOMContentLoaded', async () => {
     console.log("✅ Initialization complete. Registered banks:", Object.keys(QuestionBankManager.state.testBanks));
 });
 
+
+// =========================================
+// EXAM MODE SYSTEM
+// =========================================
+
+// Exam Mode State
+const ExamModeState = {
+    isExamMode: false,
+    currentDay: null,
+    currentSubject: null,
+    mcqStats: {
+        total: 0,
+        attempted: 0,
+        correct: 0,
+        weak: []
+    }
+};
+
+// Toggle Exam Mode
+function toggleExamMode(enable) {
+    ExamModeState.isExamMode = enable;
+    
+    // Update UI
+    document.body.classList.toggle('exam-mode', enable);
+    document.getElementById('normal-mode-btn').classList.toggle('active', !enable);
+    document.getElementById('exam-mode-btn').classList.toggle('active', enable);
+    
+    // Show/hide day selector
+    const daySelector = document.getElementById('day-selector');
+    if (enable) {
+        daySelector.classList.remove('hidden');
+        // Auto-select Day 1
+        selectDay(1);
+    } else {
+        daySelector.classList.add('hidden');
+        // Return to normal study view
+        document.getElementById('exam-view').classList.remove('active');
+        document.getElementById('study-view').classList.add('active');
+    }
+}
+
+// Select Day
+function selectDay(day) {
+    ExamModeState.currentDay = day;
+    
+    // Update day button states
+    document.querySelectorAll('.day-btn').forEach(btn => {
+        btn.classList.toggle('active', parseInt(btn.dataset.day) === day);
+    });
+    
+    // Load day-specific content
+    loadDayContent(day);
+}
+
+// Load Day Content
+function loadDayContent(day) {
+    const dayMapping = {
+        1: 'js_backend',
+        2: 'html',
+        3: 'maths',
+        4: 'revision_mock'
+    };
+    
+    const subject = dayMapping[day];
+    
+    if (day === 4) {
+        // Day 4: Revision + Mock Test
+        showRevisionMode();
+    } else {
+        // Days 1-3: Subject-specific exam view
+        loadExamView(subject);
+    }
+}
+
+// Load Exam View for Subject
+async function loadExamView(subjectKey) {
+    ExamModeState.currentSubject = subjectKey;
+    
+    // Show exam view
+    document.getElementById('study-view').classList.remove('active');
+    document.getElementById('test-center-view').classList.remove('active');
+    document.getElementById('question-bank-view').classList.remove('active');
+    document.getElementById('exam-view').classList.add('active');
+    
+    // Update breadcrumbs
+    const config = UI_CONFIG[subjectKey];
+    document.getElementById('current-subject').innerHTML = `${config.icon} ${config.name} - Exam Mode`;
+    document.getElementById('current-topic').textContent = `Day ${ExamModeState.currentDay}`;
+    
+    // Load data
+    let dataPath = null;
+    if (subjectKey === 'js_backend') dataPath = 'test_data/js_backend.json';
+    else if (subjectKey === 'html') dataPath = 'test_data/html_css_js.json';
+    else if (subjectKey === 'maths') dataPath = 'test_data/maths.json';
+    
+    if (dataPath) {
+        try {
+            const res = await fetch(dataPath);
+            const data = await res.json();
+            
+            // Render panels
+            renderMCQBank(data);
+            render3MarkAnswers(data);
+            renderRevisionCards(data);
+        } catch (error) {
+            console.error('Failed to load exam data:', error);
+        }
+    }
+}
+
+// Render MCQ Bank
+function renderMCQBank(data) {
+    const container = document.getElementById('mcq-container');
+    container.innerHTML = '';
+    
+    // Collect all MCQs from all units
+    const allMCQs = [];
+    data.units.forEach(unit => {
+        if (unit.mcqs) {
+            unit.mcqs.forEach(mcq => {
+                allMCQs.push({ ...mcq, unit: unit.unit_name });
+            });
+        }
+    });
+    
+    // Limit to 40 MCQs
+    const selectedMCQs = allMCQs.slice(0, 40);
+    ExamModeState.mcqStats.total = selectedMCQs.length;
+    
+    selectedMCQs.forEach((mcq, index) => {
+        const card = document.createElement('div');
+        card.className = 'mcq-card';
+        card.innerHTML = `
+            <div class="mcq-question">
+                <strong>Q${index + 1}.</strong> ${mcq.question}
+            </div>
+            <div class="mcq-options">
+                ${mcq.options.map((opt, i) => `
+                    <div class="mcq-option" data-mcq-id="${mcq.id}" data-option="${String.fromCharCode(65 + i)}" onclick="selectMCQOption(this, ${mcq.id}, '${String.fromCharCode(65 + i)}')">
+                        ${opt}
+                    </div>
+                `).join('')}
+            </div>
+            <div class="mcq-explanation" id="explanation-${mcq.id}">
+                <p><strong>Correct Answer:</strong> ${mcq.correct_option}</p>
+                <p><strong>Explanation:</strong> ${mcq.explanation}</p>
+            </div>
+            <div class="mcq-actions">
+                <button onclick="toggleExplanation(${mcq.id})">Show Answer</button>
+                <button onclick="markAsWeak(${mcq.id})">Mark Weak</button>
+            </div>
+        `;
+        container.appendChild(card);
+    });
+}
+
+// Select MCQ Option
+function selectMCQOption(element, mcqId, selectedOption) {
+    // Remove previous selection
+    const siblings = element.parentElement.querySelectorAll('.mcq-option');
+    siblings.forEach(opt => opt.classList.remove('selected'));
+    
+    // Add selection
+    element.classList.add('selected');
+}
+
+// Toggle Explanation
+function toggleExplanation(mcqId) {
+    const explanation = document.getElementById(`explanation-${mcqId}`);
+    explanation.classList.toggle('visible');
+}
+
+// Mark as Weak
+function markAsWeak(mcqId) {
+    if (!ExamModeState.mcqStats.weak.includes(mcqId)) {
+        ExamModeState.mcqStats.weak.push(mcqId);
+        updateMCQStats();
+    }
+}
+
+// Update MCQ Stats
+function updateMCQStats() {
+    document.getElementById('mcq-accuracy').textContent = 
+        ExamModeState.mcqStats.total > 0 
+            ? Math.round((ExamModeState.mcqStats.correct / ExamModeState.mcqStats.attempted) * 100) + '%'
+            : '0%';
+    document.getElementById('weak-mcqs-count').textContent = ExamModeState.mcqStats.weak.length;
+}
+
+// Render 3-Mark Answers
+function render3MarkAnswers(data) {
+    const container = document.getElementById('answer-container');
+    container.innerHTML = '';
+    
+    // Collect theory questions (3-mark format)
+    const allAnswers = [];
+    data.units.forEach(unit => {
+        if (unit.theory_questions) {
+            unit.theory_questions.forEach(q => {
+                allAnswers.push({ ...q, unit: unit.unit_name });
+            });
+        }
+    });
+    
+    // Limit to 20-25 answers
+    const selectedAnswers = allAnswers.slice(0, 25);
+    
+    selectedAnswers.forEach((answer, index) => {
+        const card = document.createElement('div');
+        card.className = 'answer-card';
+        
+        // Format model answer to be concise (5-6 lines)
+        const formattedAnswer = formatAs3MarkAnswer(answer);
+        
+        card.innerHTML = `
+            <div class="answer-question">
+                <strong>Q${index + 1}.</strong> ${answer.question}
+            </div>
+            <div class="ideal-answer">
+${formattedAnswer}
+            </div>
+            <div class="answer-actions">
+                <button onclick="alert('Marked as important!')">Mark Important</button>
+                <button onclick="alert('Added to revision list!')">Revise Again</button>
+            </div>
+        `;
+        container.appendChild(card);
+    });
+}
+
+// Format as 3-Mark Answer
+function formatAs3MarkAnswer(question) {
+    // If model_answer exists, use it; otherwise create from key_points
+    if (question.model_answer) {
+        return question.model_answer;
+    }
+    
+    // Create concise answer from key points
+    let answer = `${question.question.split('?')[0]}:\n\n`;
+    if (question.key_points && question.key_points.length > 0) {
+        answer += 'Key Points:\n';
+        question.key_points.slice(0, 3).forEach(point => {
+            answer += `• ${point}\n`;
+        });
+    }
+    return answer;
+}
+
+// Render Revision Cards
+function renderRevisionCards(data) {
+    const container = document.getElementById('revision-container');
+    container.innerHTML = '<div class="revision-cards"></div>';
+    const cardsContainer = container.querySelector('.revision-cards');
+    
+    // Create revision cards from key concepts
+    const revisionCards = extractRevisionCards(data);
+    
+    revisionCards.forEach(card => {
+        const cardEl = document.createElement('div');
+        cardEl.className = 'revision-card';
+        cardEl.innerHTML = `
+            <div class="revision-category">${card.category}</div>
+            <div class="revision-fact">${card.fact}</div>
+        `;
+        cardsContainer.appendChild(cardEl);
+    });
+}
+
+// Extract Revision Cards
+function extractRevisionCards(data) {
+    const cards = [];
+    
+    // Extract from MCQs and theory questions
+    data.units.forEach(unit => {
+        // From MCQs
+        if (unit.mcqs) {
+            unit.mcqs.slice(0, 5).forEach(mcq => {
+                if (mcq.explanation) {
+                    cards.push({
+                        category: 'Quick Facts',
+                        fact: mcq.explanation
+                    });
+                }
+            });
+        }
+        
+        // From theory key points
+        if (unit.theory_questions) {
+            unit.theory_questions.slice(0, 3).forEach(q => {
+                if (q.key_points) {
+                    q.key_points.forEach(point => {
+                        cards.push({
+                            category: 'Key Concepts',
+                            fact: point
+                        });
+                    });
+                }
+            });
+        }
+    });
+    
+    // Limit to 30 cards
+    return cards.slice(0, 30);
+}
+
+// Show Revision Mode (Day 4)
+function showRevisionMode() {
+    const container = document.getElementById('exam-view');
+    container.classList.add('active');
+    
+    document.getElementById('current-subject').textContent = '🔥 Day 4: Final Revision';
+    document.getElementById('current-topic').textContent = 'All Subjects Review';
+    
+    // Show combined revision from all 3 subjects
+    const examContent = container.querySelector('.exam-content-wrapper');
+    examContent.innerHTML = `
+        <div class="exam-panel">
+            <h2>🎯 FINAL REVISION - ALL SUBJECTS</h2>
+            <p style="color: var(--text-muted); margin-bottom: 2rem;">
+                Review weak MCQs and important answers from all subjects before the mock test.
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+                <button class="mode-btn" onclick="loadExamView('js_backend')" style="padding: 1rem;">
+                    ⚙️ JS Backend Revision
+                </button>
+                <button class="mode-btn" onclick="loadExamView('html')" style="padding: 1rem;">
+                    🎨 HTML/CSS/JS Revision
+                </button>
+                <button class="mode-btn" onclick="loadExamView('maths')" style="padding: 1rem;">
+                    📐 Maths Revision
+                </button>
+            </div>
+        </div>
+        <div class="exam-panel">
+            <h2>📝 MOCK TEST</h2>
+            <p style="color: var(--text-muted); margin-bottom: 1rem;">
+                Take a full mock test (70 marks) to simulate exam conditions.
+            </p>
+            <button class="mode-btn" onclick="alert('Mock test feature coming soon!')" style="padding: 1rem; background: var(--primary); color: white;">
+                Start Mock Test (60 minutes)
+            </button>
+        </div>
+    `;
+}
