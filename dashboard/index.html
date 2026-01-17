@@ -220,6 +220,139 @@
                     </div>
                 </div>
 
+                <!-- MOCK TEST VIEW -->
+                <div id="mock-test-view" class="view-container hidden">
+                    <!-- Mock Test Start Screen -->
+                    <div id="mock-start-screen" class="mock-screen active">
+                        <div class="mock-test-header">
+                            <h1>🎯 Mock Test - 70 Marks</h1>
+                            <p class="mock-description">Simulate actual exam conditions with a timed test</p>
+                        </div>
+                        <div class="mock-test-info">
+                            <div class="info-card">
+                                <h3>📝 Test Structure</h3>
+                                <ul>
+                                    <li>16 MCQs (1 mark each) = 16 marks</li>
+                                    <li>12 Short Answers (3 marks each) = 36 marks</li>
+                                    <li>6 Long Answers (3 marks each) = 18 marks</li>
+                                    <li><strong>Total: 70 marks</strong></li>
+                                </ul>
+                            </div>
+                            <div class="info-card">
+                                <h3>⏱️ Time Limit</h3>
+                                <p class="time-display">60 minutes</p>
+                                <p class="time-note">Timer starts when you begin the test</p>
+                            </div>
+                            <div class="info-card">
+                                <h3>📋 Instructions</h3>
+                                <ul>
+                                    <li>Answer all questions</li>
+                                    <li>No negative marking</li>
+                                    <li>You can navigate between questions</li>
+                                    <li>Submit before time runs out</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="btn-start-mock" onclick="MockTestManager.startTest()">
+                            Start Mock Test
+                        </button>
+                    </div>
+
+                    <!-- Mock Test Running Screen -->
+                    <div id="mock-running-screen" class="mock-screen hidden">
+                        <div class="mock-header-bar">
+                            <div class="mock-timer">
+                                <span class="timer-icon">⏱️</span>
+                                <span id="mock-timer-display">60:00</span>
+                            </div>
+                            <div class="mock-progress">
+                                <span id="mock-progress-text">Question 1/34</span>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar-fill" id="mock-progress-bar"></div>
+                                </div>
+                            </div>
+                            <button class="btn-submit-mock" onclick="MockTestManager.submitTest()">
+                                Submit Test
+                            </button>
+                        </div>
+
+                        <div class="mock-content">
+                            <div class="mock-navigation">
+                                <h4>Question Navigator</h4>
+                                <div id="question-navigator" class="question-grid"></div>
+                                <div class="nav-legend">
+                                    <span class="legend-item"><span class="dot answered"></span> Answered</span>
+                                    <span class="legend-item"><span class="dot current"></span> Current</span>
+                                    <span class="legend-item"><span class="dot unanswered"></span> Not Answered</span>
+                                </div>
+                            </div>
+
+                            <div class="mock-question-area">
+                                <div id="current-mock-question"></div>
+                                <div class="mock-controls">
+                                    <button class="btn-nav" id="btn-prev-mock"
+                                        onclick="MockTestManager.previousQuestion()">
+                                        ← Previous
+                                    </button>
+                                    <button class="btn-nav btn-primary" id="btn-next-mock"
+                                        onclick="MockTestManager.nextQuestion()">
+                                        Next →
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mock Test Results Screen -->
+                    <div id="mock-results-screen" class="mock-screen hidden">
+                        <div class="results-header">
+                            <h1>📊 Test Results</h1>
+                            <div class="score-display">
+                                <div class="score-circle">
+                                    <span id="final-score">0</span>
+                                    <span class="score-total">/70</span>
+                                </div>
+                                <p class="score-percentage" id="score-percentage">0%</p>
+                            </div>
+                        </div>
+
+                        <div class="results-breakdown">
+                            <div class="breakdown-card">
+                                <h3>MCQ Section</h3>
+                                <p class="breakdown-score"><span id="mcq-score">0</span>/16</p>
+                                <p class="breakdown-accuracy">Accuracy: <span id="mcq-accuracy-result">0%</span></p>
+                            </div>
+                            <div class="breakdown-card">
+                                <h3>Short Answers</h3>
+                                <p class="breakdown-score"><span id="short-score">0</span>/36</p>
+                                <p class="breakdown-note">Estimated based on key points</p>
+                            </div>
+                            <div class="breakdown-card">
+                                <h3>Long Answers</h3>
+                                <p class="breakdown-score"><span id="long-score">0</span>/18</p>
+                                <p class="breakdown-note">Estimated based on coverage</p>
+                            </div>
+                        </div>
+
+                        <div class="weak-areas">
+                            <h3>🎯 Areas to Improve</h3>
+                            <div id="weak-topics-list"></div>
+                        </div>
+
+                        <div class="results-actions">
+                            <button class="btn-secondary" onclick="MockTestManager.reviewAnswers()">
+                                Review Answers
+                            </button>
+                            <button class="btn-primary" onclick="MockTestManager.retakeTest()">
+                                Retake Test
+                            </button>
+                            <button class="btn-primary" onclick="toggleExamMode(true); selectDay(4)">
+                                Back to Revision
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </main>
     </div>

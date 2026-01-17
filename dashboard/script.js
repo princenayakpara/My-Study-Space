@@ -1579,9 +1579,363 @@ function showRevisionMode() {
             <p style="color: var(--text-muted); margin-bottom: 1rem;">
                 Take a full mock test (70 marks) to simulate exam conditions.
             </p>
-            <button class="mode-btn" onclick="alert('Mock test feature coming soon!')" style="padding: 1rem; background: var(--primary); color: white;">
+            <button class="mode-btn" onclick="MockTestManager.init()" style="padding: 1rem; background: var(--primary); color: white;">
                 Start Mock Test (60 minutes)
             </button>
         </div>
     `;
 }
+
+// =========================================
+// MOCK TEST MANAGER
+// =========================================
+
+const MockTestManager = {
+    state: {
+        questions: [],
+        currentIndex: 0,
+        answers: {},
+        timer: null,
+        timeRemaining: 3600, // 60 minutes in seconds
+        startTime: null,
+        allSubjectsData: {}
+    },
+
+    // Initialize and show mock test
+    async init() {
+        // Load all subjects data
+        await this.loadAllSubjectsData();
+        
+        // Show mock test view
+        document.getElementById('exam-view').classList.remove('active');
+        document.getElementById('mock-test-view').classList.remove('hidden');
+        document.getElementById('mock-test-view').classList.add('active');
+        
+        // Show start screen
+        this.showScreen('mock-start-screen');
+    },
+
+    // Load data from all 3 subjects
+    async loadAllSubjectsData() {
+        const subjects = [
+            { key: 'js_backend', path: 'test_data/js_backend.json' },
+            { key: 'html', path: 'test_data/html_css_js.json' },
+            { key: 'maths', path: 'test_data/maths.json' }
+        ];
+
+        for (const subject of subjects) {
+            try {
+                const res = await fetch(subject.path);
+                this.state.allSubjectsData[subject.key] = await res.json();
+            } catch (error) {
+                console.error(`Failed to load ${subject.key}:`, error);
+            }
+        }
+    },
+
+    // Start the test
+    startTest() {
+        // Generate test questions
+        this.generateTest();
+        
+        // Reset state
+        this.state.currentIndex = 0;
+        this.state.answers = {};
+        this.state.timeRemaining = 3600;
+        this.state.startTime = Date.now();
+        
+        // Show running screen
+        this.showScreen('mock-running-screen');
+        
+        // Start timer
+        this.startTimer();
+        
+        // Render question navigator
+        this.renderQuestionNavigator();
+        
+        // Show first question
+        this.showQuestion(0);
+    },
+
+    // Generate test with 16 MCQs + 18 theory questions
+    generateTest() {
+        this.state.questions = [];
+        
+        const allMCQs = [];
+        const allTheory = [];
+        
+        // Collect all questions from all subjects
+        Object.values(this.state.allSubjectsData).forEach(subjectData => {
+            subjectData.units.forEach(unit => {
+                if (unit.mcqs) {
+                    unit.mcqs.forEach(mcq => {
+                        allMCQs.push({ ...mcq, type: 'mcq', unit: unit.unit_name });
+                    });
+                }
+                if (unit.theory_questions) {
+                    unit.theory_questions.forEach(q => {
+                        allTheory.push({ ...q, type: 'theory', unit: unit.unit_name });
+                    });
+                }
+            });
+        });
+        
+        // Shuffle and select
+        const shuffleMCQs = this.shuffle(allMCQs).slice(0, 16);
+        const shuffleTheory = this.shuffle(allTheory).slice(0, 18);
+        
+        // Combine: MCQs first, then theory
+        this.state.questions = [...shuffleMCQs, ...shuffleTheory];
+    },
+
+    // Shuffle array
+    shuffle(array) {
+        const shuffled = [...array];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+    },
+
+    // Start countdown timer
+    startTimer() {
+        this.state.timer = setInterval(() => {
+            this.state.timeRemaining--;
+            
+            // Update display
+            const minutes = Math.floor(this.state.timeRemaining / 60);
+            const seconds = this.state.timeRemaining % 60;
+            document.getElementById('mock-timer-display').textContent = 
+                `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            
+            // Time's up
+            if (this.state.timeRemaining <= 0) {
+                clearInterval(this.state.timer);
+                alert('Time is up! Submitting your test...');
+                this.submitTest();
+            }
+            
+            // Warning at 5 minutes
+            if (this.state.timeRemaining === 300) {
+                alert('⚠️ 5 minutes remaining!');
+            }
+        }, 1000);
+    },
+
+    // Render question navigator
+    renderQuestionNavigator() {
+        const navigator = document.getElementById('question-navigator');
+        navigator.innerHTML = '';
+        
+        this.state.questions.forEach((q, index) => {
+            const btn = document.createElement('button');
+            btn.className = 'question-nav-btn';
+            btn.textContent = index + 1;
+            btn.onclick = () => this.showQuestion(index);
+            
+            // Mark as answered if answer exists
+            if (this.state.answers[index] !== undefined) {
+                btn.classList.add('answered');
+            }
+            
+            // Mark current
+            if (index === this.state.currentIndex) {
+                btn.classList.add('current');
+            }
+            
+            navigator.appendChild(btn);
+        });
+    },
+
+    // Show specific question
+    showQuestion(index) {
+        this.state.currentIndex = index;
+        const question = this.state.questions[index];
+        const container = document.getElementById('current-mock-question');
+        
+        // Update progress
+        document.getElementById('mock-progress-text').textContent = 
+            `Question ${index + 1}/${this.state.questions.length}`;
+        document.getElementById('mock-progress-bar').style.width = 
+            `${((index + 1) / this.state.questions.length) * 100}%`;
+        
+        // Render question based on type
+        if (question.type === 'mcq') {
+            container.innerHTML = `
+                <div class="mock-question-header">
+                    <span class="question-type-badge">MCQ (1 mark)</span>
+                </div>
+                <div class="mock-question-text">${question.question}</div>
+                <div class="mcq-options">
+                    ${question.options.map((opt, i) => `
+                        <div class="mcq-option ${this.state.answers[index] === String.fromCharCode(65 + i) ? 'selected' : ''}" 
+                             onclick="MockTestManager.selectOption(${index}, '${String.fromCharCode(65 + i)}')">
+                            ${opt}
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        } else {
+            container.innerHTML = `
+                <div class="mock-question-header">
+                    <span class="question-type-badge">Theory (3 marks)</span>
+                </div>
+                <div class="mock-question-text">${question.question}</div>
+                <div class="mock-answer-area">
+                    <textarea placeholder="Write your answer here (5-6 lines recommended)..." 
+                              onchange="MockTestManager.saveAnswer(${index}, this.value)">${this.state.answers[index] || ''}</textarea>
+                </div>
+            `;
+        }
+        
+        // Update navigator
+        this.renderQuestionNavigator();
+        
+        // Update navigation buttons
+        document.getElementById('btn-prev-mock').disabled = index === 0;
+        document.getElementById('btn-next-mock').textContent = 
+            index === this.state.questions.length - 1 ? 'Finish' : 'Next →';
+    },
+
+    // Select MCQ option
+    selectOption(index, option) {
+        this.state.answers[index] = option;
+        this.showQuestion(index);
+    },
+
+    // Save theory answer
+    saveAnswer(index, answer) {
+        this.state.answers[index] = answer;
+        this.renderQuestionNavigator();
+    },
+
+    // Navigate to previous question
+    previousQuestion() {
+        if (this.state.currentIndex > 0) {
+            this.showQuestion(this.state.currentIndex - 1);
+        }
+    },
+
+    // Navigate to next question
+    nextQuestion() {
+        if (this.state.currentIndex < this.state.questions.length - 1) {
+            this.showQuestion(this.state.currentIndex + 1);
+        } else {
+            // Last question - prompt to submit
+            if (confirm('You have reached the end. Do you want to submit the test?')) {
+                this.submitTest();
+            }
+        }
+    },
+
+    // Submit test and show results
+    submitTest() {
+        // Stop timer
+        if (this.state.timer) {
+            clearInterval(this.state.timer);
+        }
+        
+        // Calculate results
+        const results = this.calculateResults();
+        
+        // Show results screen
+        this.showScreen('mock-results-screen');
+        
+        // Display results
+        this.displayResults(results);
+    },
+
+    // Calculate test results
+    calculateResults() {
+        let mcqCorrect = 0;
+        let mcqTotal = 0;
+        let theoryScore = 0;
+        let theoryTotal = 0;
+        const weakTopics = new Set();
+        
+        this.state.questions.forEach((q, index) => {
+            const answer = this.state.answers[index];
+            
+            if (q.type === 'mcq') {
+                mcqTotal++;
+                if (answer === q.correct_option) {
+                    mcqCorrect++;
+                } else {
+                    weakTopics.add(q.unit);
+                }
+            } else {
+                theoryTotal += 3;
+                // Estimate score based on answer length and key points
+                if (answer && answer.trim().length > 0) {
+                    const words = answer.trim().split(/\s+/).length;
+                    if (words >= 50) theoryScore += 3; // Full marks
+                    else if (words >= 30) theoryScore += 2; // Partial
+                    else if (words >= 10) theoryScore += 1; // Minimal
+                    
+                    // Check if weak
+                    if (words < 30) weakTopics.add(q.unit);
+                } else {
+                    weakTopics.add(q.unit);
+                }
+            }
+        });
+        
+        return {
+            mcqScore: mcqCorrect,
+            mcqTotal,
+            mcqAccuracy: mcqTotal > 0 ? (mcqCorrect / mcqTotal * 100).toFixed(1) : 0,
+            theoryScore,
+            theoryTotal,
+            totalScore: mcqCorrect + theoryScore,
+            totalMarks: mcqTotal + theoryTotal,
+            percentage: ((mcqCorrect + theoryScore) / (mcqTotal + theoryTotal) * 100).toFixed(1),
+            weakTopics: Array.from(weakTopics)
+        };
+    },
+
+    // Display results
+    displayResults(results) {
+        document.getElementById('final-score').textContent = results.totalScore;
+        document.getElementById('score-percentage').textContent = results.percentage + '%';
+        
+        document.getElementById('mcq-score').textContent = results.mcqScore;
+        document.getElementById('mcq-accuracy-result').textContent = results.mcqAccuracy + '%';
+        
+        // Split theory into short and long for display
+        const shortScore = Math.floor(results.theoryScore * 0.67);
+        const longScore = results.theoryScore - shortScore;
+        
+        document.getElementById('short-score').textContent = shortScore;
+        document.getElementById('long-score').textContent = longScore;
+        
+        // Weak topics
+        const weakList = document.getElementById('weak-topics-list');
+        if (results.weakTopics.length > 0) {
+            weakList.innerHTML = results.weakTopics.map(topic => 
+                `<span class="weak-topic-tag">${topic}</span>`
+            ).join('');
+        } else {
+            weakList.innerHTML = '<p style="color: var(--text-muted);">Great job! No weak areas detected.</p>';
+        }
+    },
+
+    // Review answers (show all questions with answers)
+    reviewAnswers() {
+        alert('Review feature coming soon! You can retake the test to practice more.');
+    },
+
+    // Retake test
+    retakeTest() {
+        this.startTest();
+    },
+
+    // Show specific screen
+    showScreen(screenId) {
+        document.querySelectorAll('.mock-screen').forEach(screen => {
+            screen.classList.remove('active');
+        });
+        document.getElementById(screenId).classList.add('active');
+    }
+};
+
